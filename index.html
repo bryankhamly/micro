@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbiology Study Guides - Table of Contents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .chapter-card {
+            background: white;
+            border-radius: 12px;
+            padding: 35px 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .chapter-number {
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .chapter-title {
+            font-size: 1.6em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .chapter-description {
+            font-size: 1em;
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .chapter-meta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: auto;
+        }
+
+        .meta-tag {
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .arrow {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2em;
+            color: #667eea;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .chapter-card:hover .arrow {
+            opacity: 1;
+            right: 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        footer p {
+            opacity: 0.9;
+            font-size: 0.95em;
+        }
+
+        .coming-soon {
+            background: #f8f9fa;
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+
+        .coming-soon:hover {
+            transform: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .coming-soon .arrow {
+            display: none;
+        }
+
+        .coming-soon-badge {
+            background: #6c757d;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .chapter-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chapter-card {
+                padding: 25px 20px;
+            }
+
+            .chapter-title {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Microbiology Study Guides</h1>
+        </header>
+
+        <div class="chapter-grid">
+            <a href="https://bryankhamly.github.io/micro1617" class="chapter-card">
+                <div class="chapter-number">Chapters 16 & 17</div>
+                <div class="chapter-title">Innate & Adaptive Immunity</div>
+                <div class="chapter-description">
+                    Comprehensive coverage of the immune system, including innate immune responses and adaptive immunity mechanisms.
+                </div>
+                <div class="chapter-meta">
+                    <span class="meta-tag">Interactive</span>
+                    <span class="meta-tag">Study Guide</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+
+            <a href="https://bryankhamly.github.io/micro/18.html" class="chapter-card">
+                <div class="chapter-number">Chapter 18</div>
+                <div class="chapter-title">Applied Immunology</div>
+                <div class="chapter-description">
+                    Learn about vaccines, monoclonal antibodies, ELISA techniques, and practical applications of immunology.
+                </div>
+                <div class="chapter-meta">
+                    <span class="meta-tag">Interactive</span>
+                    <span class="meta-tag">Practice Tests</span>
+                    <span class="meta-tag">110+ Questions</span>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+
+            <!-- Coming Soon Cards - Remove or update these as you add more chapters -->
+            <div class="chapter-card coming-soon">
+                <div class="chapter-number">More Chapters</div>
+                <div class="chapter-title">Coming Soon</div>
+                <div class="chapter-description">
+                    Blah blah blah
+                </div>
+                <div class="chapter-meta">
+                    <span class="coming-soon-badge">In Development</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Bio 15 - Microbiology</p>
+            <p style="margin-top: 8px; font-size: 0.9em; opacity: 0.8;">
+                Created for Professor Pierre Nguyen's Class at IVC
+            </p>
+            <p style="margin-top: 15px;">
+                <a href="https://www.linkedin.com/in/bryankhamly/" target="_blank" style="color: white; text-decoration: none; font-weight: 600; opacity: 0.9; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+                    LinkedIn: Bryan Khamly
+                </a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
