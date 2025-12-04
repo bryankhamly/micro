@@ -70,7 +70,7 @@
         },
         {
           "question": "Where does the varicella-zoster virus remain dormant?",
-          "options": ["Skin cells", "Nerve ganglia", "Blood cells", "Liver cells"],
+          "options": ["Skin cells", "Dorsal root ganglia", "Blood cells", "Liver cells"],
           "answer": 1
         },
         {
@@ -152,6 +152,256 @@
           "question": "What antibiotic is commonly used to treat MRSA?",
           "options": ["Penicillin", "Methicillin", "Vancomycin", "Amoxicillin"],
           "answer": 2
+        },
+        {
+          "question": "What is the most common species of Staphylococcus found on human skin?",
+          "options": ["Staphylococcus aureus", "Staphylococcus epidermidis", "Staphylococcus saprophyticus", "Staphylococcus haemolyticus"],
+          "answer": 1
+        },
+        {
+          "question": "What percentage of the population carries S. aureus in their nose?",
+          "options": ["5-10%", "25-30%", "50-60%", "75-80%"],
+          "answer": 1
+        },
+        {
+          "question": "What type of toxin does S. aureus produce that causes food poisoning?",
+          "options": ["Endotoxin", "Enterotoxin", "Cytotoxin", "Neurotoxin"],
+          "answer": 1
+        },
+        {
+          "question": "What is a furuncle?",
+          "options": ["A superficial skin infection", "A deep infection of a hair follicle (boil)", "A fungal infection", "A viral wart"],
+          "answer": 1
+        },
+        {
+          "question": "What is a carbuncle?",
+          "options": ["A single infected hair follicle", "Multiple connected furuncles", "A fungal skin infection", "A type of skin cancer"],
+          "answer": 1
+        },
+        {
+          "question": "What enzyme produced by S. aureus destroys penicillin?",
+          "options": ["Coagulase", "Catalase", "Penicillinase (beta-lactamase)", "Hyaluronidase"],
+          "answer": 2
+        },
+        {
+          "question": "Which virulence factor of S. aureus causes toxic shock syndrome?",
+          "options": ["Coagulase", "TSST-1 (Toxic Shock Syndrome Toxin-1)", "Enterotoxin", "Protein A"],
+          "answer": 1
+        },
+        {
+          "question": "What is Protein A on S. aureus and what does it do?",
+          "options": ["Binds complement", "Binds the Fc region of antibodies, preventing opsonization", "Destroys red blood cells", "Causes clotting"],
+          "answer": 1
+        },
+        {
+          "question": "What Lancefield group is Streptococcus pyogenes?",
+          "options": ["Group A", "Group B", "Group C", "Group D"],
+          "answer": 0
+        },
+        {
+          "question": "What virulence factor of S. pyogenes acts as a superantigen in necrotizing fasciitis?",
+          "options": ["Streptokinase", "Exotoxin A", "Hyaluronidase", "M protein"],
+          "answer": 1
+        },
+        {
+          "question": "What enzyme produced by S. pyogenes breaks down connective tissue?",
+          "options": ["Coagulase", "Hyaluronidase", "Catalase", "Urease"],
+          "answer": 1
+        },
+        {
+          "question": "What is the treatment for necrotizing fasciitis?",
+          "options": ["Oral antibiotics only", "Antifungal cream", "Emergency surgical debridement and IV antibiotics", "Antivirals"],
+          "answer": 2
+        },
+        {
+          "question": "What organism causes hot tub rash and swimmer's ear?",
+          "options": ["S. aureus", "S. pyogenes", "Pseudomonas aeruginosa", "E. coli"],
+          "answer": 2
+        },
+        {
+          "question": "What is the Gram stain result for Pseudomonas aeruginosa?",
+          "options": ["Gram-positive cocci", "Gram-negative rod", "Gram-positive rod", "Gram-negative cocci"],
+          "answer": 1
+        },
+        {
+          "question": "What type of pathogen is Pseudomonas aeruginosa?",
+          "options": ["Normal flora", "Opportunistic pathogen", "Obligate pathogen", "Commensal only"],
+          "answer": 1
+        },
+        {
+          "question": "How is chickenpox transmitted?",
+          "options": ["Fecal-oral route", "Respiratory droplets and contact with vesicle fluid", "Sexual contact", "Insect bites"],
+          "answer": 1
+        },
+        {
+          "question": "When is a person with chickenpox no longer contagious?",
+          "options": ["When fever resolves", "When all lesions have crusted over", "After 24 hours", "After taking antivirals"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine prevents chickenpox?",
+          "options": ["MMR", "DTaP", "Varicella vaccine", "HPV vaccine"],
+          "answer": 2
+        },
+        {
+          "question": "What triggers shingles reactivation?",
+          "options": ["New exposure to VZV", "Stress, aging, or immunosuppression", "Bacterial infection", "Fungal infection"],
+          "answer": 1
+        },
+        {
+          "question": "What is the characteristic pattern of shingles rash?",
+          "options": ["Diffuse whole-body rash", "Rash following a single dermatome (band-like)", "Only on the face", "Only on the extremities"],
+          "answer": 1
+        },
+        {
+          "question": "What is postherpetic neuralgia?",
+          "options": ["Initial pain of shingles", "Persistent pain after shingles rash heals", "Pain before rash appears", "No pain at all"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine prevents shingles and is recommended for adults over 50?",
+          "options": ["Varicella vaccine", "Shingrix", "Zostavax only", "MMR"],
+          "answer": 1
+        },
+        {
+          "question": "Where does HSV-1 remain latent?",
+          "options": ["Sacral ganglia", "Trigeminal ganglia", "Dorsal root ganglia", "Liver cells"],
+          "answer": 1
+        },
+        {
+          "question": "Where does HSV-2 remain latent?",
+          "options": ["Trigeminal ganglia", "Sacral ganglia", "Dorsal root ganglia", "Brain tissue"],
+          "answer": 1
+        },
+        {
+          "question": "What percentage of the population is infected with HSV-1?",
+          "options": ["10%", "50%", "~90%", "25%"],
+          "answer": 2
+        },
+        {
+          "question": "What antiviral drug is used to treat herpes infections?",
+          "options": ["Penicillin", "Acyclovir/Valacyclovir", "Tamiflu", "Ribavirin"],
+          "answer": 1
+        },
+        {
+          "question": "Can herpes infections be cured?",
+          "options": ["Yes, with antibiotics", "Yes, with antivirals", "No, the virus remains latent for life", "Yes, with vaccines"],
+          "answer": 2
+        },
+        {
+          "question": "What are the characteristic white spots inside the mouth seen in measles?",
+          "options": ["Thrush", "Koplik's spots", "Canker sores", "Cold sores"],
+          "answer": 1
+        },
+        {
+          "question": "What type of rash does measles cause?",
+          "options": ["Vesicular", "Maculopapular (starts on face, spreads to trunk)", "Ring-shaped", "Pustular"],
+          "answer": 1
+        },
+        {
+          "question": "What is the most common cause of death from measles?",
+          "options": ["Encephalitis", "Pneumonia", "Dehydration", "Heart failure"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine prevents measles?",
+          "options": ["DTaP", "MMR (Measles, Mumps, Rubella)", "Varicella", "IPV"],
+          "answer": 1
+        },
+        {
+          "question": "What is Tinea capitis?",
+          "options": ["Ringworm of the body", "Ringworm of the scalp", "Athlete's foot", "Jock itch"],
+          "answer": 1
+        },
+        {
+          "question": "What is Tinea cruris?",
+          "options": ["Ringworm of the scalp", "Athlete's foot", "Jock itch (groin)", "Ringworm of the body"],
+          "answer": 2
+        },
+        {
+          "question": "What condition favors dermatophyte growth?",
+          "options": ["Dry skin", "Cold temperatures", "Moisture", "Acidic pH"],
+          "answer": 2
+        },
+        {
+          "question": "What is oral thrush?",
+          "options": ["Bacterial infection of the mouth", "Fungal overgrowth of Candida in the mouth", "Viral mouth ulcers", "Allergic reaction"],
+          "answer": 1
+        },
+        {
+          "question": "What increases the risk of Candida infections?",
+          "options": ["Exercise", "Antibiotic use, diabetes, immunosuppression", "Cold weather", "High protein diet"],
+          "answer": 1
+        },
+        {
+          "question": "What structure does Candida albicans form that helps it resist phagocytosis?",
+          "options": ["Capsule", "Pseudohyphae", "Spores", "Biofilm only"],
+          "answer": 1
+        },
+        {
+          "question": "What is a small, fluid-filled blister called?",
+          "options": ["Macule", "Papule", "Vesicle", "Pustule"],
+          "answer": 2
+        },
+        {
+          "question": "What produces sebum, an oily secretion that inhibits microbial growth?",
+          "options": ["Sweat glands", "Sebaceous glands", "Hair follicles", "Melanocytes"],
+          "answer": 1
+        },
+        {
+          "question": "What enzyme in sweat and tears breaks down bacterial cell walls?",
+          "options": ["Amylase", "Lysozyme", "Lipase", "Protease"],
+          "answer": 1
+        },
+        {
+          "question": "Staphylococcus aureus colonies on agar typically appear what color?",
+          "options": ["White", "Golden-yellow", "Green", "Red"],
+          "answer": 1
+        },
+        {
+          "question": "What is the result of the catalase test for Staphylococcus?",
+          "options": ["Negative", "Positive (produces bubbles)", "Variable", "No reaction"],
+          "answer": 1
+        },
+        {
+          "question": "What is the result of the catalase test for Streptococcus?",
+          "options": ["Positive", "Negative (no bubbles)", "Variable", "Produces color change"],
+          "answer": 1
+        },
+        {
+          "question": "What is alpha hemolysis characterized by?",
+          "options": ["Complete clearing around colonies", "Greenish discoloration around colonies", "No change in blood agar", "Black discoloration"],
+          "answer": 1
+        },
+        {
+          "question": "What is beta hemolysis characterized by?",
+          "options": ["Greenish discoloration", "Complete clear zone around colonies", "No change in blood agar", "Brown discoloration"],
+          "answer": 1
+        },
+        {
+          "question": "What is gamma hemolysis?",
+          "options": ["Complete hemolysis", "Partial hemolysis", "No hemolysis (no change in agar)", "Variable hemolysis"],
+          "answer": 2
+        },
+        {
+          "question": "What type of virus family does VZV belong to?",
+          "options": ["Picornavirus", "Herpesviridae", "Paramyxovirus", "Coronavirus"],
+          "answer": 1
+        },
+        {
+          "question": "What type of virus are herpes viruses (DNA or RNA)?",
+          "options": ["RNA viruses", "DNA viruses", "Retroviruses", "Prions"],
+          "answer": 1
+        },
+        {
+          "question": "What is the difference between a furuncle and folliculitis?",
+          "options": ["Folliculitis is deeper", "Furuncle is a deeper, more serious infection of a hair follicle", "They are the same", "Furuncle is only on the face"],
+          "answer": 1
+        },
+        {
+          "question": "What characteristic of S. aureus helps protect it from phagocytosis?",
+          "options": ["Flagella", "Capsule and coagulase", "Pili", "Endospores"],
+          "answer": 1
         }
       ]
     },
@@ -234,13 +484,13 @@
           "answer": 1
         },
         {
-          "question": "What is the animal reservoir for rabies?",
-          "options": ["Only dogs", "Only bats", "Various mammals (dogs, bats, raccoons, skunks)", "Birds"],
+          "question": "What is the animal reservoir for rabies in the United States?",
+          "options": ["Only dogs", "Only bats", "Various wild mammals (bats, skunks, raccoons, foxes)", "Birds"],
           "answer": 2
         },
         {
           "question": "What type of virus causes rabies?",
-          "options": ["DNA virus", "RNA virus (Lyssavirus)", "Retrovirus", "Prion"],
+          "options": ["DNA virus", "RNA virus (Lyssavirus/Rhabdovirus)", "Retrovirus", "Prion"],
           "answer": 1
         },
         {
@@ -255,12 +505,12 @@
         },
         {
           "question": "What causes polio?",
-          "options": ["Bacteria", "Poliovirus (Enterovirus)", "Fungus", "Prion"],
+          "options": ["Bacteria", "Poliovirus (Picornavirus)", "Fungus", "Prion"],
           "answer": 1
         },
         {
           "question": "What cells does poliovirus destroy?",
-          "options": ["Sensory neurons", "Motor neurons in the spinal cord", "Brain neurons", "Peripheral nerve cells"],
+          "options": ["Sensory neurons", "Motor neurons in the spinal cord", "Brain neurons only", "Peripheral nerve cells only"],
           "answer": 1
         },
         {
@@ -290,7 +540,7 @@
         },
         {
           "question": "Can prions be destroyed by normal sterilization methods?",
-          "options": ["Yes, easily destroyed", "No, they are extremely resistant", "Only by antibiotics", "Only by antiviral drugs"],
+          "options": ["Yes, easily destroyed by heat", "No, they are extremely resistant", "Only by antibiotics", "Only by antiviral drugs"],
           "answer": 1
         },
         {
@@ -315,22 +565,237 @@
         },
         {
           "question": "What is the 'D' in DTaP vaccine for?",
-          "options": ["Dengue", "Diphtheria", "Dysentery", "Disease"],
+          "options": ["Dengue", "Diphtheria", "Dysentery", "Dermatitis"],
           "answer": 1
         },
         {
           "question": "Opisthotonus is a symptom of which disease?",
-          "options": ["Botulism", "Tetanus", "Rabies", "Polio"],
+          "options": ["Botulism", "Tetanus (severe back arching)", "Rabies", "Polio"],
           "answer": 1
         },
         {
           "question": "What type of organism is Clostridium tetani?",
-          "options": ["Aerobic", "Obligate anaerobe", "Facultative anaerobe", "Microaerophilic"],
+          "options": ["Aerobic bacterium", "Obligate anaerobe", "Facultative anaerobe", "Microaerophilic"],
           "answer": 1
         },
         {
           "question": "Where is Clostridium tetani commonly found?",
-          "options": ["Water", "Soil", "Air", "Human skin"],
+          "options": ["Water", "Soil and animal feces", "Air", "Human skin"],
+          "answer": 1
+        },
+        {
+          "question": "What type of wound is most likely to cause tetanus?",
+          "options": ["Superficial cuts", "Deep puncture wounds", "Burns", "Abrasions"],
+          "answer": 1
+        },
+        {
+          "question": "What is the name of the tetanus neurotoxin?",
+          "options": ["Botulinum toxin", "Tetanospasmin", "Enterotoxin", "Exotoxin A"],
+          "answer": 1
+        },
+        {
+          "question": "Why should infants under 1 year not be given honey?",
+          "options": ["Allergic reactions", "Contains Clostridium botulinum spores (infant botulism)", "Too sweet", "Causes cavities"],
+          "answer": 1
+        },
+        {
+          "question": "What is 'floppy baby syndrome'?",
+          "options": ["Tetanus in infants", "Infant botulism causing flaccid paralysis", "Polio in infants", "Meningitis in infants"],
+          "answer": 1
+        },
+        {
+          "question": "What is the therapeutic use of botulinum toxin?",
+          "options": ["Antibiotic", "Botox for cosmetic and medical purposes", "Antiviral", "Vaccine"],
+          "answer": 1
+        },
+        {
+          "question": "What causes Haemophilus influenzae type b meningitis?",
+          "options": ["Influenza virus", "Gram-negative encapsulated bacterium", "Gram-positive bacterium", "Fungus"],
+          "answer": 1
+        },
+        {
+          "question": "Is Haemophilus influenzae related to the flu (influenza)?",
+          "options": ["Yes, it causes the flu", "No, despite its name it is a bacterium, not the flu virus", "Yes, it's a strain of flu", "Only in children"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine prevents Haemophilus influenzae type b meningitis?",
+          "options": ["Flu vaccine", "Hib vaccine", "MMR", "Prevnar"],
+          "answer": 1
+        },
+        {
+          "question": "What is the leading cause of bacterial meningitis in adults?",
+          "options": ["Haemophilus influenzae", "Neisseria meningitidis", "Streptococcus pneumoniae", "E. coli"],
+          "answer": 2
+        },
+        {
+          "question": "What vaccine prevents pneumococcal meningitis?",
+          "options": ["Hib", "Prevnar (pneumococcal vaccine)", "Meningococcal vaccine", "MMR"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Gram stain of Streptococcus pneumoniae?",
+          "options": ["Gram-negative diplococci", "Gram-positive diplococci", "Gram-positive chains", "Gram-negative rods"],
+          "answer": 1
+        },
+        {
+          "question": "What hemolysis pattern does S. pneumoniae show?",
+          "options": ["Beta-hemolytic", "Alpha-hemolytic (green zone)", "Gamma-hemolytic", "Variable"],
+          "answer": 1
+        },
+        {
+          "question": "What percentage of people are asymptomatic carriers of N. meningitidis?",
+          "options": ["5%", "10-40%", "75%", "90%"],
+          "answer": 1
+        },
+        {
+          "question": "What makes N. meningitidis particularly dangerous?",
+          "options": ["Slow progression", "Endotoxin (LPS) causes rapid shock and death", "Only affects children", "Easy to treat"],
+          "answer": 1
+        },
+        {
+          "question": "What is the characteristic rash of meningococcal meningitis?",
+          "options": ["Maculopapular", "Petechial rash (small red/purple spots)", "Vesicular", "Ring-shaped"],
+          "answer": 1
+        },
+        {
+          "question": "What causes leprosy (Hansen's disease)?",
+          "options": ["Mycobacterium tuberculosis", "Mycobacterium leprae", "Clostridium leprae", "Streptococcus leprae"],
+          "answer": 1
+        },
+        {
+          "question": "What type of staining is used for Mycobacterium leprae?",
+          "options": ["Gram stain", "Acid-fast stain", "Spore stain", "Capsule stain"],
+          "answer": 1
+        },
+        {
+          "question": "Why does M. leprae prefer cooler parts of the body?",
+          "options": ["Better oxygen", "It grows best at 30°C, below core body temperature", "More nutrients", "Less immune response"],
+          "answer": 1
+        },
+        {
+          "question": "How is leprosy transmitted?",
+          "options": ["Casual contact", "Prolonged close contact, nasal secretions", "Insect bites", "Food contamination"],
+          "answer": 1
+        },
+        {
+          "question": "What structure does M. leprae damage in the peripheral nervous system?",
+          "options": ["Axons", "Myelin sheath of Schwann cells", "Dendrites", "Cell bodies"],
+          "answer": 1
+        },
+        {
+          "question": "Is leprosy highly contagious?",
+          "options": ["Yes, extremely contagious", "No, it requires prolonged close contact", "Only through blood", "Only sexually transmitted"],
+          "answer": 1
+        },
+        {
+          "question": "What is the treatment for leprosy?",
+          "options": ["No treatment exists", "Dapsone and rifampin for 2 years", "Surgery only", "Antivirals"],
+          "answer": 1
+        },
+        {
+          "question": "What is the animal reservoir for leprosy in the southern United States?",
+          "options": ["Dogs", "Cats", "Armadillos", "Raccoons"],
+          "answer": 2
+        },
+        {
+          "question": "What percentage of polio cases are asymptomatic or mild?",
+          "options": ["50%", "75%", "~99%", "10%"],
+          "answer": 2
+        },
+        {
+          "question": "How is poliovirus transmitted?",
+          "options": ["Respiratory droplets", "Fecal-oral route", "Insect bites", "Sexual contact"],
+          "answer": 1
+        },
+        {
+          "question": "What type of paralysis does polio cause?",
+          "options": ["Spastic paralysis", "Flaccid paralysis (usually of legs)", "No paralysis", "Temporary numbness"],
+          "answer": 1
+        },
+        {
+          "question": "Who developed the first inactivated (killed) polio vaccine?",
+          "options": ["Albert Sabin", "Jonas Salk", "Louis Pasteur", "Robert Koch"],
+          "answer": 1
+        },
+        {
+          "question": "Who developed the oral live attenuated polio vaccine?",
+          "options": ["Jonas Salk", "Albert Sabin", "Edward Jenner", "Alexander Fleming"],
+          "answer": 1
+        },
+        {
+          "question": "What is PEP in rabies prevention?",
+          "options": ["Pre-exposure prophylaxis", "Post-exposure prophylaxis (vaccine + HRIG after bite)", "Preventive eating program", "Post-elimination procedure"],
+          "answer": 1
+        },
+        {
+          "question": "When must rabies PEP be given to be effective?",
+          "options": ["After symptoms appear", "Before symptoms appear", "At any time", "Only before exposure"],
+          "answer": 1
+        },
+        {
+          "question": "What is the prognosis once rabies symptoms appear?",
+          "options": ["50% survival", "Nearly 100% fatal", "Usually recoverable", "Depends on treatment"],
+          "answer": 1
+        },
+        {
+          "question": "What shape is the rabies virus?",
+          "options": ["Spherical", "Bullet-shaped", "Helical", "Icosahedral"],
+          "answer": 1
+        },
+        {
+          "question": "In rabies, where does the virus travel after reaching the brain?",
+          "options": ["Liver", "Salivary glands (for transmission)", "Kidneys", "Lungs"],
+          "answer": 1
+        },
+        {
+          "question": "What is the furious phase of rabies characterized by?",
+          "options": ["Paralysis and coma", "Agitation, hyperactivity, hydrophobia", "No symptoms", "Mild fever"],
+          "answer": 1
+        },
+        {
+          "question": "What does GABA stand for?",
+          "options": ["Gamma-aminobutyric acid (inhibitory neurotransmitter)", "General amino-based acid", "Glycine and alanine binding agent", "Glutamate activating base acid"],
+          "answer": 0
+        },
+        {
+          "question": "What neurotransmitter does acetylcholine (ACh) function as?",
+          "options": ["Inhibitory only", "Excitatory at neuromuscular junctions (causes muscle contraction)", "Neither", "Only in the brain"],
+          "answer": 1
+        },
+        {
+          "question": "The subarachnoid space contains what fluid?",
+          "options": ["Blood", "Cerebrospinal fluid (CSF)", "Lymph", "Interstitial fluid"],
+          "answer": 1
+        },
+        {
+          "question": "What is the function of the blood-brain barrier?",
+          "options": ["Produces CSF", "Protects CNS by limiting what enters from bloodstream", "Produces antibodies", "Generates immune cells"],
+          "answer": 1
+        },
+        {
+          "question": "Do all Clostridium species form endospores?",
+          "options": ["No, only some", "Yes, all Clostridium species form endospores", "Only C. tetani", "Only C. botulinum"],
+          "answer": 1
+        },
+        {
+          "question": "What other disease does Streptococcus pneumoniae commonly cause besides meningitis?",
+          "options": ["Strep throat", "Pneumonia and otitis media", "Tuberculosis", "Typhoid fever"],
+          "answer": 1
+        },
+        {
+          "question": "What is the classic triad of meningitis symptoms?",
+          "options": ["Cough, fever, fatigue", "Headache, stiff neck (nuchal rigidity), fever", "Rash, joint pain, fatigue", "Nausea, vomiting, diarrhea"],
+          "answer": 1
+        },
+        {
+          "question": "Is viral meningitis generally more or less severe than bacterial meningitis?",
+          "options": ["More severe", "Less severe (usually self-limiting)", "Equally severe", "Viral meningitis doesn't exist"],
+          "answer": 1
+        },
+        {
+          "question": "What does the meningococcal vaccine protect against?",
+          "options": ["All bacteria", "Neisseria meningitidis", "Streptococcus pneumoniae", "Haemophilus influenzae"],
           "answer": 1
         }
       ]
@@ -340,7 +805,7 @@
       "questions": [
         {
           "question": "Which structures make up the upper respiratory system?",
-          "options": ["Larynx, trachea, bronchi", "Nose, pharynx, eustachian tubes", "Bronchi, bronchioles, alveoli", "Trachea, lungs, diaphragm"],
+          "options": ["Larynx, trachea, bronchi", "Nose, pharynx, larynx, eustachian tubes, sinuses", "Bronchi, bronchioles, alveoli", "Trachea, lungs, diaphragm"],
           "answer": 1
         },
         {
@@ -350,7 +815,7 @@
         },
         {
           "question": "What defense mechanism moves mucus and trapped particles up and out of the airways?",
-          "options": ["Coughing reflex", "Ciliary escalator", "Alveolar macrophages", "IgA antibodies"],
+          "options": ["Coughing reflex only", "Ciliary escalator (mucociliary escalator)", "Alveolar macrophages only", "IgA antibodies only"],
           "answer": 1
         },
         {
@@ -365,12 +830,12 @@
         },
         {
           "question": "What complication can occur if strep throat is left untreated?",
-          "options": ["Meningitis", "Rheumatic fever", "Pneumonia", "Bronchitis"],
+          "options": ["Meningitis", "Rheumatic fever and acute glomerulonephritis", "Pneumonia", "Bronchitis"],
           "answer": 1
         },
         {
           "question": "What causes scarlet fever?",
-          "options": ["Staphylococcus aureus", "S. pyogenes with bacteriophage producing erythrogenic toxin", "Corynebacterium diphtheriae", "Bordetella pertussis"],
+          "options": ["Staphylococcus aureus", "S. pyogenes with phage-encoded erythrogenic toxin", "Corynebacterium diphtheriae", "Bordetella pertussis"],
           "answer": 1
         },
         {
@@ -385,12 +850,12 @@
         },
         {
           "question": "What is the characteristic sign of diphtheria?",
-          "options": ["Strawberry tongue", "Tough grayish membrane (pseudomembrane) on throat", "Whooping cough", "Night sweats"],
+          "options": ["Strawberry tongue", "Tough grayish pseudomembrane on throat", "Whooping cough", "Night sweats"],
           "answer": 1
         },
         {
           "question": "How does diphtheria toxin cause disease?",
-          "options": ["Blocks neurotransmitters", "Inhibits protein synthesis", "Destroys cell membranes", "Stimulates excessive mucus"],
+          "options": ["Blocks neurotransmitters", "Inhibits protein synthesis (AB toxin)", "Destroys cell membranes", "Stimulates excessive mucus"],
           "answer": 1
         },
         {
@@ -400,7 +865,7 @@
         },
         {
           "question": "Why do rhinoviruses thrive in the nose?",
-          "options": ["High humidity", "Lower temperature (32-33°C) than core body temperature", "Acidic pH", "High oxygen"],
+          "options": ["High humidity", "Lower temperature (33°C) than core body temperature", "Acidic pH", "High oxygen"],
           "answer": 1
         },
         {
@@ -435,17 +900,17 @@
         },
         {
           "question": "What are Ghon complexes?",
-          "options": ["Active TB lesions", "Calcified tubercles visible on X-ray", "TB bacteria", "Lung tumors"],
+          "options": ["Active TB lesions", "Calcified tubercles visible on X-ray (healed primary TB)", "TB bacteria", "Lung tumors"],
           "answer": 1
         },
         {
           "question": "What is the difference between latent TB and active TB?",
-          "options": ["Latent is contagious, active is not", "Latent has no symptoms and is dormant; active has symptoms and is contagious", "They are the same", "Latent affects lungs, active affects other organs"],
+          "options": ["Latent is contagious, active is not", "Latent has no symptoms and is not contagious; active has symptoms and is contagious", "They are the same", "Latent affects lungs, active affects other organs"],
           "answer": 1
         },
         {
           "question": "What test is used to detect TB exposure?",
-          "options": ["Blood culture", "Mantoux skin test (PPD)", "Throat swab", "Urine test"],
+          "options": ["Blood culture", "Mantoux/tuberculin skin test (PPD)", "Throat swab", "Urine test"],
           "answer": 1
         },
         {
@@ -455,7 +920,7 @@
         },
         {
           "question": "What is the function of hemagglutinin (H) in influenza?",
-          "options": ["Releases new viruses from cells", "Binds to host cell receptors and induces viral entry", "Destroys red blood cells", "Produces mucus"],
+          "options": ["Releases new viruses from cells", "Binds to host cell receptors (sialic acid) for viral entry", "Destroys red blood cells", "Produces mucus"],
           "answer": 1
         },
         {
@@ -465,12 +930,12 @@
         },
         {
           "question": "What is antigenic drift?",
-          "options": ["Major sudden changes in H/N genes", "Small gradual mutations in H/N genes causing seasonal flu", "Transfer of genes between species", "Loss of viral antigens"],
+          "options": ["Major sudden changes in H/N genes", "Small gradual mutations in H/N genes causing seasonal flu variations", "Transfer of genes between species", "Loss of viral antigens"],
           "answer": 1
         },
         {
           "question": "What is antigenic shift?",
-          "options": ["Small gradual mutations", "Major sudden changes from gene reassortment, causing pandemics", "Normal viral replication", "Vaccine-induced changes"],
+          "options": ["Small gradual mutations", "Major sudden changes from gene reassortment, can cause pandemics", "Normal viral replication", "Vaccine-induced changes"],
           "answer": 1
         },
         {
@@ -480,7 +945,7 @@
         },
         {
           "question": "Why are pigs concerning for influenza pandemics?",
-          "options": ["They spread flu to birds", "They can be infected by both bird and human flu, allowing reassortment", "They are immune to flu", "They produce flu vaccines"],
+          "options": ["They spread flu to birds", "They can be infected by both avian and human flu, allowing reassortment", "They are immune to flu", "They produce flu vaccines"],
           "answer": 1
         },
         {
@@ -500,7 +965,7 @@
         },
         {
           "question": "What is a distinctive symptom of COVID-19?",
-          "options": ["Strawberry tongue", "Loss of taste and smell", "Whooping cough", "Gray membrane on throat"],
+          "options": ["Strawberry tongue", "Loss of taste and smell (anosmia)", "Whooping cough", "Gray membrane on throat"],
           "answer": 1
         },
         {
@@ -512,6 +977,176 @@
           "question": "The DTaP vaccine protects against diphtheria, tetanus, and:",
           "options": ["Polio", "Pertussis", "Pneumonia", "Plague"],
           "answer": 1
+        },
+        {
+          "question": "What is the Gram stain result for Streptococcus pyogenes?",
+          "options": ["Gram-negative cocci", "Gram-positive cocci in chains", "Gram-positive cocci in clusters", "Gram-negative rods"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Gram stain of Corynebacterium diphtheriae?",
+          "options": ["Gram-negative rod", "Gram-positive rod (club-shaped)", "Gram-positive cocci", "Gram-negative cocci"],
+          "answer": 1
+        },
+        {
+          "question": "What is the arrangement of C. diphtheriae cells often described as?",
+          "options": ["Clusters", "Chains", "Chinese letters or palisades", "Diplococci"],
+          "answer": 2
+        },
+        {
+          "question": "What type of toxin is diphtheria toxin?",
+          "options": ["Endotoxin", "AB exotoxin (encoded by bacteriophage)", "Superantigen", "Cytotoxin"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Gram stain of Bordetella pertussis?",
+          "options": ["Gram-positive cocci", "Gram-negative coccobacillus", "Gram-positive rod", "Gram-negative spiral"],
+          "answer": 1
+        },
+        {
+          "question": "What are the three stages of pertussis?",
+          "options": ["Prodromal, active, recovery", "Catarrhal, paroxysmal, convalescent", "Initial, peak, resolution", "Mild, moderate, severe"],
+          "answer": 1
+        },
+        {
+          "question": "What characteristic sound gives whooping cough its name?",
+          "options": ["Barking cough", "Whooping sound during inspiration after coughing fits", "Wheezing", "Sneezing"],
+          "answer": 1
+        },
+        {
+          "question": "What type of stain is used for Mycobacterium tuberculosis?",
+          "options": ["Gram stain", "Acid-fast stain (Ziehl-Neelsen)", "Spore stain", "Capsule stain"],
+          "answer": 1
+        },
+        {
+          "question": "What cells primarily contain M. tuberculosis during infection?",
+          "options": ["Red blood cells", "Alveolar macrophages", "Epithelial cells", "Neutrophils"],
+          "answer": 1
+        },
+        {
+          "question": "What immune response walls off M. tuberculosis in granulomas?",
+          "options": ["Antibody-mediated", "Cell-mediated immunity (T cells and macrophages)", "Complement activation", "IgE response"],
+          "answer": 1
+        },
+        {
+          "question": "What percentage of people with latent TB will develop active TB?",
+          "options": ["1%", "5-10%", "50%", "90%"],
+          "answer": 1
+        },
+        {
+          "question": "What increases the risk of latent TB becoming active?",
+          "options": ["Exercise", "Immunosuppression (HIV, aging, malnutrition)", "Good nutrition", "Vaccination"],
+          "answer": 1
+        },
+        {
+          "question": "How is TB primarily transmitted?",
+          "options": ["Fecal-oral route", "Respiratory droplets (airborne)", "Sexual contact", "Insect bites"],
+          "answer": 1
+        },
+        {
+          "question": "What is MDR-TB?",
+          "options": ["Mild disease response TB", "Multidrug-resistant tuberculosis", "Modern diagnosis TB", "Minimal dose required TB"],
+          "answer": 1
+        },
+        {
+          "question": "What is the influenza genome composed of?",
+          "options": ["Single-stranded DNA", "Segmented single-stranded RNA (8 segments)", "Double-stranded DNA", "Double-stranded RNA"],
+          "answer": 1
+        },
+        {
+          "question": "What causes Legionnaires' disease?",
+          "options": ["Streptococcus pneumoniae", "Legionella pneumophila", "Mycoplasma pneumoniae", "Chlamydia pneumoniae"],
+          "answer": 1
+        },
+        {
+          "question": "Where is Legionella pneumophila commonly found?",
+          "options": ["Soil", "Water systems, cooling towers, air conditioning", "Human gut", "Animals"],
+          "answer": 1
+        },
+        {
+          "question": "Is Legionnaires' disease transmitted person-to-person?",
+          "options": ["Yes, highly contagious", "No, acquired from environmental water sources (aerosols)", "Only through direct contact", "Through food"],
+          "answer": 1
+        },
+        {
+          "question": "What organism causes 'walking pneumonia' (atypical pneumonia)?",
+          "options": ["S. pneumoniae", "Mycoplasma pneumoniae", "Legionella", "C. diphtheriae"],
+          "answer": 1
+        },
+        {
+          "question": "What is unique about Mycoplasma pneumoniae's cell structure?",
+          "options": ["Has thick cell wall", "Lacks a cell wall (smallest free-living bacteria)", "Has endospores", "Has capsule"],
+          "answer": 1
+        },
+        {
+          "question": "Why are beta-lactam antibiotics ineffective against Mycoplasma?",
+          "options": ["Mycoplasma produces beta-lactamase", "Mycoplasma lacks a cell wall (no target for beta-lactams)", "Mycoplasma is too small", "Mycoplasma is a virus"],
+          "answer": 1
+        },
+        {
+          "question": "What family does the coronavirus belong to?",
+          "options": ["Orthomyxoviridae", "Coronaviridae", "Picornaviridae", "Paramyxoviridae"],
+          "answer": 1
+        },
+        {
+          "question": "What type of genome does SARS-CoV-2 have?",
+          "options": ["DNA", "Positive-sense single-stranded RNA", "Negative-sense RNA", "Double-stranded RNA"],
+          "answer": 1
+        },
+        {
+          "question": "What causes the cytokine storm seen in severe COVID-19?",
+          "options": ["Direct viral damage", "Overactive immune response releasing excessive inflammatory cytokines", "Bacterial co-infection", "Allergic reaction"],
+          "answer": 1
+        },
+        {
+          "question": "What does the 'P' in DTaP stand for?",
+          "options": ["Polio", "Pertussis", "Pneumonia", "Plague"],
+          "answer": 1
+        },
+        {
+          "question": "How often should adults get Tdap or Td boosters?",
+          "options": ["Every year", "Every 10 years", "Once in adulthood", "Every 5 years"],
+          "answer": 1
+        },
+        {
+          "question": "What defense do alveolar macrophages provide?",
+          "options": ["Produce mucus", "Phagocytize particles and pathogens in the alveoli", "Secrete antibodies", "Move the ciliary escalator"],
+          "answer": 1
+        },
+        {
+          "question": "What antibody class is most important in mucosal immunity of the respiratory tract?",
+          "options": ["IgG", "IgM", "IgA (secretory IgA)", "IgE"],
+          "answer": 2
+        },
+        {
+          "question": "What is the primary pneumonia caused by Streptococcus pneumoniae called?",
+          "options": ["Walking pneumonia", "Lobar pneumonia (typical pneumonia)", "Atypical pneumonia", "Aspiration pneumonia"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine is recommended for prevention of pneumococcal pneumonia?",
+          "options": ["MMR", "Pneumococcal vaccine (Prevnar, Pneumovax)", "DTaP", "Hib"],
+          "answer": 1
+        },
+        {
+          "question": "What complication of rheumatic fever affects the heart?",
+          "options": ["Endocarditis", "Rheumatic heart disease (valve damage)", "Heart attack", "Arrhythmia only"],
+          "answer": 1
+        },
+        {
+          "question": "What causes rheumatic fever after strep throat?",
+          "options": ["Direct bacterial infection of heart", "Molecular mimicry - antibodies against strep cross-react with heart tissue", "Toxin damage", "Viral co-infection"],
+          "answer": 1
+        },
+        {
+          "question": "What is the typical incubation period for influenza?",
+          "options": ["1-4 days", "1-2 weeks", "3-4 weeks", "Several hours"],
+          "answer": 0
+        },
+        {
+          "question": "What cells does influenza virus primarily infect?",
+          "options": ["Alveolar macrophages", "Respiratory epithelial cells", "Red blood cells", "White blood cells"],
+          "answer": 1
         }
       ]
     },
@@ -520,12 +1155,12 @@
       "questions": [
         {
           "question": "Which part of the GI tract has the largest microbial population?",
-          "options": ["Stomach", "Small intestine", "Large intestine", "Esophagus"],
+          "options": ["Stomach", "Small intestine", "Large intestine (colon)", "Esophagus"],
           "answer": 2
         },
         {
           "question": "Why does the stomach have few microbes?",
-          "options": ["No nutrients", "Low pH (acidic)", "High oxygen", "Antibiotics present"],
+          "options": ["No nutrients", "Low pH (highly acidic, pH 1-2)", "High oxygen", "Antibiotics present"],
           "answer": 1
         },
         {
@@ -535,12 +1170,12 @@
         },
         {
           "question": "What is gastroenteritis?",
-          "options": ["Stomach cancer", "Inflammation of stomach and intestine lining", "Liver disease", "Pancreatic infection"],
+          "options": ["Stomach cancer", "Inflammation of stomach and intestinal lining", "Liver disease", "Pancreatic infection"],
           "answer": 1
         },
         {
-          "question": "What percentage of worldwide infectious disease is diarrheal disease?",
-          "options": ["10%", "25%", "40%", "60%"],
+          "question": "Approximately what percentage of worldwide infectious disease deaths is diarrheal disease?",
+          "options": ["10%", "25%", "~40% (second leading cause)", "60%"],
           "answer": 2
         },
         {
@@ -550,12 +1185,12 @@
         },
         {
           "question": "What causes Staphylococcal food poisoning?",
-          "options": ["Bacteria infecting the gut", "Preformed enterotoxin in contaminated food", "Viral infection", "Parasitic infection"],
+          "options": ["Bacteria infecting the gut", "Preformed enterotoxin in contaminated food (intoxication)", "Viral infection", "Parasitic infection"],
           "answer": 1
         },
         {
           "question": "What is the incubation period for S. aureus food poisoning?",
-          "options": ["1-6 hours (very short)", "24-48 hours", "1 week", "2 weeks"],
+          "options": ["1-6 hours (very short because toxin is preformed)", "24-48 hours", "1 week", "2 weeks"],
           "answer": 0
         },
         {
@@ -579,8 +1214,8 @@
           "answer": 1
         },
         {
-          "question": "What is unique about Salmonella typhi infection?",
-          "options": ["Only affects animals", "Can spread to bloodstream and colonize gallbladder (systemic)", "Only causes diarrhea", "Is not contagious"],
+          "question": "What is unique about Salmonella typhi infection compared to other Salmonella?",
+          "options": ["Only affects animals", "Can spread to bloodstream and colonize gallbladder (systemic infection)", "Only causes diarrhea", "Is not contagious"],
           "answer": 1
         },
         {
@@ -589,18 +1224,18 @@
           "answer": 1
         },
         {
-          "question": "What causes salmonellosis (non-typhoid)?",
+          "question": "What causes salmonellosis (non-typhoid Salmonella)?",
           "options": ["Salmonella typhi only", "Non-typhoidal Salmonella (S. enteritidis, S. typhimurium)", "Shigella", "E. coli"],
           "answer": 1
         },
         {
           "question": "What foods are commonly associated with Salmonella?",
-          "options": ["Bread and pasta", "Poultry, eggs, undercooked meat", "Fruits only", "Dairy only"],
+          "options": ["Bread and pasta", "Poultry, eggs, raw/undercooked meat", "Fruits only", "Dairy only"],
           "answer": 1
         },
         {
           "question": "What causes cholera?",
-          "options": ["Salmonella cholerae", "Vibrio cholerae", "Shigella cholerae", "E. coli"],
+          "options": ["Salmonella cholerae", "Vibrio cholerae", "Shigella cholerae", "E. coli cholerae"],
           "answer": 1
         },
         {
@@ -610,12 +1245,12 @@
         },
         {
           "question": "What is the characteristic appearance of cholera diarrhea?",
-          "options": ["Bloody", "Rice-water stool", "Black and tarry", "Normal appearance"],
+          "options": ["Bloody", "Rice-water stool (watery with mucus flecks)", "Black and tarry", "Normal appearance"],
           "answer": 1
         },
         {
           "question": "What is the main treatment for cholera?",
-          "options": ["Antibiotics only", "Oral rehydration therapy (ORT)", "Surgery", "Antiviral drugs"],
+          "options": ["Antibiotics only", "Oral rehydration therapy (ORT) - fluids and electrolytes", "Surgery", "Antiviral drugs"],
           "answer": 1
         },
         {
@@ -635,17 +1270,17 @@
         },
         {
           "question": "What toxin does EHEC produce?",
-          "options": ["Cholera toxin", "Shiga toxin (Shiga-like toxin)", "Botulinum toxin", "Tetanus toxin"],
+          "options": ["Cholera toxin", "Shiga toxin (Shiga-like toxin/verotoxin)", "Botulinum toxin", "Tetanus toxin"],
           "answer": 1
         },
         {
           "question": "What causes peptic ulcer disease?",
-          "options": ["Stress only", "Helicobacter pylori", "E. coli", "Salmonella"],
+          "options": ["Stress only", "Helicobacter pylori (and NSAIDs)", "E. coli", "Salmonella"],
           "answer": 1
         },
         {
           "question": "How does H. pylori survive in the acidic stomach?",
-          "options": ["It doesn't live in the stomach", "Produces urease to neutralize acid around it", "Has an acid-resistant cell wall", "Lives outside the stomach"],
+          "options": ["It doesn't live in the stomach", "Produces urease to neutralize acid in its immediate environment", "Has an acid-resistant cell wall", "Lives outside the stomach"],
           "answer": 1
         },
         {
@@ -660,7 +1295,7 @@
         },
         {
           "question": "What type of diarrhea does cholera cause?",
-          "options": ["Invasive/bloody", "Toxigenic/watery", "Both", "Neither"],
+          "options": ["Invasive/bloody", "Toxigenic/watery (secretory)", "Both", "Neither"],
           "answer": 1
         },
         {
@@ -670,12 +1305,12 @@
         },
         {
           "question": "How is Vibrio cholerae transmitted?",
-          "options": ["Person to person", "Contaminated water (fecal-oral route)", "Airborne", "Insect bites"],
+          "options": ["Person to person directly", "Contaminated water (fecal-oral route)", "Airborne", "Insect bites"],
           "answer": 1
         },
         {
           "question": "What is the Gram stain of Vibrio cholerae?",
-          "options": ["Gram-positive cocci", "Gram-negative curved rod", "Gram-positive rod", "Gram-negative coccus"],
+          "options": ["Gram-positive cocci", "Gram-negative curved rod (comma-shaped)", "Gram-positive rod", "Gram-negative coccus"],
           "answer": 1
         },
         {
@@ -685,7 +1320,167 @@
         },
         {
           "question": "What is the shape of Helicobacter pylori?",
-          "options": ["Round cocci", "Spiral/curved rod", "Straight rod", "Filamentous"],
+          "options": ["Round cocci", "Spiral/helical rod with flagella", "Straight rod", "Filamentous"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Gram stain of Shigella?",
+          "options": ["Gram-positive cocci", "Gram-negative rod", "Gram-positive rod", "Gram-negative cocci"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Gram stain of Salmonella?",
+          "options": ["Gram-positive cocci", "Gram-negative rod", "Gram-positive rod", "Gram-negative cocci"],
+          "answer": 1
+        },
+        {
+          "question": "What disease is associated with Clostridium difficile?",
+          "options": ["Botulism", "Pseudomembranous colitis (antibiotic-associated diarrhea)", "Tetanus", "Gas gangrene"],
+          "answer": 1
+        },
+        {
+          "question": "What increases the risk of C. difficile infection?",
+          "options": ["Exercise", "Antibiotic use (disrupts normal flora)", "High fiber diet", "Probiotics"],
+          "answer": 1
+        },
+        {
+          "question": "What type of organism is Giardia lamblia?",
+          "options": ["Bacteria", "Protozoan parasite", "Virus", "Fungus"],
+          "answer": 1
+        },
+        {
+          "question": "What is the common name for Giardia infection?",
+          "options": ["Traveler's diarrhea", "Beaver fever (giardiasis)", "Dysentery", "Typhoid"],
+          "answer": 1
+        },
+        {
+          "question": "How is Giardia transmitted?",
+          "options": ["Airborne", "Fecal-oral, contaminated water (cysts)", "Sexual contact", "Insect bites"],
+          "answer": 1
+        },
+        {
+          "question": "What is norovirus commonly called?",
+          "options": ["Stomach flu", "Cruise ship virus/winter vomiting disease", "Food poisoning", "Traveler's diarrhea"],
+          "answer": 1
+        },
+        {
+          "question": "What type of virus is norovirus?",
+          "options": ["DNA virus", "RNA virus (Calicivirus family)", "Retrovirus", "Prion"],
+          "answer": 1
+        },
+        {
+          "question": "What is rotavirus known for causing?",
+          "options": ["Adult diarrhea only", "Severe diarrhea in infants and young children", "Food poisoning", "Dysentery"],
+          "answer": 1
+        },
+        {
+          "question": "Is there a vaccine for rotavirus?",
+          "options": ["No", "Yes, an oral vaccine", "Only for adults", "Only in development"],
+          "answer": 1
+        },
+        {
+          "question": "What causes Hepatitis A?",
+          "options": ["Bacteria", "Hepatitis A virus (HAV)", "Fungus", "Parasite"],
+          "answer": 1
+        },
+        {
+          "question": "How is Hepatitis A transmitted?",
+          "options": ["Blood contact", "Fecal-oral route (contaminated food/water)", "Sexual contact only", "Airborne"],
+          "answer": 1
+        },
+        {
+          "question": "Does Hepatitis A cause chronic infection?",
+          "options": ["Yes, lifelong", "No, it is self-limiting (acute only)", "Sometimes", "Only in children"],
+          "answer": 1
+        },
+        {
+          "question": "What organ does Hepatitis primarily affect?",
+          "options": ["Stomach", "Liver", "Intestines", "Pancreas"],
+          "answer": 1
+        },
+        {
+          "question": "What causes the yellow discoloration in hepatitis (jaundice)?",
+          "options": ["Bacteria", "Buildup of bilirubin due to liver dysfunction", "Viral pigments", "Dehydration"],
+          "answer": 1
+        },
+        {
+          "question": "What causes Campylobacter gastroenteritis?",
+          "options": ["Campylobacter jejuni", "E. coli", "Salmonella", "Shigella"],
+          "answer": 0
+        },
+        {
+          "question": "What is a common source of Campylobacter infection?",
+          "options": ["Vegetables", "Undercooked poultry", "Dairy only", "Seafood only"],
+          "answer": 1
+        },
+        {
+          "question": "What is the shape of Campylobacter?",
+          "options": ["Straight rod", "Spiral or curved (S-shaped or comma-shaped)", "Cocci", "Filamentous"],
+          "answer": 1
+        },
+        {
+          "question": "What type of diarrhea does S. aureus food poisoning cause?",
+          "options": ["Bloody", "Watery with vomiting (from enterotoxin)", "No diarrhea", "Mucoid"],
+          "answer": 1
+        },
+        {
+          "question": "What is the difference between infection and intoxication in food poisoning?",
+          "options": ["They are the same", "Infection: pathogen grows in body; Intoxication: preformed toxin consumed", "Intoxication is more serious", "Infection is from viruses only"],
+          "answer": 1
+        },
+        {
+          "question": "What bacteria causes food poisoning from reheated rice?",
+          "options": ["Salmonella", "Bacillus cereus", "E. coli", "Shigella"],
+          "answer": 1
+        },
+        {
+          "question": "What type of toxin does Bacillus cereus produce in the emetic form?",
+          "options": ["Enterotoxin", "Heat-stable emetic toxin (causes vomiting)", "Neurotoxin", "Cytotoxin"],
+          "answer": 1
+        },
+        {
+          "question": "What is the incubation period for Salmonella food poisoning?",
+          "options": ["1-6 hours", "12-36 hours", "1 week", "Minutes"],
+          "answer": 1
+        },
+        {
+          "question": "How does Shigella enter intestinal cells?",
+          "options": ["Toxin-mediated", "Invasion using Type III secretion system", "Through damaged areas only", "Does not enter cells"],
+          "answer": 1
+        },
+        {
+          "question": "What is a major complication of typhoid fever if untreated?",
+          "options": ["Skin rash only", "Intestinal perforation and hemorrhage", "Joint pain", "Blindness"],
+          "answer": 1
+        },
+        {
+          "question": "What percentage of typhoid patients become chronic carriers?",
+          "options": ["None", "1-3%", "50%", "90%"],
+          "answer": 1
+        },
+        {
+          "question": "Where does Salmonella typhi persist in chronic carriers?",
+          "options": ["Stomach", "Gallbladder", "Lungs", "Brain"],
+          "answer": 1
+        },
+        {
+          "question": "What is HUS (Hemolytic Uremic Syndrome)?",
+          "options": ["Liver failure", "Kidney failure with destruction of red blood cells, often from EHEC", "Heart disease", "Brain damage"],
+          "answer": 1
+        },
+        {
+          "question": "Why shouldn't antibiotics be used to treat EHEC infections?",
+          "options": ["EHEC is resistant to all antibiotics", "Antibiotics may increase toxin release and worsen HUS", "Antibiotics are too expensive", "EHEC is a virus"],
+          "answer": 1
+        },
+        {
+          "question": "What does urease produced by H. pylori do?",
+          "options": ["Kills bacteria", "Converts urea to ammonia, neutralizing stomach acid locally", "Produces energy", "Causes bleeding"],
+          "answer": 1
+        },
+        {
+          "question": "H. pylori infection increases the risk of what type of cancer?",
+          "options": ["Lung cancer", "Gastric (stomach) cancer", "Colon cancer", "Liver cancer"],
           "answer": 1
         }
       ]
@@ -700,27 +1495,27 @@
         },
         {
           "question": "What makes urine antimicrobial?",
-          "options": ["High pH and low salt", "Low pH (acidic) and high urea concentration", "Presence of antibiotics", "White blood cells"],
+          "options": ["High pH and low salt", "Low pH (acidic), high urea concentration, and flushing action", "Presence of antibiotics", "White blood cells"],
           "answer": 1
         },
         {
           "question": "Why do women have higher rates of UTIs than men?",
-          "options": ["Different bacteria", "Shorter urethra", "Weaker immune system", "Different pH"],
+          "options": ["Different bacteria", "Shorter urethra and proximity to anus", "Weaker immune system", "Different pH"],
           "answer": 1
         },
         {
           "question": "What is the most common cause of urinary tract infections?",
-          "options": ["Staphylococcus aureus", "Escherichia coli", "Streptococcus pyogenes", "Candida albicans"],
+          "options": ["Staphylococcus aureus", "Escherichia coli (uropathogenic E. coli)", "Streptococcus pyogenes", "Candida albicans"],
           "answer": 1
         },
         {
-          "question": "What bacteria predominate in the vagina?",
+          "question": "What bacteria predominate in the healthy vagina?",
           "options": ["E. coli", "Lactobacillus", "Staphylococcus", "Streptococcus"],
           "answer": 1
         },
         {
           "question": "How do Lactobacilli protect the vagina from infection?",
-          "options": ["Produce antibiotics", "Produce lactic acid, keeping pH low (3.8-4.5)", "Produce mucus", "Block the cervix"],
+          "options": ["Produce antibiotics", "Produce lactic acid, maintaining low pH (3.8-4.5)", "Produce mucus", "Block the cervix"],
           "answer": 1
         },
         {
@@ -735,12 +1530,12 @@
         },
         {
           "question": "What is the Gram stain result for Neisseria gonorrhoeae?",
-          "options": ["Gram-positive cocci", "Gram-negative diplococci", "Gram-positive rods", "Gram-negative rods"],
+          "options": ["Gram-positive cocci", "Gram-negative diplococci (kidney bean-shaped)", "Gram-positive rods", "Gram-negative rods"],
           "answer": 1
         },
         {
           "question": "What is a major concern with N. gonorrhoeae treatment?",
-          "options": ["No treatment exists", "Increasing antibiotic resistance", "It always resolves on its own", "Only affects one gender"],
+          "options": ["No treatment exists", "Increasing antibiotic resistance (multidrug-resistant strains)", "It always resolves on its own", "Only affects one gender"],
           "answer": 1
         },
         {
@@ -750,22 +1545,22 @@
         },
         {
           "question": "Why is Chlamydia trachomatis an obligate intracellular parasite?",
-          "options": ["It's a virus", "Cannot make its own ATP", "It's a fungus", "It needs iron"],
+          "options": ["It's a virus", "Cannot make its own ATP (lacks ATP synthesis machinery)", "It's a fungus", "It needs iron"],
           "answer": 1
         },
         {
           "question": "What percentage of chlamydia cases are asymptomatic?",
-          "options": ["10%", "25%", "Up to 70%", "0%"],
+          "options": ["10%", "25%", "Up to 70-80%", "0%"],
           "answer": 2
         },
         {
           "question": "What is PID (Pelvic Inflammatory Disease)?",
-          "options": ["A skin disease", "Bacterial infection of female pelvic organs that can cause infertility", "A male disease", "A viral infection"],
+          "options": ["A skin disease", "Bacterial infection of female pelvic organs (uterus, fallopian tubes) that can cause infertility", "A male disease", "A viral infection"],
           "answer": 1
         },
         {
           "question": "What organisms commonly cause PID?",
-          "options": ["E. coli only", "N. gonorrhoeae AND C. trachomatis (coinfection)", "Candida", "HSV"],
+          "options": ["E. coli only", "N. gonorrhoeae and C. trachomatis (often coinfection)", "Candida", "HSV"],
           "answer": 1
         },
         {
@@ -774,33 +1569,33 @@
           "answer": 1
         },
         {
-          "question": "What is the shape of Treponema pallidum?",
-          "options": ["Round coccus", "Spirochete (spiral-shaped)", "Straight rod", "Curved rod"],
+          "question": "What is the morphology of Treponema pallidum?",
+          "options": ["Round coccus", "Spirochete (tightly coiled spiral-shaped)", "Straight rod", "Curved rod"],
           "answer": 1
         },
         {
           "question": "What is the primary stage of syphilis characterized by?",
-          "options": ["Rash", "Painless chancre (sore) at infection site", "Neurological symptoms", "No symptoms"],
+          "options": ["Rash", "Painless chancre (hard sore) at infection site", "Neurological symptoms", "No symptoms"],
           "answer": 1
         },
         {
           "question": "What characterizes secondary syphilis?",
-          "options": ["Chancre only", "Skin rash (including palms and soles), flu-like symptoms", "Brain damage", "Heart problems"],
+          "options": ["Chancre only", "Skin rash (including palms and soles), flu-like symptoms, highly contagious", "Brain damage", "Heart problems"],
           "answer": 1
         },
         {
           "question": "What is tertiary syphilis?",
-          "options": ["Initial infection", "Advanced stage with gummas, cardiovascular and neurological damage", "Latent period", "Cured stage"],
+          "options": ["Initial infection", "Late stage with gummas, cardiovascular and neurological damage", "Latent period", "Cured stage"],
           "answer": 1
         },
         {
           "question": "What are gummas?",
-          "options": ["Bacteria", "Soft, tumor-like growths in tertiary syphilis", "Antibodies", "Skin rashes"],
+          "options": ["Bacteria", "Soft, destructive granulomatous lesions in tertiary syphilis", "Antibodies", "Skin rashes"],
           "answer": 1
         },
         {
           "question": "What is congenital syphilis?",
-          "options": ["Syphilis in elderly", "Syphilis passed from mother to fetus", "Syphilis from blood transfusion", "Syphilis from kissing"],
+          "options": ["Syphilis in elderly", "Syphilis transmitted from mother to fetus during pregnancy", "Syphilis from blood transfusion", "Syphilis from kissing"],
           "answer": 1
         },
         {
@@ -810,12 +1605,12 @@
         },
         {
           "question": "Can genital herpes be cured?",
-          "options": ["Yes, with antibiotics", "No, it remains latent in nerve ganglia", "Yes, with antiviral drugs", "It resolves on its own permanently"],
+          "options": ["Yes, with antibiotics", "No, it remains latent in nerve ganglia for life", "Yes, with antiviral drugs", "It resolves on its own permanently"],
           "answer": 1
         },
         {
           "question": "What antiviral drug is used to manage herpes outbreaks?",
-          "options": ["Penicillin", "Acyclovir", "Tamiflu", "Ribavirin"],
+          "options": ["Penicillin", "Acyclovir/Valacyclovir", "Tamiflu", "Ribavirin"],
           "answer": 1
         },
         {
@@ -825,7 +1620,7 @@
         },
         {
           "question": "Which HPV types are high-risk for cancer?",
-          "options": ["HPV 6 and 11", "HPV 16 and 18", "HPV 1 and 2", "All HPV types"],
+          "options": ["HPV 6 and 11", "HPV 16 and 18", "HPV 1 and 2", "All HPV types equally"],
           "answer": 1
         },
         {
@@ -835,27 +1630,27 @@
         },
         {
           "question": "What vaccine prevents HPV infection?",
-          "options": ["MMR", "Gardasil", "DTaP", "Hepatitis B vaccine"],
+          "options": ["MMR", "Gardasil/Cervarix", "DTaP", "Hepatitis B vaccine"],
           "answer": 1
         },
         {
           "question": "What causes bacterial vaginosis?",
-          "options": ["Candida overgrowth", "Disruption of normal flora, often Gardnerella vaginalis overgrowth", "HSV infection", "HPV infection"],
+          "options": ["Candida overgrowth", "Disruption of normal flora with Gardnerella vaginalis overgrowth", "HSV infection", "HPV infection"],
           "answer": 1
         },
         {
           "question": "What is the characteristic sign of bacterial vaginosis?",
-          "options": ["No symptoms", "Fishy odor, gray discharge", "Painful sores", "Warts"],
+          "options": ["No symptoms", "Fishy odor (especially after intercourse), thin gray discharge", "Painful sores", "Warts"],
           "answer": 1
         },
         {
           "question": "What causes trichomoniasis?",
-          "options": ["Bacteria", "Trichomonas vaginalis (protozoan)", "Virus", "Fungus"],
+          "options": ["Bacteria", "Trichomonas vaginalis (protozoan parasite)", "Virus", "Fungus"],
           "answer": 1
         },
         {
-          "question": "How many new STI cases occur in the US per year approximately?",
-          "options": ["1 million", "~15 million", "100 million", "500,000"],
+          "question": "Approximately how many new STI cases occur in the US per year?",
+          "options": ["1 million", "~20 million (with 15 million being HPV)", "100 million", "500,000"],
           "answer": 1
         },
         {
@@ -865,7 +1660,157 @@
         },
         {
           "question": "What is the latent stage of syphilis?",
-          "options": ["First stage", "Period with no symptoms but bacteria still present", "Final stage", "Cured stage"],
+          "options": ["First stage with chancre", "Period with no symptoms but bacteria still present (can last years)", "Final stage", "Cured stage"],
+          "answer": 1
+        },
+        {
+          "question": "What symptom in men is commonly associated with gonorrhea?",
+          "options": ["No symptoms", "Painful urination and purulent (pus) discharge", "Skin rash", "Joint pain only"],
+          "answer": 1
+        },
+        {
+          "question": "What symptom in men is commonly associated with chlamydia?",
+          "options": ["Often asymptomatic, but can cause urethritis and discharge", "Always symptomatic", "Skin lesions", "Fever only"],
+          "answer": 0
+        },
+        {
+          "question": "What is a major complication of untreated chlamydia or gonorrhea in women?",
+          "options": ["Blindness", "PID leading to infertility and ectopic pregnancy", "Heart disease", "Lung infection"],
+          "answer": 1
+        },
+        {
+          "question": "What is ophthalmia neonatorum?",
+          "options": ["Eye infection in adults", "Eye infection in newborns from gonorrhea or chlamydia during birth", "Ear infection", "Throat infection"],
+          "answer": 1
+        },
+        {
+          "question": "How is ophthalmia neonatorum prevented?",
+          "options": ["Vaccines", "Prophylactic antibiotic eye drops/ointment at birth", "Cesarean section", "Isolation"],
+          "answer": 1
+        },
+        {
+          "question": "What is the most common STI in the United States?",
+          "options": ["Gonorrhea", "Syphilis", "HPV (Human Papillomavirus)", "HIV"],
+          "answer": 2
+        },
+        {
+          "question": "What is the most common curable STI?",
+          "options": ["HPV", "Chlamydia", "Herpes", "HIV"],
+          "answer": 1
+        },
+        {
+          "question": "What does lymphogranuloma venereum (LGV) cause?",
+          "options": ["Genital warts", "Painful swollen lymph nodes in groin (caused by certain C. trachomatis serovars)", "Skin rash", "No symptoms"],
+          "answer": 1
+        },
+        {
+          "question": "What causes chancroid?",
+          "options": ["Treponema pallidum", "Haemophilus ducreyi", "Chlamydia trachomatis", "HPV"],
+          "answer": 1
+        },
+        {
+          "question": "How does chancroid differ from syphilis chancre?",
+          "options": ["They are identical", "Chancroid is painful and soft; syphilis chancre is painless and hard", "Chancroid is viral", "Syphilis is more common"],
+          "answer": 1
+        },
+        {
+          "question": "What type of cells does Chlamydia infect?",
+          "options": ["Red blood cells", "Columnar epithelial cells", "Nerve cells", "Muscle cells"],
+          "answer": 1
+        },
+        {
+          "question": "What are the two forms in the Chlamydia life cycle?",
+          "options": ["Spore and vegetative", "Elementary body (infectious) and reticulate body (replicating)", "Cyst and trophozoite", "Active and dormant"],
+          "answer": 1
+        },
+        {
+          "question": "Why can't T. pallidum be cultured in the laboratory?",
+          "options": ["It grows too fast", "It requires living host cells (cannot be grown on artificial media)", "It's too dangerous", "We have vaccines instead"],
+          "answer": 1
+        },
+        {
+          "question": "What test is used for syphilis screening?",
+          "options": ["Culture", "VDRL or RPR (nontreponemal tests), confirmed by FTA-ABS", "PCR only", "Gram stain"],
+          "answer": 1
+        },
+        {
+          "question": "What is the treatment of choice for syphilis?",
+          "options": ["Acyclovir", "Penicillin G", "Azithromycin", "No treatment"],
+          "answer": 1
+        },
+        {
+          "question": "Which HPV types cause most genital warts (low-risk)?",
+          "options": ["16 and 18", "6 and 11", "1 and 2", "31 and 33"],
+          "answer": 1
+        },
+        {
+          "question": "What other cancers besides cervical cancer are associated with HPV?",
+          "options": ["Lung cancer", "Anal, throat, penile, and vaginal cancers", "Breast cancer", "Colon cancer"],
+          "answer": 1
+        },
+        {
+          "question": "Can men get HPV?",
+          "options": ["No, only women", "Yes, and can develop genital warts and HPV-related cancers", "Only from women", "Only children"],
+          "answer": 1
+        },
+        {
+          "question": "At what age is HPV vaccination recommended?",
+          "options": ["At birth", "Ages 11-12 (can start at age 9)", "Age 18", "Age 30"],
+          "answer": 1
+        },
+        {
+          "question": "What causes the characteristic fishy odor in bacterial vaginosis?",
+          "options": ["Yeast", "Amines produced by anaerobic bacteria", "Lactobacillus", "Hormones"],
+          "answer": 1
+        },
+        {
+          "question": "Is bacterial vaginosis considered an STI?",
+          "options": ["Yes, always", "Not strictly, but sexual activity is a risk factor", "No, never associated with sex", "Only in men"],
+          "answer": 1
+        },
+        {
+          "question": "What is the treatment for trichomoniasis?",
+          "options": ["Antifungals", "Metronidazole (Flagyl)", "Acyclovir", "No treatment needed"],
+          "answer": 1
+        },
+        {
+          "question": "Can trichomoniasis be asymptomatic?",
+          "options": ["Never", "Yes, especially in men", "Only in women", "Always symptomatic"],
+          "answer": 1
+        },
+        {
+          "question": "What is cystitis?",
+          "options": ["Kidney infection", "Bladder infection (lower UTI)", "Prostate infection", "Urethral infection"],
+          "answer": 1
+        },
+        {
+          "question": "What is pyelonephritis?",
+          "options": ["Bladder infection", "Kidney infection (upper UTI, more serious)", "Urethral infection", "Prostate infection"],
+          "answer": 1
+        },
+        {
+          "question": "What helps E. coli adhere to urinary tract epithelium?",
+          "options": ["Capsule only", "Pili (fimbriae)", "Flagella", "Toxins"],
+          "answer": 1
+        },
+        {
+          "question": "What is the 'clue cell' seen in bacterial vaginosis?",
+          "options": ["A type of bacteria", "Vaginal epithelial cells covered with bacteria", "White blood cells", "Yeast cells"],
+          "answer": 1
+        },
+        {
+          "question": "What is the Whiff test?",
+          "options": ["Test for UTI", "Adding KOH to vaginal discharge produces fishy odor (positive in BV)", "Test for yeast", "Test for chlamydia"],
+          "answer": 1
+        },
+        {
+          "question": "Neonatal herpes can result from what?",
+          "options": ["Vaccination", "Transmission during vaginal delivery if mother has active genital herpes", "Breastfeeding", "Skin contact after birth only"],
+          "answer": 1
+        },
+        {
+          "question": "What makes HSV-2 different from HSV-1 in terms of recurrence?",
+          "options": ["HSV-2 never recurs", "HSV-2 tends to recur more frequently when it infects the genital area", "They are identical", "HSV-1 recurs more often"],
           "answer": 1
         }
       ]
