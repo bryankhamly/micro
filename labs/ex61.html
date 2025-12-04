@@ -49,565 +49,187 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 61: Blood Grouping</h1>
-            <p>ABO and Rh Blood Typing</p>
+            <p>ABO and Rh Blood Typing - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="abo">ABO Blood Groups</button>
-            <button class="tab-btn" data-tab="rh">Rh Factor</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Understand the basis of blood grouping in the ABO and Rh systems</li>
-                        <li>Determine the ABO and Rh types of human blood</li>
-                        <li>Interpret agglutination reactions for blood typing</li>
-                        <li>Explain why blood typing is critical for safe transfusions</li>
-                    </ul>
-                </div>
+        <div class="concept-card">
+            <h3>ABO Blood Types - Antigens & Antibodies</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Blood Type</th>
+                        <th>Antigens on RBCs</th>
+                        <th>Antibodies in Serum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Type A</strong></td>
+                        <td>A antigens</td>
+                        <td>Anti-B</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Type B</strong></td>
+                        <td>B antigens</td>
+                        <td>Anti-A</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Type AB</strong></td>
+                        <td>Both A and B</td>
+                        <td>Neither (universal recipient)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Type O</strong></td>
+                        <td>Neither A nor B</td>
+                        <td>Both anti-A and anti-B (universal donor)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>Type O is the "universal donor" because cells lack A and B antigens</li>
-                        <li>Type AB is the "universal recipient" because serum lacks anti-A and anti-B antibodies</li>
-                        <li>Blood is always specifically typed to avoid transfusion reactions</li>
-                        <li>Rh typing is critical to prevent hemolytic disease of the newborn</li>
-                        <li>Incompatible transfusions can cause fatal hemolytic reactions</li>
-                    </ul>
-                </div>
+        <div class="concept-card">
+            <h3>Blood Typing Results - Agglutination Patterns</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Anti-A</th>
+                        <th>Anti-B</th>
+                        <th>Anti-Rh</th>
+                        <th>Blood Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+ (clumps)</td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td><strong>A+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>+ (clumps)</td>
+                        <td>+</td>
+                        <td><strong>B+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td><strong>AB+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td><strong>O+</strong></td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td><strong>O-</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="mt-2"><strong>Agglutination</strong> = clumping (grainy appearance); No agglutination = smooth, milky</p>
+        </div>
+
+        <div class="concept-card">
+            <h3>Universal Donor & Recipient</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Can Donate To</th>
+                        <th>Can Receive From</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>O-</strong> (Universal Donor)</td>
+                        <td>All types</td>
+                        <td>O- only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>AB+</strong> (Universal Recipient)</td>
+                        <td>AB+ only</td>
+                        <td>All types</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="concept-card">
+            <h3>Rh Factor and Hemolytic Disease of the Newborn (HDN)</h3>
+            <div class="highlight-box">
+                <strong>Problem:</strong> Rh- mother + Rh+ fetus (inherited from father)
             </div>
-
-            <div class="concept-card">
-                <h3>History of Blood Typing</h3>
-                <p>The procedure for blood typing was developed by <strong>Karl Landsteiner</strong> around 1900. He discovered that human blood types can be separated into four groups based on antigens present on the surface of red blood cells:</p>
-                <ul>
-                    <li><strong>Type A</strong> - Has A antigens</li>
-                    <li><strong>Type B</strong> - Has B antigens</li>
-                    <li><strong>Type AB</strong> - Has both A and B antigens</li>
-                    <li><strong>Type O</strong> - Has neither A nor B antigens</li>
-                </ul>
-                <p class="mt-2">Later research (1900-1940) by Landsteiner and Wiener identified the <strong>Rh factor</strong>, named for the rhesus monkey used in the research.</p>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card full-width">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        Blood Type Frequencies in the United States
-                    </h3>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Blood Type</th>
-                                <th>Frequency</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Type O</strong></td>
-                                <td>45%</td>
-                                <td>Most common; universal donor</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Type A</strong></td>
-                                <td>39%</td>
-                                <td>Second most common</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Type B</strong></td>
-                                <td>12%</td>
-                                <td>Less common</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Type AB</strong></td>
-                                <td>4%</td>
-                                <td>Rarest; universal recipient</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <ul class="mt-2">
+                <li><strong>First pregnancy:</strong> Mother exposed to Rh+ fetal cells during birth</li>
+                <li><strong>Sensitization:</strong> Mother produces anti-D antibodies (IgG)</li>
+                <li><strong>Second pregnancy:</strong> IgG crosses placenta, attacks Rh+ fetal RBCs</li>
+                <li><strong>Result:</strong> Hemolysis → jaundice, anemia, potentially fatal</li>
+            </ul>
+            <div class="highlight-box mt-2" style="background: rgba(34, 197, 94, 0.2); border-color: rgba(34, 197, 94, 0.5);">
+                <strong>Prevention: RhoGAM</strong> (Rh immune globulin) given at week 28 and after delivery
             </div>
         </div>
 
-        <!-- ABO Blood Groups Tab -->
-        <div id="abo" class="tab-content">
-            <h2 class="section-title">The ABO Blood Group System</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Blood typing relies on the <strong>agglutination</strong> of antigens and antibodies. When antibodies in serum (antisera) encounter their corresponding antigens on red blood cells, they cause the cells to clump together.
-            </p>
-
-            <div class="concept-card">
-                <h3>Antigens and Antibodies in Each Blood Type</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Blood Type</th>
-                            <th>Antigens on RBCs</th>
-                            <th>Antibodies in Serum</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Type A</strong></td>
-                            <td>A antigens</td>
-                            <td>Anti-B antibodies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Type B</strong></td>
-                            <td>B antigens</td>
-                            <td>Anti-A antibodies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Type AB</strong></td>
-                            <td>Both A and B antigens</td>
-                            <td>Neither anti-A nor anti-B</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Type O</strong></td>
-                            <td>Neither A nor B antigens</td>
-                            <td>Both anti-A and anti-B</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        How Blood Typing Works
-                    </h3>
-                    <p>Blood typing is performed with <strong>antisera</strong> containing high titers of anti-A and anti-B antibodies:</p>
-                    <ol class="pathogenesis-steps">
-                        <li>Add a drop of blood to separate samples of saline suspension</li>
-                        <li>Add <strong>anti-A serum</strong> to one sample</li>
-                        <li>Add <strong>anti-B serum</strong> to another sample</li>
-                        <li>Mix gently for 30 seconds</li>
-                        <li>Observe for <strong>agglutination</strong> (clumping)</li>
-                    </ol>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Interpreting Results
-                    </h3>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Anti-A Reaction</th>
-                                <th>Anti-B Reaction</th>
-                                <th>Blood Type</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Agglutination (+)</td>
-                                <td>No agglutination (-)</td>
-                                <td><strong>Type A</strong></td>
-                            </tr>
-                            <tr>
-                                <td>No agglutination (-)</td>
-                                <td>Agglutination (+)</td>
-                                <td><strong>Type B</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Agglutination (+)</td>
-                                <td>Agglutination (+)</td>
-                                <td><strong>Type AB</strong></td>
-                            </tr>
-                            <tr>
-                                <td>No agglutination (-)</td>
-                                <td>No agglutination (-)</td>
-                                <td><strong>Type O</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>What is Agglutination?</h3>
-                <p>Agglutination is the clumping of red blood cells caused by antibody-antigen reactions:</p>
-                <ul>
-                    <li><strong>Positive reaction:</strong> Cells appear granular, clumped, or "grainy" - like sand</li>
-                    <li><strong>Negative reaction:</strong> Cells remain evenly suspended - smooth, milky appearance</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Why does agglutination occur?</strong> Antibodies are Y-shaped molecules with two binding sites. Each antibody can bind to antigens on two different red blood cells, cross-linking them together into visible clumps.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Universal Donors and Recipients</h3>
-                <div class="overview-section">
-                    <div class="overview-card">
-                        <h4>Type O - Universal Donor</h4>
-                        <ul>
-                            <li>RBCs lack A and B antigens</li>
-                            <li>Can donate to any blood type (A, B, AB, O)</li>
-                            <li>Recipient's antibodies won't attack O cells</li>
-                            <li><strong>45% of US population</strong></li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h4>Type AB - Universal Recipient</h4>
-                        <ul>
-                            <li>Serum lacks anti-A and anti-B antibodies</li>
-                            <li>Can receive blood from any type (A, B, AB, O)</li>
-                            <li>Won't attack any donor cells</li>
-                            <li><strong>Only 4% of US population</strong></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="highlight-box mt-2">
-                    <strong>Important:</strong> In clinical practice, blood is always cross-matched specifically despite universal donor/recipient designations to ensure compatibility and detect other antibodies.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Blood Type Frequencies (US)</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Blood Type</th>
+                        <th>Frequency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>O+</td>
+                        <td>~38%</td>
+                    </tr>
+                    <tr>
+                        <td>A+</td>
+                        <td>~34%</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>~9%</td>
+                    </tr>
+                    <tr>
+                        <td>O-</td>
+                        <td>~7%</td>
+                    </tr>
+                    <tr>
+                        <td>AB+</td>
+                        <td>~3%</td>
+                    </tr>
+                    <tr>
+                        <td>AB-</td>
+                        <td>~1%</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Rh Factor Tab -->
-        <div id="rh" class="tab-content">
-            <h2 class="section-title">The Rh Blood Group System</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Between 1900 and 1940, Landsteiner and Wiener discovered additional antigens on red blood cells. The Rh system was named for the <strong>rhesus monkey</strong> where it was first identified.
-            </p>
-
-            <div class="concept-card">
-                <h3>The Rh (D) Antigen</h3>
-                <p>The Rh system actually consists of six antigens: <strong>C, c, D, d, E, e</strong>. Of these, the <strong>D factor</strong> is most important clinically:</p>
-                <ul>
-                    <li><strong>Rh-positive (Rh+):</strong> Has D antigen on red blood cells</li>
-                    <li><strong>Rh-negative (Rh-):</strong> Lacks D antigen on red blood cells</li>
-                </ul>
-                <table class="comparison-table mt-2">
-                    <thead>
-                        <tr>
-                            <th>Population</th>
-                            <th>Rh-positive</th>
-                            <th>Rh-negative</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Caucasians</td>
-                            <td>85%</td>
-                            <td>15%</td>
-                        </tr>
-                        <tr>
-                            <td>African-Americans</td>
-                            <td>94%</td>
-                            <td>6%</td>
-                        </tr>
-                        <tr>
-                            <td>Asians</td>
-                            <td>99%</td>
-                            <td>1%</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Hemolytic Disease of the Newborn (Erythroblastosis Fetalis)</h3>
-                <p>Rh typing is critically important during pregnancy to prevent a serious condition called <strong>hemolytic disease of the newborn (HDN)</strong> or <strong>erythroblastosis fetalis</strong>.</p>
-
-                <h4 class="mt-3">How HDN Develops:</h4>
-                <ol class="pathogenesis-steps">
-                    <li><strong>First pregnancy:</strong> Rh-negative mother is pregnant with Rh-positive fetus (inherited from father)</li>
-                    <li><strong>Sensitization:</strong> During birth, fetal blood cells cross into mother's circulation</li>
-                    <li><strong>Antibody production:</strong> Mother's immune system recognizes D antigen as foreign, produces IgM antibodies (initially)</li>
-                    <li><strong>Memory response:</strong> Mother now has memory B cells against D antigen</li>
-                    <li><strong>Second pregnancy:</strong> If next fetus is also Rh-positive, mother produces IgG antibodies</li>
-                    <li><strong>Placental crossing:</strong> IgG antibodies cross placenta and attack fetal red blood cells</li>
-                    <li><strong>Hemolysis:</strong> Fetal RBCs are destroyed, causing jaundice, anemia, and potentially death</li>
-                </ol>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Prevention: RhoGAM
-                    </h3>
-                    <p><strong>RhoGAM</strong> (Rh immune globulin) prevents sensitization of Rh-negative mothers:</p>
-                    <ul>
-                        <li>Given at <strong>week 28</strong> of pregnancy</li>
-                        <li>Given again <strong>within 72 hours after delivery</strong></li>
-                        <li>RhoGAM contains anti-D antibodies</li>
-                        <li>These antibodies destroy any fetal Rh+ cells before mother's immune system responds</li>
-                        <li>Prevents mother from developing her own anti-D antibodies</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>Why does RhoGAM work?</strong> The passive antibodies in RhoGAM bind to and destroy fetal Rh+ cells before they can trigger the mother's active immune response and memory cell formation.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        ABO Incompatibility
-                    </h3>
-                    <p>ABO incompatibility between mother and fetus can also cause hemolysis, but it is usually <strong>less severe</strong> than Rh disease:</p>
-                    <ul>
-                        <li>Most common: Type O mother with Type A or B fetus</li>
-                        <li>Mother has naturally occurring anti-A and anti-B (mostly IgM)</li>
-                        <li>Some IgG anti-A/anti-B can cross placenta</li>
-                        <li>Usually causes mild jaundice, rarely severe</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Complete Blood Type Notation</h3>
-                <p>A complete blood type includes both ABO and Rh designation:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Blood Type</th>
-                            <th>ABO Type</th>
-                            <th>Rh Type</th>
-                            <th>Example Frequency</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>O+</strong></td>
-                            <td>O</td>
-                            <td>Positive</td>
-                            <td>~38%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>O-</strong></td>
-                            <td>O</td>
-                            <td>Negative</td>
-                            <td>~7%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>A+</strong></td>
-                            <td>A</td>
-                            <td>Positive</td>
-                            <td>~34%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>A-</strong></td>
-                            <td>A</td>
-                            <td>Negative</td>
-                            <td>~6%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>B+</strong></td>
-                            <td>B</td>
-                            <td>Positive</td>
-                            <td>~9%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>B-</strong></td>
-                            <td>B</td>
-                            <td>Negative</td>
-                            <td>~2%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>AB+</strong></td>
-                            <td>AB</td>
-                            <td>Positive</td>
-                            <td>~3%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>AB-</strong></td>
-                            <td>AB</td>
-                            <td>Negative</td>
-                            <td>~1%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="highlight-box mt-2">
-                    <strong>True Universal Donor:</strong> O-negative blood (O-) can be given to anyone in emergencies. <strong>True Universal Recipient:</strong> AB-positive (AB+) can receive any blood type.
-                </div>
-            </div>
-        </div>
-
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure</h2>
-
-            <div class="concept-card">
-                <h3>Materials Required</h3>
-                <ul>
-                    <li>Blood typing kit containing 4 synthetic blood samples</li>
-                    <li>Anti-A, anti-B, and anti-Rh antisera</li>
-                    <li>Plastic trays with circular wells</li>
-                    <li>Colored mixing sticks (different color for each well)</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Note:</strong> In this exercise, you will work with <strong>synthetic blood</strong> that simulates human blood typing reactions for the major blood groups A, B, O, and the Rh factor. The same type of agglutination observed with authentic blood is seen.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Procedure Steps</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Add Blood Samples</strong>
-                        <ul>
-                            <li>Add one drop of a blood sample to each of three wells on the plastic tray</li>
-                            <li>Label wells: A, B, Rh</li>
-                        </ul>
-                    </li>
-                    <li><strong>Add Antisera</strong>
-                        <ul>
-                            <li>Add one drop of <strong>anti-A</strong> antisera to the well labeled A</li>
-                            <li>Add one drop of <strong>anti-B</strong> antisera to the well labeled B</li>
-                            <li>Add one drop of <strong>anti-Rh</strong> antisera to the well labeled Rh</li>
-                        </ul>
-                    </li>
-                    <li><strong>Mix</strong>
-                        <ul>
-                            <li>Use a different colored mixing stick for each well</li>
-                            <li>Gently mix the synthetic blood and antisera in each well</li>
-                            <li>Mix for at least <strong>30 seconds</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Observe for Agglutination</strong>
-                        <ul>
-                            <li>Look for granular appearance indicating agglutination has occurred</li>
-                            <li>Smooth, milky appearance = no agglutination</li>
-                        </ul>
-                    </li>
-                    <li><strong>Record Results</strong>
-                        <ul>
-                            <li>Record your observations in Laboratory Report 61</li>
-                            <li>Determine the blood type based on agglutination pattern</li>
-                        </ul>
-                    </li>
-                    <li><strong>Repeat for Additional Samples</strong>
-                        <ul>
-                            <li>Wash the plastic tray</li>
-                            <li>Repeat steps 1-5 for remaining blood samples</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Interpreting Your Results</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Well A (Anti-A)</th>
-                            <th>Well B (Anti-B)</th>
-                            <th>Well Rh (Anti-Rh)</th>
-                            <th>Blood Type</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>+ (agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td><strong>A+</strong></td>
-                        </tr>
-                        <tr>
-                            <td>+ (agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td><strong>A-</strong></td>
-                        </tr>
-                        <tr>
-                            <td>- (no agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td><strong>B+</strong></td>
-                        </tr>
-                        <tr>
-                            <td>- (no agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td><strong>B-</strong></td>
-                        </tr>
-                        <tr>
-                            <td>+ (agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td><strong>AB+</strong></td>
-                        </tr>
-                        <tr>
-                            <td>+ (agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td><strong>AB-</strong></td>
-                        </tr>
-                        <tr>
-                            <td>- (no agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td>+ (agglutination)</td>
-                            <td><strong>O+</strong></td>
-                        </tr>
-                        <tr>
-                            <td>- (no agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td>- (no agglutination)</td>
-                            <td><strong>O-</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Use different mixing sticks</strong> - Prevents cross-contamination between wells</li>
-                    <li><strong>Mix thoroughly</strong> - Ensure complete reaction between blood and antisera</li>
-                    <li><strong>Look for clumping</strong> - Agglutination appears grainy or sandy; no reaction is smooth</li>
-                    <li><strong>Type O has no agglutination</strong> with anti-A or anti-B (lacks both antigens)</li>
-                    <li><strong>Type AB agglutinates with both</strong> anti-A and anti-B (has both antigens)</li>
-                    <li><strong>Rh+ agglutinates with anti-Rh;</strong> Rh- does not</li>
-                    <li><strong>Rh incompatibility</strong> is a major concern in pregnancy - prevented with RhoGAM</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>Type O</strong> = universal donor (no A or B antigens to react)</li>
+                <li><strong>Type AB</strong> = universal recipient (no anti-A or anti-B antibodies)</li>
+                <li><strong>Agglutination</strong> = clumping = positive reaction with antisera</li>
+                <li><strong>Rh+ = has D antigen</strong>; Rh- = lacks D antigen</li>
+                <li><strong>HDN</strong> occurs when Rh- mother has Rh+ baby (second pregnancy)</li>
+                <li><strong>RhoGAM prevents</strong> mother from making anti-D antibodies</li>
+                <li>Developed by <strong>Karl Landsteiner</strong> (~1900)</li>
+                <li>Type O most common (45%); Type AB rarest (4%)</li>
+            </ul>
         </div>
     </main>
 

@@ -49,598 +49,155 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 56: A Synthetic Epidemic</h1>
-            <p>Epidemiology and Disease Transmission Simulation</p>
+            <p>Epidemiology - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="terminology">Key Terminology</button>
-            <button class="tab-btn" data-tab="epidemics">Epidemic Types</button>
-            <button class="tab-btn" data-tab="herd">Herd Immunity</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedures</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Define terminology related to the field of epidemiology</li>
-                        <li>Differentiate between common source and propagated (host-to-host) epidemics</li>
-                        <li>Perform a simple test using detectable reagents to demonstrate how an infectious agent can be passed from person to person</li>
-                        <li>Describe how epidemiology is used to trace the source and spread of communicable diseases</li>
-                        <li>Explain how herd immunity can reduce the spread of communicable diseases through a population and protect susceptible individuals from infection</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>Epidemiologists are "medical detectives" who trace sources of infection to break transmission cycles</li>
-                        <li>The microbiology laboratory plays a crucial role in preventing outbreaks from becoming epidemics</li>
-                        <li>Lab results help identify the <strong>index case</strong> - the first incident in an outbreak</li>
-                        <li>Understanding disease spread informs public health policy (vaccination, quarantine, hygiene)</li>
-                        <li>Real-world example: COVID-19 pandemic demonstrated these principles globally</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>What is Epidemiology?</h3>
-                <p><strong>Epidemiology</strong> is the study of <em>how, when, where, what, and who</em> are involved in the spread and distribution of diseases in human populations.</p>
-                <div class="highlight-box mt-2">
-                    <p><strong>The Role of the Epidemiologist:</strong></p>
-                    <ul>
-                        <li>Search out sources of infection so the transmission cycle can be broken</li>
-                        <li>Compare number of new cases with previous records to determine if an epidemic exists</li>
-                        <li>Identify the index case (first case) in an outbreak</li>
-                        <li>Work backward from positive cases to trace contacts and infections</li>
-                        <li>Report suspicious or identified infectious diseases to the CDC and WHO</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Historical Impact of Epidemics</h3>
-                <p>Human history has been profoundly shaped by epidemics:</p>
-                <ul>
-                    <li><strong>The Black Death (1340s):</strong> Bubonic plague caused by <em>Yersinia pestis</em> killed one-third of the European population</li>
-                    <li><strong>1918 Flu Pandemic:</strong> Influenza affected one-third of the world population; rapid spread attributed to WWI troop movements and living conditions</li>
-                    <li><strong>Smallpox in Mexico:</strong> Brought by European explorers; thought to be a major factor in the defeat of native populations</li>
-                    <li><strong>HIV/AIDS:</strong> Over 36.9 million people living with HIV worldwide; has slowed economic growth in sub-Saharan Africa</li>
-                    <li><strong>COVID-19 (2019-present):</strong> SARS-CoV-2 emerged in Wuhan, China; reached pandemic status within months; over 5 million deaths in US alone within 7 months</li>
-                </ul>
-            </div>
+        <div class="concept-card">
+            <h3>Essential Epidemiology Terms</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Endemic</strong></td>
+                        <td>Steady frequency of disease in a region over time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Epidemic</strong></td>
+                        <td>Excessive cases in an area compared to normal</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pandemic</strong></td>
+                        <td>Epidemic spread across continents (e.g., COVID-19)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Index case</strong></td>
+                        <td>First identified case in an outbreak</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carrier</strong></td>
+                        <td>Person who harbors and transmits pathogen but shows no symptoms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fomite</strong></td>
+                        <td>Inanimate object that transmits pathogens (doorknob, phone)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vector</strong></td>
+                        <td>Living carrier (insect/rodent) that transmits pathogen</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Key Terminology Tab -->
-        <div id="terminology" class="tab-content">
-            <h2 class="section-title">Essential Epidemiology Terms</h2>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                        Disease Classification Terms
-                    </h3>
-                    <ul>
-                        <li><strong>Infectious Disease:</strong> A disease caused by microorganisms that enter the body and multiply in tissues at the expense of the host</li>
-                        <li><strong>Communicable Disease:</strong> An infectious disease that is transmissible from one person to another</li>
-                        <li><strong>Index Case:</strong> The first identified case in an outbreak; helps epidemiologists trace the source</li>
-                        <li><strong>Carrier:</strong> An individual who harbors and transmits an infectious agent but shows no symptoms (can be asymptomatic)</li>
-                        <li><strong>Vector:</strong> A living carrier (usually an insect or rodent) that transmits an infectious agent to humans</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                        </svg>
-                        Disease Frequency Terms
-                    </h3>
-                    <ul>
-                        <li><strong>Endemic:</strong> A disease that exhibits a steady frequency over a long period in a particular region (e.g., malaria in tropical regions)</li>
-                        <li><strong>Epidemic:</strong> An excessive number of newly reported cases in a specific area in a given time period compared to previous records</li>
-                        <li><strong>Pandemic:</strong> An epidemic that spreads to one or more continents (e.g., HIV/AIDS, COVID-19)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Transmission Terminology</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Term</th>
-                            <th>Definition</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Direct Contact</strong></td>
-                            <td>Transfer of infectious agent through physical contact between individuals</td>
-                            <td>Handshaking, kissing, sexual intercourse</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Indirect Transmission</strong></td>
-                            <td>Transfer through contaminated objects, food, water, or animals</td>
-                            <td>Contaminated food, doorknobs, water supply</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fomite</strong></td>
-                            <td>An inanimate object that can harbor and transmit infectious agents</td>
-                            <td>Doorknobs, phones, keyboards, towels</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Reservoir</strong></td>
-                            <td>The natural habitat of a pathogen where it lives and multiplies</td>
-                            <td>Humans (for S. pyogenes), soil (for C. tetani)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Factors Affecting Disease Transmission</h3>
-                <div class="overview-section" style="margin-top: 1rem;">
-                    <div class="overview-card" style="margin-bottom: 0;">
-                        <h4 style="color: var(--pink); margin-bottom: 0.75rem;">Increase Transmission</h4>
-                        <ul>
-                            <li>Environmental changes (healthcare settings, travel)</li>
-                            <li>Crowded living arrangements</li>
-                            <li>Extreme weather events (increase contact with vectors)</li>
-                            <li>Changes in natural hosts or habitats for pathogens</li>
-                            <li>Human behavior and bioterrorism threats</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card" style="margin-bottom: 0;">
-                        <h4 style="color: var(--accent); margin-bottom: 0.75rem;">Decrease Transmission</h4>
-                        <ul>
-                            <li>Vaccination programs</li>
-                            <li>Quarantine and isolation measures</li>
-                            <li>Improved hygiene practices</li>
-                            <li>Social distancing</li>
-                            <li>Proper handwashing technique</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Infectious Period Considerations</h4>
-                <p>The length of time an individual remains infectious greatly affects epidemic spread:</p>
-                <ul>
-                    <li><strong>Ebola:</strong> Highly contagious but short infectious period (2-21 days from symptoms to death) - often confined to small regions</li>
-                    <li><strong>HIV/AIDS:</strong> Patients are infectious for their entire lifetime - enables massive global spread</li>
-                    <li><strong>Chlamydia & Hepatitis B:</strong> Can be asymptomatic; carriers unknowingly transmit to others</li>
-                </ul>
-            </div>
+        <div class="concept-card">
+            <h3>Two Types of Epidemics</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Common Source</th>
+                        <th>Host-to-Host (Propagated)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Source</strong></td>
+                        <td>Single contaminated source (food, water)</td>
+                        <td>Infected individuals</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Onset</strong></td>
+                        <td>Rapid; many cases at once</td>
+                        <td>Gradual; cases increase over time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Curve shape</strong></td>
+                        <td>Sharp peak, rapid decline</td>
+                        <td>Gradual rise, slower decline</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Control</strong></td>
+                        <td>Remove contaminated source</td>
+                        <td>Isolation, vaccination</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Example</strong></td>
+                        <td><em>E. coli</em> outbreak from lettuce</td>
+                        <td>Influenza, COVID-19</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Epidemic Types Tab -->
-        <div id="epidemics" class="tab-content">
-            <h2 class="section-title">Types of Epidemics</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Epidemics fall into two main categories based on how the infectious agent is transmitted through the population. Understanding the type helps epidemiologists identify the source and implement appropriate control measures.
-            </p>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
-                        </svg>
-                        Common Source Epidemic
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p><strong>Definition:</strong> All cases arise from exposure to the same contaminated source (fomite, food, or water)</p>
-                        <p><strong>Pattern:</strong> Rapid increase in cases immediately after initial exposure, followed by rapid decline once source is identified and removed</p>
-                    </div>
-                    <p><strong>Characteristics:</strong></p>
-                    <ul>
-                        <li>Many new cases occur rapidly after the initial case</li>
-                        <li>Cases cluster around the time of exposure</li>
-                        <li>Epidemic subsides quickly once source is identified and removed</li>
-                        <li>Curve shows a sharp peak</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <strong>Example:</strong> In late 2019, 167 people across 27 states were infected with Shiga toxin-producing <em>E. coli</em> O157:H7 after eating contaminated romaine lettuce from the Salinas Valley in California. Once the source was identified, recalls were issued and the epidemic quickly subsided.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                            <circle cx="9" cy="7" r="4"/>
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                        </svg>
-                        Host-to-Host (Propagated) Epidemic
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p><strong>Definition:</strong> Infectious agent is transmitted directly from person to person through contact with the infected individual</p>
-                        <p><strong>Pattern:</strong> Gradual increase in cases over time; slower to subside as transmission continues through the population</p>
-                    </div>
-                    <p><strong>Characteristics:</strong></p>
-                    <ul>
-                        <li>Cases grow more slowly over time</li>
-                        <li>Epidemic takes longer to subside</li>
-                        <li>New cases depend on contact with infected individuals</li>
-                        <li>Curve shows a gradual rise and fall</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <strong>Example:</strong> Influenza (flu) spreads from person to person through respiratory droplets. The 2009 H1N1 outbreak spread from person to person across continents, eventually being declared a pandemic by the WHO.
-                    </div>
-                </div>
+        <div class="concept-card">
+            <h3>Herd Immunity</h3>
+            <div class="highlight-box">
+                When a <strong>sufficient portion</strong> of a population is immune, outbreak is unlikely because spread is limited.
             </div>
-
-            <div class="concept-card mt-4">
-                <h3>Epidemic Curve Comparison</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>Common Source</th>
-                            <th>Host-to-Host (Propagated)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Source</strong></td>
-                            <td>Single contaminated source (food, water, fomite)</td>
-                            <td>Infected individuals</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Onset of Cases</strong></td>
-                            <td>Rapid; many cases appear at once</td>
-                            <td>Gradual; cases increase over time</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Curve Shape</strong></td>
-                            <td>Sharp peak, rapid decline</td>
-                            <td>Gradual rise, slower decline</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Duration</strong></td>
-                            <td>Short (once source removed)</td>
-                            <td>Longer (continues while transmission occurs)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Control Strategy</strong></td>
-                            <td>Identify and remove contaminated source</td>
-                            <td>Isolation, vaccination, reducing contact</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Examples</strong></td>
-                            <td>Foodborne outbreaks (Salmonella, E. coli)</td>
-                            <td>Influenza, COVID-19, measles</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="highlight-box warning mt-4">
-                <h4>Determining if an Epidemic Exists</h4>
-                <p>An epidemic is declared when the number of newly reported cases in a specific area during a given time period is <strong>excessive compared to previous records</strong>.</p>
-                <ul>
-                    <li>Epidemiologists compare current case numbers to historical baseline data</li>
-                    <li>Notable current US epidemics include: chlamydia and pertussis (whooping cough)</li>
-                    <li>The threshold for "epidemic" varies by disease and region</li>
-                </ul>
-            </div>
+            <ul class="mt-2">
+                <li>Protects those who <strong>cannot be vaccinated</strong> (infants, immunocompromised)</li>
+                <li>Higher R0 (reproduction number) = higher threshold needed</li>
+            </ul>
+            <table class="comparison-table mt-2">
+                <thead>
+                    <tr>
+                        <th>Disease</th>
+                        <th>Herd Immunity Threshold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Measles</td>
+                        <td>92-95%</td>
+                    </tr>
+                    <tr>
+                        <td>Polio</td>
+                        <td>80-86%</td>
+                    </tr>
+                    <tr>
+                        <td>COVID-19 (original)</td>
+                        <td>60-70%</td>
+                    </tr>
+                    <tr>
+                        <td>Influenza</td>
+                        <td>33-50%</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Herd Immunity Tab -->
-        <div id="herd" class="tab-content">
-            <h2 class="section-title">Herd (Community) Immunity</h2>
-
-            <div class="concept-card">
-                <h3>What is Herd Immunity?</h3>
-                <p><strong>Herd immunity</strong> (also called <strong>community immunity</strong>) is the principle that when a certain proportion of a population is vaccinated or already immune to an infectious agent, an outbreak is unlikely because the spread of the agent is limited.</p>
-                <div class="highlight-box success mt-2">
-                    <p><strong>Key Principle:</strong> Even individuals who cannot be vaccinated (infants, pregnant women, immunocompromised individuals) are somewhat protected because the spread of the infectious agent is limited in the community.</p>
-                </div>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
-                            <line x1="9" y1="9" x2="9.01" y2="9"/>
-                            <line x1="15" y1="9" x2="15.01" y2="9"/>
-                        </svg>
-                        No Immunity (0% Vaccinated)
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p>When no one in a population is immunized, a contagious disease spreads rapidly through the entire population.</p>
-                    </div>
-                    <ul>
-                        <li>All individuals are susceptible to infection</li>
-                        <li>Disease spreads unchecked from person to person</li>
-                        <li>Epidemic affects nearly everyone</li>
-                        <li>Only natural immunity from recovery limits spread</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M9 12l2 2 4-4"/>
-                        </svg>
-                        Partial Immunity (Some Vaccinated)
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p>When some of the population is immunized, disease spread is reduced but not eliminated.</p>
-                    </div>
-                    <ul>
-                        <li>Immunized individuals cannot become infected or transmit</li>
-                        <li>Disease still spreads among susceptible individuals</li>
-                        <li>Some unvaccinated individuals are still infected</li>
-                        <li>Epidemic is smaller but still occurs</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card full-width">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M12 8v4M12 16h.01"/>
-                        </svg>
-                        Herd Immunity Achieved (Most Vaccinated)
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p>When most of the population is immunized, the spread of contagious disease is <strong>contained</strong> - even unvaccinated individuals are protected.</p>
-                    </div>
-                    <div class="overview-section" style="margin-top: 1rem;">
-                        <div class="overview-card" style="margin-bottom: 0; border: 1px solid var(--accent);">
-                            <h4 style="color: var(--accent);">How It Works</h4>
-                            <ul>
-                                <li>Immunized individuals act as "barriers" to disease spread</li>
-                                <li>Infectious agent cannot find enough susceptible hosts to spread</li>
-                                <li>Chain of transmission is broken</li>
-                                <li>Susceptible individuals are indirectly protected</li>
-                            </ul>
-                        </div>
-                        <div class="overview-card" style="margin-bottom: 0; border: 1px solid var(--secondary);">
-                            <h4 style="color: var(--secondary);">Who Benefits</h4>
-                            <ul>
-                                <li>Infants too young for vaccination</li>
-                                <li>Pregnant women</li>
-                                <li>Immunocompromised individuals</li>
-                                <li>Those with vaccine allergies</li>
-                                <li>Elderly with weakened immune systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="concept-card mt-4">
-                <h3>Herd Immunity Thresholds</h3>
-                <p>Different diseases require different percentages of immune individuals to achieve herd immunity:</p>
-                <table class="comparison-table mt-2">
-                    <thead>
-                        <tr>
-                            <th>Disease</th>
-                            <th>Basic Reproduction Number (R0)</th>
-                            <th>Herd Immunity Threshold</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Measles</strong></td>
-                            <td>12-18</td>
-                            <td>92-95%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Pertussis</strong></td>
-                            <td>12-17</td>
-                            <td>92-94%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Polio</strong></td>
-                            <td>5-7</td>
-                            <td>80-86%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>COVID-19 (original)</strong></td>
-                            <td>2-3</td>
-                            <td>60-70%</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Influenza</strong></td>
-                            <td>1-2</td>
-                            <td>33-50%</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="highlight-box mt-2">
-                    <p><strong>R0 (Basic Reproduction Number):</strong> The average number of people one infected person will infect in a completely susceptible population. Higher R0 = more contagious = higher herd immunity threshold needed.</p>
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Herd Immunity Simulation (Lab Results)</h3>
+            <ul>
+                <li><strong>100% susceptible</strong> → Many become infected</li>
+                <li><strong>50% vaccinated</strong> → Fewer infections, spread reduced</li>
+                <li><strong>90% vaccinated</strong> → Very few or no infections (herd immunity achieved)</li>
+            </ul>
+            <p class="mt-2">In the lab: NaOH = "infected", pH buffer = "vaccinated", water = "susceptible"</p>
+            <p><strong>Pink color</strong> with phenolphthalein = positive (infected)</p>
         </div>
 
-        <!-- Lab Procedures Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedures</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                This exercise uses two procedures to simulate epidemic spread and demonstrate the concept of herd immunity using safe, detectable reagents instead of actual microorganisms.
-            </p>
-
-            <div class="concept-card">
-                <h3>Procedure A: Simulating Disease Transmission</h3>
-                <p><strong>Purpose:</strong> Demonstrate how an infectious agent spreads from person to person and how epidemiologists trace the source (index case)</p>
-
-                <h4 class="mt-3">Materials</h4>
-                <ul>
-                    <li>Numbered petri dish with unknown white powder (GloGerm or similar UV-detectable powder)</li>
-                    <li>Only ONE student receives the "infectious" agent (visible under UV light)</li>
-                    <li>Other students receive non-infectious powder (not visible under UV)</li>
-                    <li>2 Kimwipes or tissues per student</li>
-                    <li>UV light source</li>
-                </ul>
-
-                <h4 class="mt-3">Procedure</h4>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Preparation:</strong> Label Kimwipes as "Round 1" and "Round 2." Wash and dry hands thoroughly. Coat your right hand with the powder, focusing on the palm surface.</li>
-                    <li><strong>Round 1:</strong> On instructor's cue, shake hands with classmates using your treated right hand. Make firm palm-to-palm contact. Record each "shaker" and "shakee" on the board. After all contacts, rub hand on Round 1 Kimwipe.</li>
-                    <li><strong>Round 2:</strong> Repeat handshaking with different classmates. Do NOT touch any objects between rounds. Record contacts. Rub hand on Round 2 Kimwipe.</li>
-                    <li><strong>Chemical Identification:</strong> Place Kimwipes under UV light in a darkened room. Glowing = positive for the infectious agent. Record results for both rounds.</li>
-                    <li><strong>Handwashing Check:</strong> Observe your right hand (which was washed) under UV light to demonstrate the importance of proper handwashing technique.</li>
-                </ol>
-
-                <h4 class="mt-3">Analysis</h4>
-                <ul>
-                    <li>Tabulate all class results on the chalkboard</li>
-                    <li>Work backward from positive results to create a flowchart of transmission</li>
-                    <li>Identify the <strong>index case</strong> (the person who started the epidemic)</li>
-                    <li>This mirrors how epidemiologists trace outbreaks in the real world</li>
-                </ul>
-            </div>
-
-            <div class="concept-card">
-                <h3>Procedure B: Demonstrating Herd Immunity</h3>
-                <p><strong>Purpose:</strong> Investigate how community immunity protects susceptible individuals in a population</p>
-
-                <h4 class="mt-3">Materials</h4>
-                <ul>
-                    <li>Numbered test tube with liquid (water, NaOH, or pH buffer)</li>
-                    <li>Sterile gloves</li>
-                    <li>Dropper for fluid exchange</li>
-                    <li>Phenolphthalein indicator solution</li>
-                </ul>
-
-                <h4 class="mt-3">The Three Test Tube Contents</h4>
-                <table class="comparison-table mt-2">
-                    <thead>
-                        <tr>
-                            <th>Contents</th>
-                            <th>Represents</th>
-                            <th>Result with Indicator</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Distilled Water</td>
-                            <td>Susceptible individual</td>
-                            <td>No color change (unless infected)</td>
-                        </tr>
-                        <tr>
-                            <td>0.1 M NaOH</td>
-                            <td>Infected individual</td>
-                            <td>Turns <strong>pink</strong> with phenolphthalein</td>
-                        </tr>
-                        <tr>
-                            <td>pH Buffer (pH 6.8)</td>
-                            <td>Vaccinated/immune individual</td>
-                            <td>No color change (cannot be infected)</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4 class="mt-3">Three Rounds with Different Immunity Levels</h4>
-
-                <div class="highlight-box">
-                    <h5>Round 1: 100% Susceptible Population</h5>
-                    <ul>
-                        <li>One student unknowingly has NaOH (infected)</li>
-                        <li>All other students have water (susceptible)</li>
-                        <li>Exchange fluid with 3 different classmates</li>
-                        <li>Add phenolphthalein to test for infection</li>
-                        <li><strong>Expected result:</strong> Many students become "infected" (pink)</li>
-                    </ul>
-                </div>
-
-                <div class="highlight-box" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.1) 100%); border-color: rgba(245, 158, 11, 0.3);">
-                    <h5>Round 2: 50% Susceptible Population</h5>
-                    <ul>
-                        <li>One student has NaOH (infected)</li>
-                        <li>50% of students have water (susceptible)</li>
-                        <li>50% of students have pH buffer (vaccinated/immune)</li>
-                        <li>Exchange fluid with 3 different classmates</li>
-                        <li><strong>Expected result:</strong> Fewer students become infected; vaccinated students block transmission</li>
-                    </ul>
-                </div>
-
-                <div class="highlight-box success">
-                    <h5>Round 3: 10% Susceptible Population (Herd Immunity)</h5>
-                    <ul>
-                        <li>One student has NaOH (infected)</li>
-                        <li>10% of students have water (susceptible)</li>
-                        <li>90% of students have pH buffer (vaccinated/immune)</li>
-                        <li>Exchange fluid with 3 different classmates</li>
-                        <li><strong>Expected result:</strong> Very few or no students become infected; herd immunity protects susceptible individuals</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Key Takeaways from This Exercise</h3>
-                <div class="overview-section" style="margin-top: 1rem;">
-                    <div class="overview-card" style="margin-bottom: 0;">
-                        <h4 style="color: var(--primary);">Epidemiology Principles</h4>
-                        <ul>
-                            <li>Disease can spread rapidly through direct contact</li>
-                            <li>Tracing contacts helps identify the index case</li>
-                            <li>Working backward from positive cases reveals transmission patterns</li>
-                            <li>Early identification of the source helps contain outbreaks</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card" style="margin-bottom: 0;">
-                        <h4 style="color: var(--accent);">Herd Immunity Principles</h4>
-                        <ul>
-                            <li>Higher vaccination rates = fewer infections</li>
-                            <li>Immune individuals block transmission chains</li>
-                            <li>Susceptible individuals are protected indirectly</li>
-                            <li>Achieving herd immunity requires high vaccination coverage</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlight-box warning mt-4">
-                <h4>Safety Cautions</h4>
-                <ul>
-                    <li><strong>NaOH (sodium hydroxide)</strong> and phenolphthalein can irritate eyes and skin</li>
-                    <li>Always wear gloves when handling solutions</li>
-                    <li>Alert instructor immediately if any spills occur</li>
-                    <li>Wash hands thoroughly after the exercise</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>Endemic</strong> = constant presence; <strong>Epidemic</strong> = excessive cases; <strong>Pandemic</strong> = global spread</li>
+                <li><strong>Index case</strong> = first identified case - epidemiologists trace backward from this</li>
+                <li><strong>Common source epidemic</strong> = sharp peak (contaminated food), <strong>propagated</strong> = gradual rise (person-to-person)</li>
+                <li><strong>Herd immunity</strong> protects unvaccinated individuals when enough population is immune</li>
+                <li><strong>R0</strong> = basic reproduction number (average # infected by one person)</li>
+                <li><strong>Fomite</strong> = inanimate object; <strong>Vector</strong> = living carrier</li>
+                <li>Higher R0 = higher herd immunity threshold needed</li>
+            </ul>
         </div>
     </main>
 

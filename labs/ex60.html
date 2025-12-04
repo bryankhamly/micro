@@ -48,508 +48,144 @@
                 Back to Home
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
-            <h1>Exercise 60: Enzyme-Linked Immunosorbent Assay (ELISA)</h1>
-            <p>Detecting Antibodies Using Immunoassays</p>
+            <h1>Exercise 60: ELISA</h1>
+            <p>Enzyme-Linked Immunosorbent Assay - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="principles">ELISA Principles</button>
-            <button class="tab-btn" data-tab="types">Types of Immunoassays</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Understand the basis of enzyme-linked immunosorbent assays (ELISA)</li>
-                        <li>Perform an indirect ELISA to detect anti-HIV antibodies in patient serum as an example of disease detection</li>
-                        <li>Interpret ELISA results (positive vs. negative)</li>
-                        <li>Explain the role of antigens, antibodies, and enzymes in immunoassays</li>
-                    </ul>
-                </div>
+        <div class="concept-card">
+            <h3>Key Terminology</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Term</th>
+                        <th>Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Antigen</strong></td>
+                        <td>Molecule that triggers immune response; recognized by antibodies</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Antibody</strong></td>
+                        <td>Protein (immunoglobulin) produced by B cells that binds antigens</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Immunoassay</strong></td>
+                        <td>Test using labeled antibodies to detect antigen-antibody interactions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>ELISA is used to diagnose many viral infections: influenza, measles, hepatitis B & C, West Nile virus, HIV</li>
-                        <li>Also detects bacterial infections: syphilis, strep throat, salmonellosis</li>
-                        <li>HIV remains a major global health concern - 37.9 million people living with HIV worldwide</li>
-                        <li>Early detection improves patient outcomes and reduces transmission</li>
-                        <li>CDC estimates >1.1 million individuals infected with HIV in the United States</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Two Types of Immunoassays</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Detects</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Direct</strong></td>
+                        <td>Unknown ANTIGENS in sample</td>
+                        <td>Detecting bacteria in throat swab</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Indirect</strong></td>
+                        <td>Specific ANTIBODIES in patient serum</td>
+                        <td>HIV antibody test (this lab)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="overview-section">
-                <div class="overview-card full-width">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        Key Concepts in Immunological Testing
-                    </h3>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Term</th>
-                                <th>Definition</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Antigen</strong></td>
-                                <td>A molecule (often protein) that triggers an immune response; recognized by antibodies</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Antibody</strong></td>
-                                <td>Protein (immunoglobulin) produced by B cells that specifically binds to antigens</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Immunoassay</strong></td>
-                                <td>In vitro test using labeled antibodies to visualize antigen-antibody interactions</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Direct Immunoassay</strong></td>
-                                <td>Uses labeled antibodies to detect unknown antigens in a clinical specimen</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Indirect Immunoassay</strong></td>
-                                <td>Detects specific antibodies in a patient's serum using known antigens</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Enzyme Label</strong></td>
-                                <td>An enzyme attached to antibody that produces a visible color change when substrate is added</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="concept-card">
+            <h3>Indirect ELISA Steps (HIV Test)</h3>
+            <ol>
+                <li><strong>Coat wells with HIV antigen</strong></li>
+                <li><strong>Add patient serum</strong> - If anti-HIV antibodies present, they bind</li>
+                <li><strong>Wash</strong> - Remove unbound material</li>
+                <li><strong>Add secondary antibody</strong> - Anti-IgG linked to enzyme (peroxidase)</li>
+                <li><strong>Wash again</strong></li>
+                <li><strong>Add substrate</strong> - Enzyme produces COLOR if antibodies were present</li>
+            </ol>
+        </div>
+
+        <div class="concept-card">
+            <h3>Interpreting Results</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Result</th>
+                        <th>Color</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>POSITIVE</strong></td>
+                        <td>GREEN</td>
+                        <td>Anti-HIV antibodies PRESENT in serum</td>
+                    </tr>
+                    <tr>
+                        <td><strong>NEGATIVE</strong></td>
+                        <td>COLORLESS</td>
+                        <td>No anti-HIV antibodies detected</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight-box mt-2">
+                <strong>Positive ELISA requires confirmatory testing</strong> (Western blot or nucleic acid test)
             </div>
         </div>
 
-        <!-- ELISA Principles Tab -->
-        <div id="principles" class="tab-content">
-            <h2 class="section-title">How ELISA Works</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Immunological testing involves <strong>specific interactions</strong> between antigens and antibodies. ELISA is highly <em>sensitive</em>, detecting even minute amounts of antibodies or antigens in patient samples.
-            </p>
-
-            <div class="concept-card">
-                <h3>The Indirect ELISA Process (for HIV Detection)</h3>
-                <p>In an indirect ELISA, we detect <strong>antibodies</strong> in the patient's serum using a known antigen:</p>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Step 1: Coat wells with antigen</strong> - HIV antigen is adsorbed (bound) to the wells of a microtiter plate</li>
-                    <li><strong>Step 2: Add patient serum</strong> - If patient has anti-HIV antibodies (IgG), they will bind to the HIV antigen. Other antibodies do not bind.</li>
-                    <li><strong>Step 3: Wash</strong> - Remove unbound antibodies with phosphate buffered saline (PBS)</li>
-                    <li><strong>Step 4: Add secondary antibody</strong> - Anti-IgG antibody linked to an enzyme (peroxidase) is added. This binds to any patient antibodies that attached in step 2.</li>
-                    <li><strong>Step 5: Wash again</strong> - Remove unbound secondary antibodies</li>
-                    <li><strong>Step 6: Add substrate</strong> - A colorless substrate is added. If enzyme is present (bound secondary antibody), it catalyzes a reaction producing a <strong>visible color change</strong> (green).</li>
-                </ol>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Positive Result
-                    </h3>
-                    <div class="highlight-box" style="background: rgba(34, 197, 94, 0.2); border-color: rgba(34, 197, 94, 0.5);">
-                        <strong>GREEN COLOR = POSITIVE</strong>
-                    </div>
-                    <ul class="mt-2">
-                        <li>Patient serum contains anti-HIV IgG antibodies</li>
-                        <li>Antibodies bound to HIV antigen in well</li>
-                        <li>Secondary antibody (with enzyme) bound to patient antibodies</li>
-                        <li>Enzyme catalyzed substrate → color change</li>
-                        <li><strong>Indicates likely infection with HIV</strong></li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Negative Result
-                    </h3>
-                    <div class="highlight-box" style="background: rgba(156, 163, 175, 0.2); border-color: rgba(156, 163, 175, 0.5);">
-                        <strong>COLORLESS = NEGATIVE</strong>
-                    </div>
-                    <ul class="mt-2">
-                        <li>Patient serum does NOT contain anti-HIV IgG antibodies</li>
-                        <li>No antibodies to bind HIV antigen</li>
-                        <li>Secondary antibody washed away (nothing to bind to)</li>
-                        <li>No enzyme present → no color reaction</li>
-                        <li><strong>Indicates no HIV antibodies detected</strong></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card mt-4">
-                <h3>HIV Testing: The Full Picture</h3>
-                <p>The ELISA used for HIV is a <strong>fourth-generation immunoassay</strong> that detects antibodies to both HIV-1 and HIV-2 strains found in different parts of the world.</p>
-                <div class="highlight-box">
-                    <strong>Important:</strong> If an HIV ELISA is positive, follow-up confirmatory tests are required:
-                    <ul class="mt-2">
-                        <li><strong>Western blot</strong> - An indirect immunofluorescence assay</li>
-                        <li><strong>Nucleic acid test</strong> - Detects viral RNA directly</li>
-                    </ul>
-                    These confirm HIV infection and rule out false positives.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Why "Enzyme-Linked"?</h3>
-                <p>The secondary antibody is linked (conjugated) to an enzyme - commonly <strong>peroxidase</strong> or <strong>alkaline phosphatase</strong>.</p>
-                <ul>
-                    <li>The enzyme acts as an amplification system</li>
-                    <li>One enzyme molecule can catalyze many substrate reactions</li>
-                    <li>This produces a strong, visible signal even from small amounts of antibody</li>
-                    <li>Much safer than radioactive isotopes used in earlier immunoassays</li>
-                </ul>
-            </div>
+        <div class="concept-card">
+            <h3>Lab Controls</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Control</th>
+                        <th>Expected Result</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PBS (negative)</td>
+                        <td>Colorless</td>
+                        <td>Confirms no false positives</td>
+                    </tr>
+                    <tr>
+                        <td>+ Control</td>
+                        <td>Green</td>
+                        <td>Confirms test is working</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Types of Immunoassays Tab -->
-        <div id="types" class="tab-content">
-            <h2 class="section-title">Types of Immunoassays</h2>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                        Direct Immunoassay
-                    </h3>
-                    <p><strong>Purpose:</strong> Detect <em>unknown antigens</em> in a clinical specimen</p>
-                    <p><strong>How it works:</strong></p>
-                    <ul>
-                        <li>Uses <strong>labeled antibodies</strong> that recognize specific antigens</li>
-                        <li>If the antigen is present in sample, labeled antibody binds</li>
-                        <li>Detection by enzyme reaction, fluorescence, or radioactivity</li>
-                    </ul>
-                    <p><strong>Example uses:</strong></p>
-                    <ul>
-                        <li>Detecting bacterial antigens in throat swabs</li>
-                        <li>Identifying viral antigens in respiratory samples</li>
-                        <li>Food safety testing</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                        Indirect Immunoassay
-                    </h3>
-                    <p><strong>Purpose:</strong> Detect <em>specific antibodies</em> in patient's serum</p>
-                    <p><strong>How it works:</strong></p>
-                    <ul>
-                        <li>Known antigen is attached to a solid surface</li>
-                        <li>Patient serum is added - antibodies bind if present</li>
-                        <li>Secondary labeled antibody detects bound patient antibodies</li>
-                    </ul>
-                    <p><strong>Example uses:</strong></p>
-                    <ul>
-                        <li>HIV antibody screening (this exercise)</li>
-                        <li>Hepatitis B and C testing</li>
-                        <li>Autoimmune disease diagnosis</li>
-                        <li>Allergy testing</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Labeling Methods for Antibodies</h3>
-                <p>Antibodies can be labeled (tagged) with different detection systems:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Label Type</th>
-                            <th>Detection Method</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Enzymes</strong></td>
-                            <td>Color change when substrate added</td>
-                            <td>Safe, stable, widely used (ELISA)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Fluorescent dyes</strong></td>
-                            <td>Glow under UV light</td>
-                            <td>Used in immunofluorescence microscopy</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Radioactive isotopes</strong></td>
-                            <td>Radiation detection</td>
-                            <td>Very sensitive but hazardous; less common now</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Colloidal gold</strong></td>
-                            <td>Visible color (pink/red line)</td>
-                            <td>Used in rapid lateral flow tests (pregnancy tests, COVID rapid tests)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Clinical Applications of ELISA</h3>
-                <p>ELISA is one of the most widely used diagnostic techniques in clinical laboratories:</p>
-                <div class="overview-section">
-                    <div class="overview-card">
-                        <h4>Viral Infections</h4>
-                        <ul>
-                            <li>HIV-1 and HIV-2</li>
-                            <li>Hepatitis A, B, C</li>
-                            <li>West Nile virus</li>
-                            <li>Influenza</li>
-                            <li>Measles</li>
-                            <li>SARS-CoV-2 (COVID-19)</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h4>Bacterial Infections</h4>
-                        <ul>
-                            <li>Syphilis (Treponema pallidum)</li>
-                            <li>Lyme disease (Borrelia)</li>
-                            <li>Strep throat</li>
-                            <li>Salmonellosis</li>
-                            <li>H. pylori</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure</h2>
-
-            <div class="concept-card">
-                <h3>Materials Required</h3>
-                <ul>
-                    <li>Microtiter plate (4 rows of 3 wells each)</li>
-                    <li>Micropipetter and sterile tips</li>
-                    <li>Phosphate buffered saline (PBS) in small beaker</li>
-                    <li>Small waste beaker</li>
-                    <li>Biohazard bag for used tips</li>
-                    <li>Reagents in labeled microcentrifuge tubes:
-                        <ul>
-                            <li>HIV antigen</li>
-                            <li>Positive (+) control</li>
-                            <li>Patient serum #1 (PS1)</li>
-                            <li>Patient serum #2 (PS2)</li>
-                            <li>Secondary antibody (anti-IgG with peroxidase)</li>
-                            <li>Substrate</li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Note:</strong> Gloves should be worn throughout this exercise, replicating the procedure as it would be conducted in a medical laboratory.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Microtiter Plate Setup</h3>
-                <p>Label your plate with rows and your table number:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Row</th>
-                            <th>Well A</th>
-                            <th>Well B</th>
-                            <th>Well C</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Row 1</strong></td>
-                            <td>PBS (negative control)</td>
-                            <td>PBS (negative control)</td>
-                            <td>PBS (negative control)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 2</strong></td>
-                            <td>+ control</td>
-                            <td>+ control</td>
-                            <td>+ control</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 3</strong></td>
-                            <td>Patient serum #1</td>
-                            <td>Patient serum #1</td>
-                            <td>Patient serum #1</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 4</strong></td>
-                            <td>Patient serum #2</td>
-                            <td>Patient serum #2</td>
-                            <td>Patient serum #2</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="mt-2"><em>Each student at the table is responsible for one row of the ELISA throughout the exercise.</em></p>
-            </div>
-
-            <div class="concept-card">
-                <h3>Procedure Steps</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Add HIV Antigen</strong>
-                        <ul>
-                            <li>Using one micropipette tip, add 50μl of HIV antigen to all 12 wells</li>
-                            <li>Discard tip into biohazard receptacle</li>
-                        </ul>
-                    </li>
-                    <li><strong>Incubate</strong> - 5 minutes at room temperature</li>
-                    <li><strong>Remove Liquid</strong>
-                        <ul>
-                            <li>Using one tip for all wells, remove all liquid from each well</li>
-                            <li>Discard into waste beaker</li>
-                        </ul>
-                    </li>
-                    <li><strong>Wash Wells</strong>
-                        <ul>
-                            <li>Using one tip, wash each well with 200μl of PBS</li>
-                            <li>Add liquid and remove immediately</li>
-                            <li>Discard PBS wash into waste beaker</li>
-                        </ul>
-                    </li>
-                    <li><strong>Add Samples</strong> - Using a <em>new tip for each row</em>:
-                        <ul>
-                            <li>Row 1: Add 50μl of PBS (negative control)</li>
-                            <li>Row 2: Add 50μl of + control (positive control)</li>
-                            <li>Row 3: Add 50μl of PS1 (patient serum #1)</li>
-                            <li>Row 4: Add 50μl of PS2 (patient serum #2)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Incubate</strong> - 15 minutes at 37°C</li>
-                    <li><strong>Remove and Wash</strong>
-                        <ul>
-                            <li>Using a new tip for each <em>row</em>, remove liquid from each well</li>
-                            <li>Discard into waste beaker</li>
-                        </ul>
-                    </li>
-                    <li><strong>Wash Again</strong>
-                        <ul>
-                            <li>Using a new tip for each <em>well</em>, wash all wells with PBS buffer (as in step 5)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Add Secondary Antibody</strong>
-                        <ul>
-                            <li>Using a new tip for each <em>row</em>, add 50μl of anti-IgG with peroxidase (secondary antibody) to all 12 wells</li>
-                            <li>Wash unbound antibodies away</li>
-                        </ul>
-                    </li>
-                    <li><strong>Incubate</strong> - 15 minutes at 37°C</li>
-                    <li><strong>Remove and Wash</strong>
-                        <ul>
-                            <li>Using a new tip for each row, remove liquid from each well</li>
-                            <li>Discard into waste beaker</li>
-                        </ul>
-                    </li>
-                    <li><strong>Final Wash</strong>
-                        <ul>
-                            <li>Using a new tip for each <em>well</em>, wash all wells with PBS buffer</li>
-                        </ul>
-                    </li>
-                    <li><strong>Add Substrate</strong>
-                        <ul>
-                            <li>Using a new tip for each <em>row</em>, add 50μl of substrate to all 12 wells</li>
-                        </ul>
-                    </li>
-                    <li><strong>Incubate</strong> - 5 minutes at 37°C</li>
-                    <li><strong>Analyze Results</strong>
-                        <ul>
-                            <li>Remove plate and record observations in Laboratory Report 60</li>
-                            <li>Green wells = positive (antibodies present)</li>
-                            <li>Colorless wells = negative (no antibodies)</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Interpreting Results</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Sample</th>
-                            <th>Expected Result</th>
-                            <th>Interpretation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Row 1 (PBS)</strong></td>
-                            <td>Colorless</td>
-                            <td>Negative control - no antibodies present</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 2 (+ control)</strong></td>
-                            <td>Green</td>
-                            <td>Positive control - confirms test is working</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 3 (PS1)</strong></td>
-                            <td>Green or Colorless</td>
-                            <td>Patient 1 result - check for anti-HIV antibodies</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Row 4 (PS2)</strong></td>
-                            <td>Green or Colorless</td>
-                            <td>Patient 2 result - check for anti-HIV antibodies</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Change tips appropriately</strong> - Prevents cross-contamination between samples</li>
-                    <li><strong>Washing is critical</strong> - Removes unbound antibodies to prevent false positives</li>
-                    <li><strong>Controls are essential</strong> - Positive control validates the test; negative control shows baseline</li>
-                    <li><strong>Incubation times matter</strong> - Allow sufficient time for binding reactions</li>
-                    <li><strong>Color interpretation</strong> - Green = positive (antibodies detected), Colorless = negative</li>
-                    <li><strong>This is a screening test</strong> - Positive results require confirmatory testing (Western blot or nucleic acid test)</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>ELISA</strong> = Enzyme-Linked Immunosorbent Assay</li>
+                <li><strong>Indirect ELISA</strong> detects antibodies; <strong>Direct</strong> detects antigens</li>
+                <li><strong>GREEN = positive</strong> (antibodies detected)</li>
+                <li><strong>Colorless = negative</strong> (no antibodies)</li>
+                <li>Secondary antibody has <strong>enzyme attached</strong> (peroxidase)</li>
+                <li>Enzyme converts substrate to <strong>colored product</strong></li>
+                <li><strong>Washing steps</strong> are critical to remove unbound material</li>
+                <li>ELISA is a <strong>screening test</strong> - positive results need confirmation</li>
+                <li>Uses: HIV, hepatitis, West Nile virus, syphilis, COVID-19</li>
+            </ul>
         </div>
     </main>
 
@@ -558,7 +194,7 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Bio 15 Microbiology Study Guide</h3>
-                <p>Exercise 60: Enzyme-Linked Immunosorbent Assay (ELISA)</p>
+                <p>Exercise 60: ELISA</p>
             </div>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/bryankhamly/" target="_blank" rel="noopener noreferrer" class="footer-link">

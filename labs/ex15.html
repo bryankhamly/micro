@@ -49,395 +49,148 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 15: Endospore Staining</h1>
-            <p>Schaeffer-Fulton and Dorner Methods</p>
+            <p>Schaeffer-Fulton Method - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="endospores">About Endospores</button>
-            <button class="tab-btn" data-tab="sporulation">Sporulation Cycle</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Prepare an endospore stain of bacterial cells and observe endospores in the stained preparation</li>
-                        <li>Differentiate between vegetative cells and endospores</li>
-                        <li>Understand the importance of endospores in disease and sterilization</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>Many medically relevant pathogens produce endospores</li>
-                        <li>Endospores are difficult to control with regular disinfection methods</li>
-                        <li><strong><em>Bacillus anthracis</em></strong> - causes anthrax (2001 bioterror attack)</li>
-                        <li><strong><em>Clostridium tetani</em></strong> - causes tetanus</li>
-                        <li><strong><em>Clostridium botulinum</em></strong> - causes botulism</li>
-                        <li><strong><em>Clostridioides difficile</em></strong> - causes diarrhea and colitis (15-30% recurrence due to endospore persistence)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>What are Endospores?</h3>
-                <p>When species of bacteria belonging to the genera <strong><em>Bacillus</em></strong> and <strong><em>Clostridium</em></strong> face nutrient depletion, they undergo a complex developmental cycle that produces dormant structures called <strong>endospores</strong>.</p>
-                <ul>
-                    <li>Endospores survive environmental conditions that are not favorable for normal bacterial growth</li>
-                    <li>If nutrients become available again, the endospore can <strong>germinate</strong> to form a new vegetative cell</li>
-                    <li>Endospores are <strong>very dehydrated structures</strong> that are not actively metabolizing</li>
-                    <li>They are resistant to heat, radiation, acids, and many chemicals/disinfectants</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Clinical Importance:</strong> In some cases, it is the inhalation, injection, or ingestion of endospores rather than active bacterial cells that leads to disease. For example, powdered <em>B. anthracis</em> spores were mailed to government offices in 2001 as part of a bioterror attack, affecting 22 people.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>What are Endospores?</h3>
+            <ul>
+                <li><strong>Dormant structures</strong> produced when nutrients are depleted</li>
+                <li>Only produced by <strong><em>Bacillus</em></strong> and <strong><em>Clostridium</em></strong> genera</li>
+                <li>Extremely resistant to heat, radiation, acids, chemicals, and desiccation</li>
+                <li><strong>Very dehydrated</strong> (10-30% water content)</li>
+                <li>Contain <strong>calcium dipicolinate</strong> (NOT found in vegetative cells)</li>
+            </ul>
         </div>
 
-        <!-- About Endospores Tab -->
-        <div id="endospores" class="tab-content">
-            <h2 class="section-title">Endospore Structure and Resistance</h2>
-
-            <div class="concept-card">
-                <h3>Why Are Endospores So Resistant?</h3>
-                <p>The chemical resistance of endospores is due to several factors:</p>
-                <ul>
-                    <li><strong>Protein coat:</strong> Forms a protective barrier around the spore</li>
-                    <li><strong>Low water content:</strong> During sporulation, water content is reduced to 10-30% of the vegetative cell</li>
-                    <li><strong>Calcium dipicolinate:</strong> Spore-specific proteins form a gel that reduces protoplasmic volume</li>
-                    <li><strong>Thick cortex:</strong> Forms around the endospore, and contraction of the cortex results in a smaller, dehydrated structure</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Key Point:</strong> The higher the water content of an endospore, the less heat resistant it will be. Calcium dipicolinate is NOT present in vegetative cells - it's unique to endospores.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Sterilization Requirements</h3>
-                <p>Since endospores are not easily destroyed by heat or chemicals, they define the conditions necessary to establish sterility:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Method</th>
-                            <th>Conditions</th>
-                            <th>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Autoclave</strong></td>
-                            <td>121°C (250°F) for 15-20 minutes under pressure</td>
-                            <td>Steam under pressure; standard for sterilization</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Dry heat</strong></td>
-                            <td>160-180°C for 2+ hours</td>
-                            <td>Less effective than moist heat</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Boiling water</strong></td>
-                            <td>100°C</td>
-                            <td>NOT sufficient to kill endospores</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Pathogenic Endospore-Formers
-                    </h3>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Organism</th>
-                                <th>Disease</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><em>Bacillus anthracis</em></td>
-                                <td>Anthrax</td>
-                            </tr>
-                            <tr>
-                                <td><em>Clostridium tetani</em></td>
-                                <td>Tetanus</td>
-                            </tr>
-                            <tr>
-                                <td><em>Clostridium botulinum</em></td>
-                                <td>Botulism</td>
-                            </tr>
-                            <tr>
-                                <td><em>Clostridioides difficile</em></td>
-                                <td>Diarrhea and colitis</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Staining Challenge
-                    </h3>
-                    <p>The resistant properties of endospores mean that they are <strong>not easily penetrated by stains</strong>:</p>
-                    <ul>
-                        <li>If endospore-containing cells are stained with basic stains like crystal violet, the spores appear as <strong>clear, unstained areas</strong> in the vegetative cell</li>
-                        <li>Heat must be applied during staining with malachite green to facilitate penetration</li>
-                        <li>Once stained, the malachite green is <strong>not removed</strong> from the endospore by subsequent washing</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Pathogenic Endospore-Forming Bacteria</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Organism</th>
+                        <th>Disease</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Bacillus anthracis</em></td>
+                        <td>Anthrax</td>
+                    </tr>
+                    <tr>
+                        <td><em>Clostridium tetani</em></td>
+                        <td>Tetanus</td>
+                    </tr>
+                    <tr>
+                        <td><em>Clostridium botulinum</em></td>
+                        <td>Botulism</td>
+                    </tr>
+                    <tr>
+                        <td><em>Clostridioides difficile</em></td>
+                        <td>Diarrhea/Colitis (15-30% recurrence due to spore persistence)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Sporulation Cycle Tab -->
-        <div id="sporulation" class="tab-content">
-            <h2 class="section-title">The Sporulation Cycle</h2>
-
-            <div class="concept-card">
-                <h3>Stages of Endospore Formation</h3>
-                <p>When a vegetative cell begins to be depleted of nutrients, it enters the sporulation cycle:</p>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Nutrient depletion:</strong> Vegetative cell begins to be depleted of nutrients</li>
-                    <li><strong>Chromosome duplication:</strong> The chromosome is duplicated and separated</li>
-                    <li><strong>Septation:</strong> The cell is septated into a sporangium and forespore</li>
-                    <li><strong>Engulfment:</strong> The sporangium engulfs the forespore for further development</li>
-                    <li><strong>Layer synthesis:</strong> The sporangium begins to actively synthesize endospore layers around the forespore</li>
-                    <li><strong>Cortex and coat deposition:</strong> The cortex and outer coat layers are deposited</li>
-                    <li><strong>Mature endospore:</strong> The endospore reaches maturity with all protective layers</li>
-                    <li><strong>Release:</strong> The free endospore is released with the loss of the sporangium</li>
-                    <li><strong>Germination:</strong> If nutrients become available, the endospore swells and releases a new vegetative cell</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Endospore Structure</h3>
-                <p>A mature endospore has several protective layers:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Layer</th>
-                            <th>Location</th>
-                            <th>Function</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Core</strong></td>
-                            <td>Center</td>
-                            <td>Contains chromosome, ribosomes, enzymes (dehydrated)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cortex</strong></td>
-                            <td>Around core</td>
-                            <td>Thick peptidoglycan layer; contraction causes dehydration</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Endospore coat</strong></td>
-                            <td>Around cortex</td>
-                            <td>Protein barrier; chemical resistance</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Exosporium</strong></td>
-                            <td>Outermost</td>
-                            <td>Loose covering (not always present)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Germination</h3>
-                <p>When favorable conditions return:</p>
-                <ul>
-                    <li>The endospore can go through the process of <strong>germination</strong></li>
-                    <li>The endospore swells as it takes up water</li>
-                    <li>A new vegetative cell emerges from the spore coat</li>
-                    <li>Growth will resume normally</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Clinical significance:</strong> Recurrence of treated disease can occur due to endospore persistence. This is a common occurrence in 15-30% of <em>C. diff</em> patients - the endospores survive treatment and germinate after antibiotic therapy ends.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Sterilization Requirements</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Conditions</th>
+                        <th>Effective?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Autoclave</strong></td>
+                        <td>121°C, 15-20 min, under pressure</td>
+                        <td>YES - kills endospores</td>
+                    </tr>
+                    <tr>
+                        <td>Boiling water</td>
+                        <td>100°C</td>
+                        <td>NO - does NOT kill endospores</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedures</h2>
+        <div class="concept-card">
+            <h3>Schaeffer-Fulton Method</h3>
+            <ul>
+                <li><strong>Primary stain:</strong> Malachite green (with heat/steam for 7 min)</li>
+                <li><strong>Counterstain:</strong> Safranin</li>
+                <li>Heat is required to drive stain into the resistant endospore</li>
+            </ul>
+            <table class="comparison-table mt-2">
+                <thead>
+                    <tr>
+                        <th>Structure</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Endospores</strong></td>
+                        <td>GREEN</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vegetative cells</strong></td>
+                        <td>RED/PINK</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="concept-card">
-                <h3>Schaeffer-Fulton Method (Primary Method)</h3>
-                <p>This method utilizes <strong>malachite green</strong> to stain the endospore and <strong>safranin</strong> to stain the vegetative portion of the cell.</p>
+        <div class="concept-card">
+            <h3>Alternative: Dorner Method</h3>
+            <ul>
+                <li>Uses carbolfuchsin (heated) and nigrosin</li>
+            </ul>
+            <table class="comparison-table mt-2">
+                <thead>
+                    <tr>
+                        <th>Structure</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Endospores</strong></td>
+                        <td>RED</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Vegetative cells</strong></td>
+                        <td>COLORLESS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Background</strong></td>
+                        <td>DARK (nigrosin)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                <h4 class="mt-3">Materials:</h4>
-                <ul>
-                    <li>24-36 hour nutrient agar slant culture of <em>Bacillus cereus</em> (or other <em>Bacillus</em> sp.)</li>
-                    <li>Electric hot plate and small beaker (50 ml)</li>
-                    <li>Endospore-staining kit (5% malachite green and safranin)</li>
-                    <li>Wash bottle</li>
-                    <li>Bibulous paper</li>
-                </ul>
-
-                <h4 class="mt-3">Procedure:</h4>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Prepare smear:</strong> Prepare a smear of <em>Bacillus cereus</em> and allow it to air-dry</li>
-                    <li><strong>Heat-fix:</strong> Heat-fix the dried smear</li>
-                    <li><strong>Apply malachite green with steam:</strong>
-                        <ul>
-                            <li>Cover the smear with a small piece of bibulous paper</li>
-                            <li>Saturate it with malachite green</li>
-                            <li>Steam over boiling water for <strong>7 minutes</strong></li>
-                            <li>The bibulous paper should be small enough that it does not hang over the edges of the slide</li>
-                            <li>Add additional stain as needed to keep the paper saturated</li>
-                        </ul>
-                    </li>
-                    <li><strong>Cool and rinse:</strong>
-                        <ul>
-                            <li>After the slide has cooled sufficiently, remove the paper</li>
-                            <li>Rinse with water for <strong>30 seconds</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Counterstain:</strong>
-                        <ul>
-                            <li>Counterstain with safranin for about <strong>30 seconds</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Rinse:</strong> Rinse briefly with water to remove excess safranin</li>
-                    <li><strong>Dry and examine:</strong>
-                        <ul>
-                            <li>Blot dry with bibulous paper</li>
-                            <li>Examine the slide under oil immersion</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Expected Results (Schaeffer-Fulton)</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Structure</th>
-                            <th>Color</th>
-                            <th>Explanation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Endospores</strong></td>
-                            <td>GREEN</td>
-                            <td>Malachite green penetrates with heat; not removed by water</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Vegetative cells</strong></td>
-                            <td>RED/PINK</td>
-                            <td>Malachite green washed out; safranin counterstain taken up</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="highlight-box mt-2">
-                    <strong>Note:</strong> A variation of the Schaeffer-Fulton method that does not require steaming may be used. In this variation, a heat-fixed smear is immediately flooded with malachite green and allowed to stand for at least 10 minutes. Results will be green spores and red vegetative cells, but may be lighter than with the original method that uses steam.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Alternative Method: Dorner Method</h3>
-                <p>The Dorner method is an older technique that produces a <strong>red spore</strong> within a <strong>colorless cell</strong> against a dark background.</p>
-
-                <h4 class="mt-3">Materials:</h4>
-                <ul>
-                    <li>Electric hot plate and small beaker (25 ml)</li>
-                    <li>Small test tube (10 × 75 mm size)</li>
-                    <li>Test-tube holder</li>
-                    <li>24-36 hour nutrient agar slant culture of <em>Bacillus cereus</em></li>
-                    <li>Carbolfuchsin</li>
-                    <li>Nigrosin</li>
-                </ul>
-
-                <h4 class="mt-3">Procedure:</h4>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Make suspension:</strong> Make a heavy suspension of bacteria by dispersing several loopfuls of bacteria in 5 drops of sterile water</li>
-                    <li><strong>Add carbolfuchsin:</strong> Add 5 drops of carbolfuchsin to the bacterial suspension</li>
-                    <li><strong>Heat:</strong> Heat the carbolfuchsin suspension of bacteria in a beaker of boiling water for <strong>10 minutes</strong></li>
-                    <li><strong>Mix with nigrosin:</strong> Mix several loopfuls of bacteria in a drop of nigrosin on the slide</li>
-                    <li><strong>Spread:</strong> Spread the nigrosin-bacteria mixture on the slide in the same manner as in Exercise 12 (Negative Staining)</li>
-                    <li><strong>Air-dry and examine:</strong> Allow the smear to air-dry. Examine the slide under oil immersion</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Expected Results (Dorner Method)</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Structure</th>
-                            <th>Color</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Endospores</strong></td>
-                            <td>RED (carbolfuchsin retained)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Vegetative cells</strong></td>
-                            <td>COLORLESS (decolorized by nigrosin diffusion)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Background</strong></td>
-                            <td>DARK (nigrosin)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Endospores = GREEN</strong> (Schaeffer-Fulton) or <strong>RED</strong> (Dorner)</li>
-                    <li><strong>Vegetative cells = RED/PINK</strong> (Schaeffer-Fulton) or <strong>COLORLESS</strong> (Dorner)</li>
-                    <li><strong>Heat is required</strong> to drive malachite green into the endospore</li>
-                    <li>Endospores are <strong>resistant to heat, chemicals, and radiation</strong></li>
-                    <li><strong>Autoclaving</strong> (121°C under pressure) is required to kill endospores</li>
-                    <li>Only <em>Bacillus</em> and <em>Clostridium</em> genera produce true endospores</li>
-                    <li>Endospore-forming pathogens include agents of <strong>anthrax, tetanus, botulism, and C. diff</strong></li>
-                    <li>Endospore persistence explains <strong>disease recurrence</strong> (especially <em>C. diff</em>)</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li>Only <strong><em>Bacillus</em></strong> and <strong><em>Clostridium</em></strong> make true endospores</li>
+                <li>Endospores = <strong>GREEN</strong> (Schaeffer-Fulton)</li>
+                <li>Vegetative cells = <strong>RED/PINK</strong> (Schaeffer-Fulton)</li>
+                <li><strong>Heat is required</strong> to drive malachite green into endospores</li>
+                <li><strong>Autoclaving</strong> (121°C under pressure) kills endospores; boiling does NOT</li>
+                <li>Endospore persistence explains <strong>C. diff recurrence</strong> (15-30%)</li>
+                <li><strong>Calcium dipicolinate</strong> is unique to endospores</li>
+                <li>Endospores form when <strong>nutrients are depleted</strong>; germinate when nutrients return</li>
+            </ul>
         </div>
     </main>
 

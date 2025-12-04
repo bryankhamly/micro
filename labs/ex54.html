@@ -48,710 +48,261 @@
                 Back to Home
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
-            <h1>Exercise 54: The Streptococci and Enterococci</h1>
-            <p>Isolation and Identification</p>
+            <h1>Exercise 54: Streptococci & Enterococci</h1>
+            <p>Identification - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="hemolysis">Hemolysis Types</button>
-            <button class="tab-btn" data-tab="groups">Lancefield Groups</button>
-            <button class="tab-btn" data-tab="tests">Identification Tests</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Isolate streptococci from a mixed culture or throat using selective media and culturing techniques</li>
-                        <li>Identify unknown streptococci using selective media and biochemical tests specific for streptococci</li>
-                        <li>Differentiate between alpha, beta, and gamma hemolysis on blood agar</li>
-                        <li>Use the Lancefield classification system to identify streptococcal groups</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li><em>Streptococcus</em> and <em>Enterococcus</em> contain many medically important human pathogens</li>
-                        <li>Common causes of pharyngitis (strep throat), sepsis, meningitis, and endocarditis</li>
-                        <li>Hemolysis type and antibiotic sensitivity are key to species identification</li>
-                        <li>Clinical labs use these techniques daily to diagnose infections</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card full-width">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        Streptococci vs. Staphylococci - Key Differences
-                    </h3>
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Feature</th>
-                                <th>Streptococci/Enterococci</th>
-                                <th>Staphylococci</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Cell Arrangement</strong></td>
-                                <td>Chains (or pairs)</td>
-                                <td>Clusters (grape-like)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Gram Stain</strong></td>
-                                <td>Gram-positive cocci</td>
-                                <td>Gram-positive cocci</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Catalase Test</strong></td>
-                                <td>Negative (no bubbles)</td>
-                                <td>Positive (bubbles)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Oxygen Requirements</strong></td>
-                                <td>Facultative anaerobes (generally non-motile)</td>
-                                <td>Facultative anaerobes</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Classification</strong></td>
-                                <td>Lancefield groups (A, B, C, D, etc.)</td>
-                                <td>Coagulase test</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="highlight-box mt-2">
-                        <strong>Key Point:</strong> The <strong>catalase test</strong> is the quickest way to differentiate streptococci (catalase-negative) from staphylococci (catalase-positive). Catalase breaks down hydrogen peroxide into water and oxygen - bubbles = positive.
-                    </div>
-                </div>
+        <div class="concept-card">
+            <h3>Strep vs Staph - Quick Differentiation</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Streptococci</th>
+                        <th>Staphylococci</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Arrangement</strong></td>
+                        <td>Chains (or pairs)</td>
+                        <td>Clusters (grape-like)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Catalase Test</strong></td>
+                        <td>NEGATIVE (no bubbles)</td>
+                        <td>POSITIVE (bubbles)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight-box mt-2">
+                <strong>Catalase test</strong> is the quickest way to differentiate strep from staph!
             </div>
         </div>
 
-        <!-- Hemolysis Types Tab -->
-        <div id="hemolysis" class="tab-content">
-            <h2 class="section-title">Types of Hemolysis on Blood Agar</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                When streptococci grow on blood agar plates, they produce hemolysins that affect red blood cells differently. The hemolysis pattern is a primary identification characteristic.
-            </p>
-
-            <div class="overview-section">
-                <div class="overview-card hemolysis-beta">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="4" fill="none"/>
-                        </svg>
-                        Beta (β) Hemolysis - Complete Lysis
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p><strong>Appearance:</strong> Clear, transparent zone around colonies - complete destruction of red blood cells</p>
-                        <p><strong>What happens:</strong> Hemolysins completely lyse RBCs, releasing hemoglobin which is then degraded, leaving a clear zone</p>
-                    </div>
-                    <div class="highlight-box">
-                        <strong>Important Beta-Hemolytic Species:</strong>
-                        <ul>
-                            <li><em>Streptococcus pyogenes</em> (Group A) - strep throat, necrotizing fasciitis</li>
-                            <li><em>Streptococcus agalactiae</em> (Group B) - neonatal meningitis</li>
-                            <li><em>Streptococcus dysgalactiae</em> (Group C) - zoonotic infections</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="overview-card hemolysis-alpha">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="6" fill="none" stroke-dasharray="2,2"/>
-                        </svg>
-                        Alpha (α) Hemolysis - Partial Lysis
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p><strong>Appearance:</strong> Greenish discoloration around colonies - partial hemolysis</p>
-                        <p><strong>What happens:</strong> Hemolysins partially break down hemoglobin to methemoglobin, producing a green/brown color</p>
-                    </div>
-                    <div class="highlight-box">
-                        <strong>Important Alpha-Hemolytic Species:</strong>
-                        <ul>
-                            <li><em>Streptococcus pneumoniae</em> - pneumonia, meningitis, otitis media</li>
-                            <li>Viridans streptococci (<em>S. mitis, S. salivarius, S. mutans</em>) - dental caries, endocarditis</li>
-                        </ul>
-                    </div>
-                    <p class="mt-2"><em>Note: Some species show "alpha-prime" hemolysis - a wider zone of partial lysis that can be mistaken for beta-hemolysis. Always examine stabs under magnification!</em></p>
-                </div>
-
-                <div class="overview-card hemolysis-gamma">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                        Gamma (γ) Hemolysis - No Hemolysis
-                    </h3>
-                    <div class="hemolysis-description">
-                        <p><strong>Appearance:</strong> No change in the blood agar around colonies</p>
-                        <p><strong>What happens:</strong> No hemolytic enzymes produced - RBCs remain intact</p>
-                    </div>
-                    <div class="highlight-box">
-                        <strong>Gamma-Hemolytic Species:</strong>
-                        <ul>
-                            <li><em>Enterococcus faecalis</em> (Group D) - UTIs, endocarditis</li>
-                            <li><em>Enterococcus faecium</em> (Group D) - hospital-acquired infections</li>
-                            <li>Some viridans streptococci</li>
-                        </ul>
-                    </div>
-                    <p class="mt-2"><em>Note: Enterococci can appear nonhemolytic, alpha-hemolytic, or rarely beta-hemolytic depending on conditions.</em></p>
-                </div>
-            </div>
-
-            <div class="concept-card mt-4">
-                <h3>Reading Hemolysis - The Streak-Stab Technique</h3>
-                <p>Since hemolysis develops best anaerobically (beneath the agar surface), always use the <strong>streak-stab technique</strong>:</p>
-                <ol class="pathogenesis-steps">
-                    <li>Roll swab over approximately 1/5 of the plate surface</li>
-                    <li>Use a wire loop to streak out three areas to thin the organisms</li>
-                    <li><strong>Stab the loop into the agar</strong> perpendicular to the surface in the unstreaked area</li>
-                    <li>Make clean cuts without ragged edges</li>
-                    <li>Incubate at 37°C for 24 hours in a candle jar (reduced O₂)</li>
-                </ol>
-                <div class="highlight-box mt-2">
-                    <strong>Why stab?</strong> Beta-hemolysis is most accurately read in the stab areas where oxygen is limited. Surface colonies may show less distinct hemolysis patterns.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Types of Hemolysis on Blood Agar</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Appearance</th>
+                        <th>Key Species</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Beta (β)</strong></td>
+                        <td>CLEAR zone (complete lysis)</td>
+                        <td><em>S. pyogenes</em>, <em>S. agalactiae</em></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alpha (α)</strong></td>
+                        <td>GREEN zone (partial lysis)</td>
+                        <td><em>S. pneumoniae</em>, Viridans strep</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Gamma (γ)</strong></td>
+                        <td>NO change</td>
+                        <td>Enterococci (<em>E. faecalis</em>)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Lancefield Groups Tab -->
-        <div id="groups" class="tab-content">
-            <h2 class="section-title">Lancefield Classification System</h2>
+        <div class="concept-card">
+            <h3>Lancefield Groups - Key Species</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Group</th>
+                        <th>Species</th>
+                        <th>Hemolysis</th>
+                        <th>Key Tests</th>
+                        <th>Diseases</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>A</strong></td>
+                        <td><em>S. pyogenes</em></td>
+                        <td>β</td>
+                        <td>Bacitracin <strong>SENSITIVE</strong></td>
+                        <td>Strep throat, scarlet fever, rheumatic fever</td>
+                    </tr>
+                    <tr>
+                        <td><strong>B</strong></td>
+                        <td><em>S. agalactiae</em></td>
+                        <td>β</td>
+                        <td><strong>CAMP positive</strong></td>
+                        <td>Neonatal sepsis/meningitis</td>
+                    </tr>
+                    <tr>
+                        <td><strong>D</strong></td>
+                        <td><em>E. faecalis</em>, <em>S. bovis</em></td>
+                        <td>γ or α</td>
+                        <td><strong>Bile esculin positive</strong></td>
+                        <td>UTIs, endocarditis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Developed by Rebecca Lancefield in the 1930s, this system classifies streptococci based on antigenic differences in their cell wall carbohydrates (C-substance). Groups are designated A, B, C, D, etc.
-            </p>
+        <div class="concept-card">
+            <h3>Critical Identification Tests</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Test</th>
+                        <th>Positive Result Indicates</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Bacitracin sensitive</strong></td>
+                        <td>Group A (<em>S. pyogenes</em>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CAMP positive</strong> (arrowhead hemolysis)</td>
+                        <td>Group B (<em>S. agalactiae</em>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bile esculin positive</strong> (blackening)</td>
+                        <td>Group D (enterococci or <em>S. bovis</em>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6.5% NaCl tolerant</strong></td>
+                        <td>Enterococci (not <em>S. bovis</em>)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Optochin sensitive</strong></td>
+                        <td><em>S. pneumoniae</em> (zone ≥14mm)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
-                        </svg>
-                        Group A Streptococci (GAS)
-                    </h3>
-                    <p><strong>Species:</strong> <em>Streptococcus pyogenes</em></p>
-                    <p><strong>Hemolysis:</strong> Beta (β)</p>
-                    <p><strong>Key Tests:</strong></p>
-                    <ul>
-                        <li><strong>Bacitracin sensitive</strong> (zone of inhibition around disk)</li>
-                        <li>PYR positive</li>
-                        <li>CAMP negative</li>
-                    </ul>
-                    <p><strong>Clinical Significance:</strong></p>
-                    <ul>
-                        <li>Strep throat (pharyngitis)</li>
-                        <li>Scarlet fever</li>
-                        <li>Rheumatic fever</li>
-                        <li>Acute glomerulonephritis</li>
-                        <li>Necrotizing fasciitis ("flesh-eating bacteria")</li>
-                        <li>Puerperal fever (childbirth fever)</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>Humans are the only reservoir</strong> for S. pyogenes. Most common site: pharynx.
-                    </div>
-                </div>
+        <div class="concept-card">
+            <h3>S. pneumoniae vs Viridans Strep</h3>
+            <p>Both are <strong>alpha-hemolytic</strong> (green zone). How to differentiate:</p>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th><em>S. pneumoniae</em></th>
+                        <th>Viridans strep</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Optochin</strong></td>
+                        <td>SENSITIVE</td>
+                        <td>Resistant</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bile solubility</strong></td>
+                        <td>Positive (dissolves)</td>
+                        <td>Negative</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Diseases</strong></td>
+                        <td>Pneumonia, meningitis, otitis media</td>
+                        <td>Dental caries, endocarditis</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 12l2 2 4-4"/>
-                            <circle cx="12" cy="12" r="10"/>
-                        </svg>
-                        Group B Streptococci (GBS)
-                    </h3>
-                    <p><strong>Species:</strong> <em>Streptococcus agalactiae</em></p>
-                    <p><strong>Hemolysis:</strong> Beta (β) - narrow zone</p>
-                    <p><strong>Key Tests:</strong></p>
-                    <ul>
-                        <li>Bacitracin resistant</li>
-                        <li><strong>CAMP test positive</strong> (arrowhead hemolysis with S. aureus)</li>
-                        <li>Hippurate hydrolysis positive</li>
-                    </ul>
-                    <p><strong>Clinical Significance:</strong></p>
-                    <ul>
-                        <li>Leading cause of neonatal sepsis and meningitis</li>
-                        <li>Colonizes maternal genital tract (screen pregnant women!)</li>
-                        <li>Also causes infections in adults with underlying conditions</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>CAMP Test:</strong> S. agalactiae produces CAMP factor that synergizes with S. aureus beta-hemolysin, creating an arrowhead-shaped zone of enhanced hemolysis.
-                    </div>
-                </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>Catalase negative</strong> = Strep (not Staph)</li>
+                <li><strong>Beta hemolysis + Bacitracin sensitive</strong> = <em>S. pyogenes</em> (Group A)</li>
+                <li><strong>Beta hemolysis + CAMP positive</strong> = <em>S. agalactiae</em> (Group B)</li>
+                <li><strong>Bile esculin positive</strong> = Group D</li>
+                <li><strong>Bile esculin + 6.5% NaCl tolerant</strong> = Enterococcus</li>
+                <li><strong>Alpha hemolysis + Optochin sensitive</strong> = <em>S. pneumoniae</em></li>
+                <li><strong>S. bovis isolation</strong> from blood = screen for colon cancer!</li>
+                <li>Read hemolysis in <strong>stab areas</strong> (anaerobic = clearer pattern)</li>
+            </ul>
+        </div>
 
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                        Group C Streptococci
-                    </h3>
-                    <p><strong>Species:</strong> <em>Streptococcus dysgalactiae</em></p>
-                    <p><strong>Hemolysis:</strong> Beta (β)</p>
-                    <p><strong>Key Tests:</strong></p>
-                    <ul>
-                        <li>Bacitracin resistant, CAMP negative</li>
-                        <li>Large colonies with large zone of beta-hemolysis</li>
-                    </ul>
-                    <p><strong>Clinical Significance:</strong></p>
-                    <ul>
-                        <li>Zoonotic infections (transmitted from animals to humans)</li>
-                        <li>Pharyngitis, bacteremia, endocarditis</li>
-                        <li>Less than 1% of bacteremias</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                        </svg>
-                        Group D - Enterococci & Non-Enterococci
-                    </h3>
-                    <p><strong>Enterococcal Species:</strong> <em>E. faecalis, E. faecium</em></p>
-                    <p><strong>Non-Enterococcal:</strong> <em>S. bovis</em></p>
-                    <p><strong>Hemolysis:</strong> Usually gamma (none) or alpha; rarely beta</p>
-                    <p><strong>Key Tests:</strong></p>
-                    <ul>
-                        <li><strong>Bile esculin positive</strong> (blackening of slant)</li>
-                        <li><strong>6.5% NaCl tolerance:</strong> Enterococci = tolerant, S. bovis = not tolerant</li>
-                        <li>PYR positive (enterococci)</li>
-                    </ul>
-                    <p><strong>Clinical Significance:</strong></p>
-                    <ul>
-                        <li>UTIs (urinary tract infections)</li>
-                        <li>Endocarditis</li>
-                        <li>Bacteremia in hospitalized patients</li>
-                        <li>VRE (Vancomycin-Resistant Enterococci) - major concern!</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>S. bovis & Colon Cancer:</strong> Isolation of S. bovis from blood is associated with GI malignancies - patients should be screened!
-                    </div>
-                </div>
-            </div>
-
-            <div class="concept-card mt-4">
-                <h3>Special Case: <em>Streptococcus pneumoniae</em></h3>
-                <p><em>S. pneumoniae</em> does NOT have a Lancefield antigen (no group designation).</p>
-                <table class="comparison-table mt-2">
+        <div class="concept-card">
+            <h3>Quick Reference Summary Table</h3>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Species</th>
+                            <th>Group</th>
+                            <th>Hemolysis</th>
+                            <th>Bacitracin</th>
+                            <th>CAMP</th>
+                            <th>BE</th>
+                            <th>NaCl</th>
+                            <th>Optochin</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Hemolysis</strong></td>
-                            <td>Alpha (greenish zone)</td>
+                            <td><em>S. pyogenes</em></td>
+                            <td>A</td>
+                            <td>β</td>
+                            <td><strong>S</strong></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td><strong>Colony Appearance</strong></td>
-                            <td>Smooth, mucoid (due to polysaccharide capsule)</td>
+                            <td><em>S. agalactiae</em></td>
+                            <td>B</td>
+                            <td>β</td>
+                            <td>R</td>
+                            <td><strong>+</strong></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td><strong>Cell Morphology</strong></td>
-                            <td>Diplococci (lancet-shaped pairs)</td>
+                            <td><em>E. faecalis</em></td>
+                            <td>D</td>
+                            <td>γ</td>
+                            <td>R</td>
+                            <td>-</td>
+                            <td><strong>+</strong></td>
+                            <td><strong>+</strong></td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td><strong>Key Test</strong></td>
-                            <td><strong>Optochin SENSITIVE</strong> (zone of inhibition)</td>
+                            <td><em>S. bovis</em></td>
+                            <td>D</td>
+                            <td>γ</td>
+                            <td>R</td>
+                            <td>-</td>
+                            <td><strong>+</strong></td>
+                            <td>-</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td><strong>Bile Solubility</strong></td>
-                            <td>Positive (colonies dissolve in bile)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Clinical Significance</strong></td>
-                            <td>Pneumonia, meningitis, otitis media</td>
+                            <td><em>S. pneumoniae</em></td>
+                            <td>none</td>
+                            <td>α</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td><strong>S</strong></td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="highlight-box mt-2">
-                    <strong>Optochin differentiates pneumococci from viridans streptococci:</strong><br>
-                    S. pneumoniae = Optochin SENSITIVE (zone ≥14mm for 6mm disk)<br>
-                    Viridans strep = Optochin RESISTANT (no zone)
-                </div>
             </div>
-        </div>
-
-        <!-- Identification Tests Tab -->
-        <div id="tests" class="tab-content">
-            <h2 class="section-title">Physiological & Biochemical Tests</h2>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 8v8M8 12h8"/>
-                        </svg>
-                        Bacitracin Susceptibility Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Presumptive identification of Group A streptococci (S. pyogenes)</p>
-                    <p><strong>Principle:</strong> S. pyogenes is uniquely susceptible to low concentrations of bacitracin</p>
-                    <p><strong>Method:</strong></p>
-                    <ul>
-                        <li>Place bacitracin differential disk (0.04 units) on streaked blood agar</li>
-                        <li>Incubate 24 hours at 37°C</li>
-                    </ul>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Zone of inhibition present = Sensitive = Presumptive S. pyogenes</strong></li>
-                        <li>No zone = Resistant = NOT Group A (could be B, C, etc.)</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <strong>Important:</strong> Use differential disks (0.04 units), NOT sensitivity disks which have higher concentrations!
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        SXT Sensitivity Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Distinguish Groups A and B from other beta-hemolytic streptococci</p>
-                    <p><strong>Principle:</strong> SXT disk contains trimethoprim-sulfamethoxazole</p>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Groups A and B = RESISTANT to SXT</strong> (no zone)</li>
-                        <li>Other beta-hemolytic strep (Group C, G) = often sensitive</li>
-                    </ul>
-                    <p><strong>Used together with bacitracin:</strong></p>
-                    <ul>
-                        <li>Bacitracin S, SXT R = Group A</li>
-                        <li>Bacitracin R, SXT R = Group B</li>
-                        <li>Bacitracin R, SXT S = Group C or other</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/>
-                            <path d="M20 10c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2s2 .9 2 2v4c0 1.1-.9 2-2 2z"/>
-                            <path d="M8.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S7 21.33 7 20.5v-5c0-.83.67-1.5 1.5-1.5z"/>
-                        </svg>
-                        CAMP Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Presumptive identification of Group B streptococci (S. agalactiae)</p>
-                    <p><strong>Principle:</strong> S. agalactiae produces CAMP factor, a protein that enhances the hemolysis caused by S. aureus beta-hemolysin</p>
-                    <p><strong>Method:</strong></p>
-                    <ul>
-                        <li>Streak S. aureus in a single line across center of blood agar</li>
-                        <li>Streak unknown perpendicular to (but not touching) S. aureus streak</li>
-                        <li>Incubate 24 hours at 37°C</li>
-                    </ul>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Arrowhead-shaped zone of enhanced hemolysis = POSITIVE = Group B</strong></li>
-                        <li>No enhanced hemolysis = Negative</li>
-                    </ul>
-                    <div class="highlight-box">
-                        Named for Christie, Atkins, and Munch-Peterson who developed the test.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                        </svg>
-                        Bile Esculin (BE) Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Identify Group D streptococci (enterococci and S. bovis)</p>
-                    <p><strong>Principle:</strong> Group D organisms can:</p>
-                    <ol>
-                        <li>Grow in the presence of bile (40% bile)</li>
-                        <li>Hydrolyze esculin to esculetin + glucose</li>
-                        <li>Esculetin reacts with ferric ions → black color</li>
-                    </ol>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Blackening of more than half the slant within 24-48 hours = POSITIVE = Group D</strong></li>
-                        <li>No blackening or less than half = Negative</li>
-                    </ul>
-                    <div class="highlight-box">
-                        <strong>Best test for Group D identification!</strong> Both enterococci and non-enterococcal Group D are positive.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"/>
-                        </svg>
-                        6.5% NaCl (Salt Tolerance) Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Differentiate enterococci from non-enterococcal Group D streptococci</p>
-                    <p><strong>Principle:</strong> Enterococci can tolerate and grow in high salt concentrations</p>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Growth (turbidity) in 6.5% NaCl broth = Enterococcus</strong> (E. faecalis, E. faecium)</li>
-                        <li>No growth = Non-enterococcal Group D (S. bovis)</li>
-                    </ul>
-                    <p><strong>Timing:</strong> Check at 24, 48, and 72 hours. Color change purple → yellow may also indicate growth.</p>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
-                        </svg>
-                        Optochin Susceptibility Test
-                    </h3>
-                    <p><strong>Purpose:</strong> Differentiate S. pneumoniae from other alpha-hemolytic streptococci</p>
-                    <p><strong>Principle:</strong> S. pneumoniae is uniquely susceptible to optochin (ethylhydrocupreine)</p>
-                    <p><strong>Interpretation:</strong></p>
-                    <ul>
-                        <li><strong>Zone ≥14mm (6mm disk) or ≥16mm (10mm disk) = S. pneumoniae</strong></li>
-                        <li>Zone &lt;14mm or no zone = Viridans streptococci (resistant)</li>
-                    </ul>
-                    <div class="highlight-box">
-                        Useful for distinguishing pneumococci from viridans streptococci - both are alpha-hemolytic!
-                    </div>
-                </div>
-            </div>
-
-            <div class="concept-card mt-4">
-                <h3>Quick Reference: Test Result Summary</h3>
-                <div style="overflow-x: auto;">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Species</th>
-                                <th>Lancefield Group</th>
-                                <th>Hemolysis</th>
-                                <th>Bacitracin</th>
-                                <th>CAMP</th>
-                                <th>Bile Esculin</th>
-                                <th>6.5% NaCl</th>
-                                <th>Optochin</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><em>S. pyogenes</em></td>
-                                <td>A</td>
-                                <td>β</td>
-                                <td><strong>S</strong></td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td><em>S. agalactiae</em></td>
-                                <td>B</td>
-                                <td>β</td>
-                                <td>R</td>
-                                <td><strong>+</strong></td>
-                                <td>-</td>
-                                <td>±</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td><em>S. pneumoniae</em></td>
-                                <td>none</td>
-                                <td>α</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td><strong>S</strong></td>
-                            </tr>
-                            <tr>
-                                <td><em>S. dysgalactiae</em></td>
-                                <td>C</td>
-                                <td>β</td>
-                                <td>R</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td><em>E. faecalis</em></td>
-                                <td>D</td>
-                                <td>γ or α</td>
-                                <td>R</td>
-                                <td>-</td>
-                                <td><strong>+</strong></td>
-                                <td><strong>+</strong></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td><em>E. faecium</em></td>
-                                <td>D</td>
-                                <td>γ or α</td>
-                                <td>R</td>
-                                <td>-</td>
-                                <td><strong>+</strong></td>
-                                <td><strong>+</strong></td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td><em>S. bovis</em></td>
-                                <td>D</td>
-                                <td>γ or α</td>
-                                <td>R</td>
-                                <td>-</td>
-                                <td><strong>+</strong></td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Viridans group</td>
-                                <td>none</td>
-                                <td>α or γ</td>
-                                <td>R</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>R</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p class="mt-2"><strong>Key:</strong> S = Sensitive, R = Resistant, + = Positive, - = Negative, ± = Variable</p>
-            </div>
-        </div>
-
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure Overview</h2>
-
-            <div class="concept-card">
-                <h3>First Period: Making a Streak-Stab Agar Plate</h3>
-                <p><strong>Objective:</strong> Isolate hemolytic bacteria from throat or unknown mixture</p>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Obtain throat swab</strong> - Swab partner's pharynx (back of throat), avoiding cheeks and tongue. Look for white patches in tonsillar area.</li>
-                    <li><strong>Roll swab on plate</strong> - Cover approximately 1/5 of the blood agar surface</li>
-                    <li><strong>Streak for isolation</strong> - Use wire loop to streak out three areas, thinning organisms</li>
-                    <li><strong>Stab the agar</strong> - Make perpendicular stabs in the unstreaked area for best hemolysis reading</li>
-                    <li><strong>Repeat for unknown mixture</strong> - Use same technique on second plate</li>
-                    <li><strong>Incubate</strong> - Place in candle jar at 37°C for 24 hours (NOT longer than 24 hours!)</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Second Period: Analysis and Subculturing</h3>
-                <p><strong>Objective:</strong> Determine hemolysis type and select colonies for further testing</p>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Examine hemolysis in stab areas</strong> - Use dissecting microscope or 60x magnification</li>
-                    <li><strong>Identify hemolysis patterns:</strong>
-                        <ul>
-                            <li>Beta (clear zone, no RBCs visible)</li>
-                            <li>Alpha (greenish discoloration, partial clearing)</li>
-                            <li>Gamma (no change)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Select well-isolated colonies</strong> - Choose based on hemolysis type</li>
-                    <li><strong>Subculture to TSB</strong> - Inoculate trypticase soy broth tubes (label ALPHA or BETA)</li>
-                    <li><strong>Record observations</strong> in Laboratory Report 54</li>
-                    <li><strong>Incubate tubes</strong> at 37°C for 24 hours</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Third Period: Inoculations for Physiological Tests</h3>
-                <p><strong>Objective:</strong> Perform presumptive identification tests</p>
-
-                <h4 class="mt-3">For Beta-Hemolytic Isolates:</h4>
-                <ol class="pathogenesis-steps">
-                    <li>Make Gram stain to confirm purity</li>
-                    <li><strong>Blood agar plate</strong> - Streak each beta isolate with bacitracin and SXT disks</li>
-                    <li>Streak S. aureus perpendicular (for CAMP test)</li>
-                    <li>Incubate blood plates in candle jar at 37°C for 24 hours</li>
-                </ol>
-
-                <h4 class="mt-3">For Alpha-Hemolytic Isolates:</h4>
-                <ol class="pathogenesis-steps">
-                    <li>Make Gram stain to confirm purity</li>
-                    <li><strong>Blood agar plate</strong> - Streak with optochin disk in center</li>
-                    <li><strong>Bile esculin slant</strong> - Streak surface</li>
-                    <li><strong>6.5% NaCl broth</strong> - Inoculate one tube per isolate</li>
-                    <li>Incubate:
-                        <ul>
-                            <li>Blood agar plates: 24 hours in candle jar</li>
-                            <li>6.5% NaCl broths: 24, 48, and 72 hours</li>
-                            <li>Bile esculin slants: 48 hours</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Fourth Period: Evaluation of Physiological Tests</h3>
-                <p><strong>Objective:</strong> Read all tests and make presumptive identification</p>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Read CAMP test</strong> - Look for arrowhead hemolysis at junction with S. aureus streak</li>
-                    <li><strong>Read bacitracin test</strong> - Any zone of inhibition = Sensitive (presumptive Group A)</li>
-                    <li><strong>Read SXT test</strong> - Zone = Sensitive; No zone = Resistant</li>
-                    <li><strong>Read bile esculin</strong> - More than half blackened = Positive (Group D)</li>
-                    <li><strong>Read 6.5% NaCl</strong> - Turbidity or color change = Growth = Enterococcus</li>
-                    <li><strong>Read optochin</strong> - Zone ≥14mm = S. pneumoniae; Resistant = viridans</li>
-                    <li><strong>Complete Laboratory Report 54</strong> with all identifications</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Measuring Zone Diameters</h3>
-                <p>For optochin and other disk tests, accurate measurement is critical:</p>
-                <ul>
-                    <li><strong>6mm disks:</strong> Zone must be at least 14mm diameter to be positive</li>
-                    <li><strong>10mm disks:</strong> Zone must be at least 16mm diameter to be positive</li>
-                    <li>Measure across the center of the disk, including the disk</li>
-                    <li>Hold plate up to light for accurate reading</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Always confirm purity</strong> - Gram stain before physiological tests</li>
-                    <li><strong>Anaerobic hemolysis</strong> - Best read in stab areas, not surface</li>
-                    <li><strong>Candle jars</strong> - Provide reduced O₂ for better hemolysis development</li>
-                    <li><strong>Temperature</strong> - Always 37°C (body temperature)</li>
-                    <li><strong>Time</strong> - Don't over-incubate blood agar (24 hrs max for hemolysis reading)</li>
-                    <li><strong>Multiple tests</strong> - Use combination of tests for presumptive identification</li>
-                    <li><strong>Confirmation</strong> - Commercial kits or serological tests confirm identity</li>
-                </ul>
-            </div>
+            <p class="mt-2"><strong>Key:</strong> S = Sensitive, R = Resistant, + = Positive, - = Negative, BE = Bile Esculin</p>
         </div>
     </main>
 
@@ -760,7 +311,7 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Bio 15 Microbiology Study Guide</h3>
-                <p>Exercise 54: Streptococci and Enterococci</p>
+                <p>Exercise 54: Streptococci & Enterococci</p>
             </div>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/bryankhamly/" target="_blank" rel="noopener noreferrer" class="footer-link">

@@ -49,372 +49,97 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 43: Bacterial Counts of Foods</h1>
-            <p>Standard Plate Count Method for Food Safety</p>
+            <p>Standard Plate Count - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="bacteria">Bacteria in Foods</button>
-            <button class="tab-btn" data-tab="pathogens">Foodborne Pathogens</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Understand the role that microorganisms have in food production and in food spoilage</li>
-                        <li>Perform a standard plate count on a food sample to determine the number of bacteria in the sample</li>
-                        <li>Interpret bacterial counts in the context of food safety</li>
-                        <li>Explain why high bacterial counts can indicate potential problems</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>CDC estimates <strong>48 million people</strong> become sick from foodborne illnesses per year in the US</li>
-                        <li>128,000 are hospitalized and <strong>3,000 die</strong> from foodborne illnesses annually</li>
-                        <li>High bacterial counts can indicate spoilage or contamination</li>
-                        <li>Coliform counts indicate fecal contamination and disease potential</li>
-                        <li>Food safety testing protects public health</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Key Concept: Bacteria in Food ≠ Spoiled Food</h3>
-                <p>The presence of microorganisms in food does <strong>not necessarily</strong> indicate that the food is spoiled or that it has the potential to cause disease.</p>
-                <ul>
-                    <li>Some foods <strong>naturally have high counts</strong> due to microbial fermentation (yogurt, sauerkraut, summer sausage)</li>
-                    <li>Postproduction treatments (pasteurization, smoking) significantly reduce bacteria numbers</li>
-                    <li>Foods naturally carry bacteria from their environment (soil bacteria on vegetables)</li>
-                    <li>Not all bacteria are pathogenic - many are harmless</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>However:</strong> Although high bacterial counts don't always mean spoilage, they <em>can</em> suggest the potential for rapid spoilage. High counts are important indicators of potential problems.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Important Statistics</h3>
+            <ul>
+                <li>CDC estimates <strong>48 million</strong> people get sick from foodborne illness/year in US</li>
+                <li><strong>128,000</strong> hospitalized; <strong>3,000 die</strong> annually</li>
+            </ul>
         </div>
 
-        <!-- Bacteria in Foods Tab -->
-        <div id="bacteria" class="tab-content">
-            <h2 class="section-title">Microorganisms in Food Production</h2>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Beneficial Bacteria in Foods
-                    </h3>
-                    <p>Some foods are <strong>produced using</strong> microorganisms:</p>
-                    <ul>
-                        <li><strong>Yogurt</strong> - Fermented by <em>Lactobacillus</em> and <em>Streptococcus</em></li>
-                        <li><strong>Sauerkraut</strong> - Fermented cabbage</li>
-                        <li><strong>Summer sausage</strong> - Fermented meat product</li>
-                        <li><strong>Cheese</strong> - Various bacterial and fungal cultures</li>
-                        <li><strong>Sourdough bread</strong> - Wild yeast and bacteria</li>
-                    </ul>
-                    <p class="mt-2">These foods naturally have <strong>high bacterial counts</strong> due to the fermentation process, but this is expected and safe.</p>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Natural Bacterial Associations
-                    </h3>
-                    <p>Many foods carry bacteria from their natural environment:</p>
-                    <ul>
-                        <li><strong>Green beans, potatoes, beets</strong> - Soil bacteria from harvesting</li>
-                        <li><strong>Grapes</strong> - Yeasts give chalky appearance</li>
-                        <li><strong>Other fruits</strong> - Yeasts naturally present on skin</li>
-                        <li><strong>Frozen foods</strong> - Bacteria remain after washing and can survive freezing</li>
-                    </ul>
-                    <p class="mt-2">These bacteria may not be harmful or pathogenic - they're simply part of the food's natural microbiota.</p>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Milk: A Special Case</h3>
-                <p>Milk in the udders of healthy cows is <strong>sterile</strong>. However, bacteria are introduced during milking and processing:</p>
-                <ul>
-                    <li>Bacteria like <em>Streptococcus</em> and <em>Lactobacillus</em> are associated with the animal's skin</li>
-                    <li>They are introduced during milking and processing</li>
-                    <li><strong>Pasteurization</strong> kills many bacteria introduced during processing, including pathogens</li>
-                    <li>However, pasteurization does NOT kill all bacteria - some survive</li>
-                    <li>Surviving bacteria can eventually cause spoilage and souring of milk</li>
-                </ul>
-            </div>
-
-            <div class="concept-card">
-                <h3>Coliform Bacteria as Indicators</h3>
-                <p>One method to determine if food is contaminated with fecal material (and therefore has potential to spread disease) is to perform <strong>coliform counts</strong>.</p>
-                <div class="highlight-box">
-                    <strong>What are Coliforms?</strong>
-                    <ul class="mt-2">
-                        <li>Bacteria such as <em>E. coli</em> that normally occur in the intestines of humans and warm-blooded animals</li>
-                        <li>Their presence in food or water indicates <strong>fecal contamination</strong></li>
-                        <li>High potential for spread of serious diseases: typhoid fever, bacillary dysentery, cholera, intestinal viral diseases</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Key Concept: Bacteria ≠ Spoiled Food</h3>
+            <ul>
+                <li>Presence of bacteria does NOT always mean food is spoiled or dangerous</li>
+                <li>Some foods <strong>naturally have high counts</strong> due to fermentation (yogurt, sauerkraut, cheese)</li>
+                <li>High counts CAN indicate <strong>potential for rapid spoilage</strong></li>
+            </ul>
         </div>
 
-        <!-- Foodborne Pathogens Tab -->
-        <div id="pathogens" class="tab-content">
-            <h2 class="section-title">Common Foodborne Pathogens</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                Foodborne illnesses usually result because pathogenic bacteria or their toxins are introduced into food products during processing, handling, or preparation.
-            </p>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Staphylococcus aureus
-                    </h3>
-                    <p><strong>Transmission:</strong> Food handlers can transmit pathogens associated with the human body</p>
-                    <p><strong>Cause:</strong> Unsanitary practices - failure to wash hands before preparing or handling food</p>
-                    <p><strong>Result:</strong> Staphylococcal food poisoning from enterotoxins</p>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Salmonella
-                    </h3>
-                    <p><strong>Transmission:</strong> Intestinal bacteria from food handlers or contaminated ingredients</p>
-                    <p><strong>Associated foods:</strong> Poultry, eggs, meat products</p>
-                    <p><strong>Result:</strong> Salmonellosis - gastroenteritis with diarrhea, fever, cramps</p>
-                </div>
+        <div class="concept-card">
+            <h3>Coliform Bacteria</h3>
+            <div class="highlight-box">
+                <strong>Coliform counts indicate FECAL CONTAMINATION</strong>
             </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Clostridium botulinum
-                    </h3>
-                    <p><strong>Transmission:</strong> Endospores in soil contaminate vegetables; grow in improperly canned foods</p>
-                    <p><strong>Cause:</strong> Improper home-canning that doesn't kill endospores</p>
-                    <p><strong>Result:</strong> Botulism - potentially fatal paralytic disease from neurotoxin</p>
-                    <div class="highlight-box mt-2">
-                        <strong>Key point:</strong> <em>C. botulinum</em> endospores occur in soil. They can contaminate prepared vegetables and grow in anaerobic canned foods if not properly processed.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Campylobacter
-                    </h3>
-                    <p><strong>Transmission:</strong> Associated with poultry and eggs</p>
-                    <p><strong>Cause:</strong> Undercooked poultry or cross-contamination</p>
-                    <p><strong>Result:</strong> Campylobacteriosis - most common cause of bacterial diarrhea</p>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Escherichia coli O157:H7</h3>
-                <p><em>E. coli</em> O157:H7 is a particularly dangerous strain found in the intestines of cattle:</p>
-                <ul>
-                    <li>Fecal material from animal intestines can contaminate meat during butchering</li>
-                    <li>The pathogen is incorporated into hamburger during grinding and processing</li>
-                    <li><strong>Serious illness</strong> results from eating improperly cooked hamburger</li>
-                    <li>Cooking temperatures must be sufficient to kill the organism</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Also transmitted via:</strong>
-                    <ul>
-                        <li>Fecal material from cattle contaminating fruits and vegetables (apples, lettuce, spinach)</li>
-                        <li>Contaminated water used for irrigation</li>
-                        <li>Cross-contamination during food preparation</li>
-                    </ul>
-                </div>
-            </div>
+            <ul class="mt-2">
+                <li><em>E. coli</em> and related bacteria from intestines</li>
+                <li>High potential for disease: typhoid, dysentery, cholera</li>
+            </ul>
         </div>
 
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure</h2>
+        <div class="concept-card">
+            <h3>Common Foodborne Pathogens</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Pathogen</th>
+                        <th>Source/Cause</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Staphylococcus aureus</em></td>
+                        <td>Food handlers (unwashed hands)</td>
+                    </tr>
+                    <tr>
+                        <td><em>Salmonella</em></td>
+                        <td>Poultry, eggs, meat</td>
+                    </tr>
+                    <tr>
+                        <td><em>Clostridium botulinum</em></td>
+                        <td>Improperly canned foods (endospores)</td>
+                    </tr>
+                    <tr>
+                        <td><em>E. coli</em> O157:H7</td>
+                        <td>Undercooked hamburger, contaminated produce</td>
+                    </tr>
+                    <tr>
+                        <td><em>Campylobacter</em></td>
+                        <td>Undercooked poultry</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="concept-card">
-                <h3>Materials Required</h3>
-                <p><strong>Per student:</strong></p>
-                <ul>
-                    <li>3 nutrient agar plates</li>
-                    <li>One 99 ml sterile water blank</li>
-                    <li>Two 1.0 ml dilution pipettes</li>
-                    <li>Sterile cell spreaders</li>
-                </ul>
-                <p class="mt-2"><strong>Per class:</strong></p>
-                <ul>
-                    <li>Food blender</li>
-                    <li>Sterile blender jars (one for each type of food)</li>
-                    <li>Sterile weighing paper</li>
-                    <li>180 ml sterile water blanks (one for each type of food)</li>
-                    <li>Samples of ground meat, dried fruit, thawed frozen vegetables, or prewashed lettuce</li>
-                </ul>
-            </div>
+        <div class="concept-card">
+            <h3>Standard Plate Count Method</h3>
+            <ul>
+                <li><strong>Serial dilutions</strong> create countable colony numbers</li>
+                <li><strong>Ideal range:</strong> 30-300 colonies per plate</li>
+                <li><strong>Formula:</strong> CFU/gram = (colonies counted) × (dilution factor)</li>
+            </ul>
+            <p class="mt-2"><strong>Example:</strong> 150 colonies on 1:1000 dilution plate = 150 × 1000 = <strong>150,000 CFU/gram</strong></p>
+        </div>
 
-            <div class="concept-card">
-                <h3>Serial Dilution Process</h3>
-                <p>To count bacteria in food, we must create serial dilutions to get countable numbers of colonies:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Step</th>
-                            <th>Dilution</th>
-                            <th>Calculation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Initial blend</td>
-                            <td>1:10</td>
-                            <td>20g food + 180ml water</td>
-                        </tr>
-                        <tr>
-                            <td>Plate I</td>
-                            <td>1:100</td>
-                            <td>1ml from blend + spread on plate</td>
-                        </tr>
-                        <tr>
-                            <td>Plate II</td>
-                            <td>1:1,000</td>
-                            <td>0.1ml from blend to 99ml water blank, then 1ml to plate</td>
-                        </tr>
-                        <tr>
-                            <td>Plate III</td>
-                            <td>1:10,000</td>
-                            <td>0.1ml from 1:1000 dilution to plate</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Procedure Steps</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Prepare food suspension</strong>
-                        <ul>
-                            <li>Using aseptic technique, weigh out 20 grams of food on sterile weighing paper</li>
-                            <li>Add the food and 180 ml of sterile water to a sterile blender jar</li>
-                            <li>Blend the mixture for 5 minutes</li>
-                            <li>This suspension provides a <strong>1:10 dilution</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Plate I (1:100 dilution)</strong>
-                        <ul>
-                            <li>With a sterile 1.0 ml pipette, dispense 0.1 ml from the blender to plate I</li>
-                            <li>Add 1.0 ml to the 99 ml water blank</li>
-                            <li>Use a sterile cell spreader to disperse the sample across the plate surface</li>
-                        </ul>
-                    </li>
-                    <li><strong>Prepare 1:1000 dilution</strong>
-                        <ul>
-                            <li>Shake the water blank 25 times in an arc for 7 seconds</li>
-                            <li>Shake with your elbow on the table (as done in Exercise 19)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Plate II (1:1000 dilution)</strong>
-                        <ul>
-                            <li>Using a fresh pipette, dispense 1.0 ml to plate II</li>
-                            <li>Also dispense 0.1 ml to plate III</li>
-                            <li>Use sterile cell spreaders to disperse samples across each plate surface</li>
-                        </ul>
-                    </li>
-                    <li><strong>Plate III (1:10,000 dilution)</strong>
-                        <ul>
-                            <li>The 0.1 ml from the 1:1000 dilution gives a 1:10,000 final dilution</li>
-                        </ul>
-                    </li>
-                    <li><strong>Incubate</strong>
-                        <ul>
-                            <li>Incubate all plates at 35-37°C for 24 hours</li>
-                        </ul>
-                    </li>
-                    <li><strong>Count and Calculate</strong>
-                        <ul>
-                            <li>Count colonies on the best plate (30-300 colonies ideal)</li>
-                            <li>Record results in Laboratory Report 43</li>
-                            <li>Calculate CFU/gram using dilution factor</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Calculating Bacterial Count</h3>
-                <p>To determine the number of bacteria per gram of food:</p>
-                <div class="highlight-box">
-                    <strong>Formula:</strong> CFU/gram = (Number of colonies) × (Dilution factor)
-                </div>
-                <p class="mt-2"><strong>Example:</strong></p>
-                <ul>
-                    <li>If you count 150 colonies on Plate II (1:1000 dilution)</li>
-                    <li>CFU/gram = 150 × 1000 = <strong>150,000 CFU/gram</strong></li>
-                </ul>
-                <p class="mt-2"><strong>Countable Range:</strong> Plates with 30-300 colonies are considered ideal for counting. Fewer colonies may not be representative; more colonies are difficult to count accurately.</p>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Aseptic technique</strong> is critical to prevent contamination</li>
-                    <li><strong>Serial dilutions</strong> are necessary to get countable colony numbers</li>
-                    <li><strong>30-300 colonies</strong> is the ideal countable range</li>
-                    <li>High bacterial counts <strong>may indicate</strong> spoilage potential but don't prove it</li>
-                    <li>Coliform counts specifically indicate <strong>fecal contamination</strong></li>
-                    <li>This procedure tests for <strong>total bacterial numbers</strong>, not specific species</li>
-                    <li>Selective media would be needed to isolate specific pathogens</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>Coliform counts</strong> = indicator of fecal contamination</li>
+                <li>Bacteria in food ≠ always dangerous (fermented foods are normal)</li>
+                <li>High counts <strong>may indicate</strong> spoilage potential</li>
+                <li><strong>30-300 colonies</strong> is the ideal countable range</li>
+                <li><em>C. botulinum</em> endospores survive improper home canning</li>
+                <li><em>E. coli</em> O157:H7 from undercooked beef is serious</li>
+                <li><strong>Pasteurization</strong> kills many bacteria but NOT all (milk still spoils)</li>
+            </ul>
         </div>
     </main>
 

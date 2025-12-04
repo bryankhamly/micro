@@ -49,336 +49,99 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 13: Capsular Staining</h1>
-            <p>Anthony Method for Visualizing Bacterial Capsules</p>
+            <p>Anthony Method - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="capsules">Capsules & Slime Layers</button>
-            <button class="tab-btn" data-tab="method">Anthony Method</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Prepare and stain a smear of an encapsulated bacterium using the Anthony capsule staining method</li>
-                        <li>Visualize the capsule and differentiate it from the cell body</li>
-                        <li>Understand the importance of capsules in bacterial virulence</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>Capsules are <strong>protective structures</strong> for disease-causing organisms</li>
-                        <li><em>Streptococcus pneumoniae</em> capsules prevent phagocytic white blood cells from engulfing and destroying the pathogen</li>
-                        <li>This enables the organism to invade the lungs and cause pneumonia</li>
-                        <li><em>Streptococcus mutans</em> produces a capsule that facilitates attachment to tooth surfaces, leading to dental plaque and caries</li>
-                        <li>Capsules are important virulence factors in many pathogens</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>What is a Capsule?</h3>
-                <p>Many bacterial cells are surrounded by an <strong>extracellular gel-like layer</strong> that occurs outside of the cell wall:</p>
-                <ul>
-                    <li>If the layer is <strong>distinct and gelatinous</strong>, it is referred to as a <strong>capsule</strong></li>
-                    <li>If the layer is <strong>diffuse and irregular</strong>, it is called a <strong>slime layer</strong></li>
-                    <li>The capsule or slime layer can vary in chemical composition</li>
-                    <li>If made of polysaccharides, it is known as a <strong>glycocalyx</strong> (literally means "sugar shell")</li>
-                    <li>However, the capsule in <em>Bacillus anthracis</em> is composed of a <strong>proteinaceous matrix</strong></li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Key Point:</strong> Evidence supports that probably all bacterial cells have some amount of slime layer, but in most cases the amount is not enough to be readily discerned.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>What is a Capsule?</h3>
+            <ul>
+                <li><strong>Capsule:</strong> Distinct, gelatinous layer outside the cell wall</li>
+                <li><strong>Slime layer:</strong> Diffuse, irregular layer (less organized)</li>
+                <li><strong>Glycocalyx:</strong> Term for polysaccharide capsules ("sugar shell")</li>
+                <li>Exception: <em>Bacillus anthracis</em> has a <strong>protein</strong> capsule, not polysaccharide</li>
+            </ul>
         </div>
 
-        <!-- Capsules & Slime Layers Tab -->
-        <div id="capsules" class="tab-content">
-            <h2 class="section-title">Capsules and Slime Layers</h2>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <circle cx="12" cy="12" r="6"/>
-                            <circle cx="12" cy="12" r="2"/>
-                        </svg>
-                        Capsule
-                    </h3>
-                    <ul>
-                        <li><strong>Distinct</strong> and <strong>gelatinous</strong> layer</li>
-                        <li>Well-defined boundary</li>
-                        <li>Tightly attached to cell wall</li>
-                        <li>Usually composed of polysaccharides (glycocalyx)</li>
-                        <li>Sometimes protein-based (e.g., <em>B. anthracis</em>)</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" stroke-dasharray="4,4"/>
-                            <circle cx="12" cy="12" r="4"/>
-                        </svg>
-                        Slime Layer
-                    </h3>
-                    <ul>
-                        <li><strong>Diffuse</strong> and <strong>irregular</strong> layer</li>
-                        <li>Loose, ill-defined boundary</li>
-                        <li>Less tightly attached</li>
-                        <li>May be easily washed off</li>
-                        <li>Present in most bacteria to some degree</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Functions of Capsules</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Function</th>
-                            <th>Description</th>
-                            <th>Example</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Anti-phagocytic</strong></td>
-                            <td>Prevents engulfment by white blood cells</td>
-                            <td><em>Streptococcus pneumoniae</em></td>
-                        </tr>
-                        <tr>
-                            <td><strong>Attachment</strong></td>
-                            <td>Helps bacteria adhere to surfaces</td>
-                            <td><em>Streptococcus mutans</em> on teeth</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Protection</strong></td>
-                            <td>Shields from desiccation and chemicals</td>
-                            <td>Various environmental bacteria</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Biofilm formation</strong></td>
-                            <td>Helps create bacterial communities</td>
-                            <td>Dental plaque, catheter biofilms</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Clinical Significance</h3>
-                <div class="overview-section">
-                    <div class="overview-card">
-                        <h4><em>Streptococcus pneumoniae</em></h4>
-                        <ul>
-                            <li>Capsule is the major virulence factor</li>
-                            <li>Prevents phagocytosis by neutrophils and macrophages</li>
-                            <li>Allows bacteria to evade immune system</li>
-                            <li>Causes pneumonia, meningitis, otitis media</li>
-                            <li>Pneumococcal vaccines target capsular polysaccharides</li>
-                        </ul>
-                    </div>
-                    <div class="overview-card">
-                        <h4><em>Streptococcus mutans</em></h4>
-                        <ul>
-                            <li>Produces capsule from dietary sucrose</li>
-                            <li>Capsule facilitates attachment to tooth enamel</li>
-                            <li>Forms dental plaque (biofilm)</li>
-                            <li>If plaque not removed, leads to dental caries (cavities)</li>
-                            <li>This is why limiting sugar intake helps prevent cavities</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Functions of Capsules (Virulence Factors)</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Function</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Anti-phagocytic</strong> - Prevents engulfment by WBCs</td>
+                        <td><em>Streptococcus pneumoniae</em> (pneumonia)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Attachment</strong> - Helps adhere to surfaces</td>
+                        <td><em>Streptococcus mutans</em> (dental caries)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Biofilm formation</strong></td>
+                        <td>Dental plaque</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Anthony Method Tab -->
-        <div id="method" class="tab-content">
-            <h2 class="section-title">The Anthony Capsule Staining Method</h2>
-
-            <div class="concept-card">
-                <h3>Why Special Staining is Needed</h3>
-                <p>Staining of the bacterial capsule <strong>cannot be accomplished by ordinary staining procedures</strong>:</p>
-                <ul>
-                    <li>If smears are <strong>heat-fixed</strong> prior to staining, the capsule <strong>shrinks or is destroyed</strong></li>
-                    <li>Therefore, the capsule cannot be seen in heat-fixed stains</li>
-                    <li>The Anthony method uses smears prepared from cultures grown in <strong>skim milk broth</strong></li>
-                    <li>These smears are <strong>air-dried but NOT heat-fixed</strong></li>
-                </ul>
+        <div class="concept-card">
+            <h3>Anthony Method - Critical Points</h3>
+            <div class="highlight-box">
+                <strong>DO NOT HEAT-FIX!</strong> Heat destroys or shrinks the capsule.
             </div>
-
-            <div class="concept-card">
-                <h3>How the Anthony Method Works</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Crystal violet staining:</strong> The smear is stained with 1% crystal violet for 2 minutes</li>
-                    <li><strong>Dual staining:</strong> Crystal violet stains not only the cells, but also binds to the milk proteins from the culture medium</li>
-                    <li><strong>Background staining:</strong> This causes the background of the slide to stain purple</li>
-                    <li><strong>Copper sulfate wash:</strong> The stain is washed off with 20% copper sulfate solution</li>
-                    <li><strong>Decolorizing the capsule:</strong> Copper sulfate acts as a decolorizer, removing crystal violet from the capsules</li>
-                    <li><strong>Counterstaining:</strong> Copper sulfate also serves as a counterstain, staining the capsules a very light blue</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Expected Results</h3>
-                <p>Under oil immersion, a properly stained capsule preparation will show:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Structure</th>
-                            <th>Color</th>
-                            <th>Appearance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Background</strong></td>
-                            <td>Purple (crystal violet stain)</td>
-                            <td>Dark, uniform color</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Cell body</strong></td>
-                            <td>Dark purple</td>
-                            <td>Dense, well-defined</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Capsule</strong></td>
-                            <td>Clear or light blue halo</td>
-                            <td>Unstained zone around cell</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="highlight-box mt-2">
-                    <strong>Key observation:</strong> The capsule appears as a <strong>clear or light blue halo</strong> around the dark purple cells, contrasted against the purple background.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Important Considerations</h3>
-                <ul>
-                    <li><strong>DO NOT heat-fix</strong> - This will destroy or shrink the capsule</li>
-                    <li><strong>Air-dry only</strong> - Allow smear to dry naturally</li>
-                    <li><strong>Use skim milk cultures</strong> - Milk proteins help create background contrast</li>
-                    <li><strong>Do not wash copper sulfate into sink</strong> - Use proper waste containers</li>
-                    <li><strong>Dispose of slides in disinfectant</strong> - Do not hand wash</li>
-                </ul>
-            </div>
+            <ul class="mt-2">
+                <li><strong>Air-dry only</strong> - No heat fixation</li>
+                <li><strong>Primary stain:</strong> Crystal violet (2 min)</li>
+                <li><strong>Wash with:</strong> 20% copper sulfate (NOT water)</li>
+                <li>Copper sulfate acts as both <strong>decolorizer</strong> and <strong>counterstain</strong></li>
+            </ul>
         </div>
 
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure</h2>
+        <div class="concept-card">
+            <h3>Expected Results</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Structure</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Background</strong></td>
+                        <td>Purple (crystal violet + milk proteins)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cell body</strong></td>
+                        <td>Dark purple</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Capsule</strong></td>
+                        <td>Clear or light blue halo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="concept-card">
-                <h3>Materials Required</h3>
-                <ul>
-                    <li>36-48 hour skim milk culture of <em>Klebsiella pneumoniae</em></li>
-                    <li>1% (wt/vol) crystal violet</li>
-                    <li>20% (wt/vol) aqueous copper sulfate</li>
-                    <li>Waste containers for the copper sulfate</li>
-                    <li>Container with disinfectant solution for used slides</li>
-                    <li>Bibulous paper</li>
-                    <li>Microscope with oil immersion lens</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Organism:</strong> <em>Klebsiella pneumoniae</em> is an encapsulated Gram-negative rod that can cause pneumonia and other infections. It produces a prominent capsule that is easily visualized with this staining method.
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Procedure Steps (Anthony Method)</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Prepare thin smear</strong>
-                        <ul>
-                            <li>Use two loopfuls of the organism to prepare a thin smear on a microscope slide</li>
-                        </ul>
-                    </li>
-                    <li><strong>Air-dry only - DO NOT HEAT-FIX</strong>
-                        <ul>
-                            <li>Allow the smear to air-dry only</li>
-                            <li><strong>Do not heat-fix</strong> as this will cause the capsule to shrink or be destroyed</li>
-                        </ul>
-                    </li>
-                    <li><strong>Apply crystal violet</strong>
-                        <ul>
-                            <li>Apply 1% crystal violet to the smear</li>
-                            <li>Allow it to remain on the slide for <strong>2 minutes</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Wash with copper sulfate</strong>
-                        <ul>
-                            <li>With the slide over the proper waste container, gently wash off the crystal violet with <strong>20% copper sulfate</strong></li>
-                            <li><strong>Caution:</strong> Do not wash the copper sulfate and stain directly into the sink</li>
-                        </ul>
-                    </li>
-                    <li><strong>Blot or air-dry</strong>
-                        <ul>
-                            <li>Gently blot the slide dry with bibulous paper</li>
-                            <li>Or allow it to fully air-dry</li>
-                        </ul>
-                    </li>
-                    <li><strong>Observe under oil immersion</strong>
-                        <ul>
-                            <li>Observe with the oil immersion lens</li>
-                            <li>Compare your stain with Figure 13.2 in the lab manual</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>What You Should See</h3>
-                <p>A properly prepared Anthony capsule stain of <em>Klebsiella pneumoniae</em> will show:</p>
-                <ul>
-                    <li><strong>Background:</strong> Purple (from crystal violet binding to milk proteins)</li>
-                    <li><strong>Cell body:</strong> Dark purple (crystal violet stained)</li>
-                    <li><strong>Capsule:</strong> Clear or light blue halo around cells (unstained by crystal violet, lightly counterstained by copper sulfate)</li>
-                </ul>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>NEVER heat-fix</strong> capsule stain preparations - this destroys the capsule</li>
-                    <li><strong>Air-dry only</strong> before staining</li>
-                    <li>Capsules appear as <strong>clear or light blue halos</strong> around dark purple cells</li>
-                    <li>The purple background is created by crystal violet binding to milk proteins</li>
-                    <li><strong>Copper sulfate</strong> acts as both decolorizer and counterstain</li>
-                    <li>Dispose of copper sulfate in proper waste containers, NOT the sink</li>
-                    <li>Place used slides in disinfectant container - do not hand wash</li>
-                    <li>Capsules are important <strong>virulence factors</strong> in many pathogens</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li>Capsules = major <strong>virulence factor</strong></li>
+                <li><em>S. pneumoniae</em> capsule prevents phagocytosis</li>
+                <li><em>S. mutans</em> capsule causes dental plaque/caries</li>
+                <li>Anthony method: <strong>NO heat-fix</strong>, use <strong>copper sulfate</strong> wash</li>
+                <li>Capsule appears as <strong>clear halo</strong> around dark purple cells</li>
+                <li>Organism used: <em>Klebsiella pneumoniae</em></li>
+            </ul>
         </div>
     </main>
 

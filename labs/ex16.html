@@ -49,385 +49,120 @@
             </a>
             <span class="lab-badge">LAB EXERCISE</span>
             <h1>Exercise 16: Acid-Fast Staining</h1>
-            <p>Kinyoun Method for Mycobacteria Detection</p>
+            <p>Kinyoun Method - Core Concepts</p>
         </div>
     </header>
 
-    <!-- Tabs Navigation -->
-    <div class="tabs-container">
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="overview">Overview</button>
-            <button class="tab-btn" data-tab="mycolic">Mycolic Acid</button>
-            <button class="tab-btn" data-tab="methods">Staining Methods</button>
-            <button class="tab-btn" data-tab="procedure">Lab Procedure</button>
-        </div>
-    </div>
-
     <!-- Main Content -->
     <main class="container">
-        <!-- Overview Tab -->
-        <div id="overview" class="tab-content active">
-            <h2 class="section-title">Learning Outcomes</h2>
+        <h2 class="section-title">Key Concepts for the Test</h2>
 
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        After This Exercise You Should Be Able To:
-                    </h3>
-                    <ul>
-                        <li>Prepare an acid-fast stain of bacterial cells</li>
-                        <li>Differentiate between acid-fast and non-acid-fast cells in a mixed stain</li>
-                        <li>Explain the basis for the stain and why the stain is important in clinical microbiology</li>
-                    </ul>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 16v-4M12 8h.01"/>
-                        </svg>
-                        Why It Matters
-                    </h3>
-                    <ul>
-                        <li>The acid-fast stain is an important diagnostic tool for identifying <em>Mycobacterium tuberculosis</em> (TB)</li>
-                        <li>Also used to identify <em>Mycobacterium leprae</em> (leprosy/Hansen's disease)</li>
-                        <li>Some <em>Nocardia</em> species are also acid-fast</li>
-                        <li>Critical for rapid presumptive diagnosis of tuberculosis</li>
-                        <li>Mycobacteria have unique cell wall properties that require special staining</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>What Makes Bacteria "Acid-Fast"?</h3>
-                <p>Bacteria such as <em>Mycobacterium</em> and some <em>Nocardia</em> have cell walls with high lipid content. One of the cell wall lipids is a waxy material called <strong>mycolic acid</strong>.</p>
-                <ul>
-                    <li>Mycolic acid is a complex lipid composed of fatty acids and fatty alcohols</li>
-                    <li>Hydrocarbon chains can be up to <strong>80 carbons in length</strong></li>
-                    <li>This waxy coating significantly affects staining properties</li>
-                    <li>Prevents bacteria from being stained by many routine stains</li>
-                    <li>Once stained, the dye is <strong>not removed</strong> by acid-alcohol decolorization</li>
-                </ul>
-                <div class="highlight-box mt-2">
-                    <strong>Key Point:</strong> The term "acid-fast" refers to the fact that once these bacteria take up the primary stain, they resist decolorization by acid-alcohol - they "hold fast" to the dye.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>What Makes Bacteria Acid-Fast?</h3>
+            <ul>
+                <li><strong>Mycolic acid</strong> - waxy lipid in cell wall (up to 80 carbons long)</li>
+                <li>Makes cell wall nearly <strong>impermeable</strong> to water-soluble dyes</li>
+                <li>Once stained, dye is <strong>NOT removed</strong> by acid-alcohol</li>
+                <li>"Acid-fast" = resists decolorization by acid-alcohol</li>
+            </ul>
         </div>
 
-        <!-- Mycolic Acid Tab -->
-        <div id="mycolic" class="tab-content">
-            <h2 class="section-title">Mycolic Acid and Cell Wall Structure</h2>
-
-            <div class="concept-card">
-                <h3>The Mycobacterial Cell Wall</h3>
-                <p>The unique cell wall of mycobacteria creates special challenges for staining:</p>
-                <ul>
-                    <li><strong>Mycolic acid</strong> forms a thick, waxy layer in the cell wall</li>
-                    <li>This layer is <strong>hydrophobic</strong> (water-repelling)</li>
-                    <li>Prevents penetration of water-soluble dyes</li>
-                    <li>Makes the cell wall almost impermeable to most stains</li>
-                    <li>Regular Gram staining does NOT work reliably on mycobacteria</li>
-                </ul>
-            </div>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Acid-Fast Organisms
-                    </h3>
-                    <p>Bacteria that are <strong>acid-fast positive</strong>:</p>
-                    <ul>
-                        <li><em>Mycobacterium tuberculosis</em> - causes tuberculosis</li>
-                        <li><em>Mycobacterium leprae</em> - causes leprosy (Hansen's disease)</li>
-                        <li><em>Mycobacterium smegmatis</em> - non-pathogenic, used in labs</li>
-                        <li>Some <em>Nocardia</em> species</li>
-                    </ul>
-                    <p class="mt-2"><strong>Appearance:</strong> Stain <strong>RED/PINK</strong> (retain primary stain)</p>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <line x1="15" y1="9" x2="9" y2="15"/>
-                            <line x1="9" y1="9" x2="15" y2="15"/>
-                        </svg>
-                        Non-Acid-Fast Organisms
-                    </h3>
-                    <p>Bacteria that are <strong>non-acid-fast</strong>:</p>
-                    <ul>
-                        <li><em>Staphylococcus</em> species</li>
-                        <li><em>Streptococcus</em> species</li>
-                        <li><em>Escherichia coli</em></li>
-                        <li>Most other bacteria</li>
-                    </ul>
-                    <p class="mt-2"><strong>Appearance:</strong> Stain <strong>BLUE</strong> (take up counterstain)</p>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>Clinical Significance</h3>
-                <p>The acid-fast stain is routinely used in microbiology labs for:</p>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Organism</th>
-                            <th>Disease</th>
-                            <th>Sample Type</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><em>M. tuberculosis</em></td>
-                            <td>Tuberculosis (TB)</td>
-                            <td>Sputum, bronchial washings</td>
-                        </tr>
-                        <tr>
-                            <td><em>M. leprae</em></td>
-                            <td>Leprosy (Hansen's disease)</td>
-                            <td>Skin biopsies, nasal scrapings</td>
-                        </tr>
-                        <tr>
-                            <td><em>M. avium-intracellulare</em></td>
-                            <td>Opportunistic infections (AIDS)</td>
-                            <td>Various tissues</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="concept-card">
+            <h3>Acid-Fast Organisms</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Organism</th>
+                        <th>Disease</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Mycobacterium tuberculosis</em></td>
+                        <td>Tuberculosis (TB)</td>
+                    </tr>
+                    <tr>
+                        <td><em>Mycobacterium leprae</em></td>
+                        <td>Leprosy (Hansen's disease)</td>
+                    </tr>
+                    <tr>
+                        <td>Some <em>Nocardia</em> species</td>
+                        <td>Various infections</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Staining Methods Tab -->
-        <div id="methods" class="tab-content">
-            <h2 class="section-title">Acid-Fast Staining Methods</h2>
-
-            <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 800px; margin-left: auto; margin-right: auto;">
-                To facilitate staining of acid-fast bacteria, special methods must be used to make the cells more permeable to stains. Two main methods are used.
-            </p>
-
-            <div class="overview-section">
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        Ziehl-Neelsen Method (Hot Staining)
-                    </h3>
-                    <p><strong>Principle:</strong> Uses heat to facilitate dye penetration</p>
-                    <ul>
-                        <li>Primary stain: <strong>Carbolfuchsin</strong> (contains phenol)</li>
-                        <li>Cells are heated for 5 minutes during staining</li>
-                        <li>Phenol and heat facilitate penetration of carbolfuchsin into the cell</li>
-                        <li>Heat acts as a <strong>mordant</strong> - helps dye bind to mycolic acid</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>Safety concern:</strong> Phenol can vaporize when heated, giving rise to noxious fumes that are toxic to eyes and mucous membranes.
-                    </div>
-                </div>
-
-                <div class="overview-card">
-                    <h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        Kinyoun Method (Cold Staining)
-                    </h3>
-                    <p><strong>Principle:</strong> Uses increased concentrations of reagents instead of heat</p>
-                    <ul>
-                        <li>Primary stain: <strong>Basic fuchsin</strong> (substituted for carbolfuchsin)</li>
-                        <li>Increased concentrations of basic fuchsin and phenol</li>
-                        <li>No heating required - safer procedure</li>
-                        <li>The increased concentrations allow penetration without heat</li>
-                    </ul>
-                    <div class="highlight-box mt-2">
-                        <strong>Advantage:</strong> This procedure is safer because phenol fumes are not generated during staining of the cells.
-                    </div>
-                </div>
-            </div>
-
-            <div class="concept-card">
-                <h3>The Staining Process</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Step</th>
-                            <th>Reagent</th>
-                            <th>Purpose</th>
-                            <th>Result</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1. Primary Stain</td>
-                            <td>Basic fuchsin (red)</td>
-                            <td>Stain all cells</td>
-                            <td>All cells RED</td>
-                        </tr>
-                        <tr>
-                            <td>2. Decolorizer</td>
-                            <td>Acid-alcohol</td>
-                            <td>Remove stain from non-acid-fast cells</td>
-                            <td>Acid-fast = RED; Non-acid-fast = colorless</td>
-                        </tr>
-                        <tr>
-                            <td>3. Counterstain</td>
-                            <td>Methylene blue</td>
-                            <td>Stain decolorized cells</td>
-                            <td>Acid-fast = RED; Non-acid-fast = BLUE</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="concept-card">
-                <h3>Why Acid-Fast Cells Retain the Stain</h3>
-                <p>In the acid-fast staining procedure:</p>
-                <ol class="pathogenesis-steps">
-                    <li>Acid-fast bacteria (like <em>Mycobacterium</em>) are NOT decolorized by acid-alcohol</li>
-                    <li>They are stained <strong>pink to red</strong> by the basic fuchsin</li>
-                    <li>Non-acid-fast bacteria (like <em>Staphylococcus</em>) ARE decolorized by acid-alcohol</li>
-                    <li>A secondary stain (methylene blue) must be applied to visualize them</li>
-                    <li>Non-acid-fast cells appear <strong>blue</strong> after staining is completed</li>
-                </ol>
-                <div class="highlight-box mt-2">
-                    <strong>Memory tip:</strong> Acid-fast organisms retain the RED stain and resist decolorization because of their waxy mycolic acid layer.
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Two Acid-Fast Staining Methods</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th>Heat?</th>
+                        <th>Safety</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Ziehl-Neelsen</strong> (hot)</td>
+                        <td>Yes - requires heat</td>
+                        <td>Phenol fumes - hazardous</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kinyoun</strong> (cold)</td>
+                        <td>No heat needed</td>
+                        <td>Safer - no toxic fumes</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- Lab Procedure Tab -->
-        <div id="procedure" class="tab-content">
-            <h2 class="section-title">Laboratory Procedure (Kinyoun Method)</h2>
+        <div class="concept-card">
+            <h3>Kinyoun Method Steps</h3>
+            <ol>
+                <li><strong>Primary stain:</strong> Basic fuchsin (5 min) - stains all cells RED</li>
+                <li><strong>Decolorizer:</strong> Acid-alcohol (~1 min) - removes stain from non-acid-fast cells</li>
+                <li><strong>Counterstain:</strong> Methylene blue (30 sec) - stains decolorized cells BLUE</li>
+            </ol>
+        </div>
 
-            <div class="concept-card">
-                <h3>Materials Required</h3>
-                <ul>
-                    <li>Slant culture of <em>Mycobacterium smegmatis</em> (48-hour culture)</li>
-                    <li>Broth culture of <em>Staphylococcus epidermidis</em></li>
-                    <li>Acid-fast staining kit:
-                        <ul>
-                            <li>Basic fuchsin (primary stain)</li>
-                            <li>Acid-alcohol (decolorizer)</li>
-                            <li>Methylene blue (counterstain)</li>
-                        </ul>
-                    </li>
-                    <li>Microscope slides</li>
-                    <li>Inoculating needle and loop</li>
-                </ul>
-                <div class="highlight-box">
-                    <strong>Note:</strong> <em>M. smegmatis</em> is a non-pathogenic, acid-fast rod that occurs in soil and on external genitalia of humans. <em>S. epidermidis</em> is a non-acid-fast coccus that is part of normal skin microbiota (but can cause hospital-acquired infections).
-                </div>
-            </div>
+        <div class="concept-card">
+            <h3>Expected Results</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Cell Type</th>
+                        <th>Color</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Acid-fast POSITIVE</strong></td>
+                        <td>RED/PINK</td>
+                        <td><em>Mycobacterium smegmatis</em> (rods)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Non-acid-fast</strong></td>
+                        <td>BLUE</td>
+                        <td><em>Staphylococcus epidermidis</em> (cocci)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-            <div class="concept-card">
-                <h3>Smear Preparation</h3>
-                <ol class="pathogenesis-steps">
-                    <li>Prepare a mixed culture smear by placing <strong>two loopfuls of <em>S. epidermidis</em></strong> on a slide</li>
-                    <li>Transfer a small amount of <em>M. smegmatis</em> to the broth on the slide with an inoculating needle</li>
-                    <li>Since mycobacteria are waxy, they tend to clump together</li>
-                    <li>Break up the masses of organisms with the inoculating needle</li>
-                    <li>After air-drying the smear, <strong>heat-fix</strong> it</li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Kinyoun Staining Procedure</h3>
-                <ol class="pathogenesis-steps">
-                    <li><strong>Cover with basic fuchsin</strong>
-                        <ul>
-                            <li>Cover the heat-fixed smear with basic fuchsin</li>
-                            <li>Stain for <strong>5 minutes</strong></li>
-                            <li>(Note: If using Ziehl-Neelsen method, continuously add carbolfuchsin with the slide over steam)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Wash</strong>
-                        <ul>
-                            <li>Wash with water and shake off any excess water</li>
-                        </ul>
-                    </li>
-                    <li><strong>Decolorize with acid-alcohol</strong>
-                        <ul>
-                            <li>Decolorize for approximately <strong>1 minute</strong></li>
-                            <li>Check by tilting the slide and adding more acid-alcohol</li>
-                            <li>Continue until no more stain runs off the smear</li>
-                        </ul>
-                    </li>
-                    <li><strong>Stop decolorization</strong>
-                        <ul>
-                            <li>Stop decolorization by rinsing <strong>briefly with water</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Counterstain with methylene blue</strong>
-                        <ul>
-                            <li>Counterstain for <strong>30 seconds</strong></li>
-                        </ul>
-                    </li>
-                    <li><strong>Rinse</strong>
-                        <ul>
-                            <li>Rinse briefly with water to remove excess methylene blue</li>
-                        </ul>
-                    </li>
-                    <li><strong>Blot dry and examine</strong>
-                        <ul>
-                            <li>Blot dry with bibulous paper</li>
-                            <li>Examine under oil immersion (100x objective)</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-
-            <div class="concept-card">
-                <h3>Expected Results</h3>
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Organism</th>
-                            <th>Acid-Fast Status</th>
-                            <th>Color</th>
-                            <th>Morphology</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><em>Mycobacterium smegmatis</em></td>
-                            <td><strong>Acid-fast POSITIVE</strong></td>
-                            <td>RED/PINK</td>
-                            <td>Rods (bacilli)</td>
-                        </tr>
-                        <tr>
-                            <td><em>Staphylococcus epidermidis</em></td>
-                            <td>Non-acid-fast</td>
-                            <td>BLUE</td>
-                            <td>Cocci in clusters</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="highlight-box mt-4">
-                <h4>Key Points to Remember</h4>
-                <ul>
-                    <li><strong>Acid-fast = RED</strong> (retains primary stain, resists decolorization)</li>
-                    <li><strong>Non-acid-fast = BLUE</strong> (decolorized, takes up counterstain)</li>
-                    <li><strong>Mycolic acid</strong> in the cell wall is responsible for acid-fast property</li>
-                    <li><strong>Kinyoun method</strong> is safer than Ziehl-Neelsen (no heating required)</li>
-                    <li>This stain is critical for diagnosing <strong>tuberculosis</strong> and <strong>leprosy</strong></li>
-                    <li>Heat-fixing is still required for smear preparation</li>
-                    <li>Examine under <strong>oil immersion</strong> to see individual cells clearly</li>
-                    <li>Compare your slide to Figure 16.1 in the lab manual</li>
-                </ul>
-            </div>
+        <div class="highlight-box mt-4">
+            <h4>Test-Taking Points</h4>
+            <ul>
+                <li><strong>Acid-fast = RED</strong> (retains primary stain)</li>
+                <li><strong>Non-acid-fast = BLUE</strong> (takes counterstain)</li>
+                <li><strong>Mycolic acid</strong> is responsible for the acid-fast property</li>
+                <li>Critical for diagnosing <strong>TB</strong> and <strong>leprosy</strong></li>
+                <li>Kinyoun method is <strong>safer</strong> than Ziehl-Neelsen (no heating)</li>
+                <li>Only <em>Mycobacterium</em> and some <em>Nocardia</em> are acid-fast</li>
+                <li>Regular Gram stain does NOT work reliably on mycobacteria</li>
+            </ul>
         </div>
     </main>
 
@@ -436,7 +171,7 @@
         <div class="footer-content">
             <div class="footer-info">
                 <h3>Bio 15 Microbiology Study Guide</h3>
-                <p>Exercise 16: Acid-Fast Staining (Kinyoun Method)</p>
+                <p>Exercise 16: Acid-Fast Staining</p>
             </div>
             <div class="footer-links">
                 <a href="https://www.linkedin.com/in/bryankhamly/" target="_blank" rel="noopener noreferrer" class="footer-link">
