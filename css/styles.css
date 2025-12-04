@@ -84,6 +84,7 @@ a:hover {
     top: 0;
     z-index: 1000;
     padding: 1rem 2rem;
+    overflow-x: hidden;
 }
 
 .navbar-container {
@@ -92,6 +93,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 .navbar-brand {
@@ -101,6 +104,7 @@ a:hover {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--primary);
+    flex-shrink: 0;
 }
 
 .navbar-brand svg {
@@ -113,6 +117,8 @@ a:hover {
     list-style: none;
     gap: 0.5rem;
     padding: 0.25rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .navbar-nav a {
@@ -124,6 +130,7 @@ a:hover {
     transition: var(--transition);
     border: 1px solid var(--border);
     background: var(--surface);
+    white-space: nowrap;
 }
 
 .navbar-nav a:hover {
