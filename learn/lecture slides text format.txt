@@ -1,0 +1,1401 @@
+Chapter 25: Diseases of the Digestive System
+
+Slide 1: Structure and Function
+
+    Text:
+
+        The human digestive system.
+
+        Key components: Oral Cavity, Tongue, Teeth, Parotid (salivary) gland, Pharynx, Esophagus, Stomach, Liver, Gallbladder, Duodenum, Pancreas, Small intestine, Large intestine, Rectum, Anus.
+
+        Normal Microbiota:
+
+            Stomach and small intestine have few microorganisms due to HCl and rapid movement of food.
+
+            Large intestine has enormous microbial population (mostly anaerobes and facultative anaerobes).
+
+    [Image Description]: A medical illustration of the human upper body showing the digestive tract from mouth to anus, labeling all major organs involved in digestion.
+
+Slide 2: Normal Microbiota & Diarrheal Disease Intro
+
+    Text:
+
+        Large intestine: >100 billion bacteria per gram of feces. mostly anaerobes and facultative anaerobes.
+
+        Diarrheal Disease:
+
+            Acute syndrome of the intestinal tract.
+
+            Volume, fluid content, and frequency of bowel movements increase.
+
+            Usually a symptom of gastroenteritis (inflammation of the lining of the stomach and intestine).
+
+        Infectious diarrhea has two basic mechanisms: Toxigenic and Invasive.
+
+    [Image Description]: A diagram comparing a healthy intestinal wall to one with "Over-secretion of fluids" caused by bacteria.
+
+Slide 3: Toxigenic vs. Invasive Diarrhea
+
+    Text:
+
+        Toxigenic:
+
+            Bacteria release enterotoxins.
+
+            Bind surface receptors on small intestine.
+
+            Disrupts physiology of epithelial cells.
+
+            Stimulates hypersecretions of fluids and electrolytes.
+
+            Organism does not invade tissues.
+
+            Large volume; No blood in stool.
+
+        Invasive:
+
+            Microbes invade the wall of the small or large intestine.
+
+            Damages cells that line mucosa.
+
+            Blood in stool.
+
+            Results in severe dehydration.
+
+            40% of worldwide infectious disease; 18% of deaths worldwide.
+
+    [Image Description]: Two diagrams. (a) Toxigenic: Bacteria sit on the surface, toxins enter cells causing fluid secretion. (b) Invasive: Bacteria physically penetrate the intestinal epithelium, causing damage and bleeding.
+
+Slide 4: Staphylococcus aureus (Toxigenic)
+
+    Text:
+
+        Food poisoning: Due to enterotoxins.
+
+        Transmission: Contact with food workers who carry it.
+
+        Associated with: Contaminated custards, sauces, processed meats, sandwiches, chicken salad left unrefrigerated.
+
+        Enterotoxins are heat stable:
+
+            A superantigen.
+
+            Stimulates nerves causing cramping, nausea, vomiting, diarrhea.
+
+            Recovery in 24 hours.
+
+    [Image Description]: An image of a "Lunch Lady" action figure and a tray of cafeteria food.
+
+Slide 5: Staph. aureus Characteristics
+
+    Text:
+
+        Staphylococci: Common skin/mucous membrane inhabitant. Spherical cells, irregular clusters. Lack spores, flagella. May be encapsulated.
+
+        S. aureus:
+
+            Most serious of staph pathogens.
+
+            Large number of nosocomial infections.
+
+            Facultative anaerobe.
+
+            Very resistant non-spore forming pathogen.
+
+            Can withstand: High salt (7-10%), Extremes in pH, High temps.
+
+            Remains viable after months of air drying.
+
+    [Image Description]: Left: A Gram stain showing purple clusters of cocci bacteria. Right: A Scanning Electron Micrograph (SEM) of Staph clusters. Bottom: Cartoon of Homer Simpson dressed as the Grim Reaper.
+
+Slide 6: S. aureus Virulence
+
+    Text:
+
+        Virulence factors include enzymes and toxins.
+
+        Coagulase: Causes fibrin to be deposited around cells. Inhibits phagocytosis. Allows staph to adhere to tissues. Enzyme present in 97% of all human isolates.
+
+        Penicillinase.
+
+        Methicillin resistant S. aureus (MRSA).
+
+        Hemolysins.
+
+Slide 7: S. aureus Pathogenesis & Shigella Intro
+
+    Text:
+
+        S. aureus:
+
+            25-30% of population has it colonized in nose (also skin, nasopharynx, intestine).
+
+            Colonization of infants can occur at birth.
+
+            Most infections are minor (pimples, boils). Some are serious (surgical wound infections, bloodstream infections).
+
+        Shigella Background:
+
+            Discovered 100 years ago by Kiyoshi Shiga.
+
+            Facultative anaerobe, gram negative.
+
+            4 sub-species:
+
+                S. sonnei: Most common in US (72%).
+
+                S. flexneri: (28%), predominant in developing countries.
+
+                S. dysenteriae: Causes most severe shigellosis, Eastern Hemisphere.
+
+                S. boydii.
+
+    [Image Description]: Left: A colorized SEM of white blood cells attacking bacteria. Right: A vintage portrait of Kiyoshi Shiga.
+
+Slide 8: Shigellosis (Bacillary Dysentery)
+
+    Text:
+
+        Incapacitating dysentery, abdominal cramps.
+
+        Watery, mucous, bloody stool.
+
+        Primarily a pediatric disease (70% of cases in children under 15, mostly not toilet trained).
+
+        Transmission: Fecal-oral. Spread only person-to-person.
+
+        Infectious dose is low: 10-200 cells.
+
+    [Image Description]: A stock photo of a scenic waterfall (visual metaphor for watery stool).
+
+Slide 9: Shigellosis Pathogenesis
+
+    Text:
+
+        Shigella ingested (not affected by stomach HCl).
+
+        Invades villus cells of small intestine.
+
+        Triggers phagocytosis.
+
+        Replicates inside intestinal cells.
+
+        Shigella is non-motile but invades neighboring cells (avoiding immune system).
+
+        Shiga toxin destroys tissue.
+
+        Does not perforate intestine or invade blood.
+
+    [Image Description]: A step-by-step diagram showing Shigella entering an epithelial cell, multiplying, moving to neighboring cells, and causing a mucosal abscess.
+
+Slide 10: Shigella Virulence Factor
+
+    Text:
+
+        S. dysenteriae: Most virulent species.
+
+        Produces Shiga Toxin exotoxin.
+
+        Binds intestinal and renal cells and kills them.
+
+        Results in decreased absorption in large intestine, fluid loss, renal failure.
+
+        Dysentery results from damage to intestinal cell wall.
+
+        E. coli O157:H7 produces similar toxin.
+
+    [Image Description]: Two images of the Taco Bell Chihuahua. One says "¡No Quiero Taco Bell!" and the other shows the dog sitting on a toilet with the text "NO MORE."
+
+Slide 11: Salmonella Intro
+
+    Text:
+
+        Gram negative, facultative anaerobe.
+
+        Invade and multiply in intestinal mucosa. Can enter blood.
+
+        Nausea, abdominal pain, diarrhea.
+
+        Death rate low (1%), higher in infants/elderly (septic shock).
+
+        Antibiotics not useful; Oral rehydration therapy used.
+
+        Two diseases: Typhoid fever and Salmonellosis.
+
+        Pathogenesis: Enter M cells, multiply in vesicles, inflammatory response causes diarrhea. Bacteria may cross into lymphatic system/bloodstream.
+
+    [Image Description]: Diagram showing Salmonella bacteria entering M cells in the intestinal tract, multiplying, and entering the bloodstream/lymph nodes.
+
+Slide 12: Typhoid Fever
+
+    Text:
+
+        Causative agent: Salmonella typhi.
+
+        Humans are exclusive host. Carried in blood and intestinal tract.
+
+        Obtained fecal-orally.
+
+        ~400 cases/year in US (70% acquired traveling abroad: India, Bangladesh, Pakistan).
+
+        Worldwide: 21.5 million cases/year, 25,000 deaths.
+
+        Infection: Organisms carried systemically (liver, spleen, gallbladder).
+
+        Small percentage carry S. typhi in gallbladder (chronic carriers).
+
+        Symptoms: 103-104°F fever, diarrhea, abdominal pain. Ulcers/Perforations possible.
+
+    [Image Description]: A medical illustration showing the spread of Typhoid bacilli through the digestive tract into the blood vessels.
+
+Slide 13: Typhoid Fever Treatment
+
+    Text:
+
+        Vaccine available.
+
+        Antibiotics: Ampicillin, Trimethoprim-sulfamethoxazole, Ciprofloxacin.
+
+        Deaths rarely occur with treatment.
+
+        Without treatment: Fever for weeks, 20% mortality from complications.
+
+Slide 14: Typhoid Mary & Salmonellosis
+
+    Text:
+
+        Typhoid Mary: Mary Mallon, NYC cook. 1st healthy carrier identified in US. Infected 47 people. Refused to stop working; died in quarantine.
+
+        Salmonellosis: (Enteric fever, Salmonella food poisoning).
+
+        Causative agent: S. enteritidis (many types).
+
+        Reservoir: Intestinal flora of cattle, poultry, rodents, reptiles (Zoonotic). Animal products contaminated during slaughter/processing.
+
+    [Image Description]: Several images: A vintage newspaper clipping about "Typhoid Mary," a retro housewife illustration saying "You're gonna poop," a small turtle held by fingers, and a Teenage Mutant Ninja Turtles poster.
+
+Slide 15: Salmonellosis Transmission
+
+    Text:
+
+        Contaminated food, water, fecal/oral.
+
+        Most common food-borne transmitted disease in the U.S.
+
+        Culprits: Contaminated eggs (ovaries of hens infected), Poultry (slaughter process). Est. 1 out of 3 chickens contaminated.
+
+        Symptoms: Vomiting, diarrhea, fever, cramps (12-72 hrs). Subside in 2-5 days.
+
+        Death infrequent (400/yr in US).
+
+    [Image Description]: A cartoon of a large white chicken ("Foghorn Leghorn") looking at a small brown chicken.
+
+Slide 16: Salmonellosis Culprits & Cholera
+
+    Text:
+
+        Salmonella: Food poisoning images showing eggs, meat, sausages.
+
+        Cholera:
+
+            Causative agent: Vibrio cholerae.
+
+            Infection often mild/asymptomatic.
+
+            1 in 20 has severe disease: Profuse diarrhea ("rice-water stool"), vomiting, leg cramps.
+
+            If untreated, death in <48 hours.
+
+            Affects millions in Africa and Asia.
+
+    [Image Description]: Top: Graphics of food (eggs, cake, meat). Bottom: SEM image of Vibrio bacteria (comma-shaped).
+
+Slide 17: Cholera Pathogenesis
+
+    Text:
+
+        Ingested with food or water. Spread in areas with poor sewage. Also raw/undercooked shellfish (Gulf of Mexico).
+
+        Cells penetrate mucous barrier, rest on epithelial cells (do not invade).
+
+        Enterotoxin (Cholera Toxin - CT): Disrupts physiology. Activates Adenyl cyclase -> cAMP -> Electrolytes pumped out -> Profuse water loss (1L/hour).
+
+    [Image Description]: Cartoon of Speedy Gonzales (referencing "fast" progression).
+
+Slide 18: Cholera Pathogenesis (Continued)
+
+    Text:
+
+        In children and compromised individuals.
+
+        Can be fast and furious.
+
+        If untreated: Up to 50% body weight loss. 50% mortality rate in 48 hours.
+
+    [Image Description]: Movie poster for "The Fast and the Furious".
+
+Slide 19: Cholera Treatment & E. coli
+
+    Text:
+
+        Cholera Treatment: Immediate replacement of fluids and salts. Oral rehydration therapy (sugar/salt mix). No vaccine in US.
+
+        Escherichia coli:
+
+            Most prevalent enteric bacillus.
+
+            Enterotoxigenic E. coli causes severe diarrhea (70% of traveler's diarrhea).
+
+            Two exotoxins: Heat labile (LT) and Heat stable (ST). Stimulate secretion/fluid loss.
+
+    [Image Description]: Top: Movie poster "Love in the Time of Cholera". Bottom: A scene from the movie "Slumdog Millionaire" (referencing location of outbreaks).
+
+Slide 20: E. coli (Infantile & Food Infections)
+
+    Text:
+
+        Pathogenic E. coli: Frequent agents of infantile diarrhea. Second leading cause of death among children (immature immune systems).
+
+        Food Infections (O157:H7):
+
+            Most infamous. Leads to intestinal hemorrhaging.
+
+            Virulence due to cell wall receptor fusing with host cell (direct port to secrete toxins).
+
+            Shiga-like toxin: Binds ribosomes, disrupts translation, kills intestinal cells.
+
+    [Image Description]: Top: Cartoon of a crying baby. Middle: Chart of causes of death in children. Bottom: Collage of the Taco Bell dog (RIP Gidget), Jack in the Box mascot, and Popeye (spinach contamination reference).
+
+Slide 21: E. coli Reservoir & UTIs
+
+    Text:
+
+        Reservoir: Cattle intestine.
+
+        Transmission: Contaminated beef, water, fresh vegetables.
+
+        Infectious dose: ~100 cells.
+
+        UTIs: Causes 50-80% of UTIs. Endogenous bacteria invade urethra.
+
+        Indicator bacteria: Used to monitor fecal contamination in water/food.
+
+    [Image Description]: A "Far Side" cartoon showing cows and a chicken. The chicken says "Chicken, you can leave - I've got no beef with you."
+
+Slide 22: Helicobacter Gastritis (Peptic Ulcer Disease)
+
+    Text:
+
+        Agent: Helicobacter pylori.
+
+        Symptoms: Abdominal pain, vomiting, erosion/ulceration of stomach lining.
+
+        Background: Isolated in 1984 by Marshall & Warren. Humans/animals are reservoir. Gram negative, spiral bacilli, polar flagella. Colonizes 45% of healthy adults (15% develop ulcers).
+
+    [Image Description]: Top: Diagram of H. pylori showing flagella and urease production. Bottom: 3D rendering of H. pylori on inflamed epithelial cells.
+
+Slide 23: H. pylori Characteristics & History
+
+    Text:
+
+        Infects epithelial cells of stomach.
+
+        Only organism known to survive stomach acidity.
+
+        History: Before 1982, ulcers thought to be caused by stress/spicy food. Now known H. pylori causes >90% duodenal and 80% gastric ulcers.
+
+    [Image Description]: Top: H. pylori diagram. Bottom: Taco Bell "Border Sauce" packets (Fire/Hot) with funny captions.
+
+Slide 24: H. pylori Transmission & Sequelae
+
+    Text:
+
+        Transmission: Unknown (likely fecal/oral or oral/oral).
+
+        Long term: Associated with gastric cancer (6th most common cancer).
+
+        Lifelong infection: Colonizes stomach in ~50% of humans. Contracted in early childhood. Most asymptomatic, but 0-15% get ulcers, small % get cancer.
+
+    [Image Description]: Left: Person wearing a shirt saying "don't eat poop". Right: Infographic showing genetic variation among humans and bacteria regarding susceptibility.
+
+Slide 25: H. pylori Pathogenesis & Diagnosis
+
+    Text:
+
+        H. pylori is NOT an acidophile.
+
+        Ulcer development:
+
+            Colonizes stomach.
+
+            Uses flagella to pass mucus layer & attach to epithelial cells.
+
+            Produces urease (neutralizes acid).
+
+            Loss of mucus coating predisposes to gastritis.
+
+            Immune response/inflammation damages mucosa.
+
+        Diagnosis: Blood test (Abs), Urea Breath Test (labeled urea), Endoscopy.
+
+    [Image Description]: A 4-panel diagram showing H. pylori penetrating mucus, neutralizing acid with urease, and causing mucosal damage/inflammation.
+
+Slide 26: H. pylori Treatment
+
+    Text:
+
+        "Triple Therapy Regimen" (14 days).
+
+        Amoxicillin.
+
+        Clarithromycin (inhibits translation).
+
+        Prilosec (acid blocker).
+
+    [Image Description]: Movie poster for "Three Amigos" (Steve Martin, Chevy Chase, Martin Short) representing the triple therapy.
+
+Chapter 26: Diseases of the Urinary and Reproductive Systems
+
+Slide 1: Structure and Function
+
+    Text:
+
+        Urinary system: Kidneys, Ureters, Bladder, Urethra.
+
+        Ureters have valves: Prevent backflow to kidneys, protects against lower UTIs.
+
+        Urine: Antimicrobial properties, flushing action removes pathogens.
+
+        Normal Microbiota: Urine is sterile. Can be contaminated by skin microbiota at urethra.
+
+    [Image Description]: Diagram of the human urinary system anatomy.
+
+Slide 2: Microbiota & Urinary Diseases
+
+    Text:
+
+        Vagina: Predominant bacteria Lactobacilli (generates lactic acid, keeps pH low 3.8-4.5, inhibits growth). Yeast (Candida albicans) in 10-25% of women.
+
+        Urinary System Diseases:
+
+            Urethritis: Inflammation of urethra.
+
+            UTI: Intestinal bacteria predominate (mostly E. coli). Women have 8x rate of men.
+
+        Reproductive System Diseases:
+
+            STI: >30 microbes, 15 million new cases/yr in US. Treated with antibiotics or prevented by condoms.
+
+    [Image Description]: Top: Quote from the movie Fight Club ("Urine is sterile. You can drink it."). Bottom: Movie poster for "Big Daddy" (Adam Sandler) peeing on a door.
+
+Slide 3: Pelvic Inflammatory Disease (PID)
+
+    Text:
+
+        Bacterial infection of female pelvic organs (Uterus, cervix, uterine tubes, ovaries).
+
+        Symptoms: Lower ab pain, discharge, fever, chills, painful urination.
+
+        Can lead to infertility.
+
+        Usually coinfection of N. gonorrhoeae and C. trachomatis.
+
+    [Image Description]: Left: Cartoon of a smiling condom. Right: Diagram of female reproductive organs showing inflamed uterus, ovary, and fallopian tube.
+
+Slide 4: Gonorrhea ("The Clap")
+
+    Text:
+
+        Agent: Neisseria gonorrhoeae (Gram negative diplococcus).
+
+        Most common reportable communicable disease in US.
+
+        Attaches to mucosal cells via fimbriae. Invades urethra (men) and cervix (women).
+
+        Triggers inflammation, pus formation.
+
+        Coinfection with Chlamydia common.
+
+    [Image Description]: Left: Microscopy of leukocyte and bacteria. Right: "The 4 C's" meme lists: Colonoscopies, Root Canals, Cockroaches, Congress... and "Gonorrhea" (humorous comparison).
+
+Slide 5: Gonorrhea Symptoms
+
+    Text:
+
+        Men: Painful urination, discharge of pus.
+
+        Women: Often asymptomatic. Can spread to uterus/tubes (PID).
+
+        Infants: Ophthalmia neonatorum (eye infection during birth), can cause blindness. Antibiotics placed in newborn eyes.
+
+    [Image Description]: Top: Photo of penile discharge (pus). Bottom: Photo of an infant with severe eye infection (Ophthalmia neonatorum).
+
+Slide 6: Gonorrhea Treatment
+
+    Text:
+
+        No vaccine.
+
+        No effective adaptive immunity (antigenic variability).
+
+        Treatment: Ceftriaxone (cephalosporin). Also treat for Chlamydia (tetracycline).
+
+    [Image Description]: Vintage health poster: "Stamp Out Syphilis and Gonorrhea... Have you had your blood test?"
+
+Slide 7: Chlamydia
+
+    Text:
+
+        Signs and symptoms:
+
+            Males: Mild, painful urination, inflammation of epididymis.
+
+            Females: Usually asymptomatic, abdominal pain. Can lead to PID.
+
+        5x as many reported cases as men.
+
+    [Image Description]: Cartoon of a boy and girl clutching their crotches in pain, with lightning bolts signifying pain.
+
+Slide 8: Chlamydia Treatment
+
+    Text:
+
+        Treatment: Susceptible to tetracyclines (Doxycycline, Zithromax).
+
+        No vaccine.
+
+    [Image Description]: Top: Graphic saying "Chlamydia is not a flower". Bottom: Images of Doxycycline and Zithromax medication boxes.
+
+Slide 9: Syphilis Agent
+
+    Text:
+
+        Causative agent: Treponema pallidum.
+
+        Gram negative spirochete.
+
+        Lacks enzymes to build macromolecules (relies on host).
+
+        Slow generation time (30 hours).
+
+    [Image Description]: Darkfield microscopy image of spiral-shaped Treponema pallidum bacteria (glowing green).
+
+Slide 10: Syphilis Transmission
+
+    Text:
+
+        Sexually transmitted from spirochete-containing lesions of skin or mucous membranes (genitals, mouth, rectum).
+
+        Progresses through several stages.
+
+    [Image Description]: Vintage poster: "The Enemy is Syphilis" showing a gas-masked figure looming over workers.
+
+Slide 11: Syphilis Primary Stage
+
+    Text:
+
+        Initial sign: Small, hard-based chancre.
+
+        Appears at infection site (2-10 weeks).
+
+        Painless.
+
+        Fluid is highly infectious.
+
+        Heals in a few weeks.
+
+    [Image Description]: Photo of a chancre (ulcer) on male genitalia.
+
+Slide 12: Syphilis Secondary Stage
+
+    Text:
+
+        Skin rashes (notably palms and soles).
+
+        Lesions contain spirochetes (Highly infectious).
+
+        Lasts 2-6 weeks, heals spontaneously.
+
+        Latent period: No symptoms, not infectious. Most cases do not progress beyond this.
+
+    [Image Description]: Photos of secondary syphilis rash on palms of hands.
+
+Slide 13: Syphilis Tertiary Stage
+
+    Text:
+
+        Primary/Secondary not disabling.
+
+        Tertiary: 25% of untreated cases. Occurs 10-20 years later.
+
+        Characterized by Gummas (rubbery masses of tissue, progressive inflammation).
+
+        Skin and bones. Not infectious.
+
+    [Image Description]: Top: Photo of gummas (large lesions) on an arm. Bottom: Mugshot of Al Capone (famous syphilis victim).
+
+Slide 14: Neurosyphilis
+
+    Text:
+
+        Parts of CNS affected.
+
+        Dementia, seizures.
+
+        Antibiotics make Tertiary stage rare.
+
+        Treat with Penicillin, tetracycline.
+
+    [Image Description]: Same images as Slide 13 (Gummas and Al Capone).
+
+Slide 15: Congenital Syphilis
+
+    Text:
+
+        Transmitted across placenta to fetus.
+
+        Damage to mental development.
+
+        Most common when pregnancy occurs during latent period.
+
+        During primary/secondary: Likely stillbirth.
+
+        Preventable with antibiotics in first two trimesters.
+
+    [Image Description]: Vintage poster: "Congenital Syphilis is Preventable".
+
+Slide 16: Syphilis Treatment & Prevention
+
+    Text:
+
+        Treatment: Penicillin (effective at all stages).
+
+        Prevention: Condoms, Early diagnosis. No vaccine.
+
+    [Image Description]: Graph showing incidence of syphilis in the US (1941-2010), highlighting the drop after penicillin introduction.
+
+Slide 17: Tuskegee Study (Intro)
+
+    Text:
+
+        "Tuskegee Study of Untreated Syphilis in the Negro Male" (1932).
+
+        US Public Health Service secret experiment.
+
+        Study progression of untreated syphilis.
+
+        Fliers in Alabama promised "colored people" treatment for "bad blood" (free meals, burial insurance).
+
+        600 men signed up (black, poor).
+
+Slide 18: Tuskegee Study (Details)
+
+    Text:
+
+        399 with syphilis, 201 control.
+
+        Informed consent NOT collected.
+
+        Subjects never told they had syphilis, never treated.
+
+        Even after Penicillin available (1943).
+
+        Lasted 40 years (supposed to be 6-9 months).
+
+    [Image Description]: Photo of a doctor drawing blood from a participant in the Tuskegee study.
+
+Slide 19: Tuskegee Study (Aftermath)
+
+    Text:
+
+        1972: Exposed by AP story.
+
+        1973: Class action lawsuit ($10M settlement, medical benefits).
+
+        1997: President Clinton apology.
+
+Slide 20: Genital Warts and HPV
+
+    Text:
+
+        Agent: Human Papillomavirus (HPV). Non-enveloped DNA virus.
+
+            200 types, 30 infect genital tract.
+
+        Transmitted skin-to-skin or sexual contact.
+
+        Infects squamous epithelial cells.
+
+    [Image Description]: Clinical photos of genital warts on female genitalia.
+
+Slide 21: Genital Warts Symptoms
+
+    Text:
+
+        Visible warts: HPV-6 and HPV-11. Most common worldwide STI. Most benign.
+
+        Cancer: HPV-16 and HPV-18 cause 70% of cervical cancer (also oral, anal, penile).
+
+    [Image Description]: Diagram showing location of genital warts (penis, vagina, cervix, anus) and a close-up illustration of the warts.
+
+Slide 22: HPV and Cancer Mechanism
+
+    Text:
+
+        Virus produces proteins E6 and E7.
+
+        Bind and interfere with p53 (tumor suppressor).
+
+        p53 normally detects cell cycle mistakes and arrests growth.
+
+        Interference = "No Brakes" on cell growth.
+
+    [Image Description]: Cartoon of a bobsled team going off a cliff with the caption "NOOO BRAKES!!!" representing the loss of tumor suppression.
+
+Slide 23: HPV Treatment
+
+    Text:
+
+        No cure. Most infections resolve spontaneously.
+
+        Topical meds for warts or ablation.
+
+        Pap smears: Screening for cervical cancer. Recommended within 3 years of first partner or age 21.
+
+    [Image Description]: Illustration of a Pap smear procedure (speculum and cervical scraping).
+
+Slide 24: HPV Vaccine
+
+    Text:
+
+        Cervarix: Protects against cervical cancer (HPV 16, 18).
+
+        Gardasil: Protects against warts (HPV 6, 11) AND cancers (HPV 16, 18).
+
+        Recommended for boys and girls age 11-12.
+
+    [Image Description]: A promotional image featuring Dr. Drew (radio host) promoting vaccination.
+
+Slide 25: Herpes
+
+    Text:
+
+        Genital Herpes: Herpes simplex virus type 2 (HSV-2). Enveloped DNA virus.
+
+        25% of people over 30 in US infected.
+
+        Transmission most often when lesions present.
+
+        Replicates in skin/mucous membrane -> Vesicles.
+
+    [Image Description]: Top: TEM of Herpes virus. Bottom: Photos of herpes vesicles/lesions on skin.
+
+Slide 26: Herpes Latency & Treatment
+
+    Text:
+
+        Lifelong latency in nerve cells.
+
+        Recurrences possible (decrease over time).
+
+        Treatment: No cure. Antivirals (Valtrex) suppress outbreaks.
+
+    [Image Description]: E-card showing a couple with the caption "Diamonds are forever, like herpes."
+
+Chapter 24: Diseases of the Respiratory System
+
+Slide 1: Respiratory System Structure
+
+    Text:
+
+        Upper: Nose, pharynx (throat), eustachian tubes. Pathogenic microorganisms present as normal microbiota but suppressed.
+
+    [Image Description]: Diagram of the Upper Respiratory System anatomy.
+
+Slide 2: Lower Respiratory & Strep Throat
+
+    Text:
+
+        Lower: Larynx, trachea, bronchial tubes, alveoli. Ciliated mucous membrane. Nearly sterile (ciliary escalator).
+
+        Streptococcal Pharyngitis (Strep Throat):
+
+            Upper respiratory infection.
+
+            Streptococcus pyogenes (GAS). Gram positive, Beta-hemolytic.
+
+            Local inflammation, fever, swollen tonsils.
+
+    [Image Description]: Top: Anatomy of Lower Respiratory System. Bottom: Comparison of Normal vs. Abnormal (Strep) throat/tonsils.
+
+Slide 3: Scarlet Fever & Diphtheria
+
+    Text:
+
+        Scarlet Fever: S. pyogenes infected by bacteriophage (lysogeny) -> Erythrogenic toxin. Pinkish-red rash, Strawberry tongue.
+
+        Diphtheria:
+
+            Corynebacterium diphtheriae (Gram pos club-shaped).
+
+            Leading killer of children until 1935.
+
+            Tough grayish membrane on throat (fibrin/dead tissue) blocks air.
+
+            DTaP vaccine (Diphtheria toxoid).
+
+    [Image Description]: Top: Photos of Scarlet Fever rash. Bottom: Photo of "Strawberry tongue".
+
+Slide 4: Common Cold & Pertussis
+
+    Text:
+
+        Common Cold: Rhinovirus (30-50%), Coronavirus (10-15%). RNA virus. Thrive at lower temps (nose). Airborne droplets. No antibiotics.
+
+        Pertussis (Whooping Cough):
+
+            Bortadella pertussis (Gram neg coccobacillus, aerobe).
+
+            Capsule.
+
+    [Image Description]: Top: Elsa from Frozen ("The cold never bothered me anyway"). Bottom: Olaf the snowman.
+
+Slide 5: Pertussis Mechanism & Tuberculosis
+
+    Text:
+
+        Pertussis: Bacteria attach to ciliated trachea cells. Tracheal cytotoxin damages ciliated cells -> Mucus accumulation -> Violent coughing (whooping). Broken ribs/brain damage in infants. DTaP vaccine.
+
+        Tuberculosis (TB):
+
+            Mycobacterium tuberculosis (Acid-fast, obligate aerobe).
+
+            Mycolic acids resist desiccation.
+
+            Inhalation. 30% world infected. 1.5M deaths/year.
+
+    [Image Description]: Top Left: SEM of bacteria on ciliated cells. Top Right: Photo of coughing child. Bottom: Map of TB incidence.
+
+Slide 6: TB Pathogenesis (Latent)
+
+    Text:
+
+        Bacteria reach alveoli, ingested by macrophages. Multiply inside.
+
+        Chemotactic response recruits more macrophages -> Forms tubercle.
+
+        Caseous center forms. Bacteria dormant (Latent TB). Lesions calcify (Ghon complexes visible on X-ray).
+
+    [Image Description]: Diagram series showing (1) Bacteria entering alveoli/macrophages, and (2) Formation of the tubercle with caseous center.
+
+Slide 7: TB Pathogenesis (Active)
+
+    Text:
+
+        If immune system fails, tubercle ruptures (Liquefaction).
+
+        Releases bacilli into bronchioles/circulatory system.
+
+        Coughing spreads aerosol. Blood vessels rupture -> Hemorrhaging (consumption).
+
+    [Image Description]: Diagram showing the rupture of the alveolar wall/tubercle. Bottom: Vintage poster "Healthy looks can hide Tuberculosis".
+
+Slide 8: TB Diagnosis
+
+    Text:
+
+        Mantoux Tuberculin Skin Test: Inject purified protein derivative. If infected (past/present), memory T cells react (induration).
+
+        Chest X-ray.
+
+        BCG vaccine (not used in US).
+
+    [Image Description]: Photos of the skin test injection and the resulting induration (red bump) being measured.
+
+Slide 9: Influenza (The Flu)
+
+    Text:
+
+        Influenzavirus: Types A, B (seasonal), C, D.
+
+        8 separate RNA strands.
+
+        Capsid + Envelope studded with spikes:
+
+            Hemagglutinin (H): Binds receptors, induces entry. (H1, H2...).
+
+            Neuraminidase (N): Helps release virus, degrades mucous. (N1, N2...).
+
+    [Image Description]: Diagram of the Influenza virus structure labeling RNA segments, Capsid, Envelope, HA spikes, and NA spikes.
+
+Slide 10: Influenza Antigenic Drift
+
+    Text:
+
+        RNA genome undergoes frequent mutations (especially in H and N).
+
+        Antigenic Drift: Decreases host immune recognition.
+
+    [Image Description]: Diagram showing the viral replication cycle (entry, uncoating, synthesis, assembly, exit).
+
+Slide 11: Drift vs. Shift
+
+    Text:
+
+        Antigenic Drift: Minor mutations over time.
+
+        Antigenic Shift: Genome has 8 segments. If Bird virus + Human virus infect same host (swine) -> Segments swap (Reassortment). No immunologic recognition. Pandemics.
+
+    [Image Description]: Diagram comparing Drift (slow mutation of spikes) vs. Shift (mixing of RNA segments from two different viruses to create a new one).
+
+Slide 12: Influenza Transmission
+
+    Text:
+
+        Inhalation (droplets), Fomites (survives 24hrs).
+
+        Facilitated by crowding, poor ventilation, contact with poultry/swine.
+
+    [Image Description]: Photos of people in masks, a crowded telephone booth ("Telephone booth packing"), and a cartoon of a pig and duck talking (referencing swine/bird flu).
+
+Slide 13: Flu Treatment
+
+    Text:
+
+        Treatment: Inhibitors (Tamiflu inhibits budding/neuraminidase).
+
+        Vaccine: Contains A(H1N1), A(H3N2), and Influenza B strains.
+
+    [Image Description]: Comic of Captain America punching a villain (metaphor for vaccine fighting virus).
+
+Slide 14: Influenza A(H1N1)pdm09
+
+    Text:
+
+        "Swine flu" (2009). Genes similar to pig flu.
+
+        Very different from seasonal flu.
+
+        Older adults had some immunity (antibodies).
+
+    [Image Description]: Cartoon of pigs holding a "Pigs Unite" meeting about blaming the flu on them.
+
+Slide 15: H1N1 Stats
+
+    Text:
+
+        US: 60M cases, 12,500 deaths.
+
+        Pandemic ended Aug 2010. Still circulates.
+
+        Perspective: Seasonal flu kills 30k-50k/year in US.
+
+        Not spread by eating pork.
+
+    [Image Description]: Left: "H1N1 Flu Pandemic 2009-2019" commemorative logo. Right: Cartoon of a pig with a tattoo of "1" on its butt, saying "Dude! Best tattoo ever!" (H-1-N-1 pun).
+
+Slide 16: COVID-19 Intro
+
+    Text:
+
+        Novel coronavirus (SARS-CoV-2).
+
+        Humans and mammals.
+
+        Structure: Enveloped RNA virus (29.9 kb).
+
+    [Image Description]: Diagram of the Coronavirus structure labeling Spike, Membrane, and Envelope proteins.
+
+Slide 17: COVID-19 Structure
+
+    Text:
+
+        Spike (S) glycoprotein: Binds receptor on respiratory cells.
+
+        Nucleocapsid (N) protein.
+
+Slide 18: COVID-19 Proteins
+
+    Text:
+
+        Membrane (M): Viral envelope shape, assembly.
+
+        Small Envelope (E): Production/maturation.
+
+    [Image Description]: Detailed diagrams of the virion structure and the replication cycle within a host cell.
+
+Chapter 21 & 22: Diseases of Skin and Nervous System
+
+Slide 1: Skin Structure
+
+    Text:
+
+        Hair follicles, sweat/oil gland ducts (passageways for microbes).
+
+        Perspiration: Moisture/nutrients, but has salt, lysozyme, antimicrobial peptides.
+
+        Sebum: Lipids/proteins/salts, prevents drying.
+
+    [Image Description]: Top: The Mucinex mascot ("Mucus Rules"). Bottom: Anatomical diagram of human skin layers (epidermis, dermis, subcutaneous).
+
+Slide 2: Skin Microbiota
+
+    Text:
+
+        Skin inhospitable to most (dry, salt).
+
+        Bacteria generate fatty acids from sebum (inhibitory).
+
+        Residents: Resistant to drying/salt. Gram positive Staphylococci.
+
+        Moist areas = more microbes -> body odor.
+
+    [Image Description]: The Mucinex mascot again.
+
+Slide 3: Diphtheroids & Acne
+
+    Text:
+
+        Diphtheroids: Gram positive, aerobic.
+
+        Propionibacterium acnes: Anaerobic, inhabits hair follicles, eats sebum. Causes acne.
+
+    [Image Description]: Photo of a girl popping a pimple on her forehead.
+
+Slide 4: Skin Lesions
+
+    Text:
+
+        Vesicle: Small, fluid filled.
+
+        Pustule: Raised, pus filled.
+
+        Necrotizing fasciitis: Death of muscle/tissue.
+
+    [Image Description]: Diagrams comparing the cross-section of a Vesicle vs. a Pustule.
+
+Slide 5: Staphylococcal Infections
+
+    Text:
+
+        Staphylococci: Spherical, Gram positive.
+
+        S. epidermidis: Coagulase negative, common commensal.
+
+    [Image Description]: False-color SEM of Staphylococcus bacteria (purple clusters).
+
+Slide 6: Staphylococcus aureus
+
+    Text:
+
+        Most pathogenic Staph. 20k deaths/yr US. Nosocomial.
+
+        Resident in nose (20%). Golden yellow colonies.
+
+        Larger genome (virulence factors: capsule, enterotoxins, penicillinase/MRSA). Coagulase positive.
+
+    [Image Description]: Photo of golden-yellow S. aureus colonies on an agar plate.
+
+Slide 7: S. aureus Cutaneous Infections
+
+    Text:
+
+        Invades via wounds/follicles.
+
+        Folliculitis: Pimple.
+
+        Furuncle: Boil (more serious).
+
+    [Image Description]: Photo of a large furuncle (boil) on skin.
+
+Slide 8: Folliculitis Image
+
+    [Image Description]: Close up photo of a skin pore with pus (folliculitis).
+
+Slide 9: Streptococcal Infections
+
+    Text:
+
+        Gram positive. Causes meningitis, pneumonia, sore throat.
+
+        Toxins: Hyaluronidase, Hemolysin.
+
+        Hemolysis types: Alpha, Beta, Gamma.
+
+    [Image Description]: Blood agar plate showing Alpha (greenish), Beta (clear halo), and Gamma (no change) hemolysis.
+
+Slide 10: Necrotizing Fasciitis
+
+    Text:
+
+        "Flesh eating bacteria" (S. pyogenes).
+
+        Enters via minor breaks. Rapid tissue destruction.
+
+        Exotoxin A (Superantigen) causes immune system to damage tissue. Shock.
+
+    [Image Description]: Graphic photo of a leg with severe tissue necrosis (skin peeled back/destroyed).
+
+Slide 11: Pseudomonas
+
+    Text:
+
+        Pseudomonas aeruginosa. Aerobic, Gram negative rod. Soil/water. Resistant.
+
+        Hot Tub Rash: Hot water opens follicles, bacteria enter.
+
+        Opportunistic in burn patients.
+
+        Otitis externa (Swimmer's ear).
+
+    [Image Description]: Top: Movie poster for "Hot Tub Time Machine". Bottom: Comic book cover for "The Human Torch" (referencing burns).
+
+Slide 12: Chickenpox Transmission
+
+    Text:
+
+        Varicella-zoster virus (VZV).
+
+        Respiratory transmission.
+
+        Fluid from lesions infectious (dried scabs are not).
+
+    [Image Description]: Cartoon of a "Scab Picket Line" with a scab saying "Didn't your mom tell you not to picket [pick it]?"
+
+Slide 13: Chickenpox to Shingles
+
+    Text:
+
+        Chickenpox: Fever, rash (face/trunk). Vaccine available.
+
+        Latency: VZV enters dorsal root ganglion near spine. Persists as viral DNA. Reactivates due to stress/aging.
+
+        Moves down peripheral nerves to skin -> Shingles.
+
+    [Image Description]: Diagram showing the virus moving from the spinal cord ganglion down the nerve to the skin. Photo of chickenpox rash on a torso.
+
+Slide 14: Shingles
+
+    Text:
+
+        Distributed along waist (belt).
+
+        Severe burning/stinging.
+
+        Spread via fluid from blisters (can cause chickenpox in non-immune).
+
+        Zoster vaccine (Shingrix) >50 yrs.
+
+    [Image Description]: Diagram showing viral activation in the nerve cell and migration to the skin.
+
+Slide 15: Herpes Simplex 1 (HSV-1)
+
+    Text:
+
+        Oral/respiratory transmission. 90% infected.
+
+        Cold sores: Painful vesicles near lips.
+
+        Latent in trigeminal nerve ganglia.
+
+    [Image Description]: Diagram of a head showing the Trigeminal nerve and ganglion, and the path to the lip (site of active lesion). Photo of a cold sore.
+
+Slide 16: HSV-2
+
+    Text:
+
+        Genital herpes. Sexually transmitted.
+
+        Latent in sacral ganglia.
+
+        Treatment: No cure. Valtrex suppresses.
+
+    [Image Description]: Top: Blue Valtrex pill. Bottom: Golden Retriever dog lying on a pile of shed fur (visual pun on "viral shedding").
+
+Slide 17: Measles & Fungal Intro
+
+    Text:
+
+        Measles: Respiratory. Koplik's spots (mouth). Rash (face to trunk). High fever. MMR vaccine (99% reduction). Pneumonia causes death.
+
+        Mycosis: Fungal infection.
+
+        Dermatophytes: Colonize keratin (hair/nails). Ringworm/Tinea.
+
+    [Image Description]: Photo of a toddler covered in measles rash.
+
+Slide 18: Ringworm
+
+    Text:
+
+        Tinea capitis: Ringworm of scalp. Bald patches. Transmitted by fomites/pets.
+
+    [Image Description]: Cartoon of a chicken looking at a dog (Link to animal transmission). Note: The slide implies a picture of Tinea Capitis but the cartoon is distinct.
+
+Slide 19: Athlete's Foot & Candidiasis
+
+    Text:
+
+        Tinea cruris (Jock itch), Tinea pedis (Athlete's foot). Moisture favors growth.
+
+        Candidiasis: Candida albicans (Yeast). Normal flora, opportunist (antibiotics). Pseudohyphae resist phagocytosis.
+
+        Thrush: Whitish overgrowth in mouth.
+
+    [Image Description]: Top: Photo of foot fungus. Middle: Micrograph of Candida showing pseudohyphae. Bottom: Photo of oral thrush (white tongue).
+
+(Transition to Chapter 22 Content - Nervous System)
+
+Slide 20: Nervous System Structure
+
+    Text:
+
+        CNS: Brain and spinal cord.
+
+        PNS: Nerves branching from CNS.
+
+    [Image Description]: Diagram of the human nervous system highlighting CNS and PNS.
+
+Slide 21: Meninges
+
+    Text:
+
+        Meninges: Dura mater, Arachnoid mater, Pia mater.
+
+        CSF: Subarachnoid space. Low antibodies.
+
+        Meningitis: Inflammation of meninges.
+
+        Encephalitis: Inflammation of brain.
+
+    [Image Description]: Diagram of the protective layers (meninges) of the brain.
+
+Slide 22: Bacterial Meningitis
+
+    Text:
+
+        Haemophilus influenzae type b (Hib): Aerobic, Gram neg, Capsule. Normal throat flora. Vaccine 1988.
+
+        Neisseria meningitidis: Aerobic, Gram neg. 40% carriers. Endotoxin causes rapid death/shock. Outbreaks in dorms. Vaccine for teens.
+
+    [Image Description]: Left: HIB infographic showing symptoms. Right: Colorized SEM of Neisseria bacteria.
+
+Slide 23: Strep Pneumoniae & Tetanus Intro
+
+    Text:
+
+        S. pneumoniae: Gram pos. Leading cause of bacterial meningitis. Vaccine (Prevnar).
+
+        Tetanus: Clostridium tetani. Endospore forming, Gram pos, Obligate anaerobe. Soil/animal waste. Wounds provide anaerobic condition.
+
+    [Image Description]: Left: Cartoon of a man cupping his ear ("Otitis media" reference). Right: SEM of club-shaped bacteria (likely Corynebacterium or Clostridium).
+
+Slide 24: Tetanus Mechanism
+
+    Text:
+
+        Tetanospasmin (neurotoxin).
+
+        Blocks inhibitory neurotransmitters (GABA/Glycine) at neuromuscular junction.
+
+        Muscles contract uncontrollably (Lockjaw, arching back). Death by respiratory spasm.
+
+        DTaP Vaccine: Diphtheria, Tetanus, Pertussis. Booster every 10 yrs.
+
+    [Image Description]: Left: Diagram of synaptic cleft/neuromuscular junction. Right: Painting of a man with Opisthotonos (severe arching of back). Bottom: Photo of DAPTACEL vaccine box.
+
+Slide 25: Botulism
+
+    Text:
+
+        Clostridium botulinum. Food poisoning (poorly preserved foods). Obligate anaerobe, endospore former.
+
+        Botulinum toxin: Exotoxin. Prevents release of Acetylcholine. Flaccid paralysis. Cardiac/Respiratory failure.
+
+    [Image Description]: Left: Can of "Bernard Dehydrated Water" (humorous reference to canned goods). Right: Diagram of synapse showing toxin blocking Acetylcholine.
+
+Slide 26: Infant/Wound Botulism
+
+    Text:
+
+        Infant Botulism: Most common in US. Honey contains spores. Bacteria grow in gut (no competition). "Floppy baby".
+
+        Wound Botulism: Drug users (needles).
+
+    [Image Description]: Left: Movie poster for "300" (Spartans). Right: An Armadillo (Note: Armadillos are usually associated with Leprosy, not Botulism, but appear here).
+
+Slide 27: Botox & Leprosy Intro
+
+    Text:
+
+        Botox: Therapeutic use (migraines, cerebral palsy, sweating, cosmetic).
+
+        Leprosy: Mycobacterium leprae. Grows at 30°C (cooler body parts: skin/nerves). Invades myelin sheath of PNS.
+
+    [Image Description]: Photo of The Joker (Jack Nicholson) referencing the "frozen" face look of Botox.
+
+Slide 28: Leprosy (Hansen's Disease)
+
+    Text:
+
+        Lepromatous form: Disfiguring nodules, tissue necrosis.
+
+        Transmission: Prolonged contact, nasal secretions.
+
+        Death from complications (TB).
+
+    [Image Description]: Photo of hands severely disfigured by leprosy (claw hand).
+
+Slide 29: Leprosy Treatment & Polio
+
+    Text:
+
+        Leprosy Rx: Dapsone, Rifampin (2 years).
+
+        Polio: Poliovirus (RNA). Fecal-oral. Replicates in throat/intestine -> Blood -> CNS. Kills motor nerve cells (Paralysis).
+
+    [Image Description]: Top: Hospital ward full of Iron Lungs. Bottom Left: FDR (famous Polio survivor) in wheelchair. Bottom Right: Child with leg brace.
+
+Slide 30: Polio Vaccines
+
+    Text:
+
+        99% asymptomatic.
+
+        Salk (IPV): Injected, inactivated (1955).
+
+        Sabin (OPV): Oral, live attenuated (1963).
+
+        Aug 2020: Africa declared wild polio free.
+
+    [Image Description]: Image of Batman slapping Robin (meme format), possibly referencing vaccine debates or administration.
+
+Slide 31: Rabies
+
+    Text:
+
+        Bullet shaped RNA virus.
+
+        Reservoirs: Skunks, bats, raccoons.
+
+        Transmission: Bite (direct) or Aerosol (indirect).
+
+    [Image Description]: Top: Diagram of bullet-shaped Rhabdovirus. Bottom: Pepe Le Pew (cartoon skunk).
+
+Slide 32: Rabies Progression
+
+    Text:
+
+        Multiplies in muscle -> Motor neuron -> CNS (Encephalitis) -> Salivary glands. Fatal.
+
+    [Image Description]: Diagram of a human silhouette showing the path of the virus from a dog bite on the foot up to the brain.
+
+Slide 33: Rabies Symptoms & Treatment
+
+    Text:
+
+        Symptoms: Furious phase (hydrophobia, agitation) -> Dumb phase (paralysis, coma).
+
+        Treatment: PEP (Post Exposure Prophylaxis). Vaccine + HRIG (Immune globulin).
+
+    [Image Description]: Top: Homer Simpson drooling/foaming at the mouth. Bottom: Cartoon dog holding a giant syringe.
