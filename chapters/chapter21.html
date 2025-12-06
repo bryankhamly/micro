@@ -49,6 +49,16 @@
             </a>
             <h1>Chapter 21: Diseases of the Skin</h1>
             <p>Bacterial, Viral, and Fungal Infections of the Integumentary System</p>
+            <a href="../pdf-viewer.html?chapter=21" class="lecture-slides-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                View Lecture Slides
+            </a>
         </div>
     </header>
 
@@ -977,6 +987,177 @@
         </div>
     </footer>
 
+    <!-- PDF Viewer Panel -->
+    <div class="pdf-panel-overlay" id="pdfOverlay"></div>
+    <div class="pdf-panel" id="pdfPanel">
+        <div class="pdf-panel-header">
+            <span class="pdf-panel-title" id="pdfPanelTitle">Lecture Slides</span>
+            <div class="pdf-panel-controls">
+                <button class="pdf-panel-btn" id="pdfMinimize" title="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 14 10 14 10 20"/>
+                        <polyline points="20 10 14 10 14 4"/>
+                        <line x1="14" y1="10" x2="21" y2="3"/>
+                        <line x1="3" y1="21" x2="10" y2="14"/>
+                    </svg>
+                </button>
+                <button class="pdf-panel-btn close" id="pdfClose" title="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="pdf-panel-actions">
+            <div class="pdf-chapter-nav">
+                <button class="pdf-chapter-btn active" data-chapter="21">Ch 21</button>
+                <button class="pdf-chapter-btn" data-chapter="22">Ch 22</button>
+                <button class="pdf-chapter-btn" data-chapter="24">Ch 24</button>
+                <button class="pdf-chapter-btn" data-chapter="25">Ch 25</button>
+                <button class="pdf-chapter-btn" data-chapter="26">Ch 26</button>
+            </div>
+            <a href="../learn/lecture slides/ch21.pdf" download class="pdf-action-link" id="pdfDownload">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                    <polyline points="7 10 12 15 17 10"/>
+                    <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+                <span>Download</span>
+            </a>
+            <a href="../learn/lecture slides/ch21.pdf" target="_blank" class="pdf-action-link primary" id="pdfNewTab">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                <span>Open in New Tab</span>
+            </a>
+        </div>
+        <div class="pdf-panel-content">
+            <div class="pdf-panel-loading" id="pdfLoading">
+                <div class="pdf-panel-spinner"></div>
+                <p>Loading lecture slides...</p>
+            </div>
+            <div class="pdf-panel-error" id="pdfError">
+                <h4>Unable to display PDF</h4>
+                <p>Your browser may not support embedded PDF viewing.</p>
+                <a href="../learn/lecture slides/ch21.pdf" target="_blank" class="pdf-action-link primary" id="pdfErrorOpen">Open PDF in New Tab</a>
+            </div>
+            <iframe class="pdf-panel-frame" id="pdfFrame"></iframe>
+        </div>
+        <div class="pdf-minimized-label">Lecture Slides</div>
+    </div>
+
     <script src="../js/main.js"></script>
+    <script>
+        // PDF Panel functionality
+        const pdfData = {
+            '21': { title: 'Ch 21: Diseases of the Skin', pdf: '../learn/lecture slides/ch21.pdf' },
+            '22': { title: 'Ch 22: Diseases of the Nervous System', pdf: '../learn/lecture slides/ch22.pdf' },
+            '24': { title: 'Ch 24: Diseases of the Respiratory System', pdf: '../learn/lecture slides/ch24.pdf' },
+            '25': { title: 'Ch 25: Diseases of the Digestive System', pdf: '../learn/lecture slides/ch25.pdf' },
+            '26': { title: 'Ch 26: Diseases of the Urinary & Reproductive Systems', pdf: '../learn/lecture slides/ch26.pdf' }
+        };
+
+        const pdfPanel = document.getElementById('pdfPanel');
+        const pdfOverlay = document.getElementById('pdfOverlay');
+        const pdfFrame = document.getElementById('pdfFrame');
+        const pdfLoading = document.getElementById('pdfLoading');
+        const pdfError = document.getElementById('pdfError');
+        const pdfPanelTitle = document.getElementById('pdfPanelTitle');
+        const pdfDownload = document.getElementById('pdfDownload');
+        const pdfNewTab = document.getElementById('pdfNewTab');
+        const pdfErrorOpen = document.getElementById('pdfErrorOpen');
+        let currentChapter = '21';
+
+        // Open PDF panel
+        function openPdfPanel(chapter = '21') {
+            currentChapter = chapter;
+            const data = pdfData[chapter];
+
+            pdfPanelTitle.textContent = data.title;
+            pdfDownload.href = data.pdf;
+            pdfNewTab.href = data.pdf;
+            pdfErrorOpen.href = data.pdf;
+
+            // Update active chapter button
+            document.querySelectorAll('.pdf-chapter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.chapter === chapter);
+            });
+
+            // Show loading, hide error
+            pdfLoading.style.display = 'block';
+            pdfError.style.display = 'none';
+            pdfFrame.style.display = 'none';
+
+            // Load PDF
+            pdfFrame.src = data.pdf;
+
+            // Show panel
+            pdfPanel.classList.add('active');
+            pdfPanel.classList.remove('minimized');
+            pdfOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close PDF panel
+        function closePdfPanel() {
+            pdfPanel.classList.remove('active', 'minimized');
+            pdfOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            pdfFrame.src = '';
+        }
+
+        // Minimize/restore PDF panel
+        function toggleMinimize() {
+            pdfPanel.classList.toggle('minimized');
+            pdfOverlay.classList.toggle('active', !pdfPanel.classList.contains('minimized'));
+            document.body.style.overflow = pdfPanel.classList.contains('minimized') ? '' : 'hidden';
+        }
+
+        // PDF frame load handler
+        pdfFrame.onload = function() {
+            pdfLoading.style.display = 'none';
+            pdfFrame.style.display = 'block';
+        };
+
+        // Fallback for PDF load failure
+        setTimeout(() => {
+            if (pdfPanel.classList.contains('active') && pdfFrame.style.display === 'none') {
+                pdfLoading.style.display = 'none';
+                pdfError.style.display = 'block';
+            }
+        }, 5000);
+
+        // Event listeners
+        document.getElementById('pdfClose').addEventListener('click', closePdfPanel);
+        document.getElementById('pdfMinimize').addEventListener('click', toggleMinimize);
+        pdfOverlay.addEventListener('click', toggleMinimize);
+
+        // Chapter navigation buttons
+        document.querySelectorAll('.pdf-chapter-btn').forEach(btn => {
+            btn.addEventListener('click', () => openPdfPanel(btn.dataset.chapter));
+        });
+
+        // Lecture slides button
+        document.querySelector('.lecture-slides-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            openPdfPanel('21');
+        });
+
+        // Click minimized panel to restore
+        pdfPanel.addEventListener('click', function(e) {
+            if (pdfPanel.classList.contains('minimized') && !e.target.closest('.pdf-panel-btn')) {
+                toggleMinimize();
+            }
+        });
+
+        // Escape key to close
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && pdfPanel.classList.contains('active')) {
+                closePdfPanel();
+            }
+        });
+    </script>
 </body>
 </html>

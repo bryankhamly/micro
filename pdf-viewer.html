@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Slides - Bio 15 Microbiology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦠</text></svg>">
+    <style>
+        .pdf-viewer-container {
+            display: flex;
+            flex-direction: column;
+            height: calc(100vh - 70px);
+            background: var(--background);
+        }
+
+        .pdf-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .pdf-toolbar-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .pdf-back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .pdf-back-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .pdf-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .pdf-toolbar-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .pdf-action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .pdf-action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+        }
+
+        .pdf-action-btn.secondary {
+            background: var(--background);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        .pdf-action-btn.secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: none;
+        }
+
+        .pdf-frame-container {
+            flex: 1;
+            position: relative;
+            background: #1a1a2e;
+        }
+
+        .pdf-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .pdf-loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .pdf-loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .pdf-error {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 2rem;
+            max-width: 500px;
+        }
+
+        .pdf-error h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .pdf-error p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .chapter-nav {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .chapter-nav-btn {
+            padding: 0.4rem 0.75rem;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .chapter-nav-btn:hover,
+        .chapter-nav-btn.active {
+            border-color: var(--primary);
+            color: var(--primary);
+            background: rgba(6, 182, 212, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .pdf-toolbar {
+                padding: 1rem;
+            }
+
+            .pdf-title {
+                font-size: 0.95rem;
+                width: 100%;
+                order: -1;
+            }
+
+            .pdf-toolbar-left,
+            .pdf-toolbar-right {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .chapter-nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="12" cy="4" r="1"/>
+                    <circle cx="12" cy="20" r="1"/>
+                    <circle cx="4" cy="12" r="1"/>
+                    <circle cx="20" cy="12" r="1"/>
+                </svg>
+                Microbiology
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="chapters/chapter21.html">Ch 21: Skin</a></li>
+                <li><a href="chapters/chapter22.html">Ch 22: Nervous</a></li>
+                <li><a href="chapters/chapter24.html">Ch 24: Respiratory</a></li>
+                <li><a href="chapters/chapter25.html">Ch 25: Digestive</a></li>
+                <li><a href="chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
+                <li><a href="practice.html" class="nav-highlight">Practice Test</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PDF Viewer -->
+    <div class="pdf-viewer-container">
+        <div class="pdf-toolbar">
+            <div class="pdf-toolbar-left">
+                <a href="#" id="backBtn" class="pdf-back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Chapter
+                </a>
+                <span class="pdf-title" id="pdfTitle">Lecture Slides</span>
+            </div>
+            <div class="pdf-toolbar-right">
+                <div class="chapter-nav">
+                    <a href="?chapter=21" class="chapter-nav-btn" data-chapter="21">Ch 21</a>
+                    <a href="?chapter=22" class="chapter-nav-btn" data-chapter="22">Ch 22</a>
+                    <a href="?chapter=24" class="chapter-nav-btn" data-chapter="24">Ch 24</a>
+                    <a href="?chapter=25" class="chapter-nav-btn" data-chapter="25">Ch 25</a>
+                    <a href="?chapter=26" class="chapter-nav-btn" data-chapter="26">Ch 26</a>
+                </div>
+                <a href="#" id="downloadBtn" class="pdf-action-btn secondary" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download
+                </a>
+                <a href="#" id="openNewTab" class="pdf-action-btn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    Open in New Tab
+                </a>
+            </div>
+        </div>
+
+        <div class="pdf-frame-container">
+            <div class="pdf-loading" id="pdfLoading">
+                <div class="pdf-loading-spinner"></div>
+                <p>Loading lecture slides...</p>
+            </div>
+            <div class="pdf-error" id="pdfError">
+                <h3>Unable to display PDF</h3>
+                <p>Your browser may not support embedded PDF viewing. Click the button below to open the PDF directly.</p>
+                <a href="#" id="errorOpenBtn" class="pdf-action-btn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    Open PDF
+                </a>
+            </div>
+            <iframe id="pdfFrame" class="pdf-frame" style="display: none;"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Chapter data
+        const chapters = {
+            '21': {
+                title: 'Chapter 21: Diseases of the Skin',
+                pdf: 'learn/lecture slides/ch 21 disease of skin and nervous system.pdf',
+                back: 'chapters/chapter21.html'
+            },
+            '22': {
+                title: 'Chapter 22: Diseases of the Nervous System',
+                pdf: 'learn/lecture slides/ch 22 disease of nervous system.pdf',
+                back: 'chapters/chapter22.html'
+            },
+            '24': {
+                title: 'Chapter 24: Diseases of the Respiratory System',
+                pdf: 'learn/lecture slides/ch 24 disease of respiratory system.pdf',
+                back: 'chapters/chapter24.html'
+            },
+            '25': {
+                title: 'Chapter 25: Diseases of the Digestive System',
+                pdf: 'learn/lecture slides/ch 25 disease of digestive system.pdf',
+                back: 'chapters/chapter25.html'
+            },
+            '26': {
+                title: 'Chapter 26: Diseases of the Urinary & Reproductive Systems',
+                pdf: 'learn/lecture slides/ch 26 disease of urinary and reproductive.pdf',
+                back: 'chapters/chapter26.html'
+            }
+        };
+
+        // Get chapter from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const chapter = urlParams.get('chapter') || '21';
+        const chapterData = chapters[chapter] || chapters['21'];
+
+        // Update UI
+        document.getElementById('pdfTitle').textContent = chapterData.title;
+        document.getElementById('backBtn').href = chapterData.back;
+        document.getElementById('downloadBtn').href = chapterData.pdf;
+        document.getElementById('openNewTab').href = chapterData.pdf;
+        document.getElementById('errorOpenBtn').href = chapterData.pdf;
+        document.title = chapterData.title + ' - Lecture Slides';
+
+        // Highlight active chapter nav
+        document.querySelectorAll('.chapter-nav-btn').forEach(btn => {
+            if (btn.dataset.chapter === chapter) {
+                btn.classList.add('active');
+            }
+        });
+
+        // Load PDF
+        const pdfFrame = document.getElementById('pdfFrame');
+        const pdfLoading = document.getElementById('pdfLoading');
+        const pdfError = document.getElementById('pdfError');
+
+        pdfFrame.onload = function() {
+            pdfLoading.style.display = 'none';
+            pdfFrame.style.display = 'block';
+        };
+
+        pdfFrame.onerror = function() {
+            pdfLoading.style.display = 'none';
+            pdfError.style.display = 'block';
+        };
+
+        // Set PDF source
+        pdfFrame.src = chapterData.pdf;
+
+        // Fallback: if PDF doesn't load within 5 seconds, show error
+        setTimeout(() => {
+            if (pdfFrame.style.display === 'none') {
+                pdfLoading.style.display = 'none';
+                pdfError.style.display = 'block';
+            }
+        }, 5000);
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -426,6 +426,35 @@ a:hover {
     font-size: 1.1rem;
 }
 
+/* Lecture Slides Button */
+.lecture-slides-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: var(--radius-sm);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transition);
+    backdrop-filter: blur(10px);
+}
+
+.lecture-slides-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lecture-slides-btn svg {
+    flex-shrink: 0;
+}
+
 /* Tabs */
 .tabs-container {
     background: var(--surface);
@@ -1850,4 +1879,338 @@ a:hover {
     font-size: 1.1rem;
     position: relative;
     z-index: 1;
+}
+
+/* ===== Slide-in PDF Viewer Panel ===== */
+.pdf-panel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.pdf-panel-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pdf-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    max-width: 900px;
+    min-width: 320px;
+    height: 100vh;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-panel.active {
+    transform: translateX(0);
+}
+
+.pdf-panel.minimized {
+    transform: translateX(calc(100% - 60px));
+}
+
+.pdf-panel.minimized .pdf-panel-content,
+.pdf-panel.minimized .pdf-panel-actions {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.pdf-panel.minimized .pdf-panel-header {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 1.5rem 0.75rem;
+    height: 100%;
+    justify-content: flex-start;
+    background: #2a2a3e;
+    cursor: pointer;
+    border-left: 2px solid var(--primary);
+    box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-panel.minimized .pdf-panel-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 200px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.pdf-panel.minimized .pdf-panel-controls {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pdf-panel.minimized .pdf-panel-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--border);
+    color: var(--text-secondary);
+}
+
+.pdf-panel.minimized .pdf-panel-btn:hover {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* Minimized label shown as tab */
+.pdf-minimized-label {
+    display: none;
+}
+
+.pdf-panel.minimized .pdf-minimized-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    background: #2a2a3e;
+    color: var(--primary);
+    padding: 0.6rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-radius: 6px 6px 0 0;
+    white-space: nowrap;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-bottom: none;
+}
+
+.pdf-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.pdf-panel-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pdf-panel-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pdf-panel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.pdf-panel-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(6, 182, 212, 0.1);
+}
+
+.pdf-panel-btn.close:hover {
+    border-color: #ef4444;
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.pdf-panel-actions {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--background);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.pdf-action-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.pdf-action-link:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.pdf-action-link.primary {
+    background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+    border: none;
+    color: white;
+}
+
+.pdf-action-link.primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+}
+
+.pdf-panel-content {
+    flex: 1;
+    position: relative;
+    background: #1a1a2e;
+    overflow: hidden;
+}
+
+.pdf-panel-frame,
+.pdf-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.pdf-panel-loading,
+.pdf-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.pdf-panel-spinner,
+.pdf-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--border);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.pdf-panel-error,
+.pdf-error {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 2rem;
+    max-width: 400px;
+}
+
+.pdf-panel-error h4,
+.pdf-error h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.pdf-panel-error p,
+.pdf-error p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Chapter quick nav in panel */
+.pdf-chapter-nav {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.pdf-chapter-btn,
+.chapter-nav-btn {
+    padding: 0.35rem 0.6rem;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.pdf-chapter-btn:hover,
+.pdf-chapter-btn.active,
+.chapter-nav-btn:hover,
+.chapter-nav-btn.active {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(6, 182, 212, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .pdf-panel {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pdf-panel {
+        width: 100%;
+        max-width: none;
+    }
+
+    .pdf-panel.minimized {
+        transform: translateX(calc(100% - 50px));
+    }
+
+    .pdf-panel.minimized .pdf-minimized-label {
+        left: -40px;
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .pdf-panel-actions {
+        padding: 0.5rem 1rem;
+    }
+
+    .pdf-action-link span {
+        display: none;
+    }
 }

@@ -49,6 +49,16 @@
             </a>
             <h1>Chapter 24: Diseases of the Respiratory System</h1>
             <p>Upper and Lower Respiratory Tract Infections</p>
+            <button onclick="openPdfPanel('24')" class="lecture-slides-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                View Lecture Slides
+            </button>
         </div>
     </header>
 
@@ -897,5 +907,172 @@
     </footer>
 
     <script src="../js/main.js"></script>
+
+    <!-- PDF Viewer Panel -->
+    <div class="pdf-panel-overlay" id="pdfOverlay"></div>
+    <div class="pdf-panel" id="pdfPanel">
+        <div class="pdf-panel-header">
+            <h3 class="pdf-panel-title" id="pdfTitle">Lecture Slides</h3>
+            <div class="pdf-panel-controls">
+                <button class="pdf-panel-btn minimize-btn" id="minimizeBtn" title="Minimize">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="4 14 10 14 10 20"/>
+                        <polyline points="20 10 14 10 14 4"/>
+                        <line x1="14" y1="10" x2="21" y2="3"/>
+                        <line x1="3" y1="21" x2="10" y2="14"/>
+                    </svg>
+                </button>
+                <button class="pdf-panel-btn close-btn" id="closeBtn" title="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="pdf-panel-actions">
+            <div class="pdf-chapter-nav">
+                <button class="chapter-nav-btn" onclick="loadChapter('21')">Ch 21</button>
+                <button class="chapter-nav-btn" onclick="loadChapter('22')">Ch 22</button>
+                <button class="chapter-nav-btn active" onclick="loadChapter('24')">Ch 24</button>
+                <button class="chapter-nav-btn" onclick="loadChapter('25')">Ch 25</button>
+                <button class="chapter-nav-btn" onclick="loadChapter('26')">Ch 26</button>
+            </div>
+            <div class="pdf-action-links">
+                <a href="../learn/lecture slides/ch24.pdf" download class="pdf-action-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                    Download
+                </a>
+                <a href="../learn/lecture slides/ch24.pdf" target="_blank" class="pdf-action-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                        <polyline points="15 3 21 3 21 9"/>
+                        <line x1="10" y1="14" x2="21" y2="3"/>
+                    </svg>
+                    Open in New Tab
+                </a>
+            </div>
+        </div>
+        <div class="pdf-panel-content">
+            <div class="pdf-loading" id="pdfLoading">
+                <div class="pdf-spinner"></div>
+                <p>Loading PDF...</p>
+            </div>
+            <div class="pdf-error" id="pdfError" style="display: none;">
+                <p>Unable to load PDF. <a href="../learn/lecture slides/ch24.pdf" target="_blank">Click here to open directly</a></p>
+            </div>
+            <iframe id="pdfFrame" class="pdf-frame" src="" style="display: none;"></iframe>
+        </div>
+        <div class="pdf-minimized-label">Lecture Slides</div>
+    </div>
+
+    <script>
+        const pdfPanel = document.getElementById('pdfPanel');
+        const pdfOverlay = document.getElementById('pdfOverlay');
+        const pdfFrame = document.getElementById('pdfFrame');
+        const pdfLoading = document.getElementById('pdfLoading');
+        const pdfError = document.getElementById('pdfError');
+        const pdfTitle = document.getElementById('pdfTitle');
+        const minimizeBtn = document.getElementById('minimizeBtn');
+        const closeBtn = document.getElementById('closeBtn');
+
+        let currentChapter = '24';
+
+        const chapterNames = {
+            '21': 'Chapter 21: Skin Diseases',
+            '22': 'Chapter 22: Nervous System',
+            '24': 'Chapter 24: Respiratory System',
+            '25': 'Chapter 25: Digestive System',
+            '26': 'Chapter 26: Urinary/Reproductive'
+        };
+
+        function openPdfPanel(chapter) {
+            currentChapter = chapter;
+            pdfPanel.classList.add('active');
+            pdfPanel.classList.remove('minimized');
+            pdfOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            loadChapter(chapter);
+        }
+
+        function closePdfPanel() {
+            pdfPanel.classList.remove('active', 'minimized');
+            pdfOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            pdfFrame.src = '';
+            pdfFrame.style.display = 'none';
+            pdfLoading.style.display = 'flex';
+            pdfError.style.display = 'none';
+        }
+
+        function toggleMinimize() {
+            pdfPanel.classList.toggle('minimized');
+            if (pdfPanel.classList.contains('minimized')) {
+                pdfOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            } else {
+                pdfOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function loadChapter(chapter) {
+            currentChapter = chapter;
+            pdfTitle.textContent = chapterNames[chapter] || `Chapter ${chapter}`;
+
+            // Update active button
+            document.querySelectorAll('.chapter-nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(chapter)) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Update download and open links
+            const pdfPath = `../learn/lecture slides/ch${chapter}.pdf`;
+            document.querySelector('.pdf-action-links a[download]').href = pdfPath;
+            document.querySelector('.pdf-action-links a[target="_blank"]').href = pdfPath;
+            document.querySelector('.pdf-error a').href = pdfPath;
+
+            // Load PDF
+            pdfLoading.style.display = 'flex';
+            pdfFrame.style.display = 'none';
+            pdfError.style.display = 'none';
+
+            pdfFrame.src = pdfPath;
+        }
+
+        pdfFrame.onload = function() {
+            pdfLoading.style.display = 'none';
+            pdfFrame.style.display = 'block';
+        };
+
+        pdfFrame.onerror = function() {
+            pdfLoading.style.display = 'none';
+            pdfError.style.display = 'flex';
+        };
+
+        closeBtn.addEventListener('click', closePdfPanel);
+        minimizeBtn.addEventListener('click', toggleMinimize);
+        pdfOverlay.addEventListener('click', toggleMinimize);
+
+        // Click on minimized panel to expand
+        pdfPanel.addEventListener('click', function(e) {
+            if (pdfPanel.classList.contains('minimized') && !e.target.closest('.pdf-panel-btn')) {
+                toggleMinimize();
+            }
+        });
+
+        // Escape key to close
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && pdfPanel.classList.contains('active')) {
+                closePdfPanel();
+            }
+        });
+    </script>
 </body>
 </html>
