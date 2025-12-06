@@ -1182,6 +1182,14 @@
         document.querySelector('.lecture-slides-btn').addEventListener('click', function(e) { e.preventDefault(); openPdfPanel('22'); });
         pdfPanel.addEventListener('click', function(e) { if (pdfPanel.classList.contains('minimized') && !e.target.closest('.pdf-panel-btn')) { toggleMinimize(); } });
         document.addEventListener('keydown', function(e) { if (e.key === 'Escape' && pdfPanel.classList.contains('active')) { closePdfPanel(); } });
+
+        // Close panel when mobile "Open PDF" button is clicked
+        const mobileOpenBtn = document.getElementById('mobileOpenBtn');
+        if (mobileOpenBtn) {
+            mobileOpenBtn.addEventListener('click', function() {
+                setTimeout(closePdfPanel, 100);
+            });
+        }
     </script>
 </body>
 </html>
