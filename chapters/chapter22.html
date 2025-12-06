@@ -1176,8 +1176,8 @@
         pdfFrame.onload = function() { if (!isMobile) { pdfLoading.style.display = 'none'; pdfFrame.style.display = 'block'; } };
         setTimeout(() => { if (!isMobile && pdfPanel.classList.contains('active') && pdfFrame.style.display === 'none') { pdfLoading.style.display = 'none'; pdfError.style.display = 'block'; } }, 5000);
         document.getElementById('pdfClose').addEventListener('click', closePdfPanel);
-        document.getElementById('pdfMinimize').addEventListener('click', toggleMinimize);
-        pdfOverlay.addEventListener('click', toggleMinimize);
+        document.getElementById('pdfMinimize').addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
+        pdfOverlay.addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
         document.querySelectorAll('.pdf-chapter-btn').forEach(btn => { btn.addEventListener('click', () => openPdfPanel(btn.dataset.chapter)); });
         document.querySelector('.lecture-slides-btn').addEventListener('click', function(e) { e.preventDefault(); openPdfPanel('22'); });
         pdfPanel.addEventListener('click', function(e) { if (pdfPanel.classList.contains('minimized') && !e.target.closest('.pdf-panel-btn')) { toggleMinimize(); } });

@@ -1182,8 +1182,8 @@
 
         // Event listeners
         document.getElementById('pdfClose').addEventListener('click', closePdfPanel);
-        document.getElementById('pdfMinimize').addEventListener('click', toggleMinimize);
-        pdfOverlay.addEventListener('click', toggleMinimize);
+        document.getElementById('pdfMinimize').addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
+        pdfOverlay.addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
 
         // Chapter navigation buttons
         document.querySelectorAll('.pdf-chapter-btn').forEach(btn => {

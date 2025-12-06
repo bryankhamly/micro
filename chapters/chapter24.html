@@ -1108,8 +1108,8 @@
         };
 
         closeBtn.addEventListener('click', closePdfPanel);
-        minimizeBtn.addEventListener('click', toggleMinimize);
-        pdfOverlay.addEventListener('click', toggleMinimize);
+        minimizeBtn.addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
+        pdfOverlay.addEventListener('click', isMobile ? closePdfPanel : toggleMinimize);
 
         // Click on minimized panel to expand
         pdfPanel.addEventListener('click', function(e) {
