@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Status - Bio 15 Microbiology</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#129440;</text></svg>">
+    <style>
+        .todo-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .todo-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .todo-header h1 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .todo-header p {
+            color: var(--text-secondary);
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 0.75rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .todo-item.in-progress {
+            border-left: 4px solid #f59e0b;
+        }
+
+        .todo-item.completed {
+            border-left: 4px solid #10b981;
+            opacity: 0.7;
+        }
+
+        .todo-item.planned {
+            border-left: 4px solid var(--primary);
+        }
+
+        .todo-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+
+        .todo-status.in-progress {
+            background: rgba(245, 158, 11, 0.15);
+            color: #f59e0b;
+        }
+
+        .todo-status.completed {
+            background: rgba(16, 185, 129, 0.15);
+            color: #10b981;
+        }
+
+        .todo-status.planned {
+            background: rgba(139, 92, 246, 0.15);
+            color: var(--primary);
+        }
+
+        .todo-status svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .todo-text {
+            flex: 1;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        .todo-item.completed .todo-text {
+            text-decoration: line-through;
+            color: var(--text-muted);
+        }
+
+        .section-label {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section-label:first-of-type {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="12" cy="4" r="1"/>
+                    <circle cx="12" cy="20" r="1"/>
+                    <circle cx="4" cy="12" r="1"/>
+                    <circle cx="20" cy="12" r="1"/>
+                </svg>
+                Microbiology
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="chapters/chapter21.html">Ch 21: Skin</a></li>
+                <li><a href="chapters/chapter22.html">Ch 22: Nervous</a></li>
+                <li><a href="chapters/chapter24.html">Ch 24: Respiratory</a></li>
+                <li><a href="chapters/chapter25.html">Ch 25: Digestive</a></li>
+                <li><a href="chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
+                <li><a href="todo.html" class="nav-todo active">Site Status</a></li>
+                <li><a href="practice.html" class="nav-highlight">Practice Test</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>Site Status</h1>
+            <p>Just a list of my work in progress/todo list</p>
+        </div>
+
+        <h3 class="section-label">In Progress</h3>
+        <ul class="todo-list">
+            <li class="todo-item in-progress">
+                <span class="todo-text">Nothing</span>
+                <span class="todo-status in-progress">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    In Progress
+                </span>
+            </li>
+        </ul>
+
+        <h3 class="section-label">Planned</h3>
+        <ul class="todo-list">
+            <li class="todo-item planned">
+                <span class="todo-text">Adding content for rest of lab exercises + metabolic tests for Thursday Lab Exam</span>
+                <span class="todo-status planned">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Planned
+                </span>
+            </li>
+                        <li class="todo-item planned">
+                <span class="todo-text">Refine lab exercises with images since its mainly text</span>
+                <span class="todo-status planned">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                    Planned
+                </span>
+            </li>
+        </ul>
+
+        <h3 class="section-label">Completed</h3>
+        <ul class="todo-list">
+            <li class="todo-item completed">
+                <span class="todo-text">Blood typing activities</span>
+                <span class="todo-status completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Done
+                </span>
+            </li>
+            <li class="todo-item completed">
+                <span class="todo-text">Lab Exercises 13, 15, 16, 43, 54, 56, 60, 61 core concepts</span>
+                <span class="todo-status completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Done
+                </span>
+            </li>
+            <li class="todo-item completed">
+                <span class="todo-text">Chapters 21, 22, 24, 25, 26 study guides</span>
+                <span class="todo-status completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Done
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
