@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Typing Practice Game - Bio 15 Microbiology</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩸</text></svg>">
+    <style>
+        /* Game-specific styles */
+        .game-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Mode Selection */
+        .mode-selection {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .mode-selection h2 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .mode-selection > p {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .mode-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .mode-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .mode-card {
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .mode-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+        }
+
+        .mode-card.active {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+        }
+
+        .mode-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .mode-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .mode-card p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin: 0;
+        }
+
+        .start-game-btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .start-game-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.5);
+        }
+
+        .start-game-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .game-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .game-header h2 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .game-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 0.75rem 1.5rem;
+            text-align: center;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat-value.correct {
+            color: #10b981;
+        }
+
+        .stat-value.incorrect {
+            color: #ef4444;
+        }
+
+        /* Blood sample area */
+        .blood-sample-area {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        .sample-label {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .sample-label strong {
+            color: var(--primary);
+        }
+
+        /* Blood type display for compatibility modes */
+        .blood-type-display {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .blood-type-large {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 40px rgba(239, 68, 68, 0.3);
+        }
+
+        .blood-type-context {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        .test-wells {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .test-well {
+            text-align: center;
+        }
+
+        .well-label {
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .well-label.anti-a {
+            color: #3b82f6;
+        }
+
+        .well-label.anti-b {
+            color: #f59e0b;
+        }
+
+        .well-label.anti-rh {
+            color: #8b5cf6;
+        }
+
+        .well {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #2a1a1a 0%, #1a0a0a 100%);
+            border: 3px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Blood appearance - smooth (no agglutination) */
+        .well.smooth {
+            background: radial-gradient(circle at 30% 30%, #8b2020 0%, #5a1010 50%, #3a0808 100%);
+        }
+
+        .well.smooth::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            border-radius: 50%;
+            background: radial-gradient(circle at 40% 40%, rgba(255, 100, 100, 0.3) 0%, transparent 50%);
+        }
+
+        /* Agglutinated blood appearance */
+        .well.agglutinated {
+            background: radial-gradient(circle at 30% 30%, #6b1515 0%, #4a0a0a 100%);
+        }
+
+        .well.agglutinated::before {
+            content: "";
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            background-image:
+                radial-gradient(circle at 20% 30%, #a02020 0%, #a02020 8%, transparent 8%),
+                radial-gradient(circle at 60% 20%, #8b1818 0%, #8b1818 10%, transparent 10%),
+                radial-gradient(circle at 80% 50%, #a52a2a 0%, #a52a2a 7%, transparent 7%),
+                radial-gradient(circle at 40% 70%, #901515 0%, #901515 9%, transparent 9%),
+                radial-gradient(circle at 70% 75%, #a02020 0%, #a02020 6%, transparent 6%),
+                radial-gradient(circle at 25% 55%, #8b1818 0%, #8b1818 8%, transparent 8%),
+                radial-gradient(circle at 55% 45%, #a52a2a 0%, #a52a2a 11%, transparent 11%),
+                radial-gradient(circle at 35% 40%, #901515 0%, #901515 7%, transparent 7%),
+                radial-gradient(circle at 75% 30%, #a02020 0%, #a02020 5%, transparent 5%),
+                radial-gradient(circle at 15% 75%, #8b1818 0%, #8b1818 6%, transparent 6%);
+            border-radius: 50%;
+        }
+
+        .well-result {
+            position: absolute;
+            bottom: -30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            width: 100%;
+            text-align: center;
+        }
+
+        .well-result.positive {
+            color: #ef4444;
+        }
+
+        .well-result.negative {
+            color: #6b7280;
+        }
+
+        /* Answer section */
+        .answer-section {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+        }
+
+        .answer-section h3 {
+            text-align: center;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .blood-type-options {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 600px) {
+            .blood-type-options {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .blood-type-btn {
+            padding: 1rem 1.5rem;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            transition: var(--transition);
+        }
+
+        .blood-type-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background: var(--surface-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .blood-type-btn.selected {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+            color: var(--primary);
+        }
+
+        .blood-type-btn.correct {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(52, 211, 153, 0.2) 100%);
+            border-color: #10b981;
+            color: #34d399;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .blood-type-btn.incorrect {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(248, 113, 113, 0.2) 100%);
+            border-color: #ef4444;
+            color: #f87171;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.4);
+        }
+
+        .blood-type-btn.missed {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.3) 0%, rgba(251, 191, 36, 0.2) 100%);
+            border-color: #f59e0b;
+            color: #fbbf24;
+        }
+
+        .blood-type-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        /* Multi-select hint */
+        .multi-select-hint {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: rgba(6, 182, 212, 0.1);
+            border-radius: var(--radius-sm);
+        }
+
+        /* Feedback section */
+        .feedback {
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+
+        .feedback.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .feedback.correct {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(52, 211, 153, 0.1) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .feedback.partial {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.1) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.4);
+        }
+
+        .feedback.incorrect {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(248, 113, 113, 0.1) 100%);
+            border: 1px solid rgba(239, 68, 68, 0.4);
+        }
+
+        .feedback h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feedback.correct h4 {
+            color: #34d399;
+        }
+
+        .feedback.partial h4 {
+            color: #fbbf24;
+        }
+
+        .feedback.incorrect h4 {
+            color: #f87171;
+        }
+
+        .feedback p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        /* Blood info display */
+        .blood-info {
+            display: none;
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: var(--background);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+
+        .blood-info.show {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .blood-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 500px) {
+            .blood-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .blood-info-item {
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            text-align: center;
+        }
+
+        .blood-info-item.antigens {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(248, 113, 113, 0.05) 100%);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .blood-info-item.antibodies {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(96, 165, 250, 0.05) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .blood-info-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .blood-info-item.antigens .blood-info-label {
+            color: #f87171;
+        }
+
+        .blood-info-item.antibodies .blood-info-label {
+            color: #60a5fa;
+        }
+
+        .blood-info-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .blood-info-sublabel {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        /* Submit button for multi-select */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            max-width: 200px;
+            margin: 1.5rem auto 0;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Next button */
+        .next-btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 1.5rem auto 0;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .next-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.5);
+        }
+
+        .next-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Back to modes button */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            margin-bottom: 1rem;
+        }
+
+        .back-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Reference card */
+        .reference-card {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        .reference-card h4 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .reference-card table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .reference-card th, .reference-card td {
+            padding: 0.5rem;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .reference-card th {
+            background: var(--background);
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .reference-card td {
+            color: var(--text-primary);
+        }
+
+        .reference-toggle {
+            background: none;
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 1rem auto;
+        }
+
+        .reference-toggle:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .reference-content {
+            display: none;
+        }
+
+        .reference-content.show {
+            display: block;
+        }
+
+        /* Game complete overlay */
+        .game-complete {
+            display: none;
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--surface);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+        }
+
+        .game-complete.show {
+            display: block;
+        }
+
+        .game-complete h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .final-score {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+
+        .final-score.excellent {
+            color: #10b981;
+        }
+
+        .final-score.good {
+            color: #06b6d4;
+        }
+
+        .final-score.needs-practice {
+            color: #f59e0b;
+        }
+
+        .game-complete-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .play-again-btn {
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            border: none;
+            border-radius: var(--radius-sm);
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .play-again-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.5);
+        }
+
+        .change-mode-btn {
+            padding: 1rem 2rem;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .change-mode-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid var(--border);
+        }
+
+        .legend-dot.smooth {
+            background: radial-gradient(circle at 30% 30%, #8b2020 0%, #5a1010 100%);
+        }
+
+        .legend-dot.clumped {
+            background: #6b1515;
+            background-image:
+                radial-gradient(circle at 30% 40%, #a02020 0%, #a02020 20%, transparent 20%),
+                radial-gradient(circle at 70% 60%, #8b1818 0%, #8b1818 15%, transparent 15%);
+        }
+
+        /* Antigen/Antibody Quiz Styles */
+        .quiz-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 500px) {
+            .quiz-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .quiz-option-btn {
+            padding: 1rem;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            transition: var(--transition);
+            text-align: left;
+        }
+
+        .quiz-option-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background: var(--surface-hover);
+        }
+
+        .quiz-option-btn.selected {
+            border-color: var(--primary);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+        }
+
+        .quiz-option-btn.correct {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.3) 0%, rgba(52, 211, 153, 0.2) 100%);
+            border-color: #10b981;
+            color: #34d399;
+        }
+
+        .quiz-option-btn.incorrect {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(248, 113, 113, 0.2) 100%);
+            border-color: #ef4444;
+            color: #f87171;
+        }
+
+        .quiz-option-btn:disabled {
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
+        /* Hidden class */
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="12" cy="4" r="1"/>
+                    <circle cx="12" cy="20" r="1"/>
+                    <circle cx="4" cy="12" r="1"/>
+                    <circle cx="20" cy="12" r="1"/>
+                </svg>
+                Microbiology
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="../labs/ex61.html">Blood Grouping Lab</a></li>
+                <li><a href="../practice.html" class="nav-highlight">Practice Test</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="chapter-header lab-header">
+        <div class="chapter-header-content">
+            <a href="../index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+            <span class="lab-badge">INTERACTIVE GAME</span>
+            <h1>Blood Typing Practice</h1>
+            <p>Master blood typing with multiple practice modes</p>
+        </div>
+    </header>
+
+    <!-- Game Content -->
+    <main class="game-container">
+        <!-- Mode Selection Screen -->
+        <div class="mode-selection" id="modeSelection">
+            <h2>Choose Practice Mode</h2>
+            <p>Select how you want to practice blood typing</p>
+            <div class="mode-grid">
+                <div class="mode-card" data-mode="identify">
+                    <div class="mode-icon">🔬</div>
+                    <h3>Identify Blood Type</h3>
+                    <p>Look at agglutination patterns and identify the blood type</p>
+                </div>
+                <div class="mode-card" data-mode="donors">
+                    <div class="mode-icon">🩸</div>
+                    <h3>Find Valid Donors</h3>
+                    <p>Given a patient's blood type, select all compatible donors</p>
+                </div>
+                <div class="mode-card" data-mode="recipients">
+                    <div class="mode-icon">💉</div>
+                    <h3>Find Valid Recipients</h3>
+                    <p>Given a donor's blood type, select who can receive it</p>
+                </div>
+                <div class="mode-card" data-mode="antigens">
+                    <div class="mode-icon">🧬</div>
+                    <h3>Antigen/Antibody Quiz</h3>
+                    <p>Identify what antigens or antibodies each blood type has</p>
+                </div>
+            </div>
+            <button class="start-game-btn" id="startGameBtn" disabled>Select a Mode to Start</button>
+        </div>
+
+        <!-- Game Header (shown during game) -->
+        <div class="game-header hidden" id="gameHeader">
+            <button class="back-btn" id="backToModes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Change Mode
+            </button>
+            <h2 id="gameTitle">Identify the Blood Type</h2>
+            <p id="gameSubtitle" style="color: var(--text-secondary);">Look at the agglutination pattern and select the correct blood type</p>
+            <div class="game-stats">
+                <div class="stat-box">
+                    <div class="stat-label">Question</div>
+                    <div class="stat-value"><span id="currentQuestion">1</span> / <span id="totalQuestions">10</span></div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Correct</div>
+                    <div class="stat-value correct" id="correctCount">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Incorrect</div>
+                    <div class="stat-value incorrect" id="incorrectCount">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Area -->
+        <div id="gameArea" class="hidden">
+            <!-- Blood Sample Display (for identify mode) -->
+            <div class="blood-sample-area" id="sampleArea">
+                <div class="sample-label">Patient Blood Sample <strong id="sampleNumber">#1</strong></div>
+                <div class="test-wells">
+                    <div class="test-well">
+                        <div class="well-label anti-a">Anti-A Serum</div>
+                        <div class="well" id="wellA"></div>
+                        <div class="well-result" id="resultA"></div>
+                    </div>
+                    <div class="test-well">
+                        <div class="well-label anti-b">Anti-B Serum</div>
+                        <div class="well" id="wellB"></div>
+                        <div class="well-result" id="resultB"></div>
+                    </div>
+                    <div class="test-well">
+                        <div class="well-label anti-rh">Anti-D Serum (Rh)</div>
+                        <div class="well" id="wellRh"></div>
+                        <div class="well-result" id="resultRh"></div>
+                    </div>
+                </div>
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="legend-dot smooth"></div>
+                        <span>Smooth = No Agglutination (-)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-dot clumped"></div>
+                        <span>Clumped = Agglutination (+)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blood Type Display (for compatibility modes) -->
+            <div class="blood-sample-area hidden" id="typeDisplayArea">
+                <div class="blood-type-display">
+                    <div class="blood-type-large" id="displayBloodType">A+</div>
+                    <div class="blood-type-context" id="displayContext">Patient needs a transfusion</div>
+                </div>
+            </div>
+
+            <!-- Answer Options -->
+            <div class="answer-section" id="answerSection">
+                <h3 id="questionText">What is the blood type?</h3>
+
+                <!-- Multi-select hint -->
+                <div class="multi-select-hint hidden" id="multiSelectHint">
+                    Select ALL correct answers, then click Submit
+                </div>
+
+                <!-- Feedback -->
+                <div class="feedback" id="feedback">
+                    <h4 id="feedbackTitle"></h4>
+                    <p id="feedbackText"></p>
+                </div>
+
+                <!-- Blood Type Info (shown after answering) -->
+                <div class="blood-info" id="bloodInfo">
+                    <div class="blood-info-grid">
+                        <div class="blood-info-item antigens">
+                            <div class="blood-info-label">Antigens on RBCs</div>
+                            <div class="blood-info-value" id="antigensValue">-</div>
+                            <div class="blood-info-sublabel">(Surface markers)</div>
+                        </div>
+                        <div class="blood-info-item antibodies">
+                            <div class="blood-info-label">Antibodies in Serum</div>
+                            <div class="blood-info-value" id="antibodiesValue">-</div>
+                            <div class="blood-info-sublabel">(Will attack foreign antigens)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blood type buttons (for identify and compatibility modes) -->
+                <div class="blood-type-options" id="bloodTypeOptions">
+                    <button class="blood-type-btn" data-type="A+">A+</button>
+                    <button class="blood-type-btn" data-type="A-">A-</button>
+                    <button class="blood-type-btn" data-type="B+">B+</button>
+                    <button class="blood-type-btn" data-type="B-">B-</button>
+                    <button class="blood-type-btn" data-type="AB+">AB+</button>
+                    <button class="blood-type-btn" data-type="AB-">AB-</button>
+                    <button class="blood-type-btn" data-type="O+">O+</button>
+                    <button class="blood-type-btn" data-type="O-">O-</button>
+                </div>
+
+                <!-- Quiz options (for antigen/antibody mode) -->
+                <div class="quiz-options hidden" id="quizOptions"></div>
+
+                <!-- Submit button for multi-select -->
+                <button class="submit-btn hidden" id="submitBtn">Submit Answer</button>
+
+                <button class="next-btn" id="nextBtn" disabled>Next Question</button>
+            </div>
+
+            <!-- Reference Toggle -->
+            <button class="reference-toggle" id="referenceToggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+                Show Reference Chart
+            </button>
+
+            <div class="reference-content" id="referenceContent">
+                <div class="reference-card">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        Blood Typing Reference
+                    </h4>
+                    <div style="overflow-x: auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Blood Type</th>
+                                    <th style="background: #ef4444;">Antigens on RBCs</th>
+                                    <th style="background: #3b82f6;">Antibodies in Serum</th>
+                                    <th>Can Donate To</th>
+                                    <th>Can Receive From</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td><strong>A+</strong></td><td style="color: #f87171;">A, D</td><td style="color: #60a5fa;">Anti-B</td><td>A+, AB+</td><td>A+, A-, O+, O-</td></tr>
+                                <tr><td><strong>A-</strong></td><td style="color: #f87171;">A</td><td style="color: #60a5fa;">Anti-B</td><td>A+, A-, AB+, AB-</td><td>A-, O-</td></tr>
+                                <tr><td><strong>B+</strong></td><td style="color: #f87171;">B, D</td><td style="color: #60a5fa;">Anti-A</td><td>B+, AB+</td><td>B+, B-, O+, O-</td></tr>
+                                <tr><td><strong>B-</strong></td><td style="color: #f87171;">B</td><td style="color: #60a5fa;">Anti-A</td><td>B+, B-, AB+, AB-</td><td>B-, O-</td></tr>
+                                <tr><td><strong>AB+</strong></td><td style="color: #f87171;">A, B, D</td><td style="color: #60a5fa;">None</td><td>AB+ only</td><td style="color: #10b981;">ALL (Universal Recipient)</td></tr>
+                                <tr><td><strong>AB-</strong></td><td style="color: #f87171;">A, B</td><td style="color: #60a5fa;">None</td><td>AB+, AB-</td><td>A-, B-, AB-, O-</td></tr>
+                                <tr><td><strong>O+</strong></td><td style="color: #f87171;">D only</td><td style="color: #60a5fa;">Anti-A, Anti-B</td><td>A+, B+, AB+, O+</td><td>O+, O-</td></tr>
+                                <tr><td><strong>O-</strong></td><td style="color: #f87171;">None</td><td style="color: #60a5fa;">Anti-A, Anti-B</td><td style="color: #10b981;">ALL (Universal Donor)</td><td>O- only</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--surface); border-radius: var(--radius-sm); font-size: 0.85rem;">
+                        <p style="color: var(--text-secondary); margin: 0 0 0.5rem 0;">
+                            <strong style="color: #f87171;">Antigens</strong> = surface markers on RBCs that are recognized by antisera
+                        </p>
+                        <p style="color: var(--text-secondary); margin: 0 0 0.5rem 0;">
+                            <strong style="color: #60a5fa;">Antibodies</strong> = proteins in serum that attack foreign antigens
+                        </p>
+                        <p style="color: var(--text-secondary); margin: 0;">
+                            <strong>Rule:</strong> Donor's antigens must not match recipient's antibodies
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Complete Screen -->
+        <div class="game-complete" id="gameComplete">
+            <h2>Game Complete!</h2>
+            <p style="color: var(--text-secondary);">Here's how you did:</p>
+            <div class="final-score" id="finalScore"></div>
+            <p id="scoreMessage" style="color: var(--text-secondary); font-size: 1.1rem;"></p>
+            <div class="game-complete-buttons">
+                <button class="play-again-btn" id="playAgainBtn">Play Again</button>
+                <button class="change-mode-btn" id="changeModeBtn">Change Mode</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Bio 15 Microbiology Study Guide</h3>
+                <p>Blood Typing Practice Game</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Blood type data
+        const bloodTypes = {
+            'A+':  { antiA: true,  antiB: false, antiRh: true,  antigens: 'A, D (Rh)',    antibodies: 'Anti-B' },
+            'A-':  { antiA: true,  antiB: false, antiRh: false, antigens: 'A',            antibodies: 'Anti-B' },
+            'B+':  { antiA: false, antiB: true,  antiRh: true,  antigens: 'B, D (Rh)',    antibodies: 'Anti-A' },
+            'B-':  { antiA: false, antiB: true,  antiRh: false, antigens: 'B',            antibodies: 'Anti-A' },
+            'AB+': { antiA: true,  antiB: true,  antiRh: true,  antigens: 'A, B, D (Rh)', antibodies: 'None (Universal Recipient)' },
+            'AB-': { antiA: true,  antiB: true,  antiRh: false, antigens: 'A, B',         antibodies: 'None' },
+            'O+':  { antiA: false, antiB: false, antiRh: true,  antigens: 'D (Rh) only',  antibodies: 'Anti-A, Anti-B' },
+            'O-':  { antiA: false, antiB: false, antiRh: false, antigens: 'None (Universal Donor)', antibodies: 'Anti-A, Anti-B' }
+        };
+
+        // Compatibility data - who can donate to whom
+        const compatibility = {
+            'A+':  { canDonateTo: ['A+', 'AB+'], canReceiveFrom: ['A+', 'A-', 'O+', 'O-'] },
+            'A-':  { canDonateTo: ['A+', 'A-', 'AB+', 'AB-'], canReceiveFrom: ['A-', 'O-'] },
+            'B+':  { canDonateTo: ['B+', 'AB+'], canReceiveFrom: ['B+', 'B-', 'O+', 'O-'] },
+            'B-':  { canDonateTo: ['B+', 'B-', 'AB+', 'AB-'], canReceiveFrom: ['B-', 'O-'] },
+            'AB+': { canDonateTo: ['AB+'], canReceiveFrom: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'] },
+            'AB-': { canDonateTo: ['AB+', 'AB-'], canReceiveFrom: ['A-', 'B-', 'AB-', 'O-'] },
+            'O+':  { canDonateTo: ['A+', 'B+', 'AB+', 'O+'], canReceiveFrom: ['O+', 'O-'] },
+            'O-':  { canDonateTo: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'], canReceiveFrom: ['O-'] }
+        };
+
+        // Antigen/Antibody quiz questions
+        const antigenQuestions = [
+            { type: 'A+', question: 'What antigens does Type A+ blood have?',
+              options: ['A only', 'A and D (Rh)', 'B and D (Rh)', 'None'], correct: 'A and D (Rh)' },
+            { type: 'A-', question: 'What antigens does Type A- blood have?',
+              options: ['A only', 'A and D (Rh)', 'None', 'D (Rh) only'], correct: 'A only' },
+            { type: 'B+', question: 'What antigens does Type B+ blood have?',
+              options: ['B only', 'A and B', 'B and D (Rh)', 'D (Rh) only'], correct: 'B and D (Rh)' },
+            { type: 'B-', question: 'What antigens does Type B- blood have?',
+              options: ['B only', 'B and D (Rh)', 'A and B', 'None'], correct: 'B only' },
+            { type: 'AB+', question: 'What antigens does Type AB+ blood have?',
+              options: ['A and B', 'A, B, and D (Rh)', 'D (Rh) only', 'None'], correct: 'A, B, and D (Rh)' },
+            { type: 'AB-', question: 'What antigens does Type AB- blood have?',
+              options: ['A, B, and D (Rh)', 'A and B', 'None', 'D (Rh) only'], correct: 'A and B' },
+            { type: 'O+', question: 'What antigens does Type O+ blood have?',
+              options: ['None', 'A and B', 'D (Rh) only', 'A, B, and D (Rh)'], correct: 'D (Rh) only' },
+            { type: 'O-', question: 'What antigens does Type O- blood have?',
+              options: ['D (Rh) only', 'A and B', 'None', 'A only'], correct: 'None' },
+            { type: 'A+', question: 'What antibodies does Type A+ blood have in serum?',
+              options: ['Anti-A', 'Anti-B', 'Anti-A and Anti-B', 'None'], correct: 'Anti-B' },
+            { type: 'B+', question: 'What antibodies does Type B+ blood have in serum?',
+              options: ['Anti-A', 'Anti-B', 'Anti-A and Anti-B', 'None'], correct: 'Anti-A' },
+            { type: 'AB+', question: 'What antibodies does Type AB+ blood have in serum?',
+              options: ['Anti-A', 'Anti-B', 'Anti-A and Anti-B', 'None'], correct: 'None' },
+            { type: 'O-', question: 'What antibodies does Type O- blood have in serum?',
+              options: ['Anti-A', 'Anti-B', 'Anti-A and Anti-B', 'None'], correct: 'Anti-A and Anti-B' },
+            { type: 'O-', question: 'Why is O- called the "Universal Donor"?',
+              options: ['It has all antigens', 'It has no antigens to cause reactions', 'It has no antibodies', 'It is the most common type'], correct: 'It has no antigens to cause reactions' },
+            { type: 'AB+', question: 'Why is AB+ called the "Universal Recipient"?',
+              options: ['It has all antigens', 'It has no antibodies to attack donor blood', 'It is the rarest type', 'It has no antigens'], correct: 'It has no antibodies to attack donor blood' }
+        ];
+
+        // Game state
+        let currentMode = null;
+        let currentQuestion = 0;
+        let correctCount = 0;
+        let incorrectCount = 0;
+        let totalQuestions = 10;
+        let currentBloodType = '';
+        let answered = false;
+        let questionOrder = [];
+        let selectedAnswers = new Set();
+        let currentCorrectAnswers = [];
+        let currentQuizQuestion = null;
+
+        // DOM elements
+        const modeSelection = document.getElementById('modeSelection');
+        const gameHeader = document.getElementById('gameHeader');
+        const gameArea = document.getElementById('gameArea');
+        const gameComplete = document.getElementById('gameComplete');
+        const modeCards = document.querySelectorAll('.mode-card');
+        const startGameBtn = document.getElementById('startGameBtn');
+        const backToModesBtn = document.getElementById('backToModes');
+
+        const sampleArea = document.getElementById('sampleArea');
+        const typeDisplayArea = document.getElementById('typeDisplayArea');
+        const wellA = document.getElementById('wellA');
+        const wellB = document.getElementById('wellB');
+        const wellRh = document.getElementById('wellRh');
+        const resultA = document.getElementById('resultA');
+        const resultB = document.getElementById('resultB');
+        const resultRh = document.getElementById('resultRh');
+
+        const answerSection = document.getElementById('answerSection');
+        const bloodTypeOptions = document.getElementById('bloodTypeOptions');
+        const quizOptions = document.getElementById('quizOptions');
+        const multiSelectHint = document.getElementById('multiSelectHint');
+        const submitBtn = document.getElementById('submitBtn');
+
+        const feedback = document.getElementById('feedback');
+        const feedbackTitle = document.getElementById('feedbackTitle');
+        const feedbackText = document.getElementById('feedbackText');
+        const bloodInfo = document.getElementById('bloodInfo');
+        const antigensValue = document.getElementById('antigensValue');
+        const antibodiesValue = document.getElementById('antibodiesValue');
+        const nextBtn = document.getElementById('nextBtn');
+
+        const referenceToggle = document.getElementById('referenceToggle');
+        const referenceContent = document.getElementById('referenceContent');
+
+        const buttons = bloodTypeOptions.querySelectorAll('.blood-type-btn');
+
+        // Mode selection
+        modeCards.forEach(card => {
+            card.addEventListener('click', () => {
+                modeCards.forEach(c => c.classList.remove('active'));
+                card.classList.add('active');
+                currentMode = card.dataset.mode;
+                startGameBtn.disabled = false;
+                startGameBtn.textContent = 'Start Game';
+            });
+        });
+
+        startGameBtn.addEventListener('click', startGame);
+        backToModesBtn.addEventListener('click', showModeSelection);
+        document.getElementById('changeModeBtn').addEventListener('click', showModeSelection);
+        document.getElementById('playAgainBtn').addEventListener('click', () => startGame());
+
+        function showModeSelection() {
+            modeSelection.classList.remove('hidden');
+            gameHeader.classList.add('hidden');
+            gameArea.classList.add('hidden');
+            gameComplete.classList.remove('show');
+        }
+
+        function startGame() {
+            // Reset state
+            currentQuestion = 0;
+            correctCount = 0;
+            incorrectCount = 0;
+            answered = false;
+            selectedAnswers.clear();
+
+            document.getElementById('correctCount').textContent = '0';
+            document.getElementById('incorrectCount').textContent = '0';
+
+            // Setup UI based on mode
+            modeSelection.classList.add('hidden');
+            gameHeader.classList.remove('hidden');
+            gameArea.classList.remove('hidden');
+            gameComplete.classList.remove('show');
+
+            setupModeUI();
+            generateQuestions();
+            nextQuestion();
+        }
+
+        function setupModeUI() {
+            const gameTitle = document.getElementById('gameTitle');
+            const gameSubtitle = document.getElementById('gameSubtitle');
+            const questionText = document.getElementById('questionText');
+
+            // Reset visibility
+            sampleArea.classList.add('hidden');
+            typeDisplayArea.classList.add('hidden');
+            bloodTypeOptions.classList.remove('hidden');
+            quizOptions.classList.add('hidden');
+            multiSelectHint.classList.add('hidden');
+            submitBtn.classList.add('hidden');
+
+            switch(currentMode) {
+                case 'identify':
+                    gameTitle.textContent = 'Identify the Blood Type';
+                    gameSubtitle.textContent = 'Look at the agglutination pattern and select the correct blood type';
+                    questionText.textContent = 'What is the blood type?';
+                    sampleArea.classList.remove('hidden');
+                    break;
+                case 'donors':
+                    gameTitle.textContent = 'Find Valid Donors';
+                    gameSubtitle.textContent = 'Select ALL blood types that can safely donate to this patient';
+                    questionText.textContent = 'Who can donate to this patient?';
+                    typeDisplayArea.classList.remove('hidden');
+                    multiSelectHint.classList.remove('hidden');
+                    submitBtn.classList.remove('hidden');
+                    break;
+                case 'recipients':
+                    gameTitle.textContent = 'Find Valid Recipients';
+                    gameSubtitle.textContent = 'Select ALL blood types that can safely receive this blood';
+                    questionText.textContent = 'Who can receive this blood?';
+                    typeDisplayArea.classList.remove('hidden');
+                    multiSelectHint.classList.remove('hidden');
+                    submitBtn.classList.remove('hidden');
+                    break;
+                case 'antigens':
+                    gameTitle.textContent = 'Antigen & Antibody Quiz';
+                    gameSubtitle.textContent = 'Test your knowledge of blood type antigens and antibodies';
+                    questionText.textContent = '';
+                    typeDisplayArea.classList.remove('hidden');
+                    bloodTypeOptions.classList.add('hidden');
+                    quizOptions.classList.remove('hidden');
+                    break;
+            }
+        }
+
+        function generateQuestions() {
+            const types = Object.keys(bloodTypes);
+            questionOrder = [];
+
+            if (currentMode === 'antigens') {
+                // Shuffle antigen questions
+                const shuffled = [...antigenQuestions];
+                for (let i = shuffled.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                }
+                questionOrder = shuffled.slice(0, totalQuestions);
+            } else {
+                // Ensure all 8 types appear at least once
+                questionOrder = [...types];
+
+                // Add more random types to make 10 questions
+                while (questionOrder.length < totalQuestions) {
+                    const randomType = types[Math.floor(Math.random() * types.length)];
+                    questionOrder.push(randomType);
+                }
+
+                // Shuffle
+                for (let i = questionOrder.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [questionOrder[i], questionOrder[j]] = [questionOrder[j], questionOrder[i]];
+                }
+            }
+        }
+
+        function nextQuestion() {
+            if (currentQuestion >= totalQuestions) {
+                showGameComplete();
+                return;
+            }
+
+            answered = false;
+            selectedAnswers.clear();
+
+            // Update UI
+            document.getElementById('currentQuestion').textContent = currentQuestion + 1;
+            document.getElementById('sampleNumber').textContent = '#' + (currentQuestion + 1);
+
+            // Reset buttons
+            buttons.forEach(btn => {
+                btn.disabled = false;
+                btn.classList.remove('correct', 'incorrect', 'selected', 'missed');
+            });
+
+            // Hide feedback and blood info
+            feedback.className = 'feedback';
+            bloodInfo.classList.remove('show');
+            nextBtn.disabled = true;
+            submitBtn.disabled = true;
+
+            // Setup question based on mode
+            if (currentMode === 'identify') {
+                currentBloodType = questionOrder[currentQuestion];
+                displaySample(currentBloodType);
+                submitBtn.classList.add('hidden');
+            } else if (currentMode === 'donors') {
+                currentBloodType = questionOrder[currentQuestion];
+                displayBloodType(currentBloodType, 'Patient needs a transfusion');
+                currentCorrectAnswers = compatibility[currentBloodType].canReceiveFrom;
+                submitBtn.classList.remove('hidden');
+            } else if (currentMode === 'recipients') {
+                currentBloodType = questionOrder[currentQuestion];
+                displayBloodType(currentBloodType, 'Blood available for donation');
+                currentCorrectAnswers = compatibility[currentBloodType].canDonateTo;
+                submitBtn.classList.remove('hidden');
+            } else if (currentMode === 'antigens') {
+                currentQuizQuestion = questionOrder[currentQuestion];
+                displayQuizQuestion(currentQuizQuestion);
+                submitBtn.classList.add('hidden');
+            }
+
+            currentQuestion++;
+        }
+
+        function displaySample(type) {
+            const reactions = bloodTypes[type];
+            wellA.className = 'well ' + (reactions.antiA ? 'agglutinated' : 'smooth');
+            wellB.className = 'well ' + (reactions.antiB ? 'agglutinated' : 'smooth');
+            wellRh.className = 'well ' + (reactions.antiRh ? 'agglutinated' : 'smooth');
+
+            resultA.textContent = '';
+            resultB.textContent = '';
+            resultRh.textContent = '';
+            resultA.className = 'well-result';
+            resultB.className = 'well-result';
+            resultRh.className = 'well-result';
+        }
+
+        function displayBloodType(type, context) {
+            document.getElementById('displayBloodType').textContent = type;
+            document.getElementById('displayContext').textContent = context;
+        }
+
+        function displayQuizQuestion(q) {
+            document.getElementById('displayBloodType').textContent = q.type;
+            document.getElementById('displayContext').textContent = '';
+            document.getElementById('questionText').textContent = q.question;
+
+            quizOptions.innerHTML = '';
+            q.options.forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'quiz-option-btn';
+                btn.textContent = option;
+                btn.addEventListener('click', () => handleQuizAnswer(option, q.correct));
+                quizOptions.appendChild(btn);
+            });
+        }
+
+        function showResultLabels(type) {
+            const reactions = bloodTypes[type];
+            resultA.textContent = reactions.antiA ? '+' : '-';
+            resultA.className = 'well-result ' + (reactions.antiA ? 'positive' : 'negative');
+            resultB.textContent = reactions.antiB ? '+' : '-';
+            resultB.className = 'well-result ' + (reactions.antiB ? 'positive' : 'negative');
+            resultRh.textContent = reactions.antiRh ? '+' : '-';
+            resultRh.className = 'well-result ' + (reactions.antiRh ? 'positive' : 'negative');
+        }
+
+        // Handle single-select answer (identify mode)
+        function handleSingleAnswer(selectedType) {
+            if (answered) return;
+            answered = true;
+
+            const isCorrect = selectedType === currentBloodType;
+
+            if (isCorrect) correctCount++;
+            else incorrectCount++;
+
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('incorrectCount').textContent = incorrectCount;
+
+            feedback.className = 'feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+            feedbackTitle.textContent = isCorrect ? 'Correct!' : 'Incorrect';
+            feedbackText.textContent = isCorrect
+                ? `Yes! This is ${currentBloodType} blood.`
+                : `The correct answer is ${currentBloodType}. Your answer was ${selectedType}.`;
+
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                if (btn.dataset.type === currentBloodType) {
+                    btn.classList.add('correct');
+                } else if (btn.dataset.type === selectedType && !isCorrect) {
+                    btn.classList.add('incorrect');
+                }
+            });
+
+            showResultLabels(currentBloodType);
+
+            const typeData = bloodTypes[currentBloodType];
+            antigensValue.textContent = typeData.antigens;
+            antibodiesValue.textContent = typeData.antibodies;
+            bloodInfo.classList.add('show');
+
+            nextBtn.disabled = false;
+        }
+
+        // Handle multi-select toggle (donors/recipients modes)
+        function handleMultiSelectToggle(type) {
+            if (answered) return;
+
+            const btn = [...buttons].find(b => b.dataset.type === type);
+            if (selectedAnswers.has(type)) {
+                selectedAnswers.delete(type);
+                btn.classList.remove('selected');
+            } else {
+                selectedAnswers.add(type);
+                btn.classList.add('selected');
+            }
+
+            submitBtn.disabled = selectedAnswers.size === 0;
+        }
+
+        // Submit multi-select answer
+        function handleMultiSelectSubmit() {
+            if (answered || selectedAnswers.size === 0) return;
+            answered = true;
+
+            const selected = [...selectedAnswers];
+            const correct = currentCorrectAnswers;
+
+            const correctSelections = selected.filter(s => correct.includes(s));
+            const incorrectSelections = selected.filter(s => !correct.includes(s));
+            const missedSelections = correct.filter(c => !selected.includes(c));
+
+            const isFullyCorrect = incorrectSelections.length === 0 && missedSelections.length === 0;
+            const isPartial = correctSelections.length > 0 && !isFullyCorrect;
+
+            if (isFullyCorrect) correctCount++;
+            else incorrectCount++;
+
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('incorrectCount').textContent = incorrectCount;
+
+            // Show feedback
+            if (isFullyCorrect) {
+                feedback.className = 'feedback show correct';
+                feedbackTitle.textContent = 'Perfect!';
+                feedbackText.textContent = `You correctly identified all ${correct.length} compatible blood types.`;
+            } else if (isPartial) {
+                feedback.className = 'feedback show partial';
+                feedbackTitle.textContent = 'Partially Correct';
+                feedbackText.textContent = `You got ${correctSelections.length}/${correct.length} correct. ${missedSelections.length > 0 ? 'Missed: ' + missedSelections.join(', ') : ''} ${incorrectSelections.length > 0 ? 'Wrong: ' + incorrectSelections.join(', ') : ''}`;
+            } else {
+                feedback.className = 'feedback show incorrect';
+                feedbackTitle.textContent = 'Incorrect';
+                feedbackText.textContent = `The correct answers are: ${correct.join(', ')}`;
+            }
+
+            // Highlight buttons
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                const type = btn.dataset.type;
+                if (correct.includes(type) && selected.includes(type)) {
+                    btn.classList.add('correct');
+                } else if (!correct.includes(type) && selected.includes(type)) {
+                    btn.classList.add('incorrect');
+                } else if (correct.includes(type) && !selected.includes(type)) {
+                    btn.classList.add('missed');
+                }
+            });
+
+            submitBtn.classList.add('hidden');
+            nextBtn.disabled = false;
+        }
+
+        // Handle quiz answer (antigens mode)
+        function handleQuizAnswer(selected, correct) {
+            if (answered) return;
+            answered = true;
+
+            const isCorrect = selected === correct;
+
+            if (isCorrect) correctCount++;
+            else incorrectCount++;
+
+            document.getElementById('correctCount').textContent = correctCount;
+            document.getElementById('incorrectCount').textContent = incorrectCount;
+
+            feedback.className = 'feedback show ' + (isCorrect ? 'correct' : 'incorrect');
+            feedbackTitle.textContent = isCorrect ? 'Correct!' : 'Incorrect';
+            feedbackText.textContent = isCorrect
+                ? `Yes! The answer is "${correct}".`
+                : `The correct answer is "${correct}".`;
+
+            const quizBtns = quizOptions.querySelectorAll('.quiz-option-btn');
+            quizBtns.forEach(btn => {
+                btn.disabled = true;
+                if (btn.textContent === correct) {
+                    btn.classList.add('correct');
+                } else if (btn.textContent === selected && !isCorrect) {
+                    btn.classList.add('incorrect');
+                }
+            });
+
+            nextBtn.disabled = false;
+        }
+
+        function showGameComplete() {
+            gameArea.classList.add('hidden');
+            gameComplete.classList.add('show');
+
+            const percentage = Math.round((correctCount / totalQuestions) * 100);
+            const finalScore = document.getElementById('finalScore');
+            const scoreMessage = document.getElementById('scoreMessage');
+
+            finalScore.textContent = `${correctCount}/${totalQuestions} (${percentage}%)`;
+
+            if (percentage >= 90) {
+                finalScore.className = 'final-score excellent';
+                scoreMessage.textContent = 'Excellent! You\'ve mastered this!';
+            } else if (percentage >= 70) {
+                finalScore.className = 'final-score good';
+                scoreMessage.textContent = 'Good job! Keep practicing to improve.';
+            } else {
+                finalScore.className = 'final-score needs-practice';
+                scoreMessage.textContent = 'Keep studying! Review the reference chart and try again.';
+            }
+        }
+
+        // Event listeners
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if (currentMode === 'identify') {
+                    handleSingleAnswer(btn.dataset.type);
+                } else if (currentMode === 'donors' || currentMode === 'recipients') {
+                    handleMultiSelectToggle(btn.dataset.type);
+                }
+            });
+        });
+
+        submitBtn.addEventListener('click', handleMultiSelectSubmit);
+        nextBtn.addEventListener('click', nextQuestion);
+
+        referenceToggle.addEventListener('click', () => {
+            referenceContent.classList.toggle('show');
+            referenceToggle.innerHTML = referenceContent.classList.contains('show')
+                ? '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Hide Reference Chart'
+                : '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Show Reference Chart';
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.navbar-nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
