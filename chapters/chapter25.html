@@ -1086,6 +1086,34 @@
             <div class="pdf-error" id="pdfError" style="display: none;">
                 <p>Unable to load PDF. <a href="../learn/lecture slides/ch25.pdf" target="_blank">Click here to open directly</a></p>
             </div>
+            <div class="pdf-mobile-fallback" id="pdfMobileFallback">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <h3 id="mobilePdfTitle">Lecture Slides</h3>
+                <p>PDF viewing isn't supported in mobile browsers. Use the buttons below to view or download.</p>
+                <div class="pdf-mobile-actions">
+                    <a href="../learn/lecture slides/ch25.pdf" target="_blank" class="pdf-mobile-btn primary" id="mobileOpenBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        Open PDF
+                    </a>
+                    <a href="../learn/lecture slides/ch25.pdf" download class="pdf-mobile-btn secondary" id="mobileDownloadBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
             <iframe id="pdfFrame" class="pdf-frame" src="" style="display: none;"></iframe>
         </div>
         <div class="pdf-minimized-label">Lecture Slides</div>
@@ -1097,11 +1125,16 @@
         const pdfFrame = document.getElementById('pdfFrame');
         const pdfLoading = document.getElementById('pdfLoading');
         const pdfError = document.getElementById('pdfError');
+        const pdfMobileFallback = document.getElementById('pdfMobileFallback');
         const pdfTitle = document.getElementById('pdfTitle');
         const minimizeBtn = document.getElementById('minimizeBtn');
         const closeBtn = document.getElementById('closeBtn');
 
         let currentChapter = '25';
+
+        // Detect mobile/tablet devices
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+            || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2);
 
         const chapterNames = {
             '21': 'Chapter 21: Skin Diseases',
@@ -1128,6 +1161,7 @@
             pdfFrame.style.display = 'none';
             pdfLoading.style.display = 'flex';
             pdfError.style.display = 'none';
+            if (pdfMobileFallback) pdfMobileFallback.classList.remove('show');
         }
 
         function toggleMinimize() {
@@ -1159,17 +1193,34 @@
             document.querySelector('.pdf-action-links a[target="_blank"]').href = pdfPath;
             document.querySelector('.pdf-error a').href = pdfPath;
 
-            // Load PDF
-            pdfLoading.style.display = 'flex';
-            pdfFrame.style.display = 'none';
-            pdfError.style.display = 'none';
+            // Update mobile fallback links
+            if (pdfMobileFallback) {
+                document.getElementById('mobileOpenBtn').href = pdfPath;
+                document.getElementById('mobileDownloadBtn').href = pdfPath;
+                document.getElementById('mobilePdfTitle').textContent = chapterNames[chapter] || `Chapter ${chapter}`;
+            }
 
-            pdfFrame.src = pdfPath;
+            // Check if mobile - show fallback instead of iframe
+            if (isMobile) {
+                pdfLoading.style.display = 'none';
+                pdfFrame.style.display = 'none';
+                pdfError.style.display = 'none';
+                pdfMobileFallback.classList.add('show');
+            } else {
+                // Load PDF in iframe for desktop
+                pdfLoading.style.display = 'flex';
+                pdfFrame.style.display = 'none';
+                pdfError.style.display = 'none';
+                if (pdfMobileFallback) pdfMobileFallback.classList.remove('show');
+                pdfFrame.src = pdfPath;
+            }
         }
 
         pdfFrame.onload = function() {
-            pdfLoading.style.display = 'none';
-            pdfFrame.style.display = 'block';
+            if (!isMobile) {
+                pdfLoading.style.display = 'none';
+                pdfFrame.style.display = 'block';
+            }
         };
 
         pdfFrame.onerror = function() {

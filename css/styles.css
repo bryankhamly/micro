@@ -2214,3 +2214,86 @@ a:hover {
         display: none;
     }
 }
+
+/* Mobile PDF fallback */
+.pdf-mobile-fallback {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+    background: var(--background);
+}
+
+.pdf-mobile-fallback.show {
+    display: flex;
+}
+
+.pdf-mobile-fallback svg {
+    width: 64px;
+    height: 64px;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.pdf-mobile-fallback h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.pdf-mobile-fallback p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+.pdf-mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 280px;
+}
+
+.pdf-mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.pdf-mobile-btn.primary {
+    background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+}
+
+.pdf-mobile-btn.primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(6, 182, 212, 0.4);
+}
+
+.pdf-mobile-btn.secondary {
+    background: var(--surface);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+}
+
+.pdf-mobile-btn.secondary:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}

@@ -1065,6 +1065,34 @@
                 <p>Your browser may not support embedded PDF viewing.</p>
                 <a href="../learn/lecture slides/ch22.pdf" target="_blank" class="pdf-action-link primary" id="pdfErrorOpen">Open PDF in New Tab</a>
             </div>
+            <div class="pdf-mobile-fallback" id="pdfMobileFallback">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <h3 id="mobilePdfTitle">Lecture Slides</h3>
+                <p>PDF viewing isn't supported in mobile browsers. Use the buttons below to view or download.</p>
+                <div class="pdf-mobile-actions">
+                    <a href="../learn/lecture slides/ch22.pdf" target="_blank" class="pdf-mobile-btn primary" id="mobileOpenBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                        </svg>
+                        Open PDF
+                    </a>
+                    <a href="../learn/lecture slides/ch22.pdf" download class="pdf-mobile-btn secondary" id="mobileDownloadBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Download PDF
+                    </a>
+                </div>
+            </div>
             <iframe class="pdf-panel-frame" id="pdfFrame"></iframe>
         </div>
         <div class="pdf-minimized-label">Lecture Slides</div>
@@ -1084,11 +1112,16 @@
         const pdfFrame = document.getElementById('pdfFrame');
         const pdfLoading = document.getElementById('pdfLoading');
         const pdfError = document.getElementById('pdfError');
+        const pdfMobileFallback = document.getElementById('pdfMobileFallback');
         const pdfPanelTitle = document.getElementById('pdfPanelTitle');
         const pdfDownload = document.getElementById('pdfDownload');
         const pdfNewTab = document.getElementById('pdfNewTab');
         const pdfErrorOpen = document.getElementById('pdfErrorOpen');
         let currentChapter = '22';
+
+        // Detect mobile/tablet devices
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+            || (navigator.maxTouchPoints && navigator.maxTouchPoints > 2);
 
         function openPdfPanel(chapter = '22') {
             currentChapter = chapter;
@@ -1097,31 +1130,51 @@
             pdfDownload.href = data.pdf;
             pdfNewTab.href = data.pdf;
             pdfErrorOpen.href = data.pdf;
+
+            // Update mobile fallback links
+            if (pdfMobileFallback) {
+                document.getElementById('mobileOpenBtn').href = data.pdf;
+                document.getElementById('mobileDownloadBtn').href = data.pdf;
+                document.getElementById('mobilePdfTitle').textContent = data.title;
+            }
+
             document.querySelectorAll('.pdf-chapter-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.dataset.chapter === chapter);
             });
-            pdfLoading.style.display = 'block';
-            pdfError.style.display = 'none';
-            pdfFrame.style.display = 'none';
-            pdfFrame.src = data.pdf;
+
             pdfPanel.classList.add('active');
             pdfPanel.classList.remove('minimized');
             pdfOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // Check if mobile - show fallback instead of iframe
+            if (isMobile) {
+                pdfLoading.style.display = 'none';
+                pdfFrame.style.display = 'none';
+                pdfError.style.display = 'none';
+                pdfMobileFallback.classList.add('show');
+            } else {
+                pdfLoading.style.display = 'block';
+                pdfError.style.display = 'none';
+                pdfFrame.style.display = 'none';
+                if (pdfMobileFallback) pdfMobileFallback.classList.remove('show');
+                pdfFrame.src = data.pdf;
+            }
         }
         function closePdfPanel() {
             pdfPanel.classList.remove('active', 'minimized');
             pdfOverlay.classList.remove('active');
             document.body.style.overflow = '';
             pdfFrame.src = '';
+            if (pdfMobileFallback) pdfMobileFallback.classList.remove('show');
         }
         function toggleMinimize() {
             pdfPanel.classList.toggle('minimized');
             pdfOverlay.classList.toggle('active', !pdfPanel.classList.contains('minimized'));
             document.body.style.overflow = pdfPanel.classList.contains('minimized') ? '' : 'hidden';
         }
-        pdfFrame.onload = function() { pdfLoading.style.display = 'none'; pdfFrame.style.display = 'block'; };
-        setTimeout(() => { if (pdfPanel.classList.contains('active') && pdfFrame.style.display === 'none') { pdfLoading.style.display = 'none'; pdfError.style.display = 'block'; } }, 5000);
+        pdfFrame.onload = function() { if (!isMobile) { pdfLoading.style.display = 'none'; pdfFrame.style.display = 'block'; } };
+        setTimeout(() => { if (!isMobile && pdfPanel.classList.contains('active') && pdfFrame.style.display === 'none') { pdfLoading.style.display = 'none'; pdfError.style.display = 'block'; } }, 5000);
         document.getElementById('pdfClose').addEventListener('click', closePdfPanel);
         document.getElementById('pdfMinimize').addEventListener('click', toggleMinimize);
         pdfOverlay.addEventListener('click', toggleMinimize);
