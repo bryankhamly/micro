@@ -85,12 +85,12 @@
         },
         {
           "question": "What causes warts?",
-          "options": ["Bacteria", "Fungi", "Human papillomavirus (HPV)", "Parasites"],
+          "options": ["Bacteria", "Fungi", "Human papillomavirus", "Parasites"],
           "answer": 2
         },
         {
           "question": "What is the most common fungal skin infection?",
-          "options": ["Candidiasis", "Ringworm (dermatophytosis)", "Aspergillosis", "Histoplasmosis"],
+          "options": ["Candidiasis", "Ringworm", "Aspergillosis", "Histoplasmosis"],
           "answer": 1
         },
         {
@@ -170,7 +170,7 @@
         },
         {
           "question": "What is a furuncle?",
-          "options": ["A superficial skin infection", "A deep infection of a hair follicle (boil)", "A fungal infection", "A viral wart"],
+          "options": ["A superficial skin infection", "A deep infection of a hair follicle", "A fungal infection", "A viral wart"],
           "answer": 1
         },
         {
@@ -180,12 +180,12 @@
         },
         {
           "question": "What enzyme produced by S. aureus destroys penicillin?",
-          "options": ["Coagulase", "Catalase", "Penicillinase (beta-lactamase)", "Hyaluronidase"],
+          "options": ["Coagulase", "Catalase", "Beta-lactamase", "Hyaluronidase"],
           "answer": 2
         },
         {
           "question": "Which virulence factor of S. aureus causes toxic shock syndrome?",
-          "options": ["Coagulase", "TSST-1 (Toxic Shock Syndrome Toxin-1)", "Enterotoxin", "Protein A"],
+          "options": ["Coagulase", "TSST-1", "Enterotoxin", "Protein A"],
           "answer": 1
         },
         {
@@ -445,12 +445,12 @@
         },
         {
           "question": "What type of toxin does Clostridium tetani produce?",
-          "options": ["Enterotoxin", "Exotoxin (neurotoxin)", "Endotoxin", "Cytotoxin"],
+          "options": ["Enterotoxin", "Neurotoxin", "Endotoxin", "Cytotoxin"],
           "answer": 1
         },
         {
           "question": "How does tetanus toxin cause disease?",
-          "options": ["Blocks release of acetylcholine", "Blocks release of inhibitory neurotransmitters (GABA, glycine)", "Destroys myelin sheath", "Blocks sodium channels"],
+          "options": ["Blocks release of acetylcholine", "Blocks release of inhibitory neurotransmitters", "Destroys myelin sheath", "Blocks sodium channels"],
           "answer": 1
         },
         {
@@ -460,7 +460,7 @@
         },
         {
           "question": "What is lockjaw?",
-          "options": ["A symptom of botulism", "A symptom of tetanus (inability to open mouth)", "A symptom of rabies", "A symptom of polio"],
+          "options": ["A symptom of botulism", "A symptom of tetanus", "A symptom of rabies", "A symptom of polio"],
           "answer": 1
         },
         {
@@ -490,12 +490,12 @@
         },
         {
           "question": "What type of virus causes rabies?",
-          "options": ["DNA virus", "RNA virus (Lyssavirus/Rhabdovirus)", "Retrovirus", "Prion"],
+          "options": ["DNA virus", "RNA virus", "Retrovirus", "Prion"],
           "answer": 1
         },
         {
           "question": "What are Negri bodies?",
-          "options": ["Bacterial inclusions", "Viral inclusion bodies in nerve cells (diagnostic for rabies)", "Fungal spores", "Parasitic cysts"],
+          "options": ["Bacterial inclusions", "Viral inclusion bodies in nerve cells", "Fungal spores", "Parasitic cysts"],
           "answer": 1
         },
         {
@@ -505,7 +505,7 @@
         },
         {
           "question": "What causes polio?",
-          "options": ["Bacteria", "Poliovirus (Picornavirus)", "Fungus", "Prion"],
+          "options": ["Bacteria", "Poliovirus", "Fungus", "Prion"],
           "answer": 1
         },
         {
@@ -530,12 +530,12 @@
         },
         {
           "question": "What disease is caused by prions in humans?",
-          "options": ["Rabies", "Creutzfeldt-Jakob disease (CJD)", "Meningitis", "Encephalitis"],
+          "options": ["Rabies", "Creutzfeldt-Jakob disease", "Meningitis", "Encephalitis"],
           "answer": 1
         },
         {
           "question": "What is the bovine form of prion disease called?",
-          "options": ["Scrapie", "Mad cow disease (BSE)", "Kuru", "CJD"],
+          "options": ["Scrapie", "BSE", "Kuru", "CJD"],
           "answer": 1
         },
         {
@@ -550,12 +550,12 @@
         },
         {
           "question": "How does rabies virus travel to the brain?",
-          "options": ["Through the bloodstream", "Along peripheral nerves (retrograde transport)", "Through the lymphatic system", "Through the respiratory system"],
+          "options": ["Through the bloodstream", "Along peripheral nerves", "Through the lymphatic system", "Through the respiratory system"],
           "answer": 1
         },
         {
           "question": "What is the incubation period for rabies typically?",
-          "options": ["1-2 days", "1-3 months (varies by bite location)", "1-2 years", "Several hours"],
+          "options": ["1-2 days", "1-3 months", "1-2 years", "Several hours"],
           "answer": 1
         },
         {
@@ -570,7 +570,7 @@
         },
         {
           "question": "Opisthotonus is a symptom of which disease?",
-          "options": ["Botulism", "Tetanus (severe back arching)", "Rabies", "Polio"],
+          "options": ["Botulism", "Tetanus", "Rabies", "Polio"],
           "answer": 1
         },
         {
@@ -595,7 +595,7 @@
         },
         {
           "question": "Why should infants under 1 year not be given honey?",
-          "options": ["Allergic reactions", "Contains Clostridium botulinum spores (infant botulism)", "Too sweet", "Causes cavities"],
+          "options": ["Allergic reactions", "Contains Clostridium botulinum spores", "Too sweet", "Causes cavities"],
           "answer": 1
         },
         {
@@ -605,7 +605,7 @@
         },
         {
           "question": "What is the therapeutic use of botulinum toxin?",
-          "options": ["Antibiotic", "Botox for cosmetic and medical purposes", "Antiviral", "Vaccine"],
+          "options": ["Antibiotic", "Cosmetic and medical injections", "Antiviral", "Vaccine"],
           "answer": 1
         },
         {
@@ -1095,7 +1095,7 @@
         },
         {
           "question": "What causes the cytokine storm seen in severe COVID-19?",
-          "options": ["Direct viral damage", "Overactive immune response releasing excessive inflammatory cytokines", "Bacterial co-infection", "Allergic reaction"],
+          "options": ["Direct viral damage", "Overactive immune response", "Bacterial co-infection", "Allergic reaction"],
           "answer": 1
         },
         {
@@ -1115,27 +1115,27 @@
         },
         {
           "question": "What antibody class is most important in mucosal immunity of the respiratory tract?",
-          "options": ["IgG", "IgM", "IgA (secretory IgA)", "IgE"],
+          "options": ["IgG", "IgM", "IgA", "IgE"],
           "answer": 2
         },
         {
           "question": "What is the primary pneumonia caused by Streptococcus pneumoniae called?",
-          "options": ["Walking pneumonia", "Lobar pneumonia (typical pneumonia)", "Atypical pneumonia", "Aspiration pneumonia"],
+          "options": ["Walking pneumonia", "Lobar pneumonia", "Atypical pneumonia", "Aspiration pneumonia"],
           "answer": 1
         },
         {
           "question": "What vaccine is recommended for prevention of pneumococcal pneumonia?",
-          "options": ["MMR", "Pneumococcal vaccine (Prevnar, Pneumovax)", "DTaP", "Hib"],
+          "options": ["MMR", "Pneumococcal vaccine", "DTaP", "Hib"],
           "answer": 1
         },
         {
           "question": "What complication of rheumatic fever affects the heart?",
-          "options": ["Endocarditis", "Rheumatic heart disease (valve damage)", "Heart attack", "Arrhythmia only"],
+          "options": ["Endocarditis", "Rheumatic heart disease", "Heart attack", "Arrhythmia only"],
           "answer": 1
         },
         {
           "question": "What causes rheumatic fever after strep throat?",
-          "options": ["Direct bacterial infection of heart", "Molecular mimicry - antibodies against strep cross-react with heart tissue", "Toxin damage", "Viral co-infection"],
+          "options": ["Direct bacterial infection of heart", "Molecular mimicry", "Toxin damage", "Viral co-infection"],
           "answer": 1
         },
         {
@@ -1175,7 +1175,7 @@
         },
         {
           "question": "Approximately what percentage of worldwide infectious disease deaths is diarrheal disease?",
-          "options": ["10%", "25%", "~40% (second leading cause)", "60%"],
+          "options": ["10%", "25%", "~40%", "60%"],
           "answer": 2
         },
         {
@@ -1185,12 +1185,12 @@
         },
         {
           "question": "What causes Staphylococcal food poisoning?",
-          "options": ["Bacteria infecting the gut", "Preformed enterotoxin in contaminated food (intoxication)", "Viral infection", "Parasitic infection"],
+          "options": ["Bacteria infecting the gut", "Preformed enterotoxin in contaminated food", "Viral infection", "Parasitic infection"],
           "answer": 1
         },
         {
           "question": "What is the incubation period for S. aureus food poisoning?",
-          "options": ["1-6 hours (very short because toxin is preformed)", "24-48 hours", "1 week", "2 weeks"],
+          "options": ["1-6 hours", "24-48 hours", "1 week", "2 weeks"],
           "answer": 0
         },
         {
@@ -1205,7 +1205,7 @@
         },
         {
           "question": "What is the infectious dose of Shigella?",
-          "options": ["Millions of bacteria", "Very low (10-100 organisms)", "Thousands of bacteria", "Only through food"],
+          "options": ["Millions of bacteria", "10-100 organisms", "Thousands of bacteria", "Only through food"],
           "answer": 1
         },
         {
@@ -1215,7 +1215,7 @@
         },
         {
           "question": "What is unique about Salmonella typhi infection compared to other Salmonella?",
-          "options": ["Only affects animals", "Can spread to bloodstream and colonize gallbladder (systemic infection)", "Only causes diarrhea", "Is not contagious"],
+          "options": ["Only affects animals", "Can spread to bloodstream and colonize gallbladder", "Only causes diarrhea", "Is not contagious"],
           "answer": 1
         },
         {
@@ -1245,17 +1245,17 @@
         },
         {
           "question": "What is the characteristic appearance of cholera diarrhea?",
-          "options": ["Bloody", "Rice-water stool (watery with mucus flecks)", "Black and tarry", "Normal appearance"],
+          "options": ["Bloody", "Rice-water stool", "Black and tarry", "Normal appearance"],
           "answer": 1
         },
         {
           "question": "What is the main treatment for cholera?",
-          "options": ["Antibiotics only", "Oral rehydration therapy (ORT) - fluids and electrolytes", "Surgery", "Antiviral drugs"],
+          "options": ["Antibiotics only", "Oral rehydration therapy", "Surgery", "Antiviral drugs"],
           "answer": 1
         },
         {
           "question": "What is ETEC?",
-          "options": ["A virus", "Enterotoxigenic E. coli (causes traveler's diarrhea)", "A fungus", "A parasite"],
+          "options": ["A virus", "Enterotoxigenic E. coli", "A fungus", "A parasite"],
           "answer": 1
         },
         {
@@ -1265,17 +1265,17 @@
         },
         {
           "question": "What serious complication can EHEC cause?",
-          "options": ["Liver failure", "Hemolytic uremic syndrome (HUS) - kidney failure", "Heart disease", "Lung infection"],
+          "options": ["Liver failure", "Hemolytic uremic syndrome", "Heart disease", "Lung infection"],
           "answer": 1
         },
         {
           "question": "What toxin does EHEC produce?",
-          "options": ["Cholera toxin", "Shiga toxin (Shiga-like toxin/verotoxin)", "Botulinum toxin", "Tetanus toxin"],
+          "options": ["Cholera toxin", "Shiga toxin", "Botulinum toxin", "Tetanus toxin"],
           "answer": 1
         },
         {
           "question": "What causes peptic ulcer disease?",
-          "options": ["Stress only", "Helicobacter pylori (and NSAIDs)", "E. coli", "Salmonella"],
+          "options": ["Stress only", "Helicobacter pylori", "E. coli", "Salmonella"],
           "answer": 1
         },
         {
@@ -1335,12 +1335,12 @@
         },
         {
           "question": "What disease is associated with Clostridium difficile?",
-          "options": ["Botulism", "Pseudomembranous colitis (antibiotic-associated diarrhea)", "Tetanus", "Gas gangrene"],
+          "options": ["Botulism", "Pseudomembranous colitis", "Tetanus", "Gas gangrene"],
           "answer": 1
         },
         {
           "question": "What increases the risk of C. difficile infection?",
-          "options": ["Exercise", "Antibiotic use (disrupts normal flora)", "High fiber diet", "Probiotics"],
+          "options": ["Exercise", "Antibiotic use", "High fiber diet", "Probiotics"],
           "answer": 1
         },
         {
@@ -1350,22 +1350,22 @@
         },
         {
           "question": "What is the common name for Giardia infection?",
-          "options": ["Traveler's diarrhea", "Beaver fever (giardiasis)", "Dysentery", "Typhoid"],
+          "options": ["Traveler's diarrhea", "Giardiasis", "Dysentery", "Typhoid"],
           "answer": 1
         },
         {
           "question": "How is Giardia transmitted?",
-          "options": ["Airborne", "Fecal-oral, contaminated water (cysts)", "Sexual contact", "Insect bites"],
+          "options": ["Airborne", "Fecal-oral, contaminated water", "Sexual contact", "Insect bites"],
           "answer": 1
         },
         {
           "question": "What is norovirus commonly called?",
-          "options": ["Stomach flu", "Cruise ship virus/winter vomiting disease", "Food poisoning", "Traveler's diarrhea"],
+          "options": ["Stomach flu", "Cruise ship virus", "Food poisoning", "Traveler's diarrhea"],
           "answer": 1
         },
         {
           "question": "What type of virus is norovirus?",
-          "options": ["DNA virus", "RNA virus (Calicivirus family)", "Retrovirus", "Prion"],
+          "options": ["DNA virus", "RNA virus", "Retrovirus", "Prion"],
           "answer": 1
         },
         {
@@ -1380,7 +1380,7 @@
         },
         {
           "question": "What causes Hepatitis A?",
-          "options": ["Bacteria", "Hepatitis A virus (HAV)", "Fungus", "Parasite"],
+          "options": ["Bacteria", "Hepatitis A virus", "Fungus", "Parasite"],
           "answer": 1
         },
         {
@@ -1390,7 +1390,7 @@
         },
         {
           "question": "Does Hepatitis A cause chronic infection?",
-          "options": ["Yes, lifelong", "No, it is self-limiting (acute only)", "Sometimes", "Only in children"],
+          "options": ["Yes, lifelong", "No, it is self-limiting", "Sometimes", "Only in children"],
           "answer": 1
         },
         {
@@ -1415,12 +1415,12 @@
         },
         {
           "question": "What is the shape of Campylobacter?",
-          "options": ["Straight rod", "Spiral or curved (S-shaped or comma-shaped)", "Cocci", "Filamentous"],
+          "options": ["Straight rod", "Spiral or curved", "Cocci", "Filamentous"],
           "answer": 1
         },
         {
           "question": "What type of diarrhea does S. aureus food poisoning cause?",
-          "options": ["Bloody", "Watery with vomiting (from enterotoxin)", "No diarrhea", "Mucoid"],
+          "options": ["Bloody", "Watery with vomiting", "No diarrhea", "Mucoid"],
           "answer": 1
         },
         {
@@ -1435,7 +1435,7 @@
         },
         {
           "question": "What type of toxin does Bacillus cereus produce in the emetic form?",
-          "options": ["Enterotoxin", "Heat-stable emetic toxin (causes vomiting)", "Neurotoxin", "Cytotoxin"],
+          "options": ["Enterotoxin", "Heat-stable emetic toxin", "Neurotoxin", "Cytotoxin"],
           "answer": 1
         },
         {
@@ -1465,7 +1465,7 @@
         },
         {
           "question": "What is HUS (Hemolytic Uremic Syndrome)?",
-          "options": ["Liver failure", "Kidney failure with destruction of red blood cells, often from EHEC", "Heart disease", "Brain damage"],
+          "options": ["Liver failure", "Kidney failure with destruction of red blood cells", "Heart disease", "Brain damage"],
           "answer": 1
         },
         {
@@ -1480,7 +1480,7 @@
         },
         {
           "question": "H. pylori infection increases the risk of what type of cancer?",
-          "options": ["Lung cancer", "Gastric (stomach) cancer", "Colon cancer", "Liver cancer"],
+          "options": ["Lung cancer", "Gastric cancer", "Colon cancer", "Liver cancer"],
           "answer": 1
         }
       ]
@@ -1495,7 +1495,7 @@
         },
         {
           "question": "What makes urine antimicrobial?",
-          "options": ["High pH and low salt", "Low pH (acidic), high urea concentration, and flushing action", "Presence of antibiotics", "White blood cells"],
+          "options": ["High pH and low salt", "Low pH, high urea concentration, and flushing action", "Presence of antibiotics", "White blood cells"],
           "answer": 1
         },
         {
@@ -1505,7 +1505,7 @@
         },
         {
           "question": "What is the most common cause of urinary tract infections?",
-          "options": ["Staphylococcus aureus", "Escherichia coli (uropathogenic E. coli)", "Streptococcus pyogenes", "Candida albicans"],
+          "options": ["Staphylococcus aureus", "Escherichia coli", "Streptococcus pyogenes", "Candida albicans"],
           "answer": 1
         },
         {
@@ -1515,7 +1515,7 @@
         },
         {
           "question": "How do Lactobacilli protect the vagina from infection?",
-          "options": ["Produce antibiotics", "Produce lactic acid, maintaining low pH (3.8-4.5)", "Produce mucus", "Block the cervix"],
+          "options": ["Produce antibiotics", "Produce lactic acid, maintaining low pH", "Produce mucus", "Block the cervix"],
           "answer": 1
         },
         {
@@ -1530,12 +1530,12 @@
         },
         {
           "question": "What is the Gram stain result for Neisseria gonorrhoeae?",
-          "options": ["Gram-positive cocci", "Gram-negative diplococci (kidney bean-shaped)", "Gram-positive rods", "Gram-negative rods"],
+          "options": ["Gram-positive cocci", "Gram-negative diplococci", "Gram-positive rods", "Gram-negative rods"],
           "answer": 1
         },
         {
           "question": "What is a major concern with N. gonorrhoeae treatment?",
-          "options": ["No treatment exists", "Increasing antibiotic resistance (multidrug-resistant strains)", "It always resolves on its own", "Only affects one gender"],
+          "options": ["No treatment exists", "Increasing antibiotic resistance", "It always resolves on its own", "Only affects one gender"],
           "answer": 1
         },
         {
@@ -1545,7 +1545,7 @@
         },
         {
           "question": "Why is Chlamydia trachomatis an obligate intracellular parasite?",
-          "options": ["It's a virus", "Cannot make its own ATP (lacks ATP synthesis machinery)", "It's a fungus", "It needs iron"],
+          "options": ["It's a virus", "Cannot make its own ATP", "It's a fungus", "It needs iron"],
           "answer": 1
         },
         {
@@ -1560,7 +1560,7 @@
         },
         {
           "question": "What organisms commonly cause PID?",
-          "options": ["E. coli only", "N. gonorrhoeae and C. trachomatis (often coinfection)", "Candida", "HSV"],
+          "options": ["E. coli only", "N. gonorrhoeae and C. trachomatis", "Candida", "HSV"],
           "answer": 1
         },
         {
@@ -1570,12 +1570,12 @@
         },
         {
           "question": "What is the morphology of Treponema pallidum?",
-          "options": ["Round coccus", "Spirochete (tightly coiled spiral-shaped)", "Straight rod", "Curved rod"],
+          "options": ["Round coccus", "Spirochete", "Straight rod", "Curved rod"],
           "answer": 1
         },
         {
           "question": "What is the primary stage of syphilis characterized by?",
-          "options": ["Rash", "Painless chancre (hard sore) at infection site", "Neurological symptoms", "No symptoms"],
+          "options": ["Rash", "Painless chancre at infection site", "Neurological symptoms", "No symptoms"],
           "answer": 1
         },
         {
@@ -1600,7 +1600,7 @@
         },
         {
           "question": "What causes genital herpes?",
-          "options": ["HPV", "HSV-1 or HSV-2 (mainly HSV-2)", "Treponema", "Chlamydia"],
+          "options": ["HPV", "HSV-1 or HSV-2", "Treponema", "Chlamydia"],
           "answer": 1
         },
         {
@@ -1615,7 +1615,7 @@
         },
         {
           "question": "What causes genital warts?",
-          "options": ["HSV", "Human papillomavirus (HPV)", "Bacteria", "Fungus"],
+          "options": ["HSV", "Human papillomavirus", "Bacteria", "Fungus"],
           "answer": 1
         },
         {
@@ -1645,12 +1645,12 @@
         },
         {
           "question": "What causes trichomoniasis?",
-          "options": ["Bacteria", "Trichomonas vaginalis (protozoan parasite)", "Virus", "Fungus"],
+          "options": ["Bacteria", "Trichomonas vaginalis", "Virus", "Fungus"],
           "answer": 1
         },
         {
           "question": "Approximately how many new STI cases occur in the US per year?",
-          "options": ["1 million", "~20 million (with 15 million being HPV)", "100 million", "500,000"],
+          "options": ["1 million", "~20 million", "100 million", "500,000"],
           "answer": 1
         },
         {
@@ -1660,12 +1660,12 @@
         },
         {
           "question": "What is the latent stage of syphilis?",
-          "options": ["First stage with chancre", "Period with no symptoms but bacteria still present (can last years)", "Final stage", "Cured stage"],
+          "options": ["First stage with chancre", "Period with no symptoms but bacteria still present", "Final stage", "Cured stage"],
           "answer": 1
         },
         {
           "question": "What symptom in men is commonly associated with gonorrhea?",
-          "options": ["No symptoms", "Painful urination and purulent (pus) discharge", "Skin rash", "Joint pain only"],
+          "options": ["No symptoms", "Painful urination and purulent discharge", "Skin rash", "Joint pain only"],
           "answer": 1
         },
         {
@@ -1700,7 +1700,7 @@
         },
         {
           "question": "What does lymphogranuloma venereum (LGV) cause?",
-          "options": ["Genital warts", "Painful swollen lymph nodes in groin (caused by certain C. trachomatis serovars)", "Skin rash", "No symptoms"],
+          "options": ["Genital warts", "Painful swollen lymph nodes in groin", "Skin rash", "No symptoms"],
           "answer": 1
         },
         {
@@ -1720,17 +1720,17 @@
         },
         {
           "question": "What are the two forms in the Chlamydia life cycle?",
-          "options": ["Spore and vegetative", "Elementary body (infectious) and reticulate body (replicating)", "Cyst and trophozoite", "Active and dormant"],
+          "options": ["Spore and vegetative", "Elementary body and reticulate body", "Cyst and trophozoite", "Active and dormant"],
           "answer": 1
         },
         {
           "question": "Why can't T. pallidum be cultured in the laboratory?",
-          "options": ["It grows too fast", "It requires living host cells (cannot be grown on artificial media)", "It's too dangerous", "We have vaccines instead"],
+          "options": ["It grows too fast", "It requires living host cells", "It's too dangerous", "We have vaccines instead"],
           "answer": 1
         },
         {
           "question": "What test is used for syphilis screening?",
-          "options": ["Culture", "VDRL or RPR (nontreponemal tests), confirmed by FTA-ABS", "PCR only", "Gram stain"],
+          "options": ["Culture", "VDRL or RPR, confirmed by FTA-ABS", "PCR only", "Gram stain"],
           "answer": 1
         },
         {
@@ -1755,7 +1755,7 @@
         },
         {
           "question": "At what age is HPV vaccination recommended?",
-          "options": ["At birth", "Ages 11-12 (can start at age 9)", "Age 18", "Age 30"],
+          "options": ["At birth", "Ages 11-12", "Age 18", "Age 30"],
           "answer": 1
         },
         {
@@ -1770,7 +1770,7 @@
         },
         {
           "question": "What is the treatment for trichomoniasis?",
-          "options": ["Antifungals", "Metronidazole (Flagyl)", "Acyclovir", "No treatment needed"],
+          "options": ["Antifungals", "Metronidazole", "Acyclovir", "No treatment needed"],
           "answer": 1
         },
         {
@@ -1780,17 +1780,17 @@
         },
         {
           "question": "What is cystitis?",
-          "options": ["Kidney infection", "Bladder infection (lower UTI)", "Prostate infection", "Urethral infection"],
+          "options": ["Kidney infection", "Bladder infection", "Prostate infection", "Urethral infection"],
           "answer": 1
         },
         {
           "question": "What is pyelonephritis?",
-          "options": ["Bladder infection", "Kidney infection (upper UTI, more serious)", "Urethral infection", "Prostate infection"],
+          "options": ["Bladder infection", "Kidney infection", "Urethral infection", "Prostate infection"],
           "answer": 1
         },
         {
           "question": "What helps E. coli adhere to urinary tract epithelium?",
-          "options": ["Capsule only", "Pili (fimbriae)", "Flagella", "Toxins"],
+          "options": ["Capsule only", "Pili", "Flagella", "Toxins"],
           "answer": 1
         },
         {
@@ -1800,7 +1800,7 @@
         },
         {
           "question": "What is the Whiff test?",
-          "options": ["Test for UTI", "Adding KOH to vaginal discharge produces fishy odor (positive in BV)", "Test for yeast", "Test for chlamydia"],
+          "options": ["Test for UTI", "Adding KOH to vaginal discharge produces fishy odor", "Test for yeast", "Test for chlamydia"],
           "answer": 1
         },
         {
