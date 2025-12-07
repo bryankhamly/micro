@@ -256,6 +256,9 @@ function finishTest() {
 
     testSection.style.display = 'none';
     resultsSection.style.display = 'block';
+
+    // Generate inline review
+    generateReviewQuestions('all');
 }
 
 // Reset and go back to setup
@@ -268,6 +271,77 @@ function resetTest() {
     setupSection.style.display = 'block';
     testSection.style.display = 'none';
     resultsSection.style.display = 'none';
+}
+
+// Generate review questions HTML
+function generateReviewQuestions(filter) {
+    const reviewQuestionsContainer = document.getElementById('review-questions');
+    reviewQuestionsContainer.innerHTML = '';
+
+    selectedQuestions.forEach((question, index) => {
+        const isCorrect = userAnswers[index] === question.correctShuffledIndex;
+        const userAnswerIndex = userAnswers[index];
+        const correctAnswerIndex = question.correctShuffledIndex;
+
+        // Apply filter
+        if (filter === 'correct' && !isCorrect) return;
+        if (filter === 'incorrect' && isCorrect) return;
+
+        const userAnswerText = userAnswerIndex !== null
+            ? question.shuffledOptions[userAnswerIndex].text
+            : 'No answer selected';
+        const correctAnswerText = question.shuffledOptions[correctAnswerIndex].text;
+
+        const questionDiv = document.createElement('div');
+        questionDiv.className = `review-question ${isCorrect ? 'correct' : 'incorrect'}`;
+
+        questionDiv.innerHTML = `
+            <div class="review-question-header">
+                <span class="review-question-number">Question ${index + 1}</span>
+                <span class="review-question-chapter">Ch ${question.chapter}: ${question.chapterName}</span>
+            </div>
+            <div class="review-question-text">${question.question}</div>
+            ${isCorrect ? `
+                <div class="review-answer user-correct">
+                    <svg class="review-answer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <span class="review-answer-label">Your Answer:</span>
+                    <span class="review-answer-text">${userAnswerText}</span>
+                </div>
+            ` : `
+                <div class="review-answer user-incorrect">
+                    <svg class="review-answer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="15" y1="9" x2="9" y2="15"/>
+                        <line x1="9" y1="9" x2="15" y2="15"/>
+                    </svg>
+                    <span class="review-answer-label">Your Answer:</span>
+                    <span class="review-answer-text">${userAnswerText}</span>
+                </div>
+                <div class="review-answer correct-answer">
+                    <svg class="review-answer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <span class="review-answer-label">Correct Answer:</span>
+                    <span class="review-answer-text">${correctAnswerText}</span>
+                </div>
+            `}
+        `;
+
+        reviewQuestionsContainer.appendChild(questionDiv);
+    });
+
+    // Show message if no questions match filter
+    if (reviewQuestionsContainer.children.length === 0) {
+        reviewQuestionsContainer.innerHTML = `
+            <div style="text-align: center; padding: 2rem; color: var(--text-secondary);">
+                No questions match this filter.
+            </div>
+        `;
+    }
 }
 
 // Event Listeners
@@ -283,6 +357,15 @@ startBtn.addEventListener('click', startTest);
 prevBtn.addEventListener('click', previousQuestion);
 nextBtn.addEventListener('click', nextQuestion);
 testAgainBtn.addEventListener('click', resetTest);
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        generateReviewQuestions(btn.dataset.filter);
+    });
+});
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
