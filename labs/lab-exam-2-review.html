@@ -406,6 +406,53 @@
             color: #34d399;
         }
 
+        /* Quick Study Box */
+        .quick-study-box {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+            border: 2px solid rgba(251, 191, 36, 0.5);
+            border-radius: var(--radius);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 0 25px rgba(251, 191, 36, 0.15);
+        }
+
+        .quick-study-box h5 {
+            color: #fbbf24;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .quick-study-box h5::before {
+            content: "⚡";
+        }
+
+        .quick-study-box ul {
+            margin: 0;
+            padding-left: 1.25rem;
+        }
+
+        .quick-study-box li {
+            margin-bottom: 0.4rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+
+        .quick-study-box li:last-child {
+            margin-bottom: 0;
+        }
+
+        .quick-study-box li strong {
+            color: #fcd34d;
+        }
+
+        .quick-study-box li em {
+            color: var(--pink);
+        }
+
         .organisms-list {
             display: flex;
             flex-wrap: wrap;
@@ -889,6 +936,16 @@
                     <strong>Key Concept:</strong> MR(+) organisms and VP(+) organisms are typically mutually exclusive! If an organism is MR(+), it's usually VP(-), and vice versa. This is because they represent different fermentation pathways - mixed acid fermentation (MR+) vs. butanediol fermentation (VP+).
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>MR+ = RED</strong> (acid), <strong>VP+ = RED at top</strong> (acetoin)</li>
+                        <li>Both use <strong>MRVP broth</strong> - same medium, different reagents</li>
+                        <li>MR and VP are usually <strong>opposite</strong> (mutually exclusive)</li>
+                        <li>VP: Add VPA first, then VPB</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -975,6 +1032,17 @@
                     <strong>Key Concept:</strong> Gas will ONLY be produced if there is also acid! You cannot have a -/+ result (no acid but gas). The gas (usually CO2 and H2) is a byproduct of fermentation that only occurs when sugars are being broken down.
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Yellow = Acid (+)</strong>, Red = No fermentation (-)</li>
+                        <li><strong>Bubble in Durham tube = Gas (+)</strong></li>
+                        <li>Results written as <strong>Acid/Gas</strong>: +/+, +/-, -/-</li>
+                        <li><strong>Cannot have -/+</strong> (no gas without acid!)</li>
+                        <li>Pink/Magenta = protein breakdown (alkaline)</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1041,6 +1109,15 @@
 
                 <div class="key-point">
                     <strong>Key Concept:</strong> The Indole test is part of the <strong>IMViC tests</strong> (Indole, Methyl Red, Voges-Proskauer, Citrate) used to differentiate Enterobacteriaceae. E. coli is I+ M+ V- C- while Enterobacter is I- M- V+ C+.
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Indole+ = RED ring</strong> at top after adding Kovac's reagent</li>
+                        <li>Tests for <strong>tryptophanase</strong> enzyme (breaks down tryptophan)</li>
+                        <li>Part of <strong>IMViC tests</strong>: Indole, MR, VP, Citrate</li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1176,6 +1253,19 @@
                     </ol>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li>Results: <strong>Slant/Butt/H₂S/Gas</strong> (K=alkaline, A=acid)</li>
+                        <li><strong>Slant (top)</strong> = Lactose; <strong>Butt (bottom)</strong> = Glucose</li>
+                        <li><strong>Black color = H₂S positive</strong> (iron reacts with sulfide)</li>
+                        <li><strong>Bubbles/cracks = Gas positive</strong></li>
+                        <li>K/A = Glucose only fermented (lactose negative)</li>
+                        <li>A/A = Both glucose AND lactose fermented</li>
+                        <li>K/K = Non-fermenter (no sugars used)</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1232,6 +1322,16 @@
                             <p>No casease enzyme produced</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Clear zone around growth = Positive</strong></li>
+                        <li>Tests for <strong>casease</strong> enzyme (protein digestion)</li>
+                        <li>Casein = milk protein (makes agar opaque)</li>
+                        <li>No clearing = Negative (no casease)</li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1299,6 +1399,15 @@
 
                 <div class="key-point">
                     <strong>Clinical Relevance:</strong> Helicobacter pylori uses urease to survive in the acidic stomach! It converts urea to ammonia, neutralizing the acid in its immediate environment. The urease breath test is used to diagnose H. pylori infections.
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Hot Pink/Magenta = Positive</strong> (alkaline from ammonia)</li>
+                        <li>Yellow/Orange = Negative (no urease)</li>
+                        <li>Urease breaks down: <strong>Urea → Ammonia + CO₂</strong></li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1381,6 +1490,17 @@
                     <strong>Key Concept:</strong> The green metallic sheen is the KEY indicator of fecal contamination! It's produced by E. coli's vigorous fermentation of lactose, which causes the dyes to precipitate on the colony surface in a characteristic iridescent pattern.
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Green metallic sheen = strong lactose fermenter</strong></li>
+                        <li><strong>Purple/Pink = weak lactose fermenter</strong></li>
+                        <li><strong>Colorless = Lactose NON-fermenter</strong></li>
+                        <li><strong>Selective:</strong> Inhibits Gram (+) bacteria</li>
+                        <li><strong>Differential:</strong> Shows lactose fermentation ability</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1447,6 +1567,15 @@
 
                 <div class="key-point">
                     <strong>Clinical Application:</strong> The catalase test is the quickest way to differentiate <strong>Staphylococcus</strong> (catalase +, clusters) from <strong>Streptococcus</strong> (catalase -, chains). Both are Gram-positive cocci!
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Bubbles = Positive</strong> (O₂ gas released)</li>
+                        <li>No bubbles = Negative</li>
+                        <li>Key test to differentiate Staph (+) from Strep (-)</li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1516,6 +1645,15 @@
                     <strong>Key Concept:</strong> Most <strong>Enterobacteriaceae are oxidase NEGATIVE</strong>, while <strong>Pseudomonas is oxidase POSITIVE</strong>. This is a quick way to rule out Enterobacteriaceae!
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Purple/Dark blue = Positive</strong></li>
+                        <li>No color change = Negative</li>
+                        <li>Tests for <strong>cytochrome c oxidase</strong></li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1577,6 +1715,17 @@
                     <strong>Remember:</strong> Iodine + Starch = Blue-black color. If amylase has digested the starch, there's nothing for iodine to react with, so you see a CLEAR zone!
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Clear zone = Positive</strong> (starch digested)</li>
+                        <li><strong>Blue-black = Negative</strong> (starch still present)</li>
+                        <li>Add <strong>iodine</strong> to reveal results</li>
+                        <li>Tests for <strong>amylase</strong> enzyme</li>
+                        <li>Iodine + Starch = Blue-black color</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1632,6 +1781,16 @@
                             <p>No lipase enzyme produced</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Clear halo around growth = Positive</strong></li>
+                        <li>Tests for <strong>lipase</strong> enzyme (fat digestion)</li>
+                        <li>Lipase breaks triglycerides → glycerol + fatty acids</li>
+                        <li>No clearing = Negative (no lipase)</li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1715,6 +1874,16 @@
                     <strong>Part of IMViC:</strong> The citrate test is the "C" in IMViC tests. E. coli is citrate (-) while Enterobacter is citrate (+).
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Blue = Positive</strong> (citrate utilized, pH rises)</li>
+                        <li><strong>Green = Negative</strong> (no citrate utilization)</li>
+                        <li>Tests if bacteria can use <strong>citrate as sole carbon source</strong></li>
+                        <li>The "C" in <strong>IMViC tests</strong></li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -1788,6 +1957,17 @@
 
                 <div class="key-point">
                     <strong>Key Concept:</strong> <strong>NaCl is SELECTIVE</strong> (selects for salt-tolerant Staph), while <strong>Mannitol + Phenol Red is DIFFERENTIAL</strong> (differentiates mannitol fermenters from non-fermenters). Yellow zones indicate pathogenic S. aureus!
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Growth + Yellow = Mannitol fermenter</strong> (pathogenic Staph)</li>
+                        <li><strong>Growth + Red = Non-fermenter</strong></li>
+                        <li><strong>No growth = Not Staphylococcus</strong></li>
+                        <li><strong>Selective:</strong> High salt selects for Staph</li>
+                        <li><strong>Differential:</strong> Yellow = mannitol fermentation</li>
+                    </ul>
                 </div>
 
                 <div class="image-gallery">
@@ -1871,6 +2051,17 @@
                         <li>If no red, maybe NO3 is still there (unreduced) OR completely reduced to N2</li>
                         <li>Zinc chemically reduces NO3 to NO2 - if it turns red, NO3 was still there = NEGATIVE</li>
                         <li>If zinc doesn't cause red, NO3 was completely reduced to N2 = POSITIVE</li>
+                    </ul>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>RED after reagents = Positive</strong> (nitrite present)</li>
+                        <li>No red? Add <strong>zinc</strong>:</li>
+                        <li>Red after zinc = <strong>Negative</strong> (NO₃ still there)</li>
+                        <li>No red after zinc = <strong>Positive</strong> (complete denitrification to N₂)</li>
+                        <li>Pathway: NO₃ → NO₂ → NO → N₂O → N₂</li>
                     </ul>
                 </div>
 
@@ -1964,6 +2155,16 @@
                     </ul>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Diffuse/cloudy growth = Motile (+)</strong></li>
+                        <li><strong>Growth only along stab line = Non-motile (-)</strong></li>
+                        <li>SIM medium: <strong>S</strong>ulfide, <strong>I</strong>ndole, <strong>M</strong>otility</li>
+                        <li>Use inoculating <strong>needle</strong> (not loop) - stab technique</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -2044,6 +2245,15 @@
                     </ul>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Green color = Positive</strong> (add ferric chloride)</li>
+                        <li>No color change = Negative</li>
+                        <li>Read result <strong>immediately</strong> - color fades quickly!</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Test Results</h5>
                     <div class="gallery-placeholder">
@@ -2120,6 +2330,15 @@
                         <li>Anthony method: <strong>NO heat-fix</strong>, use <strong>copper sulfate</strong> wash</li>
                         <li>Capsule appears as <strong>clear halo</strong> around dark purple cells</li>
                         <li>Organism used: <em>Klebsiella pneumoniae</em></li>
+                    </ul>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Clear halo</strong> around purple cells = Capsule</li>
+                        <li>Anthony method: <strong>NO heat-fix</strong>, use copper sulfate</li>
+                        <li>Capsule = <strong>virulence factor</strong> (prevents phagocytosis)</li>
                     </ul>
                 </div>
 
@@ -2212,6 +2431,15 @@
                     </ul>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>GREEN = Endospore</strong> | <strong>RED = Vegetative cell</strong></li>
+                        <li><strong>Heat required</strong> to drive malachite green into spores</li>
+                        <li><strong>Autoclaving</strong> kills spores; boiling does NOT</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Image Gallery</h5>
                     <div class="gallery-placeholder">
@@ -2287,6 +2515,16 @@
                         <li>Kinyoun method is <strong>safer</strong> than Ziehl-Neelsen (no heating)</li>
                         <li>Only <em>Mycobacterium</em> and some <em>Nocardia</em> are acid-fast</li>
                         <li>Regular Gram stain does NOT work reliably on mycobacteria</li>
+                    </ul>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>RED = Acid-fast positive</strong></li>
+                        <li><strong>BLUE = Non-acid-fast</strong></li>
+                        <li><strong>Mycolic acid</strong> in cell wall = acid-fast property</li>
+                        <li>Kinyoun = cold method; Ziehl-Neelsen = heat method</li>
                     </ul>
                 </div>
 
@@ -2369,6 +2607,16 @@
                     </ul>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Ideal range: 30-300 colonies</strong></li>
+                        <li><strong>CFU/gram = colonies × dilution factor</strong></li>
+                        <li><strong>Coliform counts = fecal contamination indicator</strong></li>
+                        <li>Pasteurization ≠ sterilization</li>
+                    </ul>
+                </div>
+
                 <div class="image-gallery">
                     <h5>Image Gallery</h5>
                     <div class="gallery-placeholder">
@@ -2429,6 +2677,17 @@
                     <ul>
                         <li><em>S. pneumoniae</em>: Optochin <strong>SENSITIVE</strong>, Bile solubility <strong>Positive</strong> → Pneumonia, meningitis, otitis media</li>
                         <li>Viridans strep: Optochin <strong>Resistant</strong>, Bile solubility <strong>Negative</strong> → Dental caries, endocarditis</li>
+                    </ul>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Catalase (-) = Strep</strong>; Catalase (+) = Staph</li>
+                        <li><strong>β hemolysis + Bacitracin S</strong> = Group A</li>
+                        <li><strong>β hemolysis + CAMP (+)</strong> = Group B</li>
+                        <li><strong>Bile esculin (+)</strong> = Group D</li>
+                        <li><strong>α hemolysis + Optochin S</strong> = Pneumococcus</li>
                     </ul>
                 </div>
 
@@ -2507,6 +2766,17 @@
                     </ul>
                     <p>In lab: NaOH = "infected", pH buffer = "vaccinated", water = "susceptible"</p>
                     <p><strong>Pink color</strong> with phenolphthalein = positive (infected)</p>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Endemic</strong> = steady; <strong>Epidemic</strong> = excess; <strong>Pandemic</strong> = global</li>
+                        <li><strong>Common source</strong> = sharp peak; <strong>Propagated</strong> = gradual rise</li>
+                        <li><strong>R0</strong> = reproduction number (higher = more contagious)</li>
+                        <li><strong>Fomite</strong> = object; <strong>Vector</strong> = living carrier</li>
+                        <li><strong>Index case</strong> = first identified case in outbreak</li>
+                    </ul>
                 </div>
 
                 <div class="key-point">
@@ -2609,6 +2879,17 @@
                     </div>
                 </div>
 
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Direct ELISA</strong> = detects ANTIGENS (pathogen)</li>
+                        <li><strong>Indirect ELISA</strong> = detects ANTIBODIES (immune response)</li>
+                        <li><strong>GREEN = positive</strong>; <strong>Colorless = negative</strong></li>
+                        <li><strong>Enzyme</strong> on secondary antibody converts substrate to color</li>
+                        <li>ELISA = <strong>screening test</strong> (needs confirmation)</li>
+                    </ul>
+                </div>
+
                 <div class="key-point">
                     <strong>Test-Taking Points:</strong>
                     <ul>
@@ -2694,6 +2975,17 @@
                         <li><strong>O-:</strong> ~7%</li>
                         <li><strong>AB+:</strong> ~3%</li>
                         <li><strong>AB-:</strong> ~1% (rarest)</li>
+                    </ul>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>Type O-</strong> = universal donor; <strong>Type AB+</strong> = universal recipient</li>
+                        <li><strong>Agglutination</strong> = clumping = positive test result</li>
+                        <li><strong>HDN</strong>: Rh- mother + Rh+ baby (2nd pregnancy risk)</li>
+                        <li><strong>RhoGAM</strong> prevents mother from making anti-D antibodies</li>
+                        <li>Antibodies in serum are <strong>opposite</strong> of antigens on RBCs</li>
                     </ul>
                 </div>
 
@@ -2784,6 +3076,16 @@
                             <p><strong>TFTC</strong> (Too Few To Count) - <25 plaques</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="quick-study-box">
+                    <h5>Quick Study</h5>
+                    <ul>
+                        <li><strong>PFU/mL = (plaques × dilution factor) / volume</strong></li>
+                        <li><strong>Plaque</strong> = clear zone where phage lysed bacteria</li>
+                        <li>Each plaque = <strong>one original phage</strong> (1 PFU)</li>
+                        <li>Uses <strong>soft agar overlay</strong> technique</li>
+                    </ul>
                 </div>
 
                 <div class="key-point">
