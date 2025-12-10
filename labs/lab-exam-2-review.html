@@ -1,0 +1,2931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exam 2 Review - Bio 15 Microbiology</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦠</text></svg>">
+    <style>
+        /* Lab Review Tabs - Match disease-tab-btn styling from main CSS */
+        .lab-review-container {
+            margin-top: 2rem;
+        }
+
+        .lab-tab-categories {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--border);
+            background: var(--surface);
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .category-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+        }
+
+        .category-btn.active {
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+
+        .lab-tabs-wrapper {
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+        }
+
+        .lab-tabs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 0.75rem;
+        }
+
+        /* Match disease-tab-btn styling */
+        .lab-tab-btn {
+            padding: 0.75rem 1.25rem;
+            background: var(--background);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            color: var(--text-secondary);
+        }
+
+        .lab-tab-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary-light);
+            background: var(--surface-hover);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+        }
+
+        .lab-tab-btn.active {
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border-color: transparent;
+            color: white;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+        }
+
+        .lab-tab-btn .test-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .lab-tab-btn .test-type {
+            font-size: 0.8rem;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .lab-tab-btn.active .test-type {
+            opacity: 0.9;
+        }
+
+        /* Content Panels - Match concept-card styling */
+        .lab-content-panel {
+            display: none;
+            animation: fadeIn 0.3s ease;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .lab-content-panel::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+        }
+
+        .lab-content-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .test-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .test-header h3 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .test-badge {
+            padding: 0.35rem 1rem;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+        }
+
+        .test-section {
+            margin-bottom: 2rem;
+        }
+
+        .test-section h4 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .test-section h4::before {
+            content: '';
+            width: 4px;
+            height: 1.2em;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            border-radius: 2px;
+        }
+
+        .test-section p {
+            color: var(--text-primary);
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .test-section p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Info Grid - Match overview-card styling */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .info-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+        }
+
+        .info-card h4, .info-card h5 {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .info-card p {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .info-card ul {
+            margin: 0.5rem 0 0 1.5rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.6rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .info-card li:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-card li strong {
+            color: var(--secondary);
+        }
+
+        .info-card li em {
+            color: var(--pink);
+        }
+
+        /* General list styling for consistency */
+        .test-section ul {
+            margin: 0.75rem 0 0 1.5rem;
+        }
+
+        .test-section li {
+            margin-bottom: 0.6rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .test-section li:last-child {
+            margin-bottom: 0;
+        }
+
+        .test-section li strong {
+            color: var(--secondary);
+        }
+
+        .test-section li em {
+            color: var(--pink);
+        }
+
+        .test-section ol {
+            margin: 0.75rem 0 0 1.5rem;
+        }
+
+        /* Result boxes */
+        .result-box {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
+        }
+
+        .result-item {
+            flex: 1;
+            min-width: 250px;
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .result-positive {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(52, 211, 153, 0.08) 100%);
+            border: 2px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .result-positive h5 {
+            color: #34d399;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .result-negative {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(236, 72, 153, 0.08) 100%);
+            border: 2px solid rgba(239, 68, 68, 0.4);
+        }
+
+        .result-negative h5 {
+            color: #f87171;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .result-item p {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            margin: 0.25rem 0;
+        }
+
+        /* Key Point - Match highlight-box styling */
+        .key-point {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
+        }
+
+        .key-point p {
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+
+        .key-point p:last-child {
+            margin-bottom: 0;
+        }
+
+        .key-point strong {
+            color: var(--primary);
+        }
+
+        .key-point ul {
+            margin: 0.75rem 0 0 0;
+            padding-left: 1.5rem;
+        }
+
+        .key-point li {
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .key-point li:last-child {
+            margin-bottom: 0;
+        }
+
+        .key-point li strong {
+            color: var(--secondary);
+        }
+
+        .key-point li em {
+            color: var(--pink);
+        }
+
+        /* Warning key-point variant */
+        .key-point.warning {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.12) 0%, rgba(236, 72, 153, 0.08) 100%);
+            border-color: rgba(239, 68, 68, 0.4);
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);
+        }
+
+        .key-point.warning strong {
+            color: #f87171;
+        }
+
+        /* Success key-point variant */
+        .key-point.success {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(52, 211, 153, 0.08) 100%);
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+        }
+
+        .key-point.success strong {
+            color: #34d399;
+        }
+
+        .organisms-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+        }
+
+        .organism-tag {
+            padding: 0.35rem 0.85rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-style: italic;
+            transition: var(--transition);
+        }
+
+        .organism-tag.positive {
+            background: rgba(16, 185, 129, 0.15);
+            border-color: rgba(16, 185, 129, 0.4);
+            color: #34d399;
+        }
+
+        .organism-tag.negative {
+            background: rgba(239, 68, 68, 0.15);
+            border-color: rgba(239, 68, 68, 0.4);
+            color: #f87171;
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: var(--background);
+            border: 2px dashed var(--border);
+            border-radius: var(--radius);
+            text-align: center;
+        }
+
+        .image-gallery h5 {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .gallery-placeholder {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            min-width: 200px;
+            max-width: 400px;
+            background: var(--surface);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            font-size: 0.8rem;
+            border: 1px solid var(--border);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+        }
+
+        /* Game link button */
+        .game-link-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
+        }
+
+        .game-link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+        }
+
+        .game-link-btn svg {
+            flex-shrink: 0;
+        }
+
+        /* Image Lightbox */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            cursor: pointer;
+        }
+
+        .lightbox-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: var(--radius);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .lightbox-close:hover {
+            opacity: 1;
+        }
+
+        /* Procedure steps */
+        .procedure-steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .procedure-steps li {
+            position: relative;
+            padding-left: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .procedure-steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.25rem;
+            height: 2.25rem;
+            background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .lab-tabs-wrapper {
+                padding: 1rem;
+            }
+
+            .lab-content-panel {
+                padding: 1.5rem;
+            }
+
+            .lab-tab-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .category-btn {
+                padding: 0.6rem 1.25rem;
+                font-size: 0.9rem;
+            }
+
+            .test-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-box {
+                flex-direction: column;
+            }
+
+            .result-item {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <circle cx="12" cy="12" r="4"/>
+                    <circle cx="12" cy="4" r="1"/>
+                    <circle cx="12" cy="20" r="1"/>
+                    <circle cx="4" cy="12" r="1"/>
+                    <circle cx="20" cy="12" r="1"/>
+                </svg>
+                Microbiology
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="../chapters/chapter21.html">Ch 21: Skin</a></li>
+                <li><a href="../chapters/chapter22.html">Ch 22: Nervous</a></li>
+                <li><a href="../chapters/chapter24.html">Ch 24: Respiratory</a></li>
+                <li><a href="../chapters/chapter25.html">Ch 25: Digestive</a></li>
+                <li><a href="../chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
+                <li><a href="lab-exam-2-review.html" class="nav-lab active">Lab Exam 2</a></li>
+                <li><a href="../todo.html" class="nav-todo">Site Status</a></li>
+                <li><a href="../practice.html" class="nav-highlight">Practice Test</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="chapter-header lab-header">
+        <div class="chapter-header-content">
+            <a href="../index.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                Back to Home
+            </a>
+            <span class="lab-badge">LAB EXAM 2 REVIEW</span>
+            <h1>Metabolic Tests & Lab Exercises</h1>
+            <p>Comprehensive review of all metabolic tests and lab procedures</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="lab-review-container">
+            <!-- Category Buttons -->
+            <div class="lab-tab-categories">
+                <button class="category-btn active" data-category="metabolic">Metabolic Tests</button>
+                <button class="category-btn" data-category="exercises">Lab Exercises</button>
+            </div>
+
+            <!-- Metabolic Tests Tabs -->
+            <div id="metabolic-tabs" class="lab-tabs-wrapper">
+                <div class="lab-tabs">
+                    <button class="lab-tab-btn active" data-tab="mrvp">
+                        <span class="test-name">MR-VP Test</span>
+                        <span class="test-type">Glucose Fermentation</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="phenol-red">
+                        <span class="test-name">Phenol Red Broth</span>
+                        <span class="test-type">Sugar Fermentation</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="indole">
+                        <span class="test-name">Indole Test</span>
+                        <span class="test-type">Tryptophan Metabolism</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="kligler">
+                        <span class="test-name">Kligler Iron Agar</span>
+                        <span class="test-type">Multiple Test Medium</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="casein">
+                        <span class="test-name">Casein Hydrolysis</span>
+                        <span class="test-type">Protein Digestion</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="urease">
+                        <span class="test-name">Urease Test</span>
+                        <span class="test-type">Urea Hydrolysis</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="emb">
+                        <span class="test-name">EMB Agar</span>
+                        <span class="test-type">Selective & Differential</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="catalase">
+                        <span class="test-name">Catalase Test</span>
+                        <span class="test-type">H₂O₂ Breakdown</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="oxidase">
+                        <span class="test-name">Oxidase Test</span>
+                        <span class="test-type">Cytochrome c Oxidase</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="starch">
+                        <span class="test-name">Starch Hydrolysis</span>
+                        <span class="test-type">Amylase Activity</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="spirit-blue">
+                        <span class="test-name">Spirit Blue Agar</span>
+                        <span class="test-type">Lipase Activity</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="citrate">
+                        <span class="test-name">Citrate Test</span>
+                        <span class="test-type">Carbon Source</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="msa">
+                        <span class="test-name">Mannitol Salt Agar</span>
+                        <span class="test-type">Selective & Differential</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="nitrate">
+                        <span class="test-name">Nitrate Reduction</span>
+                        <span class="test-type">Anaerobic Respiration</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="motility">
+                        <span class="test-name">Motility Test</span>
+                        <span class="test-type">SIM Medium</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="phenylalanine">
+                        <span class="test-name">Phenylalanine Deaminase</span>
+                        <span class="test-type">Amino Acid Degradation</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Lab Exercises Tabs (hidden by default) -->
+            <div id="exercises-tabs" class="lab-tabs-wrapper" style="display: none;">
+                <div class="lab-tabs">
+                    <button class="lab-tab-btn" data-tab="ex13">
+                        <span class="test-name">Ex 13: Capsule Staining</span>
+                        <span class="test-type">Anthony Method</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex15">
+                        <span class="test-name">Ex 15: Endospore Staining</span>
+                        <span class="test-type">Schaeffer-Fulton</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex16">
+                        <span class="test-name">Ex 16: Acid-Fast Staining</span>
+                        <span class="test-type">Kinyoun Method</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex43">
+                        <span class="test-name">Ex 43: Bacterial Counts</span>
+                        <span class="test-type">Serial Dilution</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex54">
+                        <span class="test-name">Ex 54: Strep & Enterococci</span>
+                        <span class="test-type">Hemolysis Patterns</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex56">
+                        <span class="test-name">Ex 56: Synthetic Epidemic</span>
+                        <span class="test-type">Epidemiology</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex60">
+                        <span class="test-name">Ex 60: ELISA</span>
+                        <span class="test-type">Immunoassay</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="ex61">
+                        <span class="test-name">Ex 61: Blood Grouping</span>
+                        <span class="test-type">ABO & Rh Typing</span>
+                    </button>
+                    <button class="lab-tab-btn" data-tab="plaque-assay">
+                        <span class="test-name">Plaque Assay</span>
+                        <span class="test-type">Bacteriophage Counting</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ==================== METABOLIC TEST CONTENT PANELS ==================== -->
+
+            <!-- MR-VP Test -->
+            <div id="mrvp" class="lab-content-panel active">
+                <div class="test-header">
+                    <h3>Methyl Red (MR) & Voges-Proskauer (VP) Tests</h3>
+                    <span class="test-badge">MRVP Broth</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Both tests use the same MRVP broth to differentiate bacteria based on how they ferment glucose - specifically what end products they produce.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Methyl Red Test</h5>
+                        <ul>
+                            <li>Detects <strong>stable acid end products</strong> from glucose fermentation</li>
+                            <li>Add 15 drops Methyl Red to MRVP broth</li>
+                            <li>Mix well - instant color change</li>
+                            <li>Methyl Red is a pH indicator</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Voges-Proskauer Test</h5>
+                        <ul>
+                            <li>Detects <strong>acetoin + butanediol</strong> production</li>
+                            <li>Transfer 1 mL of broth</li>
+                            <li>Add 9 drops VPA, mix</li>
+                            <li>Add 3 drops VPB, mix</li>
+                            <li>Wait 15-20 min (read every 10 min for 45 min)</li>
+                            <li>Do NOT shake tubes after reagents added</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>MR Positive (+)</h5>
+                            <p><strong>RED color</strong> = Acid produced (low pH)</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">E. coli (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>MR Negative (-)</h5>
+                            <p><strong>No color change</strong> = No stable acids</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">Enterobacter (-)</span>
+                                <span class="organism-tag negative">Pseudomonas (-)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="result-box" style="margin-top: 1rem;">
+                        <div class="result-item result-positive">
+                            <h5>VP Positive (+)</h5>
+                            <p><strong>RED color</strong> at top = Acetoin produced</p>
+                            <p style="font-size: 0.8rem; margin-top: 0.5rem;">Don't confuse with copper color!</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">Enterobacter (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>VP Negative (-)</h5>
+                            <p><strong>No red color</strong> = No acetoin</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">E. coli (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> MR(+) organisms and VP(+) organisms are typically mutually exclusive! If an organism is MR(+), it's usually VP(-), and vice versa. This is because they represent different fermentation pathways - mixed acid fermentation (MR+) vs. butanediol fermentation (VP+).
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/MR test.png" alt="Methyl Red Test Results"></div>
+                        <div class="gallery-item"><img src="../images/VP test.png" alt="VP Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phenol Red Broth -->
+            <div id="phenol-red" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Phenol Red Broth (Durham Tubes)</h3>
+                    <span class="test-badge">Carbohydrate Fermentation</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests the ability of bacteria to ferment specific sugars (glucose, lactose, sucrose, etc.) and whether gas is produced during fermentation.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Medium Components</h5>
+                        <ul>
+                            <li>Simple broth with a specific sugar</li>
+                            <li>Sugar can vary (glucose, lactose, sucrose, etc.)</li>
+                            <li>Phenol Red pH indicator</li>
+                            <li>Durham tube (small inverted tube) to trap gas</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Phenol Red pH Ranges</h5>
+                        <ul>
+                            <li><strong>pH &lt; 6.8</strong> = Yellow (acidic)</li>
+                            <li><strong>pH 6.9-7.3</strong> = Red (neutral)</li>
+                            <li><strong>pH &gt; 7.4</strong> = Pink/Magenta (alkaline)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Color</th>
+                                <th>Gas Bubble</th>
+                                <th>Result (Acid/Gas)</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yellow</td>
+                                <td>Yes</td>
+                                <td>+/+</td>
+                                <td>Ferments sugar, produces acid AND gas</td>
+                            </tr>
+                            <tr>
+                                <td>Yellow</td>
+                                <td>No</td>
+                                <td>+/-</td>
+                                <td>Ferments sugar, produces acid only</td>
+                            </tr>
+                            <tr>
+                                <td>Red</td>
+                                <td>No</td>
+                                <td>-/-</td>
+                                <td>Does NOT ferment sugar (control)</td>
+                            </tr>
+                            <tr>
+                                <td>Pink/Magenta</td>
+                                <td>No</td>
+                                <td>-/- (protein)</td>
+                                <td>Protein degradation (alkaline products)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> Gas will ONLY be produced if there is also acid! You cannot have a -/+ result (no acid but gas). The gas (usually CO2 and H2) is a byproduct of fermentation that only occurs when sugars are being broken down.
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/phenol red.png" alt="Phenol Red Broth Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indole Test -->
+            <div id="indole" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Indole Test</h3>
+                    <span class="test-badge">Tryptophan Metabolism</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Determines if bacteria can produce the enzyme <strong>tryptophanase</strong> to break down the amino acid tryptophan into indole, pyruvate, and ammonia.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Biochemistry</h5>
+                        <ul>
+                            <li>Tryptophan + H2O + tryptophanase</li>
+                            <li>Produces: Indole + Pyruvate + NH3</li>
+                            <li>Indole reacts with Kovac's reagent</li>
+                            <li>Forms rosindole dye (cherry red)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Grow bacteria in tryptone broth</li>
+                            <li>Add <strong>15 drops Kovac's Reagent</strong></li>
+                            <li>Look for color change at surface</li>
+                            <li>Results are immediate</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Indole Positive (+)</h5>
+                            <p><strong>RED ring</strong> at top of broth</p>
+                            <p>Tryptophanase enzyme present</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">E. coli (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Indole Negative (-)</h5>
+                            <p><strong>No color change</strong> (reagent stays yellow)</p>
+                            <p>No tryptophanase enzyme</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">Enterobacter (-)</span>
+                                <span class="organism-tag negative">Klebsiella (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> The Indole test is part of the <strong>IMViC tests</strong> (Indole, Methyl Red, Voges-Proskauer, Citrate) used to differentiate Enterobacteriaceae. E. coli is I+ M+ V- C- while Enterobacter is I- M- V+ C+.
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/indole.png" alt="Indole Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kligler Iron Agar -->
+            <div id="kligler" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Kligler Iron Agar (KIA) / TSI</h3>
+                    <span class="test-badge">Multiple Test Medium</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>A multipurpose medium that tests for glucose fermentation, lactose/sucrose fermentation, gas production, and hydrogen sulfide (H2S) production all in one tube!</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Medium Components</h5>
+                        <ul>
+                            <li><strong>Glucose:</strong> 1g/L (0.1%)</li>
+                            <li><strong>Lactose & Sucrose:</strong> 10g each/L (1%)</li>
+                            <li><strong>Phenol Red:</strong> pH indicator</li>
+                            <li><strong>Sodium thiosulfate:</strong> Sulfur source</li>
+                            <li><strong>Ferrous sulfate:</strong> H2S indicator</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Reading the Tube</h5>
+                        <ul>
+                            <li><strong>Slant (top):</strong> Aerobic conditions</li>
+                            <li><strong>Butt (bottom):</strong> Anaerobic conditions</li>
+                            <li>Report as: Slant/Butt, H2S, Gas</li>
+                            <li>Example: K/A, H2S(-), Gas(+)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>The Reversion Concept</h4>
+                    <div class="key-point">
+                        <strong>Why the slant can change color:</strong>
+                        <ol style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                            <li>Glucose is preferred but only 0.1% (runs out in ~12 hours)</li>
+                            <li>0.1% glucose fermentation produces small amount of acid (yellow)</li>
+                            <li>When glucose depleted, bacteria use beef extract/peptone</li>
+                            <li>Protein degradation produces NH3 (ammonia) - raises pH</li>
+                            <li>Slant REVERTS to red/pink (alkaline), but butt stays yellow</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Slant/Butt</th>
+                                <th>Abbreviation</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Red/Yellow</td>
+                                <td>K/A (Alkaline/Acid)</td>
+                                <td>Glucose fermenter ONLY (reversion occurred)</td>
+                            </tr>
+                            <tr>
+                                <td>Yellow/Yellow</td>
+                                <td>A/A (Acid/Acid)</td>
+                                <td>Glucose AND lactose/sucrose fermenter</td>
+                            </tr>
+                            <tr>
+                                <td>Red/Red</td>
+                                <td>K/K</td>
+                                <td>Non-fermenter (uses peptones)</td>
+                            </tr>
+                            <tr>
+                                <td>Black precipitate</td>
+                                <td>H2S (+)</td>
+                                <td>Hydrogen sulfide production (FeS)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="test-section">
+                    <h4>H2S Production</h4>
+                    <div class="info-card">
+                        <h5>How H2S is Detected</h5>
+                        <ul>
+                            <li>Sugar fermentation produces acids (H+)</li>
+                            <li>Cysteine desulfurase only works in acidic environment</li>
+                            <li>Breaks down cysteine to pyruvate + H2S gas</li>
+                            <li>H2S + Fe (ferrous sulfate) = <strong>FeS (black precipitate)</strong></li>
+                            <li>Any black color = H2S positive</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>KIA Notation Legend</h4>
+                    <div class="key-point">
+                        <p><strong>Format:</strong> Slant/Butt/H₂S/Gas</p>
+                        <ul>
+                            <li><strong>K</strong> = Alkaline (red/pink) - no fermentation or reversion</li>
+                            <li><strong>A</strong> = Acid (yellow) - fermentation occurred</li>
+                            <li><strong>+</strong> = Positive (H₂S = black, Gas = bubbles/cracks)</li>
+                            <li><strong>-</strong> = Negative</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Image Key (Left to Right)</h4>
+                    <ol>
+                        <li><strong>K/K/-/-</strong> — No fermentation, no H₂S, no gas</li>
+                        <li><strong>K/A/+/-</strong> — Glucose only, H₂S positive, no gas</li>
+                        <li><strong>K/A/+/+</strong> — Glucose only, H₂S positive, gas positive</li>
+                        <li><strong>K/A/-/-</strong> — Glucose only, no H₂S, no gas</li>
+                        <li><strong>K/A/-/+</strong> — Glucose only, no H₂S, gas positive</li>
+                        <li><strong>A/A/+/-</strong> — Glucose + lactose/sucrose, H₂S positive, no gas</li>
+                        <li><strong>A/A/-/+</strong> — Glucose + lactose/sucrose, no H₂S, gas positive</li>
+                        <li><strong>A/A/-/-</strong> — Glucose + lactose/sucrose, no H₂S, no gas</li>
+                    </ol>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/KIA test.png" alt="Kligler Iron Agar Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Casein Hydrolysis -->
+            <div id="casein" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Casein Hydrolysis Test</h3>
+                    <span class="test-badge">Protein Digestion</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>casease</strong>, an exoenzyme that breaks down casein (the main protein in milk) into smaller peptides and amino acids.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Key Concepts</h5>
+                        <ul>
+                            <li><strong>Casein:</strong> Protein found in milk</li>
+                            <li>Makes milk agar appear opaque/white</li>
+                            <li><strong>Casease:</strong> Exoenzyme that hydrolyzes casein</li>
+                            <li>Bacteria get smaller peptides as amino acid source</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Streak bacteria on milk agar plate</li>
+                            <li>Incubate</li>
+                            <li>Look for clear zones around growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Casease Positive (+)</h5>
+                            <p><strong>Clear zone</strong> around colonies</p>
+                            <p>Casein has been digested</p>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Casease Negative (-)</h5>
+                            <p><strong>No clearing</strong> - medium stays opaque</p>
+                            <p>No casease enzyme produced</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/casein.png" alt="Casein Hydrolysis Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urease Test -->
+            <div id="urease" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Urease Test</h3>
+                    <span class="test-badge">Urea Hydrolysis</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>urease</strong>, a hydrolytic exoenzyme that breaks down urea into ammonia and carbon dioxide.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Biochemistry</h5>
+                        <ul>
+                            <li><strong>Urea:</strong> Nitrogen-containing compound</li>
+                            <li>Urease breaks down: Urea → 2NH3 + CO2</li>
+                            <li>NH3 (ammonia) raises pH (alkaline)</li>
+                            <li>Contains Phenol Red pH indicator</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Phenol Red Colors</h5>
+                        <ul>
+                            <li><strong>Yellow:</strong> Acidic (-)</li>
+                            <li><strong>Red:</strong> Neutral</li>
+                            <li><strong>Hot Pink:</strong> Basic/Alkaline (+)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Urease Positive (+)</h5>
+                            <p><strong>Hot pink/magenta color</strong></p>
+                            <p>Alkaline pH from ammonia production</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">Proteus (+)</span>
+                                <span class="organism-tag positive">H. pylori (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Urease Negative (-)</h5>
+                            <p><strong>Yellow or no change</strong></p>
+                            <p>No urease enzyme present</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">E. coli (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Clinical Relevance:</strong> Helicobacter pylori uses urease to survive in the acidic stomach! It converts urea to ammonia, neutralizing the acid in its immediate environment. The urease breath test is used to diagnose H. pylori infections.
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/urea test.png" alt="Urease Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMB Agar -->
+            <div id="emb" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>EMB Agar (Eosin Methylene Blue)</h3>
+                    <span class="test-badge">Selective & Differential</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>A selective AND differential medium used to detect <strong>coliform bacteria</strong> (indicators of fecal contamination) and differentiate lactose fermenters.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Selective Properties</h5>
+                        <ul>
+                            <li>Encourages growth of <strong>Gram (-)</strong> organisms</li>
+                            <li>Inhibits growth of <strong>Gram (+)</strong> organisms</li>
+                            <li>Dyes (eosin & methylene blue) inhibit Gram (+)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Medium Components</h5>
+                        <ul>
+                            <li><strong>Lactose:</strong> Fermentable sugar</li>
+                            <li><strong>Eosin Y:</strong> pH indicator dye</li>
+                            <li><strong>Methylene Blue:</strong> pH indicator dye</li>
+                            <li>Both dyes also inhibit Gram (+)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Appearance</th>
+                                <th>Interpretation</th>
+                                <th>Example Organisms</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Green metallic sheen</strong></td>
+                                <td>VIGOROUS lactose fermenter (strong acid)</td>
+                                <td>E. coli - indicates fecal contamination!</td>
+                            </tr>
+                            <tr>
+                                <td>Pink/Purple colonies</td>
+                                <td>Lactose fermenter (weak)</td>
+                                <td>Enterobacter, Klebsiella</td>
+                            </tr>
+                            <tr>
+                                <td>Colorless/Color of medium</td>
+                                <td>Lactose NON-fermenter</td>
+                                <td>Salmonella, Shigella, Pseudomonas</td>
+                            </tr>
+                            <tr>
+                                <td>No growth</td>
+                                <td>Gram (+) organism (inhibited)</td>
+                                <td>Staphylococcus, Streptococcus</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> The green metallic sheen is the KEY indicator of fecal contamination! It's produced by E. coli's vigorous fermentation of lactose, which causes the dyes to precipitate on the colony surface in a characteristic iridescent pattern.
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/EMB test.png" alt="EMB Agar Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Catalase Test -->
+            <div id="catalase" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Catalase Test</h3>
+                    <span class="test-badge">Toxic Oxygen Removal</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>catalase</strong> enzyme, which breaks down toxic hydrogen peroxide (H2O2) into water and oxygen gas.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Why Catalase Matters</h5>
+                        <ul>
+                            <li>The ETC produces toxic H2O2 as byproduct</li>
+                            <li>H2O2 is damaging to cells</li>
+                            <li>Catalase detoxifies: 2H2O2 → 2H2O + O2</li>
+                            <li>Bacteria need catalase to do aerobic respiration</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Use a glass slide</li>
+                            <li>Use applicator stick to smear cells</li>
+                            <li>Add 1-2 drops of H2O2 (3%)</li>
+                            <li>Look for <strong>bubbling</strong> (O2 release)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Catalase Positive (+)</h5>
+                            <p><strong>Bubbling/Fizzing</strong></p>
+                            <p>Oxygen gas being released</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">Staphylococcus (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Catalase Negative (-)</h5>
+                            <p><strong>No bubbles</strong></p>
+                            <p>No catalase enzyme</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">Streptococcus (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Clinical Application:</strong> The catalase test is the quickest way to differentiate <strong>Staphylococcus</strong> (catalase +, clusters) from <strong>Streptococcus</strong> (catalase -, chains). Both are Gram-positive cocci!
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/catalase.png" alt="Catalase Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oxidase Test -->
+            <div id="oxidase" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Oxidase Test</h3>
+                    <span class="test-badge">Cytochrome c Oxidase</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>cytochrome c oxidase</strong>, the terminal electron acceptor in the electron transport chain that transfers electrons to oxygen.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Take sterile cotton swab</li>
+                            <li>Pick up cells from colony</li>
+                            <li>Apply 2 drops of oxidase reagent</li>
+                            <li>Read within <strong>30 seconds</strong></li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Important Notes</h5>
+                        <ul>
+                            <li>Must read quickly (30 sec)</li>
+                            <li>Don't use metal loop (false positive)</li>
+                            <li>Use fresh reagent</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Oxidase Positive (+)</h5>
+                            <p><strong>Purple/Dark blue</strong> within 30 seconds</p>
+                            <p>Cytochrome c oxidase present</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">Pseudomonas (+)</span>
+                                <span class="organism-tag positive">Neisseria (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Oxidase Negative (-)</h5>
+                            <p><strong>No color change</strong></p>
+                            <p>No cytochrome c oxidase</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">Enterobacteriaceae (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> Most <strong>Enterobacteriaceae are oxidase NEGATIVE</strong>, while <strong>Pseudomonas is oxidase POSITIVE</strong>. This is a quick way to rule out Enterobacteriaceae!
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/oxidase.jpg" alt="Oxidase Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Starch Hydrolysis -->
+            <div id="starch" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Starch Hydrolysis Test</h3>
+                    <span class="test-badge">Amylase Activity</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>amylase</strong>, an exoenzyme that breaks down starch (a polysaccharide) into glucose units.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Key Concepts</h5>
+                        <ul>
+                            <li><strong>Starch:</strong> Polysaccharide of glucose monomers</li>
+                            <li><strong>Amylase:</strong> Breaks α-1,4 glycosidic bonds</li>
+                            <li>Bacteria get glucose for energy</li>
+                            <li>Iodine reacts with intact starch (blue-black)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Streak bacteria on starch agar plate</li>
+                            <li>Incubate</li>
+                            <li>Flood plate with <strong>iodine</strong></li>
+                            <li>Look for clear zones around growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Amylase Positive (+)</h5>
+                            <p><strong>Clear zone</strong> around colonies</p>
+                            <p>Starch has been digested (no blue-black)</p>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Amylase Negative (-)</h5>
+                            <p><strong>Blue-black color</strong> up to colonies</p>
+                            <p>Starch still present (no clearing)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Remember:</strong> Iodine + Starch = Blue-black color. If amylase has digested the starch, there's nothing for iodine to react with, so you see a CLEAR zone!
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/starch hydrolysis.png" alt="Starch Hydrolysis Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spirit Blue (Lipase) -->
+            <div id="spirit-blue" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Spirit Blue Agar (Lipase Test)</h3>
+                    <span class="test-badge">Lipid Hydrolysis</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the presence of <strong>lipase</strong>, an exoenzyme that breaks down lipids (fats/oils) into glycerol and fatty acids.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Key Concepts</h5>
+                        <ul>
+                            <li><strong>Lipase:</strong> Exoenzyme that hydrolyzes lipids</li>
+                            <li>Breaks triglycerides into glycerol + fatty acids</li>
+                            <li>Spirit blue dye is incorporated in lipid</li>
+                            <li>When lipid digested, dye is released</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Streak bacteria on spirit blue agar</li>
+                            <li>Incubate</li>
+                            <li>Look for halos around colonies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Lipase Positive (+)</h5>
+                            <p><strong>Clear/transparent blue halos</strong> around colonies</p>
+                            <p>Lipids have been digested</p>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Lipase Negative (-)</h5>
+                            <p><strong>No clearing</strong> around colonies</p>
+                            <p>No lipase enzyme produced</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/spirit blue.png" alt="Spirit Blue Agar Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citrate Test -->
+            <div id="citrate" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Citrate Test</h3>
+                    <span class="test-badge">Carbon Source Utilization</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests whether an organism can use <strong>citrate as its SOLE carbon source</strong> and <strong>ammonium as its SOLE nitrogen source</strong>.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Medium Components</h5>
+                        <ul>
+                            <li><strong>Sodium citrate:</strong> Only carbon source</li>
+                            <li><strong>Ammonium phosphate:</strong> Only nitrogen source</li>
+                            <li><strong>Bromthymol blue:</strong> pH indicator</li>
+                            <li>No other carbon sources available!</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Biochemistry</h5>
+                        <ul>
+                            <li>Citrate utilization produces alkaline products</li>
+                            <li>Ammonia (NH3) released raises pH</li>
+                            <li>Bromthymol blue turns BLUE at higher pH</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Result</th>
+                                <th>Interpretation</th>
+                                <th>Symbol</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Blue (even small amount)</td>
+                                <td>Citrate is utilized</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>No color change + Growth</td>
+                                <td>Citrate is utilized</td>
+                                <td>+</td>
+                            </tr>
+                            <tr>
+                                <td>No color change + No growth</td>
+                                <td>Citrate is NOT utilized</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="organisms-list" style="margin-top: 1rem;">
+                        <span class="organism-tag positive">Enterobacter (+)</span>
+                        <span class="organism-tag positive">Klebsiella (+)</span>
+                        <span class="organism-tag negative">E. coli (-)</span>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Part of IMViC:</strong> The citrate test is the "C" in IMViC tests. E. coli is citrate (-) while Enterobacter is citrate (+).
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/citrate.jpg" alt="Citrate Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mannitol Salt Agar -->
+            <div id="msa" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Mannitol Salt Agar (MSA)</h3>
+                    <span class="test-badge">Selective & Differential</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>A selective AND differential medium used to isolate <strong>Staphylococcus</strong> species and differentiate <strong>pathogenic from non-pathogenic</strong> staphylococci.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Medium Components</h5>
+                        <ul>
+                            <li><strong>Beef extract & Peptone:</strong> Nutrients</li>
+                            <li><strong>NaCl (7.5%):</strong> High salt = SELECTIVE</li>
+                            <li><strong>Mannitol:</strong> Fermentable sugar = DIFFERENTIAL</li>
+                            <li><strong>Phenol Red:</strong> pH indicator</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Why 7.5% Salt?</h5>
+                        <ul>
+                            <li>Normal bacterial cell = 0.85% salt</li>
+                            <li>7.5% salt = nearly 10x higher!</li>
+                            <li>Most bacteria can't survive</li>
+                            <li>Staphylococcus is HALOTOLERANT</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Growth?</th>
+                                <th>Color Change?</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Yes</td>
+                                <td>Yellow (acidic)</td>
+                                <td>Staphylococcus that ferments mannitol<br><strong>= Likely PATHOGENIC (S. aureus)</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Yes</td>
+                                <td>No change (red)</td>
+                                <td>Staphylococcus that does NOT ferment mannitol<br>= Likely NON-pathogenic (S. epidermidis)</td>
+                            </tr>
+                            <tr>
+                                <td>No</td>
+                                <td>N/A</td>
+                                <td>Not halotolerant (not Staphylococcus)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concept:</strong> <strong>NaCl is SELECTIVE</strong> (selects for salt-tolerant Staph), while <strong>Mannitol + Phenol Red is DIFFERENTIAL</strong> (differentiates mannitol fermenters from non-fermenters). Yellow zones indicate pathogenic S. aureus!
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/MSA plate.jpg" alt="MSA Plate Results"></div>
+                        <div class="gallery-item"><img src="../images/MSA slant.jpg" alt="MSA Slant Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nitrate Reduction -->
+            <div id="nitrate" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Nitrate Reduction Test</h3>
+                    <span class="test-badge">Anaerobic Respiration</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests whether bacteria can perform <strong>anaerobic respiration</strong> using nitrate (NO3-) as the terminal electron acceptor instead of oxygen.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Denitrification Pathway</h5>
+                        <p>NO3- → NO2- → NO → N2O → N2</p>
+                        <ul>
+                            <li>Nitrate → Nitrite → Nitric oxide</li>
+                            <li>→ Nitrous oxide → Nitrogen gas</li>
+                            <li>Occurs when O2 is not available</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Grow in nitrate broth</li>
+                            <li>Add 6 drops Nitrate Reagent A</li>
+                            <li>Add 6 drops Nitrate Reagent B</li>
+                            <li>Wait 2 minutes, check for red</li>
+                            <li>If no red, add zinc powder</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation (This is tricky!)</h4>
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>After Reagents A&B</th>
+                                <th>After Zinc</th>
+                                <th>Interpretation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RED</td>
+                                <td>N/A (don't add)</td>
+                                <td><strong>Positive:</strong> NO3 reduced to NO2 (nitrite detected)</td>
+                            </tr>
+                            <tr>
+                                <td>No color</td>
+                                <td>RED</td>
+                                <td><strong>Negative:</strong> Zinc reduced remaining NO3 to NO2</td>
+                            </tr>
+                            <tr>
+                                <td>No color</td>
+                                <td>No color</td>
+                                <td><strong>Positive:</strong> Complete denitrification (NO3 → N2)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="key-point">
+                    <strong>Why the confusion?</strong>
+                    <ul style="margin-top: 0.5rem;">
+                        <li>Reagents detect NITRITE (NO2-), not nitrate</li>
+                        <li>If bacteria reduced NO3 to NO2, reagents turn RED (positive)</li>
+                        <li>If no red, maybe NO3 is still there (unreduced) OR completely reduced to N2</li>
+                        <li>Zinc chemically reduces NO3 to NO2 - if it turns red, NO3 was still there = NEGATIVE</li>
+                        <li>If zinc doesn't cause red, NO3 was completely reduced to N2 = POSITIVE</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/nitrate reduction.png" alt="Nitrate Reduction Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Motility Test -->
+            <div id="motility" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Motility Test (SIM Medium)</h3>
+                    <span class="test-badge">Bacterial Movement</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests whether bacteria are <strong>motile</strong> (capable of self-propelled movement) using flagella. SIM medium can also test for Indole production and H₂S production simultaneously.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>SIM Medium Components</h5>
+                        <ul>
+                            <li><strong>S = Sulfide:</strong> Ferrous sulfate + sodium thiosulfate for H₂S detection</li>
+                            <li><strong>I = Indole:</strong> Tryptophan for indole production</li>
+                            <li><strong>M = Motility:</strong> Semi-solid agar (0.5%) allows movement</li>
+                            <li>Low agar concentration creates semi-solid consistency</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Inoculation Technique</h5>
+                        <ul>
+                            <li>Use <strong>inoculating needle</strong> (NOT loop)</li>
+                            <li><strong>Stab</strong> straight down into center of medium</li>
+                            <li>Remove needle along <strong>same path</strong></li>
+                            <li>Incubate and observe for spreading growth</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Motile (+)</h5>
+                            <p><strong>Diffuse, cloudy growth</strong> spreading away from stab line</p>
+                            <p>Growth throughout the medium</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">E. coli (+)</span>
+                                <span class="organism-tag positive">Proteus (+)</span>
+                                <span class="organism-tag positive">Pseudomonas (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Non-Motile (-)</h5>
+                            <p><strong>Growth only along stab line</strong></p>
+                            <p>Sharp, defined line of growth</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">Klebsiella (-)</span>
+                                <span class="organism-tag negative">Shigella (-)</span>
+                                <span class="organism-tag negative">Staphylococcus (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Types of Bacterial Flagella</h4>
+                    <ul>
+                        <li><strong>Monotrichous:</strong> Single flagellum at one end (e.g., <em>Vibrio</em>)</li>
+                        <li><strong>Amphitrichous:</strong> Single flagellum at both ends</li>
+                        <li><strong>Lophotrichous:</strong> Tuft of flagella at one or both ends (e.g., <em>Pseudomonas</em>)</li>
+                        <li><strong>Peritrichous:</strong> Flagella all around the cell (e.g., <em>E. coli</em>, <em>Salmonella</em>)</li>
+                    </ul>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concepts:</strong>
+                    <ul>
+                        <li><strong>Semi-solid agar</strong> (0.5%) allows motile bacteria to swim away from stab</li>
+                        <li><strong>Motile = diffuse/cloudy</strong> growth spreading from stab line</li>
+                        <li><strong>Non-motile = sharp</strong> growth only along stab line</li>
+                        <li><em>Shigella</em> is non-motile (key differentiator from <em>Salmonella</em>)</li>
+                        <li>Flagella provide <strong>chemotaxis</strong> - movement toward nutrients/away from toxins</li>
+                        <li><strong>TTC (2,3,5-Triphenyltetrazolium chloride)</strong> may be added - turns <strong>red when reduced</strong> by bacteria, making growth more visible</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/motility.png" alt="Motility Test Results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phenylalanine Deaminase Test -->
+            <div id="phenylalanine" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Phenylalanine Deaminase Test</h3>
+                    <span class="test-badge">Amino Acid Degradation</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Tests for the enzyme <strong>phenylalanine deaminase</strong> which converts the amino acid <strong>phenylalanine</strong> to <strong>phenylpyruvic acid</strong> (PPA). This test helps identify members of the Enterobacteriaceae family, particularly <em>Proteus</em>, <em>Morganella</em>, and <em>Providencia</em>.</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>How It Works</h5>
+                        <ul>
+                            <li><strong>Medium:</strong> Phenylalanine agar slant (contains phenylalanine)</li>
+                            <li><strong>Enzyme:</strong> Phenylalanine deaminase removes amino group</li>
+                            <li><strong>Reaction:</strong> Phenylalanine → Phenylpyruvic acid (PPA)</li>
+                            <li><strong>Reagent:</strong> Ferric chloride (FeCl₃) added after incubation</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Inoculate phenylalanine agar slant heavily</li>
+                            <li>Incubate 18-24 hours at 37°C</li>
+                            <li>Add 4-5 drops of <strong>10% ferric chloride</strong></li>
+                            <li>Tilt tube to allow reagent to flow over growth</li>
+                            <li>Observe for color change immediately</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Results Interpretation</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Positive (+)</h5>
+                            <p><strong>Green color</strong> develops on slant</p>
+                            <p>Phenylpyruvic acid reacts with ferric chloride</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag positive">Proteus spp. (+)</span>
+                                <span class="organism-tag positive">Morganella (+)</span>
+                                <span class="organism-tag positive">Providencia (+)</span>
+                            </div>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Negative (-)</h5>
+                            <p><strong>No color change</strong> (yellow/straw color remains)</p>
+                            <p>No phenylpyruvic acid produced</p>
+                            <div class="organisms-list">
+                                <span class="organism-tag negative">E. coli (-)</span>
+                                <span class="organism-tag negative">Klebsiella (-)</span>
+                                <span class="organism-tag negative">Enterobacter (-)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Key Concepts:</strong>
+                    <ul>
+                        <li><strong>Positive = green color</strong> after adding ferric chloride</li>
+                        <li>Only <strong>Proteus, Morganella, Providencia</strong> are positive among Enterobacteriaceae</li>
+                        <li>Helps differentiate <em>Proteus</em> from other urease-positive organisms</li>
+                        <li>Green color fades quickly - <strong>read immediately</strong> after adding reagent</li>
+                        <li>Often used with urease test for <em>Proteus</em> identification</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/phenylalanine1.jpg" alt="Phenylalanine Deaminase Test Results 1"></div>
+                        <div class="gallery-item"><img src="../images/phenylalanine2.jpg" alt="Phenylalanine Deaminase Test Results 2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ==================== LAB EXERCISE CONTENT PANELS ==================== -->
+
+            <!-- Ex 13: Capsule Staining -->
+            <div id="ex13" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 13: Capsular Staining (Anthony Method)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>What is a Capsule?</h4>
+                        <ul>
+                            <li><strong>Capsule:</strong> Distinct, gelatinous layer outside the cell wall</li>
+                            <li><strong>Slime layer:</strong> Diffuse, irregular layer (less organized)</li>
+                            <li><strong>Glycocalyx:</strong> Term for polysaccharide capsules ("sugar shell")</li>
+                            <li>Exception: <em>Bacillus anthracis</em> has a <strong>protein</strong> capsule, not polysaccharide</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Functions of Capsules (Virulence Factors)</h4>
+                        <ul>
+                            <li><strong>Anti-phagocytic</strong> - Prevents engulfment by WBCs (<em>S. pneumoniae</em>)</li>
+                            <li><strong>Attachment</strong> - Helps adhere to surfaces (<em>S. mutans</em> - dental caries)</li>
+                            <li><strong>Biofilm formation</strong> - Dental plaque</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Anthony Method - Critical Points</h4>
+                    <div class="key-point warning">
+                        <strong>DO NOT HEAT-FIX!</strong> Heat destroys or shrinks the capsule.
+                    </div>
+                    <ul>
+                        <li><strong>Air-dry only</strong> - No heat fixation</li>
+                        <li><strong>Primary stain:</strong> Crystal violet (2 min)</li>
+                        <li><strong>Wash with:</strong> 20% copper sulfate (NOT water)</li>
+                        <li>Copper sulfate acts as both <strong>decolorizer</strong> and <strong>counterstain</strong></li>
+                    </ul>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-item result-positive">
+                        <h5>Background</h5>
+                        <p>Purple (crystal violet + milk proteins)</p>
+                    </div>
+                    <div class="result-item result-positive">
+                        <h5>Cell Body</h5>
+                        <p>Dark purple</p>
+                    </div>
+                    <div class="result-item result-negative">
+                        <h5>Capsule</h5>
+                        <p>Clear or light blue halo</p>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li>Capsules = major <strong>virulence factor</strong></li>
+                        <li><em>S. pneumoniae</em> capsule prevents phagocytosis</li>
+                        <li><em>S. mutans</em> capsule causes dental plaque/caries</li>
+                        <li>Anthony method: <strong>NO heat-fix</strong>, use <strong>copper sulfate</strong> wash</li>
+                        <li>Capsule appears as <strong>clear halo</strong> around dark purple cells</li>
+                        <li>Organism used: <em>Klebsiella pneumoniae</em></li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/capsule_stain_1.png" alt="Capsule Stain 1"></div>
+                        <div class="gallery-item"><img src="../images/capsule_stain_2.png" alt="Capsule Stain 2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 15: Endospore Staining -->
+            <div id="ex15" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 15: Endospore Staining (Schaeffer-Fulton)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>What are Endospores?</h4>
+                        <ul>
+                            <li><strong>Dormant structures</strong> produced when nutrients are depleted</li>
+                            <li>Only produced by <strong><em>Bacillus</em></strong> and <strong><em>Clostridium</em></strong> genera</li>
+                            <li>Extremely resistant to heat, radiation, acids, chemicals, and desiccation</li>
+                            <li><strong>Very dehydrated</strong> (10-30% water content)</li>
+                            <li>Contain <strong>calcium dipicolinate</strong> (NOT found in vegetative cells)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Pathogenic Endospore-Forming Bacteria</h4>
+                        <ul>
+                            <li><em>Bacillus anthracis</em> → Anthrax</li>
+                            <li><em>Clostridium tetani</em> → Tetanus</li>
+                            <li><em>Clostridium botulinum</em> → Botulism</li>
+                            <li><em>Clostridioides difficile</em> → Diarrhea/Colitis (15-30% recurrence due to spore persistence)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Sterilization Requirements</h4>
+                    <ul>
+                        <li><strong>Autoclave:</strong> 121°C, 15-20 min, under pressure → <strong>YES</strong> - kills endospores</li>
+                        <li><strong>Boiling water:</strong> 100°C → <strong>NO</strong> - does NOT kill endospores</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Schaeffer-Fulton Method</h4>
+                    <ul>
+                        <li><strong>Primary stain:</strong> Malachite green (with heat/steam for 7 min)</li>
+                        <li><strong>Counterstain:</strong> Safranin</li>
+                        <li>Heat is required to drive stain into the resistant endospore</li>
+                    </ul>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-item result-positive">
+                        <h5>Endospores</h5>
+                        <p>GREEN (malachite green retained)</p>
+                    </div>
+                    <div class="result-item result-negative">
+                        <h5>Vegetative Cells</h5>
+                        <p>RED/PINK (safranin counterstain)</p>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Alternative: Dorner Method</h4>
+                    <ul>
+                        <li>Uses carbolfuchsin (heated) and nigrosin</li>
+                        <li><strong>Endospores:</strong> RED</li>
+                        <li><strong>Vegetative cells:</strong> COLORLESS</li>
+                        <li><strong>Background:</strong> DARK (nigrosin)</li>
+                    </ul>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li>Only <strong><em>Bacillus</em></strong> and <strong><em>Clostridium</em></strong> make true endospores</li>
+                        <li>Endospores = <strong>GREEN</strong> (Schaeffer-Fulton)</li>
+                        <li>Vegetative cells = <strong>RED/PINK</strong> (Schaeffer-Fulton)</li>
+                        <li><strong>Heat is required</strong> to drive malachite green into endospores</li>
+                        <li><strong>Autoclaving</strong> (121°C under pressure) kills endospores; boiling does NOT</li>
+                        <li>Endospore persistence explains <strong>C. diff recurrence</strong> (15-30%)</li>
+                        <li><strong>Calcium dipicolinate</strong> is unique to endospores</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/endospore_stain_1.jpg" alt="Endospore Stain 1"></div>
+                        <div class="gallery-item"><img src="../images/endospore_stain_2.jpg" alt="Endospore Stain 2"></div>
+                        <div class="gallery-item"><img src="../images/endospore_stain_3.jpg" alt="Endospore Stain 3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 16: Acid-Fast Staining -->
+            <div id="ex16" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 16: Acid-Fast Staining (Kinyoun Method)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>What Makes Bacteria Acid-Fast?</h4>
+                        <ul>
+                            <li><strong>Mycolic acid</strong> - waxy lipid in cell wall (up to 80 carbons long)</li>
+                            <li>Makes cell wall nearly <strong>impermeable</strong> to water-soluble dyes</li>
+                            <li>Once stained, dye is <strong>NOT removed</strong> by acid-alcohol</li>
+                            <li>"Acid-fast" = resists decolorization by acid-alcohol</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Acid-Fast Organisms</h4>
+                        <ul>
+                            <li><em>Mycobacterium tuberculosis</em> → Tuberculosis (TB)</li>
+                            <li><em>Mycobacterium leprae</em> → Leprosy (Hansen's disease)</li>
+                            <li>Some <em>Nocardia</em> species → Various infections</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Two Acid-Fast Staining Methods</h4>
+                    <ul>
+                        <li><strong>Ziehl-Neelsen (hot):</strong> Requires heat - phenol fumes hazardous</li>
+                        <li><strong>Kinyoun (cold):</strong> No heat needed - safer, no toxic fumes</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Kinyoun Method Steps</h4>
+                    <ol>
+                        <li><strong>Primary stain:</strong> Basic fuchsin (5 min) - stains all cells RED</li>
+                        <li><strong>Decolorizer:</strong> Acid-alcohol (~1 min) - removes stain from non-acid-fast cells</li>
+                        <li><strong>Counterstain:</strong> Methylene blue (30 sec) - stains decolorized cells BLUE</li>
+                    </ol>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-item result-positive">
+                        <h5>Acid-Fast Positive</h5>
+                        <p>RED/PINK (<em>M. smegmatis</em> - rods)</p>
+                    </div>
+                    <div class="result-item result-negative">
+                        <h5>Non-Acid-Fast</h5>
+                        <p>BLUE (<em>S. epidermidis</em> - cocci)</p>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Acid-fast = RED</strong> (retains primary stain)</li>
+                        <li><strong>Non-acid-fast = BLUE</strong> (takes counterstain)</li>
+                        <li><strong>Mycolic acid</strong> is responsible for the acid-fast property</li>
+                        <li>Critical for diagnosing <strong>TB</strong> and <strong>leprosy</strong></li>
+                        <li>Kinyoun method is <strong>safer</strong> than Ziehl-Neelsen (no heating)</li>
+                        <li>Only <em>Mycobacterium</em> and some <em>Nocardia</em> are acid-fast</li>
+                        <li>Regular Gram stain does NOT work reliably on mycobacteria</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/acidfast_stain_1.jpg" alt="Acid-Fast Stain 1"></div>
+                        <div class="gallery-item"><img src="../images/acidfast_stain_2.jpg" alt="Acid-Fast Stain 2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 43: Bacterial Counts -->
+            <div id="ex43" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 43: Bacterial Counts of Foods</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Important Statistics</h4>
+                        <ul>
+                            <li>CDC estimates <strong>48 million</strong> people get sick from foodborne illness/year in US</li>
+                            <li><strong>128,000</strong> hospitalized; <strong>3,000 die</strong> annually</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Key Concept: Bacteria ≠ Spoiled Food</h4>
+                        <ul>
+                            <li>Presence of bacteria does NOT always mean food is spoiled or dangerous</li>
+                            <li>Some foods <strong>naturally have high counts</strong> due to fermentation (yogurt, sauerkraut, cheese)</li>
+                            <li>High counts CAN indicate <strong>potential for rapid spoilage</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Coliform Bacteria</h4>
+                    <div class="key-point warning">
+                        <strong>Coliform counts indicate FECAL CONTAMINATION</strong>
+                    </div>
+                    <ul>
+                        <li><em>E. coli</em> and related bacteria from intestines</li>
+                        <li>High potential for disease: typhoid, dysentery, cholera</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Common Foodborne Pathogens</h4>
+                    <ul>
+                        <li><em>Staphylococcus aureus</em> → Food handlers (unwashed hands)</li>
+                        <li><em>Salmonella</em> → Poultry, eggs, meat</li>
+                        <li><em>Clostridium botulinum</em> → Improperly canned foods (endospores)</li>
+                        <li><em>E. coli</em> O157:H7 → Undercooked hamburger, contaminated produce</li>
+                        <li><em>Campylobacter</em> → Undercooked poultry</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Standard Plate Count Method</h4>
+                    <ul>
+                        <li><strong>Serial dilutions</strong> create countable colony numbers</li>
+                        <li><strong>Ideal range:</strong> 30-300 colonies per plate</li>
+                        <li><strong>Formula:</strong> CFU/gram = (colonies counted) × (dilution factor)</li>
+                    </ul>
+                    <p><strong>Example:</strong> 150 colonies on 1:1000 dilution plate = 150 × 1000 = <strong>150,000 CFU/gram</strong></p>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Coliform counts</strong> = indicator of fecal contamination</li>
+                        <li>Bacteria in food ≠ always dangerous (fermented foods are normal)</li>
+                        <li>High counts <strong>may indicate</strong> spoilage potential</li>
+                        <li><strong>30-300 colonies</strong> is the ideal countable range</li>
+                        <li><em>C. botulinum</em> endospores survive improper home canning</li>
+                        <li><em>E. coli</em> O157:H7 from undercooked beef is serious</li>
+                        <li><strong>Pasteurization</strong> kills many bacteria but NOT all (milk still spoils)</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/bacteria counting.png" alt="Bacteria Counting"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 54: Strep & Enterococci -->
+            <div id="ex54" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 54: Streptococci & Enterococci</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Strep vs Staph - Quick Differentiation</h4>
+                        <ul>
+                            <li><strong>Streptococci:</strong> Chains (or pairs), <strong>Catalase NEGATIVE</strong> (no bubbles)</li>
+                            <li><strong>Staphylococci:</strong> Clusters (grape-like), <strong>Catalase POSITIVE</strong> (bubbles)</li>
+                        </ul>
+                        <p><strong>Catalase test</strong> is the quickest way to differentiate strep from staph!</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Types of Hemolysis on Blood Agar</h4>
+                        <ul>
+                            <li><strong>Beta (β):</strong> CLEAR zone (complete lysis) - <em>S. pyogenes</em>, <em>S. agalactiae</em></li>
+                            <li><strong>Alpha (α):</strong> GREEN zone (partial lysis) - <em>S. pneumoniae</em>, Viridans strep</li>
+                            <li><strong>Gamma (γ):</strong> NO change - Enterococci (<em>E. faecalis</em>)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Lancefield Groups - Key Species</h4>
+                    <ul>
+                        <li><strong>Group A</strong> - <em>S. pyogenes</em>: β hemolysis, <strong>Bacitracin SENSITIVE</strong> → Strep throat, scarlet fever, rheumatic fever</li>
+                        <li><strong>Group B</strong> - <em>S. agalactiae</em>: β hemolysis, <strong>CAMP positive</strong> → Neonatal sepsis/meningitis</li>
+                        <li><strong>Group D</strong> - <em>E. faecalis</em>, <em>S. bovis</em>: γ or α hemolysis, <strong>Bile esculin positive</strong> → UTIs, endocarditis</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Critical Identification Tests</h4>
+                    <ul>
+                        <li><strong>Bacitracin sensitive</strong> → Group A (<em>S. pyogenes</em>)</li>
+                        <li><strong>CAMP positive</strong> (arrowhead hemolysis) → Group B (<em>S. agalactiae</em>)</li>
+                        <li><strong>Bile esculin positive</strong> (blackening) → Group D (enterococci or <em>S. bovis</em>)</li>
+                        <li><strong>6.5% NaCl tolerant</strong> → Enterococci (not <em>S. bovis</em>)</li>
+                        <li><strong>Optochin sensitive</strong> → <em>S. pneumoniae</em> (zone ≥14mm)</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>S. pneumoniae vs Viridans Strep</h4>
+                    <p>Both are <strong>alpha-hemolytic</strong> (green zone). How to differentiate:</p>
+                    <ul>
+                        <li><em>S. pneumoniae</em>: Optochin <strong>SENSITIVE</strong>, Bile solubility <strong>Positive</strong> → Pneumonia, meningitis, otitis media</li>
+                        <li>Viridans strep: Optochin <strong>Resistant</strong>, Bile solubility <strong>Negative</strong> → Dental caries, endocarditis</li>
+                    </ul>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Catalase negative</strong> = Strep (not Staph)</li>
+                        <li><strong>Beta hemolysis + Bacitracin sensitive</strong> = <em>S. pyogenes</em> (Group A)</li>
+                        <li><strong>Beta hemolysis + CAMP positive</strong> = <em>S. agalactiae</em> (Group B)</li>
+                        <li><strong>Bile esculin positive</strong> = Group D</li>
+                        <li><strong>Bile esculin + 6.5% NaCl tolerant</strong> = Enterococcus</li>
+                        <li><strong>Alpha hemolysis + Optochin sensitive</strong> = <em>S. pneumoniae</em></li>
+                        <li><strong>S. bovis isolation</strong> from blood = screen for colon cancer!</li>
+                        <li>Read hemolysis in <strong>stab areas</strong> (anaerobic = clearer pattern)</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/blood agar hemolysis.png" alt="Blood Agar Hemolysis Types"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 56: Synthetic Epidemic -->
+            <div id="ex56" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 56: A Synthetic Epidemic</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Essential Epidemiology Terms</h4>
+                        <ul>
+                            <li><strong>Endemic:</strong> Steady frequency of disease in a region over time</li>
+                            <li><strong>Epidemic:</strong> Excessive cases in an area compared to normal</li>
+                            <li><strong>Pandemic:</strong> Epidemic spread across continents (e.g., COVID-19)</li>
+                            <li><strong>Index case:</strong> First identified case in an outbreak</li>
+                            <li><strong>Carrier:</strong> Person who harbors and transmits pathogen but shows no symptoms</li>
+                            <li><strong>Fomite:</strong> Inanimate object that transmits pathogens (doorknob, phone)</li>
+                            <li><strong>Vector:</strong> Living carrier (insect/rodent) that transmits pathogen</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Two Types of Epidemics</h4>
+                        <ul>
+                            <li><strong>Common Source:</strong> Single contaminated source (food, water); rapid onset; sharp peak, rapid decline; Example: <em>E. coli</em> from lettuce</li>
+                            <li><strong>Host-to-Host (Propagated):</strong> Infected individuals; gradual onset; gradual rise, slower decline; Example: Influenza, COVID-19</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Herd Immunity</h4>
+                    <div class="key-point success">
+                        When a <strong>sufficient portion</strong> of a population is immune, outbreak is unlikely because spread is limited.
+                    </div>
+                    <ul>
+                        <li>Protects those who <strong>cannot be vaccinated</strong> (infants, immunocompromised)</li>
+                        <li>Higher R0 (reproduction number) = higher threshold needed</li>
+                        <li><strong>Measles:</strong> 92-95% threshold</li>
+                        <li><strong>Polio:</strong> 80-86% threshold</li>
+                        <li><strong>COVID-19 (original):</strong> 60-70% threshold</li>
+                        <li><strong>Influenza:</strong> 33-50% threshold</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Lab Simulation Results</h4>
+                    <ul>
+                        <li><strong>100% susceptible</strong> → Many become infected</li>
+                        <li><strong>50% vaccinated</strong> → Fewer infections, spread reduced</li>
+                        <li><strong>90% vaccinated</strong> → Very few or no infections (herd immunity achieved)</li>
+                    </ul>
+                    <p>In lab: NaOH = "infected", pH buffer = "vaccinated", water = "susceptible"</p>
+                    <p><strong>Pink color</strong> with phenolphthalein = positive (infected)</p>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Endemic</strong> = constant presence; <strong>Epidemic</strong> = excessive cases; <strong>Pandemic</strong> = global spread</li>
+                        <li><strong>Index case</strong> = first identified case - epidemiologists trace backward from this</li>
+                        <li><strong>Common source epidemic</strong> = sharp peak (contaminated food), <strong>propagated</strong> = gradual rise (person-to-person)</li>
+                        <li><strong>Herd immunity</strong> protects unvaccinated individuals when enough population is immune</li>
+                        <li><strong>R0</strong> = basic reproduction number (average # infected by one person)</li>
+                        <li><strong>Fomite</strong> = inanimate object; <strong>Vector</strong> = living carrier</li>
+                        <li>Higher R0 = higher herd immunity threshold needed</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Ex 60: ELISA -->
+            <div id="ex60" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 60: ELISA (Enzyme-Linked Immunosorbent Assay)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Key Terminology</h4>
+                        <ul>
+                            <li><strong>Antigen:</strong> Molecule that triggers immune response; recognized by antibodies</li>
+                            <li><strong>Antibody:</strong> Protein (immunoglobulin) produced by B cells that binds antigens</li>
+                            <li><strong>Immunoassay:</strong> Test using labeled antibodies to detect antigen-antibody interactions</li>
+                            <li><strong>Enzyme-linked:</strong> Antibody has enzyme attached that produces color when substrate added</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>The Key Question: What Are We Looking For?</h4>
+                        <ul>
+                            <li><strong>Direct ELISA:</strong> Looking for unknown <strong>ANTIGENS</strong> (pathogen itself)</li>
+                            <li><strong>Indirect ELISA:</strong> Looking for <strong>ANTIBODIES</strong> (immune response to pathogen)</li>
+                        </ul>
+                        <p><strong>Remember:</strong> "Direct = Detect pathogen, Indirect = Detect immune response"</p>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Direct (Sandwich) ELISA - Detecting Antigens</h4>
+                    <p><strong>Purpose:</strong> Find unknown antigens (pathogens) in a sample</p>
+                    <p><strong>Example:</strong> COVID rapid test, detecting bacteria in throat swab</p>
+                    <ol>
+                        <li><strong>Coat wells with known "capture" antibody</strong> - This antibody will grab the target antigen</li>
+                        <li><strong>Add patient sample</strong> - If antigen present, it binds to capture antibody</li>
+                        <li><strong>Wash</strong> - Remove unbound material</li>
+                        <li><strong>Add enzyme-linked "detection" antibody</strong> - Binds other side of antigen (makes "sandwich")</li>
+                        <li><strong>Wash again</strong></li>
+                        <li><strong>Add substrate</strong> - Enzyme produces COLOR if antigen was present</li>
+                    </ol>
+                    <div class="key-point">
+                        <strong>The Sandwich:</strong> Capture Antibody → Antigen → Detection Antibody (enzyme-linked)
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Indirect ELISA - Detecting Antibodies (HIV Test in Lab)</h4>
+                    <p><strong>Purpose:</strong> Find antibodies in patient serum (shows past/current infection)</p>
+                    <p><strong>Example:</strong> HIV antibody test, hepatitis screening</p>
+                    <ol>
+                        <li><strong>Coat wells with known antigen</strong> (e.g., HIV proteins)</li>
+                        <li><strong>Add patient serum</strong> - If patient has anti-HIV antibodies, they bind to antigen</li>
+                        <li><strong>Wash</strong> - Remove unbound material</li>
+                        <li><strong>Add secondary antibody</strong> - Anti-human IgG with enzyme attached (binds to patient's antibodies)</li>
+                        <li><strong>Wash again</strong></li>
+                        <li><strong>Add substrate</strong> - Enzyme produces COLOR if patient antibodies were present</li>
+                    </ol>
+                    <div class="key-point">
+                        <strong>The Chain:</strong> Known Antigen → Patient's Antibody → Secondary Antibody (enzyme-linked)
+                    </div>
+                </div>
+
+                <div class="result-box">
+                    <div class="result-item result-positive">
+                        <h5>Positive (+)</h5>
+                        <p>GREEN color develops</p>
+                        <p>Antigen (direct) or antibodies (indirect) DETECTED</p>
+                    </div>
+                    <div class="result-item result-negative">
+                        <h5>Negative (-)</h5>
+                        <p>COLORLESS - no color change</p>
+                        <p>No antigen or antibodies detected</p>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Lab Controls</h4>
+                    <ul>
+                        <li><strong>PBS (negative control):</strong> Expected colorless - confirms no false positives</li>
+                        <li><strong>Positive control:</strong> Expected green - confirms test is working</li>
+                    </ul>
+                    <div class="key-point warning">
+                        <strong>Positive ELISA requires confirmatory testing</strong> (Western blot or nucleic acid test)
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>ELISA</strong> = Enzyme-Linked Immunosorbent Assay</li>
+                        <li><strong>Direct/Sandwich ELISA</strong> = detects <strong>ANTIGENS</strong> (the pathogen)</li>
+                        <li><strong>Indirect ELISA</strong> = detects <strong>ANTIBODIES</strong> (patient's immune response)</li>
+                        <li><strong>GREEN = positive</strong>; <strong>Colorless = negative</strong></li>
+                        <li>Enzyme (peroxidase) converts substrate to <strong>colored product</strong></li>
+                        <li><strong>Washing steps</strong> are critical to remove unbound material</li>
+                        <li>ELISA is a <strong>screening test</strong> - positive results need confirmation</li>
+                        <li>Uses: HIV, hepatitis, West Nile virus, syphilis, COVID-19</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/elisa.png" alt="ELISA Test"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ex 61: Blood Grouping -->
+            <div id="ex61" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Exercise 61: Blood Grouping (ABO & Rh Typing)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>ABO Blood Types - Antigens & Antibodies</h4>
+                        <ul>
+                            <li><strong>Type A:</strong> A antigens on RBCs, Anti-B antibodies in serum</li>
+                            <li><strong>Type B:</strong> B antigens on RBCs, Anti-A antibodies in serum</li>
+                            <li><strong>Type AB:</strong> Both A and B antigens, Neither antibody (universal recipient)</li>
+                            <li><strong>Type O:</strong> Neither A nor B antigens, Both anti-A and anti-B (universal donor)</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h4>Blood Typing Results - Agglutination Patterns</h4>
+                        <ul>
+                            <li><strong>A+:</strong> Anti-A (+), Anti-B (-), Anti-Rh (+)</li>
+                            <li><strong>B+:</strong> Anti-A (-), Anti-B (+), Anti-Rh (+)</li>
+                            <li><strong>AB+:</strong> Anti-A (+), Anti-B (+), Anti-Rh (+)</li>
+                            <li><strong>O+:</strong> Anti-A (-), Anti-B (-), Anti-Rh (+)</li>
+                            <li><strong>O-:</strong> Anti-A (-), Anti-B (-), Anti-Rh (-)</li>
+                        </ul>
+                        <p><strong>Agglutination</strong> = clumping (grainy); No agglutination = smooth, milky</p>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Universal Donor & Recipient</h4>
+                    <ul>
+                        <li><strong>O- (Universal Donor):</strong> Can donate to all types, can only receive from O-</li>
+                        <li><strong>AB+ (Universal Recipient):</strong> Can only donate to AB+, can receive from all types</li>
+                    </ul>
+                </div>
+
+                <div class="test-section">
+                    <h4>Rh Factor and Hemolytic Disease of the Newborn (HDN)</h4>
+                    <div class="key-point warning">
+                        <strong>Problem:</strong> Rh- mother + Rh+ fetus (inherited from father)
+                    </div>
+                    <ul>
+                        <li><strong>First pregnancy:</strong> Mother exposed to Rh+ fetal cells during birth</li>
+                        <li><strong>Sensitization:</strong> Mother produces anti-D antibodies (IgG)</li>
+                        <li><strong>Second pregnancy:</strong> IgG crosses placenta, attacks Rh+ fetal RBCs</li>
+                        <li><strong>Result:</strong> Hemolysis → jaundice, anemia, potentially fatal</li>
+                    </ul>
+                    <div class="key-point success">
+                        <strong>Prevention: RhoGAM</strong> (Rh immune globulin) given at week 28 and after delivery
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Blood Type Frequencies (US)</h4>
+                    <ul>
+                        <li><strong>O+:</strong> ~38% (most common)</li>
+                        <li><strong>A+:</strong> ~34%</li>
+                        <li><strong>B+:</strong> ~9%</li>
+                        <li><strong>O-:</strong> ~7%</li>
+                        <li><strong>AB+:</strong> ~3%</li>
+                        <li><strong>AB-:</strong> ~1% (rarest)</li>
+                    </ul>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Type O</strong> = universal donor (no A or B antigens to react)</li>
+                        <li><strong>Type AB</strong> = universal recipient (no anti-A or anti-B antibodies)</li>
+                        <li><strong>Agglutination</strong> = clumping = positive reaction with antisera</li>
+                        <li><strong>Rh+ = has D antigen</strong>; Rh- = lacks D antigen</li>
+                        <li><strong>HDN</strong> occurs when Rh- mother has Rh+ baby (second pregnancy)</li>
+                        <li><strong>RhoGAM prevents</strong> mother from making anti-D antibodies</li>
+                        <li>Developed by <strong>Karl Landsteiner</strong> (~1900)</li>
+                        <li>Type O most common (45%); Type AB rarest (4%)</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Image Gallery</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/blood grouping.jpg" alt="Blood Grouping"></div>
+                    </div>
+                </div>
+
+                <a href="../games/blood-typing.html" class="game-link-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Practice Blood Typing Game
+                </a>
+            </div>
+
+            <!-- Plaque Assay -->
+            <div id="plaque-assay" class="lab-content-panel">
+                <div class="test-header">
+                    <h3>Plaque Assay (Bacteriophage Counting)</h3>
+                    <span class="test-badge">Lab Exercise</span>
+                </div>
+
+                <div class="test-section">
+                    <h4>Purpose</h4>
+                    <p>Quantifies <strong>bacteriophages</strong> (viruses that infect bacteria) by counting clear zones called <strong>plaques</strong> in a bacterial lawn. Each plaque represents one original phage particle (PFU = Plaque Forming Unit).</p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h5>Key Concepts</h5>
+                        <ul>
+                            <li><strong>Bacteriophage:</strong> Virus that infects and lyses bacteria</li>
+                            <li><strong>Plaque:</strong> Clear zone where phages destroyed bacteria</li>
+                            <li><strong>PFU:</strong> Plaque Forming Unit - one infectious phage particle</li>
+                            <li><strong>Bacterial lawn:</strong> Confluent growth of bacteria on agar surface</li>
+                            <li>Uses <strong>soft agar overlay</strong> technique</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Procedure</h5>
+                        <ul>
+                            <li>Mix phage dilution with host bacteria and soft agar</li>
+                            <li>Pour over solid nutrient agar plate</li>
+                            <li>Incubate - bacteria grow, phages lyse hosts</li>
+                            <li>Count plaques in plates with <strong>25-250 plaques</strong></li>
+                            <li>Calculate PFU/mL using dilution factor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Calculating PFU/mL</h4>
+                    <div class="key-point">
+                        <p><strong>Formula:</strong> PFU/mL = (# plaques × dilution factor) / volume plated</p>
+                        <p><strong>Example:</strong> 45 plaques on a 10⁻⁵ dilution plate with 0.1 mL plated</p>
+                        <p>PFU/mL = (45 × 10⁵) / 0.1 = 4.5 × 10⁷ PFU/mL</p>
+                    </div>
+                </div>
+
+                <div class="test-section">
+                    <h4>Countable Range</h4>
+                    <div class="result-box">
+                        <div class="result-item result-positive">
+                            <h5>Countable (25-250)</h5>
+                            <p>Only count plates with <strong>25-250 plaques</strong></p>
+                            <p>This range provides statistically valid results</p>
+                        </div>
+                        <div class="result-item result-negative">
+                            <h5>Not Countable</h5>
+                            <p><strong>TNTC</strong> (Too Numerous To Count) - >250 plaques</p>
+                            <p><strong>TFTC</strong> (Too Few To Count) - <25 plaques</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="key-point">
+                    <strong>Test-Taking Points:</strong>
+                    <ul>
+                        <li><strong>Countable range: 25-250 plaques</strong> per plate</li>
+                        <li>Each plaque = one original phage (one PFU)</li>
+                        <li><strong>Clear zones</strong> = phage lysis of bacteria</li>
+                        <li>Similar concept to CFU counting but for viruses</li>
+                        <li>Uses <strong>serial dilutions</strong> like bacterial counting</li>
+                        <li>Soft agar overlay allows phage diffusion</li>
+                    </ul>
+                </div>
+
+                <div class="image-gallery">
+                    <h5>Test Results</h5>
+                    <div class="gallery-placeholder">
+                        <div class="gallery-item"><img src="../images/plaque assay.png" alt="Plaque Assay"></div>
+                        <div class="gallery-item"><img src="../images/plaque lawn.JPG" alt="Plaque Lawn"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Bio 15 Microbiology Study Guide</h3>
+                <p>Lab Exam 2 Review</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/bryankhamly/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://discord.com/users/topkekxd" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                    </svg>
+                    topkekxd
+                </a>
+                <a href="mailto:bryankhamly@gmail.com" class="footer-link email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">&times;</button>
+            <img src="" alt="Enlarged image" id="lightbox-img">
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Category switching
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const metabolicTabs = document.getElementById('metabolic-tabs');
+        const exercisesTabs = document.getElementById('exercises-tabs');
+        const allPanels = document.querySelectorAll('.lab-content-panel');
+        const allTabBtns = document.querySelectorAll('.lab-tab-btn');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const category = btn.dataset.category;
+
+                if (category === 'metabolic') {
+                    metabolicTabs.style.display = 'block';
+                    exercisesTabs.style.display = 'none';
+                    // Show first metabolic test
+                    showTab('mrvp');
+                    // Activate first tab button
+                    metabolicTabs.querySelectorAll('.lab-tab-btn').forEach((tb, i) => {
+                        tb.classList.toggle('active', i === 0);
+                    });
+                } else {
+                    metabolicTabs.style.display = 'none';
+                    exercisesTabs.style.display = 'block';
+                    // Show first exercise
+                    showTab('ex13');
+                    // Activate first tab button
+                    exercisesTabs.querySelectorAll('.lab-tab-btn').forEach((tb, i) => {
+                        tb.classList.toggle('active', i === 0);
+                    });
+                }
+            });
+        });
+
+        // Tab switching
+        allTabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.dataset.tab;
+
+                // Update active state for tabs in same wrapper
+                const wrapper = btn.closest('.lab-tabs-wrapper');
+                wrapper.querySelectorAll('.lab-tab-btn').forEach(tb => {
+                    tb.classList.remove('active');
+                });
+                btn.classList.add('active');
+
+                showTab(tabId);
+            });
+        });
+
+        function showTab(tabId) {
+            allPanels.forEach(panel => {
+                panel.classList.remove('active');
+            });
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        }
+
+        // Image Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.querySelector('.lightbox-close');
+
+        // Add click event to all gallery images
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        // Close lightbox when clicking close button
+        lightboxClose.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeLightbox();
+        });
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox || e.target === lightbox.querySelector('.lightbox-content')) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+    </script>
+</body>
+</html>

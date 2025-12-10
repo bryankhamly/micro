@@ -33,6 +33,7 @@
                 <li><a href="chapters/chapter24.html">Ch 24: Respiratory</a></li>
                 <li><a href="chapters/chapter25.html">Ch 25: Digestive</a></li>
                 <li><a href="chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
+                <li><a href="labs/lab-exam-2-review.html" class="nav-lab">Lab Exam 2</a></li>
                 <li><a href="todo.html" class="nav-todo">Site Status</a></li>
                 <li><a href="practice.html" class="nav-highlight">Practice Test</a></li>
             </ul>
@@ -47,6 +48,322 @@
 
     <!-- Main Content -->
     <main class="container">
+        <!-- Lab Exam 2 Review - Featured at Top -->
+        <a href="labs/lab-exam-2-review.html" class="lab-exam-review-card">
+            <div class="lab-exam-review-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                    <rect x="9" y="3" width="6" height="4" rx="1"/>
+                    <path d="M9 12h6M9 16h6"/>
+                </svg>
+            </div>
+            <div class="lab-exam-review-content">
+                <h3>Lab Exam 2 Review</h3>
+                <p>Comprehensive review of all metabolic tests and lab exercises</p>
+                <span class="lab-exam-review-badge">MR-VP, KIA, EMB, Catalase, Oxidase, MSA, Nitrate & More</span>
+            </div>
+            <div class="lab-exam-review-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+
+        <style>
+            .lab-exam-review-card {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1.5rem 2rem;
+                background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+                margin-bottom: 2rem;
+            }
+            .lab-exam-review-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+            }
+            .lab-exam-review-icon {
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .lab-exam-review-icon svg {
+                width: 32px;
+                height: 32px;
+                stroke: white;
+            }
+            .lab-exam-review-content {
+                flex: 1;
+            }
+            .lab-exam-review-content h3 {
+                color: white;
+                font-size: 1.4rem;
+                margin: 0 0 0.5rem 0;
+            }
+            .lab-exam-review-content p {
+                color: rgba(255, 255, 255, 0.9);
+                margin: 0 0 0.75rem 0;
+                font-size: 0.95rem;
+            }
+            .lab-exam-review-badge {
+                display: inline-block;
+                padding: 0.35rem 0.75rem;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .lab-exam-review-arrow {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: transform 0.3s ease;
+            }
+            .lab-exam-review-arrow svg {
+                stroke: white;
+            }
+            .lab-exam-review-card:hover .lab-exam-review-arrow {
+                transform: translateX(5px);
+            }
+            @media (max-width: 768px) {
+                .lab-exam-review-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 1.5rem;
+                }
+                .lab-exam-review-arrow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <!-- Blood Typing Game - Featured below Lab Exam Review -->
+        <a href="games/blood-typing.html" class="blood-typing-game-card">
+            <div class="blood-typing-game-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+                    <path d="M12 6v6M9 9h6"/>
+                </svg>
+            </div>
+            <div class="blood-typing-game-content">
+                <h3>Blood Typing Practice Game</h3>
+                <p>Practice identifying blood types from agglutination patterns</p>
+                <span class="blood-typing-game-badge">ABO, Rh Factor, Agglutination</span>
+            </div>
+            <div class="blood-typing-game-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+
+        <style>
+            .blood-typing-game-card {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1.5rem 2rem;
+                background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
+                margin-bottom: 2rem;
+            }
+            .blood-typing-game-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+            }
+            .blood-typing-game-icon {
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .blood-typing-game-icon svg {
+                width: 32px;
+                height: 32px;
+                stroke: white;
+            }
+            .blood-typing-game-content {
+                flex: 1;
+            }
+            .blood-typing-game-content h3 {
+                color: white;
+                font-size: 1.4rem;
+                margin: 0 0 0.5rem 0;
+            }
+            .blood-typing-game-content p {
+                color: rgba(255, 255, 255, 0.9);
+                margin: 0 0 0.75rem 0;
+                font-size: 0.95rem;
+            }
+            .blood-typing-game-badge {
+                display: inline-block;
+                padding: 0.35rem 0.75rem;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .blood-typing-game-arrow {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: transform 0.3s ease;
+            }
+            .blood-typing-game-arrow svg {
+                stroke: white;
+            }
+            .blood-typing-game-card:hover .blood-typing-game-arrow {
+                transform: translateX(5px);
+            }
+            @media (max-width: 768px) {
+                .blood-typing-game-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 1.5rem;
+                }
+                .blood-typing-game-arrow {
+                    display: none;
+                }
+            }
+        </style>
+
+        <!-- Final Review - Under Construction -->
+        <div class="final-review-card">
+            <div class="final-review-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            <div class="final-review-content">
+                <h3>Final Review</h3>
+                <p>Under Construction</p>
+                <span class="final-review-badge">Coming Soon</span>
+            </div>
+            <div class="final-review-status">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                </svg>
+            </div>
+        </div>
+
+        <style>
+            .final-review-card {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1.5rem 2rem;
+                background: linear-gradient(135deg, #6b7280 0%, #9ca3af 50%, #d1d5db 100%);
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 20px rgba(107, 114, 128, 0.3);
+                margin-bottom: 2rem;
+                opacity: 0.8;
+            }
+            .final-review-icon {
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .final-review-icon svg {
+                width: 32px;
+                height: 32px;
+                stroke: white;
+            }
+            .final-review-content {
+                flex: 1;
+            }
+            .final-review-content h3 {
+                color: white;
+                font-size: 1.4rem;
+                margin: 0 0 0.5rem 0;
+            }
+            .final-review-content p {
+                color: rgba(255, 255, 255, 0.9);
+                margin: 0 0 0.75rem 0;
+                font-size: 0.95rem;
+            }
+            .final-review-badge {
+                display: inline-block;
+                padding: 0.35rem 0.75rem;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .final-review-status {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                animation: spin 3s linear infinite;
+            }
+            .final-review-status svg {
+                width: 20px;
+                height: 20px;
+                stroke: white;
+            }
+            @keyframes spin {
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); }
+            }
+            @media (max-width: 768px) {
+                .final-review-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 1.5rem;
+                }
+                .final-review-status {
+                    display: none;
+                }
+            }
+        </style>
+
+        <!-- Study Chapters Section -->
+        <div class="section-divider">
+            <span class="section-divider-text">Chapter Review</span>
+        </div>
+
         <h2 class="section-title">Study Chapters</h2>
         <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
             Select a chapter below to explore diseases organized by body system. Each chapter includes detailed information on causative agents, symptoms, pathogenesis, treatment, and completed study outlines.
@@ -116,157 +433,6 @@
                 <h3>Chapter 26</h3>
                 <p>Diseases of the Urinary & Reproductive Systems</p>
                 <span class="chapter-card-badge">STIs: Gonorrhea, Syphilis, HPV, Herpes</span>
-            </a>
-        </div>
-
-        <!-- Lab Section Divider -->
-        <div class="section-divider">
-            <span class="section-divider-text">Lab Exercises</span>
-        </div>
-
-        <h2 class="section-title">Lab Study Guides</h2>
-        <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
-            All content here is from the lab manual with the core concepts and results condensed.
-        </p>
-
-        <div class="chapter-grid">
-            <!-- Exercise 13 - Capsular Staining -->
-            <a href="labs/ex13.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="8"/>
-                        <circle cx="12" cy="12" r="4"/>
-                        <circle cx="12" cy="12" r="10" stroke-dasharray="2,2"/>
-                    </svg>
-                </div>
-                <h3>Exercise 13</h3>
-                <p>Capsular Staining: Anthony Method</p>
-                <span class="chapter-card-badge">Capsules, Glycocalyx, Virulence</span>
-            </a>
-
-            <!-- Exercise 15 - Endospore Staining -->
-            <a href="labs/ex15.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <ellipse cx="12" cy="12" rx="8" ry="4"/>
-                        <circle cx="12" cy="12" r="2"/>
-                    </svg>
-                </div>
-                <h3>Exercise 15</h3>
-                <p>Endospore Staining: Schaeffer-Fulton</p>
-                <span class="chapter-card-badge">Bacillus, Clostridium, Spore Resistance</span>
-            </a>
-
-            <!-- Exercise 16 - Acid-Fast Staining -->
-            <a href="labs/ex16.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="14" rx="2"/>
-                        <path d="M3 9h18"/>
-                        <circle cx="8" cy="14" r="2"/>
-                        <circle cx="16" cy="14" r="2"/>
-                    </svg>
-                </div>
-                <h3>Exercise 16</h3>
-                <p>Acid-Fast Staining: Kinyoun Method</p>
-                <span class="chapter-card-badge">Mycobacteria, TB, Mycolic Acid</span>
-            </a>
-
-            <!-- Exercise 43 - Bacterial Counts of Foods -->
-            <a href="labs/ex43.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2C8 2 4 5 4 9c0 3 2 5 3 6l-1 5h12l-1-5c1-1 3-3 3-6 0-4-4-7-8-7z"/>
-                        <path d="M9 22h6"/>
-                    </svg>
-                </div>
-                <h3>Exercise 43</h3>
-                <p>Bacterial Counts of Foods</p>
-                <span class="chapter-card-badge">Food Safety, Plate Counts, Coliforms</span>
-            </a>
-
-            <!-- Exercise 54 - Streptococci & Enterococci -->
-            <a href="labs/ex54.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="8" cy="8" r="3"/>
-                        <circle cx="16" cy="8" r="3"/>
-                        <circle cx="8" cy="16" r="3"/>
-                        <circle cx="16" cy="16" r="3"/>
-                        <path d="M11 8h2M8 11v2M16 11v2M11 16h2"/>
-                    </svg>
-                </div>
-                <h3>Exercise 54</h3>
-                <p>Streptococci & Enterococci: Isolation and Identification</p>
-                <span class="chapter-card-badge">Hemolysis, Lancefield Groups, CAMP Test</span>
-            </a>
-
-            <!-- Exercise 56 - Synthetic Epidemic -->
-            <a href="labs/ex56.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M2 12h20"/>
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                    </svg>
-                </div>
-                <h3>Exercise 56</h3>
-                <p>A Synthetic Epidemic: Epidemiology Simulation</p>
-                <span class="chapter-card-badge">Epidemics, Herd Immunity, Disease Spread</span>
-            </a>
-
-            <!-- Exercise 60 - ELISA -->
-            <a href="labs/ex60.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2"/>
-                        <circle cx="8.5" cy="8.5" r="1.5"/>
-                        <circle cx="15.5" cy="8.5" r="1.5"/>
-                        <circle cx="8.5" cy="15.5" r="1.5"/>
-                        <circle cx="15.5" cy="15.5" r="1.5"/>
-                    </svg>
-                </div>
-                <h3>Exercise 60</h3>
-                <p>Enzyme-Linked Immunosorbent Assay (ELISA)</p>
-                <span class="chapter-card-badge">Immunoassays, HIV Detection, Antibodies</span>
-            </a>
-
-            <!-- Exercise 61 - Blood Grouping -->
-            <a href="labs/ex61.html" class="chapter-card lab">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
-                        <circle cx="12" cy="9" r="2.5"/>
-                    </svg>
-                </div>
-                <h3>Exercise 61</h3>
-                <p>Blood Grouping: ABO and Rh Typing</p>
-                <span class="chapter-card-badge">ABO System, Rh Factor, Agglutination</span>
-            </a>
-        </div>
-
-        <!-- Interactive Games Section -->
-        <div class="section-divider">
-            <span class="section-divider-text">Interactive Practice</span>
-        </div>
-
-        <h2 class="section-title">Practice Games</h2>
-        <p class="text-center mb-4" style="color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
-            Test your knowledge with interactive games and simulations.
-        </p>
-
-        <div class="chapter-grid">
-            <!-- Blood Typing Game -->
-            <a href="games/blood-typing.html" class="chapter-card game">
-                <div class="chapter-card-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
-                        <path d="M12 6v6M9 9h6"/>
-                    </svg>
-                </div>
-                <h3>Blood Typing Game</h3>
-                <p>Practice identifying blood types from agglutination patterns</p>
-                <span class="chapter-card-badge">ABO, Rh Factor, Agglutination</span>
             </a>
         </div>
     </main>
