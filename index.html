@@ -43,6 +43,7 @@
                 <li><a href="chapters/chapter25.html">Ch 25: Digestive</a></li>
                 <li><a href="chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
                 <li><a href="labs/lab-exam-2-review.html" class="nav-lab">Lab Exam 2</a></li>
+                <li><a href="final-review.html" class="nav-final">Final Review</a></li>
                 <li><a href="todo.html" class="nav-todo">Site Status</a></li>
                 <li><a href="practice.html" class="nav-highlight">Practice Test</a></li>
             </ul>
@@ -72,6 +73,27 @@
                 <span class="lab-exam-review-badge">MR-VP, KIA, EMB, Catalase, Oxidase, MSA, Nitrate & More</span>
             </div>
             <div class="lab-exam-review-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
+
+        <!-- Final Exam Review - Featured -->
+        <a href="final-review.html" class="final-exam-review-card">
+            <div class="final-exam-review-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    <path d="M8 7h8M8 11h8M8 15h5"/>
+                </svg>
+            </div>
+            <div class="final-exam-review-content">
+                <h3>Final Exam Review</h3>
+                <p>Comprehensive review of all lecture chapters for the final exam</p>
+                <span class="final-exam-review-badge">Ch 1-9, 12, 13, 20 • Core Concepts • Visual Aids</span>
+            </div>
+            <div class="final-exam-review-arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
@@ -156,6 +178,88 @@
                     padding: 1.5rem;
                 }
                 .lab-exam-review-arrow {
+                    display: none;
+                }
+            }
+
+            /* Final Exam Review Card Styles */
+            .final-exam-review-card {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1.5rem 2rem;
+                background: linear-gradient(135deg, #ec4899 0%, #f59e0b 50%, #fbbf24 100%);
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+                margin-bottom: 2rem;
+            }
+            .final-exam-review-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 30px rgba(236, 72, 153, 0.4);
+            }
+            .final-exam-review-icon {
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .final-exam-review-icon svg {
+                width: 32px;
+                height: 32px;
+                stroke: white;
+            }
+            .final-exam-review-content {
+                flex: 1;
+            }
+            .final-exam-review-content h3 {
+                color: white;
+                font-size: 1.4rem;
+                margin: 0 0 0.5rem 0;
+            }
+            .final-exam-review-content p {
+                color: rgba(255, 255, 255, 0.9);
+                margin: 0 0 0.75rem 0;
+                font-size: 0.95rem;
+            }
+            .final-exam-review-badge {
+                display: inline-block;
+                padding: 0.35rem 0.75rem;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            .final-exam-review-arrow {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: transform 0.3s ease;
+            }
+            .final-exam-review-arrow svg {
+                stroke: white;
+            }
+            .final-exam-review-card:hover .final-exam-review-arrow {
+                transform: translateX(5px);
+            }
+            @media (max-width: 768px) {
+                .final-exam-review-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 1.5rem;
+                }
+                .final-exam-review-arrow {
                     display: none;
                 }
             }
@@ -259,110 +363,6 @@
                     padding: 1.5rem;
                 }
                 .blood-typing-game-arrow {
-                    display: none;
-                }
-            }
-        </style>
-
-        <!-- Final Review - Under Construction -->
-        <div class="final-review-card">
-            <div class="final-review-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                    <path d="M2 17l10 5 10-5"/>
-                    <path d="M2 12l10 5 10-5"/>
-                </svg>
-            </div>
-            <div class="final-review-content">
-                <h3>Final Review</h3>
-                <p>Under Construction</p>
-                <span class="final-review-badge">Coming Soon</span>
-            </div>
-            <div class="final-review-status">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                </svg>
-            </div>
-        </div>
-
-        <style>
-            .final-review-card {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-                padding: 1.5rem 2rem;
-                background: linear-gradient(135deg, #6b7280 0%, #9ca3af 50%, #d1d5db 100%);
-                border-radius: 16px;
-                text-decoration: none;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 20px rgba(107, 114, 128, 0.3);
-                margin-bottom: 2rem;
-                opacity: 0.8;
-            }
-            .final-review-icon {
-                width: 60px;
-                height: 60px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-            }
-            .final-review-icon svg {
-                width: 32px;
-                height: 32px;
-                stroke: white;
-            }
-            .final-review-content {
-                flex: 1;
-            }
-            .final-review-content h3 {
-                color: white;
-                font-size: 1.4rem;
-                margin: 0 0 0.5rem 0;
-            }
-            .final-review-content p {
-                color: rgba(255, 255, 255, 0.9);
-                margin: 0 0 0.75rem 0;
-                font-size: 0.95rem;
-            }
-            .final-review-badge {
-                display: inline-block;
-                padding: 0.35rem 0.75rem;
-                background: rgba(255, 255, 255, 0.2);
-                color: white;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: 500;
-            }
-            .final-review-status {
-                width: 40px;
-                height: 40px;
-                background: rgba(255, 255, 255, 0.15);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-                animation: spin 3s linear infinite;
-            }
-            .final-review-status svg {
-                width: 20px;
-                height: 20px;
-                stroke: white;
-            }
-            @keyframes spin {
-                from { transform: rotate(0deg); }
-                to { transform: rotate(360deg); }
-            }
-            @media (max-width: 768px) {
-                .final-review-card {
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 1.5rem;
-                }
-                .final-review-status {
                     display: none;
                 }
             }
