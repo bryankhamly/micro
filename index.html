@@ -37,14 +37,7 @@
                 </svg>
             </button>
             <ul class="navbar-nav">
-                <li><a href="chapters/chapter21.html">Ch 21: Skin</a></li>
-                <li><a href="chapters/chapter22.html">Ch 22: Nervous</a></li>
-                <li><a href="chapters/chapter24.html">Ch 24: Respiratory</a></li>
-                <li><a href="chapters/chapter25.html">Ch 25: Digestive</a></li>
-                <li><a href="chapters/chapter26.html">Ch 26: Urinary/Repro</a></li>
-                <li><a href="labs/lab-exam-2-review.html" class="nav-lab">Lab Exam 2</a></li>
                 <li><a href="final-review.html" class="nav-final">Final Review</a></li>
-                <li><a href="todo.html" class="nav-todo">Site Status</a></li>
                 <li><a href="practice.html" class="nav-highlight">Practice Test</a></li>
             </ul>
         </div>
@@ -58,29 +51,8 @@
 
     <!-- Main Content -->
     <main class="container">
-        <!-- Lab Exam 2 Review - Featured at Top -->
-        <a href="labs/lab-exam-2-review.html" class="lab-exam-review-card">
-            <div class="lab-exam-review-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
-                    <rect x="9" y="3" width="6" height="4" rx="1"/>
-                    <path d="M9 12h6M9 16h6"/>
-                </svg>
-            </div>
-            <div class="lab-exam-review-content">
-                <h3>Lab Exam 2 Review</h3>
-                <p>Comprehensive review of all metabolic tests and lab exercises</p>
-                <span class="lab-exam-review-badge">MR-VP, KIA, EMB, Catalase, Oxidase, MSA, Nitrate & More</span>
-            </div>
-            <div class="lab-exam-review-arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-            </div>
-        </a>
-
-        <!-- Final Exam Review - Featured -->
-        <a href="final-review.html" class="final-exam-review-card">
+        <!-- Final Exam Review - Featured Hero -->
+        <a href="final-review.html" class="final-exam-review-card hero-card">
             <div class="final-exam-review-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -101,117 +73,49 @@
         </a>
 
         <style>
-            .lab-exam-review-card {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-                padding: 1.5rem 2rem;
-                background: linear-gradient(135deg, #059669 0%, #10b981 50%, #34d399 100%);
-                border-radius: 16px;
-                text-decoration: none;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
-                margin-bottom: 2rem;
-            }
-            .lab-exam-review-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
-            }
-            .lab-exam-review-icon {
-                width: 60px;
-                height: 60px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-            }
-            .lab-exam-review-icon svg {
-                width: 32px;
-                height: 32px;
-                stroke: white;
-            }
-            .lab-exam-review-content {
-                flex: 1;
-            }
-            .lab-exam-review-content h3 {
-                color: white;
-                font-size: 1.4rem;
-                margin: 0 0 0.5rem 0;
-            }
-            .lab-exam-review-content p {
-                color: rgba(255, 255, 255, 0.9);
-                margin: 0 0 0.75rem 0;
-                font-size: 0.95rem;
-            }
-            .lab-exam-review-badge {
-                display: inline-block;
-                padding: 0.35rem 0.75rem;
-                background: rgba(255, 255, 255, 0.2);
-                color: white;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: 500;
-            }
-            .lab-exam-review-arrow {
-                width: 40px;
-                height: 40px;
-                background: rgba(255, 255, 255, 0.15);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-                transition: transform 0.3s ease;
-            }
-            .lab-exam-review-arrow svg {
-                stroke: white;
-            }
-            .lab-exam-review-card:hover .lab-exam-review-arrow {
-                transform: translateX(5px);
-            }
-            @media (max-width: 768px) {
-                .lab-exam-review-card {
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 1.5rem;
-                }
-                .lab-exam-review-arrow {
-                    display: none;
-                }
-            }
-
-            /* Final Exam Review Card Styles */
+            /* Final Exam Review Card Styles - Hero */
             .final-exam-review-card {
                 display: flex;
                 align-items: center;
-                gap: 1.5rem;
-                padding: 1.5rem 2rem;
-                background: linear-gradient(135deg, #ec4899 0%, #f59e0b 50%, #fbbf24 100%);
-                border-radius: 16px;
+                gap: 2rem;
+                padding: 2rem 2.5rem;
+                background: linear-gradient(135deg, #7c3aed 0%, #ec4899 50%, #f59e0b 100%);
+                border-radius: 20px;
                 text-decoration: none;
                 transition: all 0.3s ease;
-                box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
-                margin-bottom: 2rem;
+                box-shadow: 0 8px 32px rgba(124, 58, 237, 0.4);
+                margin-bottom: 2.5rem;
+                position: relative;
+                overflow: hidden;
+            }
+            .final-exam-review-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+                pointer-events: none;
             }
             .final-exam-review-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 8px 30px rgba(236, 72, 153, 0.4);
+                transform: translateY(-4px);
+                box-shadow: 0 12px 40px rgba(124, 58, 237, 0.5);
             }
             .final-exam-review-icon {
-                width: 60px;
-                height: 60px;
+                width: 80px;
+                height: 80px;
                 background: rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
+                border-radius: 16px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-shrink: 0;
+                backdrop-filter: blur(10px);
             }
             .final-exam-review-icon svg {
-                width: 32px;
-                height: 32px;
+                width: 44px;
+                height: 44px;
                 stroke: white;
             }
             .final-exam-review-content {
@@ -219,150 +123,56 @@
             }
             .final-exam-review-content h3 {
                 color: white;
-                font-size: 1.4rem;
+                font-size: 1.75rem;
                 margin: 0 0 0.5rem 0;
+                font-weight: 700;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
             .final-exam-review-content p {
-                color: rgba(255, 255, 255, 0.9);
-                margin: 0 0 0.75rem 0;
-                font-size: 0.95rem;
+                color: rgba(255, 255, 255, 0.95);
+                margin: 0 0 1rem 0;
+                font-size: 1.05rem;
             }
             .final-exam-review-badge {
                 display: inline-block;
-                padding: 0.35rem 0.75rem;
-                background: rgba(255, 255, 255, 0.2);
+                padding: 0.5rem 1rem;
+                background: rgba(255, 255, 255, 0.25);
                 color: white;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: 500;
+                border-radius: 25px;
+                font-size: 0.85rem;
+                font-weight: 600;
+                backdrop-filter: blur(10px);
             }
             .final-exam-review-arrow {
-                width: 40px;
-                height: 40px;
-                background: rgba(255, 255, 255, 0.15);
+                width: 50px;
+                height: 50px;
+                background: rgba(255, 255, 255, 0.2);
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-shrink: 0;
                 transition: transform 0.3s ease;
+                backdrop-filter: blur(10px);
             }
             .final-exam-review-arrow svg {
                 stroke: white;
+                width: 24px;
+                height: 24px;
             }
             .final-exam-review-card:hover .final-exam-review-arrow {
-                transform: translateX(5px);
+                transform: translateX(6px);
             }
             @media (max-width: 768px) {
                 .final-exam-review-card {
                     flex-direction: column;
                     text-align: center;
-                    padding: 1.5rem;
+                    padding: 2rem 1.5rem;
+                }
+                .final-exam-review-content h3 {
+                    font-size: 1.5rem;
                 }
                 .final-exam-review-arrow {
-                    display: none;
-                }
-            }
-        </style>
-
-        <!-- Blood Typing Game - Featured below Lab Exam Review -->
-        <a href="games/blood-typing.html" class="blood-typing-game-card">
-            <div class="blood-typing-game-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 2c-4 0-7 3-7 7 0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
-                    <path d="M12 6v6M9 9h6"/>
-                </svg>
-            </div>
-            <div class="blood-typing-game-content">
-                <h3>Blood Typing Practice Game</h3>
-                <p>Practice identifying blood types from agglutination patterns</p>
-                <span class="blood-typing-game-badge">ABO, Rh Factor, Agglutination</span>
-            </div>
-            <div class="blood-typing-game-arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                </svg>
-            </div>
-        </a>
-
-        <style>
-            .blood-typing-game-card {
-                display: flex;
-                align-items: center;
-                gap: 1.5rem;
-                padding: 1.5rem 2rem;
-                background: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
-                border-radius: 16px;
-                text-decoration: none;
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
-                margin-bottom: 2rem;
-            }
-            .blood-typing-game-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
-            }
-            .blood-typing-game-icon {
-                width: 60px;
-                height: 60px;
-                background: rgba(255, 255, 255, 0.2);
-                border-radius: 12px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-            }
-            .blood-typing-game-icon svg {
-                width: 32px;
-                height: 32px;
-                stroke: white;
-            }
-            .blood-typing-game-content {
-                flex: 1;
-            }
-            .blood-typing-game-content h3 {
-                color: white;
-                font-size: 1.4rem;
-                margin: 0 0 0.5rem 0;
-            }
-            .blood-typing-game-content p {
-                color: rgba(255, 255, 255, 0.9);
-                margin: 0 0 0.75rem 0;
-                font-size: 0.95rem;
-            }
-            .blood-typing-game-badge {
-                display: inline-block;
-                padding: 0.35rem 0.75rem;
-                background: rgba(255, 255, 255, 0.2);
-                color: white;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: 500;
-            }
-            .blood-typing-game-arrow {
-                width: 40px;
-                height: 40px;
-                background: rgba(255, 255, 255, 0.15);
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-shrink: 0;
-                transition: transform 0.3s ease;
-            }
-            .blood-typing-game-arrow svg {
-                stroke: white;
-            }
-            .blood-typing-game-card:hover .blood-typing-game-arrow {
-                transform: translateX(5px);
-            }
-            @media (max-width: 768px) {
-                .blood-typing-game-card {
-                    flex-direction: column;
-                    text-align: center;
-                    padding: 1.5rem;
-                }
-                .blood-typing-game-arrow {
                     display: none;
                 }
             }

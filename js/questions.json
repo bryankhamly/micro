@@ -1814,6 +1814,1361 @@
           "answer": 1
         }
       ]
+    },
+    "final": {
+      "name": "Final Review",
+      "questions": [
+        {
+          "question": "Which of the following is TRUE about prokaryotic cells?",
+          "options": ["They contain membrane-bound organelles", "They have a true nucleus with a nuclear membrane", "They contain 70S ribosomes", "They are always pathogenic"],
+          "answer": 2
+        },
+        {
+          "question": "The bacterial chromosome is typically located in a region called the:",
+          "options": ["Nucleus", "Nucleoid", "Mitochondria", "Endoplasmic reticulum"],
+          "answer": 1
+        },
+        {
+          "question": "Which component is found in bacterial cell walls but NOT in eukaryotic cell walls?",
+          "options": ["Chitin", "Cellulose", "Peptidoglycan", "Lignin"],
+          "answer": 2
+        },
+        {
+          "question": "Gram-positive bacteria appear purple after Gram staining because they have:",
+          "options": ["An outer membrane that retains crystal violet", "A thin peptidoglycan layer", "A thick peptidoglycan layer that retains crystal violet-iodine complex", "Lipopolysaccharide in their cell wall"],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is a characteristic of Gram-negative bacteria?",
+          "options": ["Thick peptidoglycan layer", "Teichoic acids in the cell wall", "Outer membrane containing lipopolysaccharide (LPS)", "Purple color after Gram staining"],
+          "answer": 2
+        },
+        {
+          "question": "Endotoxins are:",
+          "options": ["Proteins secreted by bacteria", "Part of the Gram-negative outer membrane", "Found only in Gram-positive bacteria", "Always encoded by bacteriophages"],
+          "answer": 1
+        },
+        {
+          "question": "Which structure allows bacteria to survive harsh environmental conditions such as heat and desiccation?",
+          "options": ["Capsule", "Pili", "Endospore", "Flagella"],
+          "answer": 2
+        },
+        {
+          "question": "Which genus of bacteria is known for forming highly resistant endospores?",
+          "options": ["Staphylococcus", "Streptococcus", "Escherichia", "Clostridium"],
+          "answer": 3
+        },
+        {
+          "question": "The function of bacterial pili (fimbriae) is primarily:",
+          "options": ["Movement", "Attachment to surfaces", "Protein synthesis", "Energy production"],
+          "answer": 1
+        },
+        {
+          "question": "During conjugation, DNA is transferred through a structure called the:",
+          "options": ["Flagellum", "Capsule", "Sex pilus", "Endospore"],
+          "answer": 2
+        },
+        {
+          "question": "A bacteriophage that integrates its DNA into the bacterial chromosome is called a:",
+          "options": ["Virulent phage", "Lytic phage", "Temperate phage", "Prion"],
+          "answer": 2
+        },
+        {
+          "question": "Transformation in bacteria involves:",
+          "options": ["Transfer of DNA via a virus", "Uptake of naked DNA from the environment", "Transfer of DNA through direct cell contact", "Transfer of DNA through a pilus"],
+          "answer": 1
+        },
+        {
+          "question": "Transduction is the transfer of bacterial DNA by:",
+          "options": ["Direct cell-to-cell contact", "Bacteriophages", "Uptake of free DNA", "Plasmid transfer"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is the correct order of Gram staining?",
+          "options": ["Safranin, iodine, crystal violet, alcohol", "Crystal violet, iodine, alcohol, safranin", "Iodine, crystal violet, safranin, alcohol", "Alcohol, crystal violet, iodine, safranin"],
+          "answer": 1
+        },
+        {
+          "question": "Acid-fast staining is used primarily to identify:",
+          "options": ["Streptococcus", "Staphylococcus", "Mycobacterium", "Escherichia"],
+          "answer": 2
+        },
+        {
+          "question": "Mycobacterium tuberculosis is difficult to Gram stain because of:",
+          "options": ["Its small size", "Mycolic acids in its cell wall", "Lack of a cell wall", "Its spore formation"],
+          "answer": 1
+        },
+        {
+          "question": "In the Central Dogma of molecular biology, the flow of genetic information is:",
+          "options": ["Protein → RNA → DNA", "RNA → DNA → Protein", "DNA → RNA → Protein", "DNA → Protein → RNA"],
+          "answer": 2
+        },
+        {
+          "question": "DNA replication occurs in which direction?",
+          "options": ["3' to 5'", "5' to 3'", "Both directions equally", "It varies by organism"],
+          "answer": 1
+        },
+        {
+          "question": "The start codon AUG codes for which amino acid?",
+          "options": ["Tryptophan", "Methionine", "Leucine", "Stop signal"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is a stop codon?",
+          "options": ["AUG", "UGG", "UAA", "GGG"],
+          "answer": 2
+        },
+        {
+          "question": "A mutation that changes one amino acid to another is called a:",
+          "options": ["Silent mutation", "Missense mutation", "Nonsense mutation", "Frameshift mutation"],
+          "answer": 1
+        },
+        {
+          "question": "Sickle cell anemia is caused by what type of mutation?",
+          "options": ["Silent mutation", "Nonsense mutation", "Missense mutation", "Frameshift mutation"],
+          "answer": 2
+        },
+        {
+          "question": "An F+ bacterium transfers its F plasmid to an F- cell through:",
+          "options": ["Transformation", "Transduction", "Conjugation", "Binary fission"],
+          "answer": 2
+        },
+        {
+          "question": "Restriction enzymes cut DNA at specific sequences called:",
+          "options": ["Origins of replication", "Palindromic recognition sequences", "Promoter regions", "Telomeres"],
+          "answer": 1
+        },
+        {
+          "question": "In recombinant DNA technology, which enzyme is used to join DNA fragments together?",
+          "options": ["Restriction endonuclease", "DNA polymerase", "DNA ligase", "Helicase"],
+          "answer": 2
+        },
+        {
+          "question": "In blue-white screening, white colonies indicate:",
+          "options": ["No plasmid uptake", "Plasmid with no insert", "Recombinant plasmid with insert", "Dead cells"],
+          "answer": 2
+        },
+        {
+          "question": "PCR (Polymerase Chain Reaction) requires all of the following EXCEPT:",
+          "options": ["Primers", "Taq polymerase", "Template DNA", "Living cells"],
+          "answer": 3
+        },
+        {
+          "question": "Viruses are considered obligate intracellular parasites because they:",
+          "options": ["Can only reproduce inside a host cell", "Have their own ribosomes", "Can perform metabolism independently", "Are always DNA-based"],
+          "answer": 0
+        },
+        {
+          "question": "A virus that infects bacteria is called a:",
+          "options": ["Retrovirus", "Bacteriophage", "Oncovirus", "Prion"],
+          "answer": 1
+        },
+        {
+          "question": "The viral envelope is derived from:",
+          "options": ["The viral capsid", "Host cell membranes", "Viral DNA", "Bacterial cell walls"],
+          "answer": 1
+        },
+        {
+          "question": "Retroviruses like HIV use which enzyme to convert RNA to DNA?",
+          "options": ["DNA polymerase", "RNA polymerase", "Reverse transcriptase", "Ligase"],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is NOT a characteristic of viruses?",
+          "options": ["Contain genetic material (DNA or RNA)", "Require a host cell for replication", "Have 70S ribosomes for protein synthesis", "Have a protein coat called a capsid"],
+          "answer": 2
+        },
+        {
+          "question": "The lytic cycle of viral replication results in:",
+          "options": ["Integration of viral DNA into host chromosome", "Dormancy of the virus", "Destruction of the host cell and release of new viruses", "No viral reproduction"],
+          "answer": 2
+        },
+        {
+          "question": "During the lysogenic cycle, the viral DNA integrated into the bacterial chromosome is called a:",
+          "options": ["Virion", "Prophage", "Plasmid", "Transposon"],
+          "answer": 1
+        },
+        {
+          "question": "Fungi are eukaryotes that have cell walls made of:",
+          "options": ["Peptidoglycan", "Cellulose", "Chitin", "Lipopolysaccharide"],
+          "answer": 2
+        },
+        {
+          "question": "Protozoa are characterized by:",
+          "options": ["Cell walls made of chitin", "Being prokaryotic", "Being unicellular eukaryotes without cell walls", "Producing spores like fungi"],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is used to stain the capsule of bacteria?",
+          "options": ["Gram stain", "Acid-fast stain", "Negative stain (India ink)", "Spore stain"],
+          "answer": 2
+        },
+        {
+          "question": "The phase of bacterial growth where cells divide at maximum rate is called:",
+          "options": ["Lag phase", "Log (exponential) phase", "Stationary phase", "Death phase"],
+          "answer": 1
+        },
+        {
+          "question": "Bacteria that require oxygen for growth are called:",
+          "options": ["Obligate anaerobes", "Facultative anaerobes", "Obligate aerobes", "Microaerophiles"],
+          "answer": 2
+        },
+        {
+          "question": "Bacteria that can grow with or without oxygen are called:",
+          "options": ["Obligate aerobes", "Obligate anaerobes", "Facultative anaerobes", "Aerotolerant"],
+          "answer": 2
+        },
+        {
+          "question": "Clostridium species are classified as:",
+          "options": ["Obligate aerobes", "Obligate anaerobes", "Facultative anaerobes", "Microaerophiles"],
+          "answer": 1
+        },
+        {
+          "question": "The process of using heat to kill pathogens in milk and other beverages is called:",
+          "options": ["Sterilization", "Pasteurization", "Autoclaving", "Filtration"],
+          "answer": 1
+        },
+        {
+          "question": "Autoclaving uses which combination to achieve sterilization?",
+          "options": ["Dry heat at 160°C", "Moist heat and pressure (121°C, 15 psi)", "UV radiation", "Chemical disinfectants"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is bacteriostatic?",
+          "options": ["It kills bacteria", "It inhibits bacterial growth without killing", "It destroys viruses", "It removes all microorganisms"],
+          "answer": 1
+        },
+        {
+          "question": "Beta-lactam antibiotics like penicillin work by:",
+          "options": ["Inhibiting protein synthesis", "Inhibiting cell wall synthesis", "Inhibiting DNA replication", "Disrupting cell membranes"],
+          "answer": 1
+        },
+        {
+          "question": "Which antibiotic class inhibits protein synthesis by binding to bacterial ribosomes?",
+          "options": ["Beta-lactams", "Aminoglycosides and tetracyclines", "Fluoroquinolones", "Sulfonamides"],
+          "answer": 1
+        },
+        {
+          "question": "Fluoroquinolones inhibit bacterial growth by targeting:",
+          "options": ["Cell wall synthesis", "Cell membrane", "DNA gyrase (DNA synthesis)", "Ribosomes"],
+          "answer": 2
+        },
+        {
+          "question": "Bacteria can become resistant to antibiotics through all of the following EXCEPT:",
+          "options": ["Mutation", "Acquiring resistance genes via conjugation", "Production of enzymes that inactivate the antibiotic", "Reproducing sexually"],
+          "answer": 3
+        },
+        {
+          "question": "MRSA stands for:",
+          "options": ["Methicillin-Responsive Staphylococcus aureus", "Methicillin-Resistant Staphylococcus aureus", "Multiple-Resistant Streptococcus aureus", "Methicillin-Resistant Streptococcus aureus"],
+          "answer": 1
+        },
+        {
+          "question": "Vancomycin is often used as a 'last resort' antibiotic for:",
+          "options": ["Gram-negative infections", "Viral infections", "Drug-resistant Gram-positive infections like MRSA", "Fungal infections"],
+          "answer": 2
+        },
+        {
+          "question": "The Ebola virus belongs to which family?",
+          "options": ["Coronaviridae", "Filoviridae", "Orthomyxoviridae", "Herpesviridae"],
+          "answer": 1
+        },
+        {
+          "question": "What type of genome does Ebola virus have?",
+          "options": ["Double-stranded DNA", "Positive-sense single-stranded RNA", "Negative-sense single-stranded RNA", "Double-stranded RNA"],
+          "answer": 2
+        },
+        {
+          "question": "The natural reservoir for Ebola virus is believed to be:",
+          "options": ["Mosquitoes", "Fruit bats", "Rodents", "Birds"],
+          "answer": 1
+        },
+        {
+          "question": "Ebola virus causes disease primarily through:",
+          "options": ["Neurotoxin production", "Triggering a cytokine storm and vascular damage", "Destroying lung tissue", "Attacking the nervous system"],
+          "answer": 1
+        },
+        {
+          "question": "Ebola is transmitted primarily through:",
+          "options": ["Airborne droplets", "Contaminated water", "Direct contact with bodily fluids", "Mosquito bites"],
+          "answer": 2
+        },
+        {
+          "question": "Lyme disease is caused by:",
+          "options": ["A virus", "A protozoan", "Borrelia burgdorferi", "A fungus"],
+          "answer": 2
+        },
+        {
+          "question": "The vector for Lyme disease is:",
+          "options": ["Mosquitoes", "Fleas", "Ixodes scapularis", "Sandflies"],
+          "answer": 2
+        },
+        {
+          "question": "The characteristic early sign of Lyme disease is:",
+          "options": ["High fever", "Erythema migrans", "Pustular rash", "Swollen lymph nodes only"],
+          "answer": 1
+        },
+        {
+          "question": "How long must a tick be attached to transmit Lyme disease?",
+          "options": ["A few minutes", "At least 24 hours", "One week", "Transmission is immediate"],
+          "answer": 1
+        },
+        {
+          "question": "RSV (Respiratory Syncytial Virus) is named for its ability to:",
+          "options": ["Cause respiratory failure", "Form syncytia", "Sync with host DNA", "Spread synchronously"],
+          "answer": 1
+        },
+        {
+          "question": "Which RSV protein causes the formation of syncytia?",
+          "options": ["G protein", "F protein", "N protein", "M protein"],
+          "answer": 1
+        },
+        {
+          "question": "RSV is the leading cause of respiratory infections in:",
+          "options": ["Elderly adults only", "Infants and young children", "Pregnant women only", "Immunocompetent adults"],
+          "answer": 1
+        },
+        {
+          "question": "RSV causes disease through:",
+          "options": ["Exotoxin production", "Endotoxin release", "Host inflammatory response", "Neurotoxin effects"],
+          "answer": 2
+        },
+        {
+          "question": "Acute Flaccid Myelitis (AFM) is most commonly associated with:",
+          "options": ["Influenza virus", "Enterovirus D68", "Rhinovirus", "Adenovirus"],
+          "answer": 1
+        },
+        {
+          "question": "AFM primarily affects which part of the nervous system?",
+          "options": ["Brain cortex", "Anterior horn cells of the spinal cord grey matter", "Peripheral nerves only", "Autonomic nervous system"],
+          "answer": 1
+        },
+        {
+          "question": "The MRI finding characteristic of AFM is:",
+          "options": ["Enlarged ventricles", "Butterfly-shaped grey matter lesions in spinal cord", "White matter plaques", "Normal appearance"],
+          "answer": 1
+        },
+        {
+          "question": "In AFM, which immune cells are primarily responsible for neuronal damage?",
+          "options": ["B cells", "CD8+ cytotoxic T cells", "Neutrophils only", "Eosinophils"],
+          "answer": 1
+        },
+        {
+          "question": "Angiostrongyliasis is caused by:",
+          "options": ["A bacterium", "A virus", "Angiostrongylus cantonensis", "A protozoan"],
+          "answer": 2
+        },
+        {
+          "question": "The definitive host for Angiostrongylus cantonensis is:",
+          "options": ["Humans", "Snails", "Rats", "Dogs"],
+          "answer": 2
+        },
+        {
+          "question": "Humans become infected with rat lungworm by:",
+          "options": ["Rat bites", "Inhaling spores", "Eating raw or undercooked snails/slugs or contaminated produce", "Person-to-person transmission"],
+          "answer": 2
+        },
+        {
+          "question": "Rat lungworm disease is the most common cause of:",
+          "options": ["Bacterial meningitis", "Eosinophilic meningitis", "Viral encephalitis", "Fungal meningitis"],
+          "answer": 1
+        },
+        {
+          "question": "Why are humans considered 'dead-end hosts' for Angiostrongylus cantonensis?",
+          "options": ["The infection is always fatal", "The parasite cannot complete its life cycle in humans", "Humans cannot be infected", "The parasite dies immediately"],
+          "answer": 1
+        },
+        {
+          "question": "CRE stands for:",
+          "options": ["Cephalosporin-Resistant Enterococcus", "Carbapenem-Resistant Enterobacterales", "Ciprofloxacin-Resistant E. coli", "Chloramphenicol-Resistant Enterobacter"],
+          "answer": 1
+        },
+        {
+          "question": "Carbapenems are considered 'last resort' antibiotics because:",
+          "options": ["They are very expensive", "They are used when other antibiotics have failed", "They have no side effects", "They only work on viruses"],
+          "answer": 1
+        },
+        {
+          "question": "CRE infections are primarily spread in:",
+          "options": ["Schools", "Healthcare settings", "Swimming pools", "Through food"],
+          "answer": 1
+        },
+        {
+          "question": "The three major classes of carbapenemases are:",
+          "options": ["Alpha, Beta, Gamma", "Class A (KPC), Class B (NDM), Class D (OXA-48)", "Types 1, 2, 3", "Fast, Medium, Slow"],
+          "answer": 1
+        },
+        {
+          "question": "Resistance genes in CRE are often spread between bacteria through:",
+          "options": ["Transformation only", "Conjugation", "Transduction only", "Binary fission"],
+          "answer": 1
+        },
+        {
+          "question": "Mpox (Monkeypox) is caused by a virus in which family?",
+          "options": ["Herpesviridae", "Orthopoxvirus (Poxviridae)", "Flaviviridae", "Coronaviridae"],
+          "answer": 1
+        },
+        {
+          "question": "A distinguishing feature of Mpox compared to smallpox is:",
+          "options": ["Higher mortality rate", "Lymphadenopathy", "More severe rash", "Different rash progression"],
+          "answer": 1
+        },
+        {
+          "question": "The Mpox rash progresses through which stages?",
+          "options": ["Vesicles only", "Macules → Papules → Vesicles → Pustules → Crusts", "Pustules → Vesicles → Macules", "No rash occurs"],
+          "answer": 1
+        },
+        {
+          "question": "What vaccine can protect against Mpox?",
+          "options": ["MMR", "JYNNEOS (also protects against smallpox)", "HPV vaccine", "Influenza vaccine"],
+          "answer": 1
+        },
+        {
+          "question": "Leishmaniasis is transmitted by:",
+          "options": ["Mosquitoes", "Ticks", "Phlebotomine sandflies", "Fleas"],
+          "answer": 2
+        },
+        {
+          "question": "The causative agent of leishmaniasis is:",
+          "options": ["A bacterium", "A virus", "Leishmania", "A fungus"],
+          "answer": 2
+        },
+        {
+          "question": "In the Leishmania life cycle, the form found in sandflies is called:",
+          "options": ["Amastigote", "Promastigote", "Trophozoite", "Cyst"],
+          "answer": 1
+        },
+        {
+          "question": "Inside human macrophages, Leishmania exists as:",
+          "options": ["Promastigote", "Amastigote", "Sporozoite", "Merozoite"],
+          "answer": 1
+        },
+        {
+          "question": "Which type of leishmaniasis is the most fatal?",
+          "options": ["Cutaneous", "Mucocutaneous", "Visceral", "All are equally fatal"],
+          "answer": 2
+        },
+        {
+          "question": "A Th1 immune response in leishmaniasis leads to:",
+          "options": ["Disease progression", "Protection and parasite control", "No effect", "Increased parasite replication"],
+          "answer": 1
+        },
+        {
+          "question": "In leishmaniasis, neutrophils act as a 'Trojan horse' by:",
+          "options": ["Killing all parasites", "Carrying parasites to macrophages where they survive", "Producing antibodies", "Releasing cytokines only"],
+          "answer": 1
+        },
+        {
+          "question": "Plague is caused by:",
+          "options": ["A virus", "Yersinia pestis", "A protozoan", "A fungus"],
+          "answer": 1
+        },
+        {
+          "question": "Yersinia pestis is a:",
+          "options": ["Gram-positive coccus", "Gram-negative bacillus", "Gram-positive bacillus", "Spirochete"],
+          "answer": 1
+        },
+        {
+          "question": "The primary vector for bubonic and septicemic plague is:",
+          "options": ["Mosquitoes", "Ticks", "Xenopsylla cheopis (rat flea)", "Sandflies"],
+          "answer": 2
+        },
+        {
+          "question": "Buboes in bubonic plague are:",
+          "options": ["Skin lesions", "Swollen, painful lymph nodes", "Lung abscesses", "Brain lesions"],
+          "answer": 1
+        },
+        {
+          "question": "Which form of plague is transmitted person-to-person via respiratory droplets?",
+          "options": ["Bubonic", "Septicemic", "Pneumonic", "All forms equally"],
+          "answer": 2
+        },
+        {
+          "question": "Yersinia pestis uses which secretion system to inject toxins into host cells?",
+          "options": ["Type I", "Type II", "Type III Secretion System (T3SS)", "Type IV"],
+          "answer": 2
+        },
+        {
+          "question": "Yops (Yersinia outer proteins) function as:",
+          "options": ["Nutrients", "Exotoxins that disable host immune cells", "Cell wall components", "Capsule proteins"],
+          "answer": 1
+        },
+        {
+          "question": "Schistosomiasis is caused by:",
+          "options": ["Bacteria", "Viruses", "Schistosoma species", "Fungi"],
+          "answer": 2
+        },
+        {
+          "question": "The intermediate host for Schistosoma is:",
+          "options": ["Rats", "Mosquitoes", "Freshwater snails", "Humans"],
+          "answer": 2
+        },
+        {
+          "question": "Humans become infected with schistosomiasis when:",
+          "options": ["Bitten by mosquitoes", "Cercariae penetrate the skin in contaminated freshwater", "Eating undercooked meat", "Person-to-person contact"],
+          "answer": 1
+        },
+        {
+          "question": "Cercarial dermatitis is caused by:",
+          "options": ["Bacteria in the water", "Immune response to cercariae penetrating skin", "Chemical irritation", "Fungal infection"],
+          "answer": 1
+        },
+        {
+          "question": "The treatment of choice for schistosomiasis is:",
+          "options": ["Penicillin", "Praziquantel", "Ivermectin", "Doxycycline"],
+          "answer": 1
+        },
+        {
+          "question": "Schistosomiasis does NOT occur in the United States because:",
+          "options": ["The climate is too cold", "The intermediate host snails are not present", "It has been eradicated", "Americans have immunity"],
+          "answer": 1
+        },
+        {
+          "question": "Which type of schistosomiasis affects the urinary bladder and can increase risk of bladder cancer?",
+          "options": ["S. mansoni infection", "S. japonicum infection", "S. haematobium infection", "All types equally"],
+          "answer": 2
+        },
+        {
+          "question": "Prions differ from other infectious agents because they:",
+          "options": ["Are larger than bacteria", "Are misfolded proteins with no nucleic acid", "Can be killed by antibiotics", "Have RNA genomes"],
+          "answer": 1
+        },
+        {
+          "question": "Creutzfeldt-Jakob disease (CJD) is caused by:",
+          "options": ["A virus", "A bacterium", "A prion", "A fungus"],
+          "answer": 2
+        },
+        {
+          "question": "BSE (Bovine Spongiform Encephalopathy) is commonly known as:",
+          "options": ["Bird flu", "Swine flu", "Mad cow disease", "Rabies"],
+          "answer": 2
+        },
+        {
+          "question": "Prions are resistant to:",
+          "options": ["Standard sterilization methods", "Soap and water only", "Ultraviolet light only", "All known treatments"],
+          "answer": 0
+        },
+        {
+          "question": "The function of hemagglutinin (H) in influenza virus is to:",
+          "options": ["Release new viruses from cells", "Bind to host cell receptors for entry", "Replicate viral RNA", "Form the viral capsid"],
+          "answer": 1
+        },
+        {
+          "question": "Neuraminidase (N) in influenza virus functions to:",
+          "options": ["Attach to host cells", "Help release new viruses from infected cells", "Synthesize viral proteins", "Protect viral RNA"],
+          "answer": 1
+        },
+        {
+          "question": "Antigenic drift refers to:",
+          "options": ["Major sudden changes in viral antigens", "Small gradual mutations in H and N genes", "Loss of viral antigens", "Transfer of genes between different species"],
+          "answer": 1
+        },
+        {
+          "question": "Antigenic shift occurs when:",
+          "options": ["Small mutations accumulate over time", "Two different influenza viruses infect the same cell and exchange RNA segments", "The virus loses its envelope", "Antibodies neutralize the virus"],
+          "answer": 1
+        },
+        {
+          "question": "Tamiflu (oseltamivir) works by inhibiting:",
+          "options": ["Hemagglutinin", "Neuraminidase", "RNA polymerase", "Reverse transcriptase"],
+          "answer": 1
+        },
+        {
+          "question": "SARS-CoV-2 binds to which receptor on human cells?",
+          "options": ["CD4", "ACE2", "Sialic acid", "CCR5"],
+          "answer": 1
+        },
+        {
+          "question": "The target for most COVID-19 vaccines is the:",
+          "options": ["Nucleocapsid protein", "Membrane protein", "Spike (S) protein", "Envelope protein"],
+          "answer": 2
+        },
+        {
+          "question": "Pfizer and Moderna COVID-19 vaccines are what type?",
+          "options": ["Live attenuated", "Inactivated whole virus", "mRNA vaccines", "Subunit vaccines"],
+          "answer": 2
+        },
+        {
+          "question": "A cytokine storm involves:",
+          "options": ["Bacterial overgrowth", "An excessive, damaging immune response", "Viral mutation", "Antibiotic resistance"],
+          "answer": 1
+        },
+        {
+          "question": "Which test is used to differentiate Staphylococcus from Streptococcus?",
+          "options": ["Coagulase test", "Catalase test", "Oxidase test", "Urease test"],
+          "answer": 1
+        },
+        {
+          "question": "Staphylococcus aureus is positive for which enzyme that distinguishes it from other staphylococci?",
+          "options": ["Catalase", "Coagulase", "Urease", "Oxidase"],
+          "answer": 1
+        },
+        {
+          "question": "Beta-hemolysis on blood agar shows:",
+          "options": ["Green discoloration around colonies", "Complete clear zone around colonies", "No change in the agar", "Black discoloration"],
+          "answer": 1
+        },
+        {
+          "question": "Alpha-hemolysis on blood agar shows:",
+          "options": ["Complete clearing", "Greenish discoloration around colonies", "No change", "Red discoloration"],
+          "answer": 1
+        },
+        {
+          "question": "Streptococcus pyogenes belongs to which Lancefield group?",
+          "options": ["Group B", "Group C", "Group A", "Group D"],
+          "answer": 2
+        },
+        {
+          "question": "The tetanus toxin (tetanospasmin) causes:",
+          "options": ["Flaccid paralysis", "Spastic paralysis by blocking inhibitory neurotransmitters", "Diarrhea", "Skin lesions"],
+          "answer": 1
+        },
+        {
+          "question": "Botulinum toxin causes disease by:",
+          "options": ["Blocking inhibitory neurotransmitters", "Blocking acetylcholine release at neuromuscular junctions", "Destroying nerve cells", "Causing inflammation"],
+          "answer": 1
+        },
+        {
+          "question": "Which toxin is the most potent biological toxin known?",
+          "options": ["Tetanus toxin", "Cholera toxin", "Botulinum toxin", "Diphtheria toxin"],
+          "answer": 2
+        },
+        {
+          "question": "Rabies virus travels to the brain via:",
+          "options": ["Bloodstream", "Lymphatic system", "Peripheral nerves", "Direct invasion"],
+          "answer": 2
+        },
+        {
+          "question": "Once rabies symptoms appear, the prognosis is:",
+          "options": ["50% survival", "90% survival with treatment", "Nearly 100% fatal", "Variable depending on treatment"],
+          "answer": 2
+        },
+        {
+          "question": "Negri bodies are diagnostic inclusion bodies found in:",
+          "options": ["Bacterial infections", "Rabies-infected nerve cells", "Fungal infections", "Prion diseases"],
+          "answer": 1
+        },
+        {
+          "question": "Rabies post-exposure prophylaxis (PEP) must be given:",
+          "options": ["Only after symptoms appear", "Before symptoms appear to be effective", "At any time during infection", "Only before exposure"],
+          "answer": 1
+        },
+        {
+          "question": "Mycobacterium leprae (leprosy) prefers:",
+          "options": ["High body temperature areas", "Cooler parts of the body (grows best at 30°C)", "Only internal organs", "The bloodstream"],
+          "answer": 1
+        },
+        {
+          "question": "Leprosy damages which cells in the peripheral nervous system?",
+          "options": ["Axons", "Schwann cells (myelin sheath)", "Dendrites", "Neuromuscular junctions"],
+          "answer": 1
+        },
+        {
+          "question": "The characteristic pseudomembrane in diphtheria is located in the:",
+          "options": ["Lungs", "Throat", "Stomach", "Skin"],
+          "answer": 1
+        },
+        {
+          "question": "Diphtheria toxin is classified as:",
+          "options": ["Endotoxin", "AB exotoxin that inhibits protein synthesis", "Neurotoxin", "Enterotoxin"],
+          "answer": 1
+        },
+        {
+          "question": "Whooping cough (pertussis) is caused by:",
+          "options": ["Corynebacterium diphtheriae", "Bordetella pertussis", "Streptococcus pneumoniae", "Mycobacterium tuberculosis"],
+          "answer": 1
+        },
+        {
+          "question": "The tracheal cytotoxin of Bordetella pertussis:",
+          "options": ["Causes the whooping sound", "Destroys ciliated cells, disabling the mucociliary escalator", "Produces fever", "Causes the pseudomembrane"],
+          "answer": 1
+        },
+        {
+          "question": "A tubercle (granuloma) in tuberculosis contains:",
+          "options": ["Only bacteria", "Walled-off bacteria surrounded by immune cells", "Dead lung tissue only", "Viral particles"],
+          "answer": 1
+        },
+        {
+          "question": "Latent TB differs from active TB in that:",
+          "options": ["Latent TB is contagious", "Latent TB has no symptoms and is not contagious; active TB has symptoms and is contagious", "They are the same", "Active TB cannot be treated"],
+          "answer": 1
+        },
+        {
+          "question": "The Mantoux test (PPD) detects:",
+          "options": ["Active TB infection", "Previous exposure to Mycobacterium tuberculosis", "Antibiotic resistance", "Viral load"],
+          "answer": 1
+        },
+        {
+          "question": "Cholera toxin causes:",
+          "options": ["Bloody diarrhea", "Massive secretory (watery) diarrhea", "Constipation", "Vomiting only"],
+          "answer": 1
+        },
+        {
+          "question": "Rice-water stool is characteristic of:",
+          "options": ["Shigellosis", "Salmonellosis", "Cholera", "EHEC infection"],
+          "answer": 2
+        },
+        {
+          "question": "EHEC (E. coli O157:H7) produces which toxin?",
+          "options": ["Cholera toxin", "Shiga toxin", "Botulinum toxin", "Tetanus toxin"],
+          "answer": 1
+        },
+        {
+          "question": "A serious complication of EHEC infection is:",
+          "options": ["Typhoid fever", "Hemolytic Uremic Syndrome (HUS)", "Meningitis", "Pneumonia"],
+          "answer": 1
+        },
+        {
+          "question": "Helicobacter pylori survives in the acidic stomach by producing:",
+          "options": ["Acid", "Urease (converts urea to ammonia)", "Mucus", "Antibodies"],
+          "answer": 1
+        },
+        {
+          "question": "H. pylori is associated with increased risk of:",
+          "options": ["Lung cancer", "Gastric cancer", "Breast cancer", "Leukemia"],
+          "answer": 1
+        },
+        {
+          "question": "Neisseria gonorrhoeae is a:",
+          "options": ["Gram-positive coccus", "Gram-negative diplococcus", "Gram-positive rod", "Spirochete"],
+          "answer": 1
+        },
+        {
+          "question": "The primary concern with treating gonorrhea is:",
+          "options": ["No treatment exists", "Increasing antibiotic resistance", "It always resolves spontaneously", "Vaccines are ineffective"],
+          "answer": 1
+        },
+        {
+          "question": "Chlamydia trachomatis is an obligate intracellular parasite because:",
+          "options": ["It is a virus", "It cannot make its own ATP", "It has no cell wall", "It requires specific nutrients"],
+          "answer": 1
+        },
+        {
+          "question": "Pelvic Inflammatory Disease (PID) can be caused by:",
+          "options": ["HPV", "Neisseria gonorrhoeae and Chlamydia trachomatis", "Candida", "Herpes simplex"],
+          "answer": 1
+        },
+        {
+          "question": "Treponema pallidum, the cause of syphilis, is a:",
+          "options": ["Coccus", "Rod", "Spirochete", "Vibrio"],
+          "answer": 2
+        },
+        {
+          "question": "The primary stage of syphilis is characterized by:",
+          "options": ["Rash on palms and soles", "Painless chancre at the infection site", "Neurological symptoms", "Gummas"],
+          "answer": 1
+        },
+        {
+          "question": "Secondary syphilis is characterized by:",
+          "options": ["Chancre only", "Skin rash (including palms and soles) and is highly contagious", "Gummas", "Cardiovascular damage"],
+          "answer": 1
+        },
+        {
+          "question": "Tertiary syphilis may involve:",
+          "options": ["Only skin manifestations", "Gummas, cardiovascular disease, and neurosyphilis", "No symptoms", "Complete recovery"],
+          "answer": 1
+        },
+        {
+          "question": "HPV types 16 and 18 are considered high-risk because they:",
+          "options": ["Cause warts", "Are associated with cervical cancer", "Are the most contagious", "Cannot be prevented by vaccination"],
+          "answer": 1
+        },
+        {
+          "question": "The Gardasil vaccine protects against:",
+          "options": ["Herpes simplex virus", "Human papillomavirus (HPV)", "Chlamydia", "Gonorrhea"],
+          "answer": 1
+        },
+        {
+          "question": "Bacterial vaginosis is characterized by:",
+          "options": ["Thick, white discharge", "Fishy odor and thin gray discharge", "Painful ulcers", "Warts"],
+          "answer": 1
+        },
+        {
+          "question": "The most common cause of urinary tract infections is:",
+          "options": ["Staphylococcus aureus", "Escherichia coli", "Streptococcus pyogenes", "Pseudomonas aeruginosa"],
+          "answer": 1
+        },
+        {
+          "question": "Lactobacillus in the vagina protects against infection by:",
+          "options": ["Producing antibiotics", "Producing lactic acid to maintain low pH", "Forming a physical barrier", "Secreting antibodies"],
+          "answer": 1
+        },
+        {
+          "question": "Congenital syphilis refers to:",
+          "options": ["Syphilis acquired through sexual contact", "Syphilis transmitted from mother to fetus during pregnancy", "Syphilis in elderly patients", "Syphilis acquired through blood transfusion"],
+          "answer": 1
+        },
+        {
+          "question": "What is the minimum magnification typically needed to see bacteria?",
+          "options": ["10x", "100x", "1000x", "10,000x"],
+          "answer": 2
+        },
+        {
+          "question": "The resolution of a light microscope is limited by:",
+          "options": ["The size of the specimen", "The wavelength of visible light", "The magnification power", "The staining technique"],
+          "answer": 1
+        },
+        {
+          "question": "Which microscope uses electrons instead of light?",
+          "options": ["Phase contrast microscope", "Fluorescence microscope", "Electron microscope (TEM/SEM)", "Darkfield microscope"],
+          "answer": 2
+        },
+        {
+          "question": "Binary fission is the process by which:",
+          "options": ["Eukaryotes reproduce", "Bacteria divide into two identical cells", "Viruses replicate", "Fungi produce spores"],
+          "answer": 1
+        },
+        {
+          "question": "The generation time of bacteria refers to:",
+          "options": ["The time to form a spore", "The time required for a cell to divide", "The time to infect a host", "The lifespan of a bacterium"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is required for cellular respiration but NOT fermentation?",
+          "options": ["Glucose", "Enzymes", "Oxygen as final electron acceptor", "ATP production"],
+          "answer": 2
+        },
+        {
+          "question": "Fermentation produces much less ATP than aerobic respiration because:",
+          "options": ["It uses different enzymes", "The electron transport chain is not used", "It requires more glucose", "It only occurs in eukaryotes"],
+          "answer": 1
+        },
+        {
+          "question": "The electron transport chain is located in which structure in prokaryotes?",
+          "options": ["Nucleus", "Plasma membrane", "Mitochondria", "Ribosomes"],
+          "answer": 1
+        },
+        {
+          "question": "Koch's postulates are used to:",
+          "options": ["Classify bacteria", "Establish causation between a microbe and a disease", "Identify antibiotic resistance", "Measure bacterial growth"],
+          "answer": 1
+        },
+        {
+          "question": "A nosocomial infection is one that is:",
+          "options": ["Caused by normal flora", "Acquired in a healthcare setting", "Transmitted by vectors", "Always fatal"],
+          "answer": 1
+        },
+        {
+          "question": "Which immunoglobulin is the most abundant in blood and provides long-term immunity?",
+          "options": ["IgA", "IgM", "IgG", "IgE"],
+          "answer": 2
+        },
+        {
+          "question": "IgA is primarily found in:",
+          "options": ["Blood only", "Mucosal secretions", "Lymph nodes", "Bone marrow"],
+          "answer": 1
+        },
+        {
+          "question": "Which cells are the primary targets of HIV?",
+          "options": ["Red blood cells", "CD4+ T helper cells", "B cells", "Neutrophils"],
+          "answer": 1
+        },
+        {
+          "question": "Opsonization enhances phagocytosis by:",
+          "options": ["Killing pathogens directly", "Coating pathogens for easier recognition by phagocytes", "Producing inflammation", "Activating T cells"],
+          "answer": 1
+        },
+        {
+          "question": "The complement system can be activated by all of the following EXCEPT:",
+          "options": ["Antibodies bound to pathogens", "Pathogen surfaces directly", "Mannose-binding lectin", "ATP molecules"],
+          "answer": 3
+        },
+        {
+          "question": "A vaccine that contains weakened but live pathogens is called:",
+          "options": ["Inactivated vaccine", "Subunit vaccine", "Live attenuated vaccine", "Toxoid vaccine"],
+          "answer": 2
+        },
+        {
+          "question": "A toxoid vaccine contains:",
+          "options": ["Live bacteria", "Killed bacteria", "Inactivated toxin", "Viral RNA"],
+          "answer": 2
+        },
+        {
+          "question": "Herd immunity occurs when:",
+          "options": ["Everyone is vaccinated", "A sufficient portion of the population is immune, protecting those who are not", "Only healthcare workers are vaccinated", "Natural immunity develops"],
+          "answer": 1
+        },
+        {
+          "question": "Which type of immunity is provided by vaccination?",
+          "options": ["Natural active immunity", "Artificial active immunity", "Natural passive immunity", "Artificial passive immunity"],
+          "answer": 1
+        },
+        {
+          "question": "Passive immunity differs from active immunity in that:",
+          "options": ["It lasts longer", "It involves receiving pre-formed antibodies", "It requires multiple doses", "It provides stronger protection"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following diseases is caused by a spirochete?",
+          "options": ["Tuberculosis", "Syphilis", "Gonorrhea", "Chlamydia"],
+          "answer": 1
+        },
+        {
+          "question": "The Wassermann test and its modern equivalents are used to diagnose:",
+          "options": ["Gonorrhea", "Syphilis", "Chlamydia", "HPV"],
+          "answer": 1
+        },
+        {
+          "question": "Which organism can survive and replicate within macrophages?",
+          "options": ["Streptococcus pyogenes", "Mycobacterium tuberculosis", "Staphylococcus epidermidis", "Neisseria gonorrhoeae"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is NOT a mechanism of antibiotic resistance?",
+          "options": ["Enzymatic degradation of the antibiotic", "Altered target site", "Decreased membrane permeability", "Increased cell division rate"],
+          "answer": 3
+        },
+        {
+          "question": "Penicillin-binding proteins are the target of:",
+          "options": ["Aminoglycosides", "Beta-lactam antibiotics", "Fluoroquinolones", "Macrolides"],
+          "answer": 1
+        },
+        {
+          "question": "Which antibiotic class should NOT be given to young children due to effects on bone and cartilage development?",
+          "options": ["Penicillins", "Fluoroquinolones", "Cephalosporins", "Macrolides"],
+          "answer": 1
+        },
+        {
+          "question": "Selective toxicity in antimicrobial therapy means:",
+          "options": ["The drug only works against one species", "The drug harms the pathogen more than the host", "The drug is toxic to all cells", "The drug selects for resistant bacteria"],
+          "answer": 1
+        },
+        {
+          "question": "The minimum inhibitory concentration (MIC) is:",
+          "options": ["The highest concentration that kills bacteria", "The lowest concentration that prevents visible bacterial growth", "The concentration that causes toxicity", "The concentration in the bloodstream"],
+          "answer": 1
+        },
+        {
+          "question": "Which structure is responsible for the purple color retention in Gram-positive bacteria?",
+          "options": ["Outer membrane", "Thick peptidoglycan layer", "Lipopolysaccharide", "Teichoic acid"],
+          "answer": 1
+        },
+        {
+          "question": "Lipid A is the toxic component of:",
+          "options": ["Exotoxins", "Teichoic acid", "Lipopolysaccharide (endotoxin)", "Peptidoglycan"],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is NOT a function of the bacterial capsule?",
+          "options": ["Protection from phagocytosis", "Adherence to surfaces", "DNA replication", "Protection from desiccation"],
+          "answer": 2
+        },
+        {
+          "question": "Biofilms are clinically significant because they:",
+          "options": ["Are easily destroyed by antibiotics", "Provide increased antibiotic resistance", "Only form in the environment", "Are composed of single species only"],
+          "answer": 1
+        },
+        {
+          "question": "The enzyme that adds nucleotides during DNA replication is:",
+          "options": ["DNA ligase", "DNA polymerase", "Helicase", "Primase"],
+          "answer": 1
+        },
+        {
+          "question": "Okazaki fragments are produced on the:",
+          "options": ["Leading strand", "Lagging strand", "Both strands equally", "Neither strand"],
+          "answer": 1
+        },
+        {
+          "question": "The wobble position in the codon refers to:",
+          "options": ["The first position", "The second position", "The third position", "All positions"],
+          "answer": 2
+        },
+        {
+          "question": "A silent mutation does NOT change the amino acid because of:",
+          "options": ["DNA repair mechanisms", "Degeneracy of the genetic code", "RNA editing", "Protein folding"],
+          "answer": 1
+        },
+        {
+          "question": "An operon is:",
+          "options": ["A single gene", "A group of genes controlled by a single promoter", "A regulatory protein", "A ribosomal subunit"],
+          "answer": 1
+        },
+        {
+          "question": "The lac operon is induced by:",
+          "options": ["Glucose", "Lactose", "Tryptophan", "ATP"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is an example of horizontal gene transfer?",
+          "options": ["Binary fission", "Conjugation", "Mitosis", "Meiosis"],
+          "answer": 1
+        },
+        {
+          "question": "R plasmids are significant because they:",
+          "options": ["Enhance virulence", "Carry antibiotic resistance genes", "Encode toxins", "Enable sporulation"],
+          "answer": 1
+        },
+        {
+          "question": "A prophage is:",
+          "options": ["A virus actively replicating", "Viral DNA integrated into bacterial chromosome", "A bacterial defense mechanism", "An inactive ribosome"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is a DNA virus?",
+          "options": ["Influenza virus", "HIV", "Herpes simplex virus", "Poliovirus"],
+          "answer": 2
+        },
+        {
+          "question": "Positive-sense RNA viruses can:",
+          "options": ["Be directly translated by ribosomes", "Only replicate in the nucleus", "Never cause disease in humans", "Only infect bacteria"],
+          "answer": 0
+        },
+        {
+          "question": "Oncogenic viruses can cause cancer by:",
+          "options": ["Producing toxins", "Integrating into host DNA and disrupting cell cycle control", "Triggering immediate cell death", "Blocking all protein synthesis"],
+          "answer": 1
+        },
+        {
+          "question": "Which hepatitis virus is most likely to cause chronic infection?",
+          "options": ["Hepatitis A", "Hepatitis B", "Hepatitis E", "All equally likely"],
+          "answer": 1
+        },
+        {
+          "question": "The eclipse period during viral replication is when:",
+          "options": ["Viruses are released from the cell", "No complete virions can be detected in the cell", "The virus attaches to the cell", "The cell divides"],
+          "answer": 1
+        },
+        {
+          "question": "Innate immunity is characterized by:",
+          "options": ["Memory response", "Specificity for individual pathogens", "Rapid, non-specific response", "Antibody production"],
+          "answer": 2
+        },
+        {
+          "question": "Toll-like receptors (TLRs) recognize:",
+          "options": ["Specific antigens", "Pathogen-associated molecular patterns (PAMPs)", "Antibodies", "MHC molecules"],
+          "answer": 1
+        },
+        {
+          "question": "The membrane attack complex (MAC) is formed by:",
+          "options": ["Antibodies", "T cells", "Complement proteins", "Phagocytes"],
+          "answer": 2
+        },
+        {
+          "question": "MHC Class I molecules present antigens to:",
+          "options": ["B cells", "CD4+ T cells", "CD8+ T cells", "NK cells only"],
+          "answer": 2
+        },
+        {
+          "question": "MHC Class II molecules are found on:",
+          "options": ["All nucleated cells", "Antigen-presenting cells only", "Red blood cells", "Neurons only"],
+          "answer": 1
+        },
+        {
+          "question": "Helper T cells (CD4+) primarily function by:",
+          "options": ["Directly killing infected cells", "Secreting cytokines to coordinate immune response", "Producing antibodies", "Phagocytosis"],
+          "answer": 1
+        },
+        {
+          "question": "Plasma cells are derived from:",
+          "options": ["T cells", "B cells", "Macrophages", "Neutrophils"],
+          "answer": 1
+        },
+        {
+          "question": "Memory cells provide:",
+          "options": ["Immediate non-specific response", "Faster and stronger secondary immune response", "Constant antibody production", "Phagocytic activity"],
+          "answer": 1
+        },
+        {
+          "question": "Anaphylaxis is mediated primarily by:",
+          "options": ["IgG", "IgA", "IgE", "IgM"],
+          "answer": 2
+        },
+        {
+          "question": "Type IV hypersensitivity is:",
+          "options": ["Antibody-mediated", "Delayed-type T cell-mediated", "Complement-mediated", "IgE-mediated"],
+          "answer": 1
+        },
+        {
+          "question": "Autoimmune diseases occur when:",
+          "options": ["Pathogens attack the immune system", "The immune system attacks self-antigens", "Vaccines cause allergies", "Antibiotics kill normal flora"],
+          "answer": 1
+        },
+        {
+          "question": "The causative agent of anthrax is:",
+          "options": ["Bacillus cereus", "Bacillus anthracis", "Clostridium perfringens", "Clostridium botulinum"],
+          "answer": 1
+        },
+        {
+          "question": "Gas gangrene is caused by:",
+          "options": ["Clostridium tetani", "Clostridium perfringens", "Clostridium difficile", "Clostridium botulinum"],
+          "answer": 1
+        },
+        {
+          "question": "Which organism causes peptic ulcers and is associated with gastric cancer?",
+          "options": ["Escherichia coli", "Helicobacter pylori", "Salmonella typhi", "Campylobacter jejuni"],
+          "answer": 1
+        },
+        {
+          "question": "Rocky Mountain spotted fever is transmitted by:",
+          "options": ["Mosquitoes", "Ticks", "Fleas", "Lice"],
+          "answer": 1
+        },
+        {
+          "question": "Malaria is caused by:",
+          "options": ["Bacteria", "Viruses", "Plasmodium species", "Fungi"],
+          "answer": 2
+        },
+        {
+          "question": "The definitive host for Plasmodium (malaria) is:",
+          "options": ["Humans", "Mosquitoes", "Birds", "Rodents"],
+          "answer": 1
+        },
+        {
+          "question": "Toxoplasmosis is particularly dangerous during:",
+          "options": ["Childhood", "Pregnancy", "Old age", "Adolescence"],
+          "answer": 1
+        },
+        {
+          "question": "The definitive host for Toxoplasma gondii is:",
+          "options": ["Humans", "Dogs", "Cats", "Rodents"],
+          "answer": 2
+        },
+        {
+          "question": "Cryptococcus neoformans causes disease primarily in:",
+          "options": ["Healthy individuals", "Immunocompromised patients", "Children only", "Pregnant women only"],
+          "answer": 1
+        },
+        {
+          "question": "Athlete's foot is caused by:",
+          "options": ["Bacteria", "Viruses", "Dermatophyte fungi", "Protozoa"],
+          "answer": 2
+        },
+        {
+          "question": "Systemic fungal infections are most commonly seen in:",
+          "options": ["Healthy adults", "Immunocompromised patients", "Athletes", "Newborns only"],
+          "answer": 1
+        },
+        {
+          "question": "The Koplik spots are pathognomonic for:",
+          "options": ["Rubella", "Measles", "Chickenpox", "Scarlet fever"],
+          "answer": 1
+        },
+        {
+          "question": "German measles is particularly dangerous in:",
+          "options": ["Children", "Elderly", "Pregnant women", "Athletes"],
+          "answer": 2
+        },
+        {
+          "question": "Mumps virus primarily affects the:",
+          "options": ["Lungs", "Parotid salivary glands", "Liver", "Kidneys"],
+          "answer": 1
+        },
+        {
+          "question": "Herd immunity threshold depends on:",
+          "options": ["The weather", "The basic reproduction number (R0) of the pathogen", "The age of the population", "Geographic location only"],
+          "answer": 1
+        },
+        {
+          "question": "Which vaccine is contraindicated in immunocompromised patients?",
+          "options": ["Inactivated vaccines", "Live attenuated vaccines", "Subunit vaccines", "Toxoid vaccines"],
+          "answer": 1
+        },
+        {
+          "question": "The BCG vaccine protects against:",
+          "options": ["Hepatitis B", "Tuberculosis", "Pertussis", "Polio"],
+          "answer": 1
+        },
+        {
+          "question": "HIV viral load testing measures:",
+          "options": ["CD4 cell count", "Amount of HIV RNA in blood", "Antibody levels", "White blood cell count"],
+          "answer": 1
+        },
+        {
+          "question": "HAART (Highly Active Antiretroviral Therapy) for HIV typically includes:",
+          "options": ["One drug", "Two drugs", "Combination of multiple drug classes", "No drugs, only monitoring"],
+          "answer": 2
+        },
+        {
+          "question": "Fomites are:",
+          "options": ["Types of bacteria", "Inanimate objects that can transmit pathogens", "Viral particles", "Fungal spores"],
+          "answer": 1
+        },
+        {
+          "question": "The incubation period is:",
+          "options": ["When symptoms are most severe", "Time between infection and symptom onset", "The recovery period", "When the pathogen is most transmissible"],
+          "answer": 1
+        },
+        {
+          "question": "A pandemic differs from an epidemic in that:",
+          "options": ["It affects more people", "It spreads worldwide across multiple continents", "It lasts longer", "It is caused by bacteria only"],
+          "answer": 1
+        },
+        {
+          "question": "An endemic disease is one that:",
+          "options": ["Spreads rapidly", "Is constantly present in a population at baseline levels", "Only affects animals", "Is always fatal"],
+          "answer": 1
+        },
+        {
+          "question": "A zoonotic disease is:",
+          "options": ["Spread by insects", "Transmitted from animals to humans", "Only found in zoos", "A bacterial disease"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is a vector-borne disease?",
+          "options": ["Tuberculosis", "Malaria", "Strep throat", "Hepatitis B"],
+          "answer": 1
+        },
+        {
+          "question": "Superantigens cause disease by:",
+          "options": ["Destroying red blood cells", "Non-specifically activating large numbers of T cells", "Blocking antibody production", "Inhibiting complement"],
+          "answer": 1
+        },
+        {
+          "question": "The Jarisch-Herxheimer reaction occurs during treatment of:",
+          "options": ["Tuberculosis", "Syphilis and other spirochetal infections", "Malaria", "Viral infections"],
+          "answer": 1
+        },
+        {
+          "question": "Toxic shock syndrome can be caused by:",
+          "options": ["E. coli", "Staphylococcus aureus superantigens", "Salmonella", "Candida"],
+          "answer": 1
+        },
+        {
+          "question": "The normal flora of the gut provides protection by:",
+          "options": ["Producing antibodies", "Competing with pathogens for nutrients and space", "Killing all bacteria", "Increasing stomach acid"],
+          "answer": 1
+        },
+        {
+          "question": "Opportunistic infections occur when:",
+          "options": ["Pathogens become more virulent", "Host defenses are compromised", "Bacteria mutate", "Viruses replicate faster"],
+          "answer": 1
+        },
+        {
+          "question": "CRISPR-Cas9 is used for:",
+          "options": ["Antibiotic production", "Genome editing", "Vaccine development only", "Sterilization"],
+          "answer": 1
+        },
+        {
+          "question": "The polymerase chain reaction (PCR) is used to:",
+          "options": ["Culture bacteria", "Amplify specific DNA sequences", "Produce antibodies", "Identify proteins"],
+          "answer": 1
+        },
+        {
+          "question": "ELISA testing detects:",
+          "options": ["DNA only", "Antigens or antibodies", "Live bacteria", "Viral RNA only"],
+          "answer": 1
+        },
+        {
+          "question": "Western blotting is used to detect:",
+          "options": ["DNA", "RNA", "Specific proteins", "Carbohydrates"],
+          "answer": 2
+        },
+        {
+          "question": "The term 'broad-spectrum antibiotic' means:",
+          "options": ["It is very potent", "It is effective against many different types of bacteria", "It only works against Gram-positive bacteria", "It is given in high doses"],
+          "answer": 1
+        },
+        {
+          "question": "Bacteriophage therapy uses:",
+          "options": ["Antibiotics from bacteria", "Viruses to kill specific bacteria", "Radiation", "Heat treatment"],
+          "answer": 1
+        },
+        {
+          "question": "The LD50 of a pathogen is:",
+          "options": ["The dose that infects 50% of subjects", "The dose that kills 50% of test subjects", "The time to cause disease", "The immune response threshold"],
+          "answer": 1
+        },
+        {
+          "question": "Virulence factors include all of the following EXCEPT:",
+          "options": ["Adhesins", "Capsules", "Toxins", "Ribosomes"],
+          "answer": 3
+        },
+        {
+          "question": "Siderophores help pathogens by:",
+          "options": ["Evading antibodies", "Acquiring iron from the host", "Destroying cell membranes", "Inhibiting phagocytosis"],
+          "answer": 1
+        },
+        {
+          "question": "The portal of entry most commonly used by respiratory pathogens is the:",
+          "options": ["Gastrointestinal tract", "Mucous membranes of the respiratory tract", "Skin", "Urogenital tract"],
+          "answer": 1
+        },
+        {
+          "question": "Nosocomial infections are associated with:",
+          "options": ["Food consumption", "Healthcare facilities", "Outdoor activities", "Sexual contact"],
+          "answer": 1
+        },
+        {
+          "question": "Hand hygiene is the most effective way to prevent:",
+          "options": ["Airborne infections only", "Healthcare-associated infections", "Genetic diseases", "Autoimmune disorders"],
+          "answer": 1
+        },
+        {
+          "question": "Sterilization differs from disinfection in that sterilization:",
+          "options": ["Only kills bacteria", "Eliminates ALL microorganisms including spores", "Uses only chemicals", "Is only for skin"],
+          "answer": 1
+        },
+        {
+          "question": "Autoclave sterilization uses:",
+          "options": ["Dry heat", "Moist heat under pressure", "UV radiation", "Gamma radiation"],
+          "answer": 1
+        },
+        {
+          "question": "Which disinfectant level is required to kill bacterial endospores?",
+          "options": ["Low-level", "Intermediate-level", "High-level or sterilant", "Any level"],
+          "answer": 2
+        },
+        {
+          "question": "The decimal reduction time (D-value) represents:",
+          "options": ["Time to kill all organisms", "Time to reduce population by 90%", "Time to double the population", "Time for disinfectant action"],
+          "answer": 1
+        },
+        {
+          "question": "Quaternary ammonium compounds are effective against:",
+          "options": ["Bacterial endospores", "Most bacteria and enveloped viruses", "All viruses", "Prions"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is bactericidal?",
+          "options": ["Tetracycline", "Penicillin", "Erythromycin", "Chloramphenicol"],
+          "answer": 1
+        },
+        {
+          "question": "Sulfonamides work by:",
+          "options": ["Inhibiting cell wall synthesis", "Inhibiting folic acid synthesis", "Disrupting cell membranes", "Blocking protein synthesis"],
+          "answer": 1
+        },
+        {
+          "question": "Isoniazid is specifically used to treat:",
+          "options": ["Strep throat", "Tuberculosis", "UTIs", "Skin infections"],
+          "answer": 1
+        },
+        {
+          "question": "Amphotericin B is used to treat:",
+          "options": ["Bacterial infections", "Viral infections", "Fungal infections", "Parasitic infections"],
+          "answer": 2
+        },
+        {
+          "question": "Metronidazole is effective against:",
+          "options": ["Aerobic bacteria only", "Anaerobic bacteria and protozoa", "Viruses", "Fungi"],
+          "answer": 1
+        },
+        {
+          "question": "The Kirby-Bauer disk diffusion test measures:",
+          "options": ["MIC directly", "Antibiotic susceptibility", "Bacterial growth rate", "Toxin production"],
+          "answer": 1
+        },
+        {
+          "question": "Broad-spectrum antibiotics can lead to:",
+          "options": ["Enhanced immunity", "Superinfection with opportunistic pathogens", "Faster recovery", "Increased normal flora"],
+          "answer": 1
+        },
+        {
+          "question": "Thrush is caused by overgrowth of:",
+          "options": ["Bacteria", "Candida albicans", "Viruses", "Parasites"],
+          "answer": 1
+        },
+        {
+          "question": "A chronic carrier of a pathogen:",
+          "options": ["Always shows symptoms", "May be asymptomatic while shedding organisms", "Cannot transmit disease", "Is immune to reinfection"],
+          "answer": 1
+        },
+        {
+          "question": "The period of illness is characterized by:",
+          "options": ["No symptoms", "Most severe signs and symptoms", "Recovery phase", "Incubation"],
+          "answer": 1
+        }
+      ]
     }
   }
 }
