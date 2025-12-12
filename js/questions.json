@@ -2379,226 +2379,6 @@
           "answer": 1
         },
         {
-          "question": "The target for most COVID-19 vaccines is the:",
-          "options": ["Nucleocapsid protein", "Membrane protein", "Spike (S) protein", "Envelope protein"],
-          "answer": 2
-        },
-        {
-          "question": "Pfizer and Moderna COVID-19 vaccines are what type?",
-          "options": ["Live attenuated", "Inactivated whole virus", "mRNA vaccines", "Subunit vaccines"],
-          "answer": 2
-        },
-        {
-          "question": "A cytokine storm involves:",
-          "options": ["Bacterial overgrowth", "An excessive, damaging immune response", "Viral mutation", "Antibiotic resistance"],
-          "answer": 1
-        },
-        {
-          "question": "Which test is used to differentiate Staphylococcus from Streptococcus?",
-          "options": ["Coagulase test", "Catalase test", "Oxidase test", "Urease test"],
-          "answer": 1
-        },
-        {
-          "question": "Staphylococcus aureus is positive for which enzyme that distinguishes it from other staphylococci?",
-          "options": ["Catalase", "Coagulase", "Urease", "Oxidase"],
-          "answer": 1
-        },
-        {
-          "question": "Beta-hemolysis on blood agar shows:",
-          "options": ["Green discoloration around colonies", "Complete clear zone around colonies", "No change in the agar", "Black discoloration"],
-          "answer": 1
-        },
-        {
-          "question": "Alpha-hemolysis on blood agar shows:",
-          "options": ["Complete clearing", "Greenish discoloration around colonies", "No change", "Red discoloration"],
-          "answer": 1
-        },
-        {
-          "question": "Streptococcus pyogenes belongs to which Lancefield group?",
-          "options": ["Group B", "Group C", "Group A", "Group D"],
-          "answer": 2
-        },
-        {
-          "question": "The tetanus toxin (tetanospasmin) causes:",
-          "options": ["Flaccid paralysis", "Spastic paralysis by blocking inhibitory neurotransmitters", "Diarrhea", "Skin lesions"],
-          "answer": 1
-        },
-        {
-          "question": "Botulinum toxin causes disease by:",
-          "options": ["Blocking inhibitory neurotransmitters", "Blocking acetylcholine release at neuromuscular junctions", "Destroying nerve cells", "Causing inflammation"],
-          "answer": 1
-        },
-        {
-          "question": "Which toxin is the most potent biological toxin known?",
-          "options": ["Tetanus toxin", "Cholera toxin", "Botulinum toxin", "Diphtheria toxin"],
-          "answer": 2
-        },
-        {
-          "question": "Rabies virus travels to the brain via:",
-          "options": ["Bloodstream", "Lymphatic system", "Peripheral nerves", "Direct invasion"],
-          "answer": 2
-        },
-        {
-          "question": "Once rabies symptoms appear, the prognosis is:",
-          "options": ["50% survival", "90% survival with treatment", "Nearly 100% fatal", "Variable depending on treatment"],
-          "answer": 2
-        },
-        {
-          "question": "Negri bodies are diagnostic inclusion bodies found in:",
-          "options": ["Bacterial infections", "Rabies-infected nerve cells", "Fungal infections", "Prion diseases"],
-          "answer": 1
-        },
-        {
-          "question": "Rabies post-exposure prophylaxis (PEP) must be given:",
-          "options": ["Only after symptoms appear", "Before symptoms appear to be effective", "At any time during infection", "Only before exposure"],
-          "answer": 1
-        },
-        {
-          "question": "Mycobacterium leprae (leprosy) prefers:",
-          "options": ["High body temperature areas", "Cooler parts of the body (grows best at 30°C)", "Only internal organs", "The bloodstream"],
-          "answer": 1
-        },
-        {
-          "question": "Leprosy damages which cells in the peripheral nervous system?",
-          "options": ["Axons", "Schwann cells (myelin sheath)", "Dendrites", "Neuromuscular junctions"],
-          "answer": 1
-        },
-        {
-          "question": "The characteristic pseudomembrane in diphtheria is located in the:",
-          "options": ["Lungs", "Throat", "Stomach", "Skin"],
-          "answer": 1
-        },
-        {
-          "question": "Diphtheria toxin is classified as:",
-          "options": ["Endotoxin", "AB exotoxin that inhibits protein synthesis", "Neurotoxin", "Enterotoxin"],
-          "answer": 1
-        },
-        {
-          "question": "Whooping cough (pertussis) is caused by:",
-          "options": ["Corynebacterium diphtheriae", "Bordetella pertussis", "Streptococcus pneumoniae", "Mycobacterium tuberculosis"],
-          "answer": 1
-        },
-        {
-          "question": "The tracheal cytotoxin of Bordetella pertussis:",
-          "options": ["Causes the whooping sound", "Destroys ciliated cells, disabling the mucociliary escalator", "Produces fever", "Causes the pseudomembrane"],
-          "answer": 1
-        },
-        {
-          "question": "A tubercle (granuloma) in tuberculosis contains:",
-          "options": ["Only bacteria", "Walled-off bacteria surrounded by immune cells", "Dead lung tissue only", "Viral particles"],
-          "answer": 1
-        },
-        {
-          "question": "Latent TB differs from active TB in that:",
-          "options": ["Latent TB is contagious", "Latent TB has no symptoms and is not contagious; active TB has symptoms and is contagious", "They are the same", "Active TB cannot be treated"],
-          "answer": 1
-        },
-        {
-          "question": "The Mantoux test (PPD) detects:",
-          "options": ["Active TB infection", "Previous exposure to Mycobacterium tuberculosis", "Antibiotic resistance", "Viral load"],
-          "answer": 1
-        },
-        {
-          "question": "Cholera toxin causes:",
-          "options": ["Bloody diarrhea", "Massive secretory (watery) diarrhea", "Constipation", "Vomiting only"],
-          "answer": 1
-        },
-        {
-          "question": "Rice-water stool is characteristic of:",
-          "options": ["Shigellosis", "Salmonellosis", "Cholera", "EHEC infection"],
-          "answer": 2
-        },
-        {
-          "question": "EHEC (E. coli O157:H7) produces which toxin?",
-          "options": ["Cholera toxin", "Shiga toxin", "Botulinum toxin", "Tetanus toxin"],
-          "answer": 1
-        },
-        {
-          "question": "A serious complication of EHEC infection is:",
-          "options": ["Typhoid fever", "Hemolytic Uremic Syndrome (HUS)", "Meningitis", "Pneumonia"],
-          "answer": 1
-        },
-        {
-          "question": "Helicobacter pylori survives in the acidic stomach by producing:",
-          "options": ["Acid", "Urease (converts urea to ammonia)", "Mucus", "Antibodies"],
-          "answer": 1
-        },
-        {
-          "question": "H. pylori is associated with increased risk of:",
-          "options": ["Lung cancer", "Gastric cancer", "Breast cancer", "Leukemia"],
-          "answer": 1
-        },
-        {
-          "question": "Neisseria gonorrhoeae is a:",
-          "options": ["Gram-positive coccus", "Gram-negative diplococcus", "Gram-positive rod", "Spirochete"],
-          "answer": 1
-        },
-        {
-          "question": "The primary concern with treating gonorrhea is:",
-          "options": ["No treatment exists", "Increasing antibiotic resistance", "It always resolves spontaneously", "Vaccines are ineffective"],
-          "answer": 1
-        },
-        {
-          "question": "Chlamydia trachomatis is an obligate intracellular parasite because:",
-          "options": ["It is a virus", "It cannot make its own ATP", "It has no cell wall", "It requires specific nutrients"],
-          "answer": 1
-        },
-        {
-          "question": "Pelvic Inflammatory Disease (PID) can be caused by:",
-          "options": ["HPV", "Neisseria gonorrhoeae and Chlamydia trachomatis", "Candida", "Herpes simplex"],
-          "answer": 1
-        },
-        {
-          "question": "Treponema pallidum, the cause of syphilis, is a:",
-          "options": ["Coccus", "Rod", "Spirochete", "Vibrio"],
-          "answer": 2
-        },
-        {
-          "question": "The primary stage of syphilis is characterized by:",
-          "options": ["Rash on palms and soles", "Painless chancre at the infection site", "Neurological symptoms", "Gummas"],
-          "answer": 1
-        },
-        {
-          "question": "Secondary syphilis is characterized by:",
-          "options": ["Chancre only", "Skin rash (including palms and soles) and is highly contagious", "Gummas", "Cardiovascular damage"],
-          "answer": 1
-        },
-        {
-          "question": "Tertiary syphilis may involve:",
-          "options": ["Only skin manifestations", "Gummas, cardiovascular disease, and neurosyphilis", "No symptoms", "Complete recovery"],
-          "answer": 1
-        },
-        {
-          "question": "HPV types 16 and 18 are considered high-risk because they:",
-          "options": ["Cause warts", "Are associated with cervical cancer", "Are the most contagious", "Cannot be prevented by vaccination"],
-          "answer": 1
-        },
-        {
-          "question": "The Gardasil vaccine protects against:",
-          "options": ["Herpes simplex virus", "Human papillomavirus (HPV)", "Chlamydia", "Gonorrhea"],
-          "answer": 1
-        },
-        {
-          "question": "Bacterial vaginosis is characterized by:",
-          "options": ["Thick, white discharge", "Fishy odor and thin gray discharge", "Painful ulcers", "Warts"],
-          "answer": 1
-        },
-        {
-          "question": "The most common cause of urinary tract infections is:",
-          "options": ["Staphylococcus aureus", "Escherichia coli", "Streptococcus pyogenes", "Pseudomonas aeruginosa"],
-          "answer": 1
-        },
-        {
-          "question": "Lactobacillus in the vagina protects against infection by:",
-          "options": ["Producing antibiotics", "Producing lactic acid to maintain low pH", "Forming a physical barrier", "Secreting antibodies"],
-          "answer": 1
-        },
-        {
-          "question": "Congenital syphilis refers to:",
-          "options": ["Syphilis acquired through sexual contact", "Syphilis transmitted from mother to fetus during pregnancy", "Syphilis in elderly patients", "Syphilis acquired through blood transfusion"],
-          "answer": 1
-        },
-        {
           "question": "What is the minimum magnification typically needed to see bacteria?",
           "options": ["10x", "100x", "1000x", "10,000x"],
           "answer": 2
@@ -2649,31 +2429,6 @@
           "answer": 1
         },
         {
-          "question": "Which immunoglobulin is the most abundant in blood and provides long-term immunity?",
-          "options": ["IgA", "IgM", "IgG", "IgE"],
-          "answer": 2
-        },
-        {
-          "question": "IgA is primarily found in:",
-          "options": ["Blood only", "Mucosal secretions", "Lymph nodes", "Bone marrow"],
-          "answer": 1
-        },
-        {
-          "question": "Which cells are the primary targets of HIV?",
-          "options": ["Red blood cells", "CD4+ T helper cells", "B cells", "Neutrophils"],
-          "answer": 1
-        },
-        {
-          "question": "Opsonization enhances phagocytosis by:",
-          "options": ["Killing pathogens directly", "Coating pathogens for easier recognition by phagocytes", "Producing inflammation", "Activating T cells"],
-          "answer": 1
-        },
-        {
-          "question": "The complement system can be activated by all of the following EXCEPT:",
-          "options": ["Antibodies bound to pathogens", "Pathogen surfaces directly", "Mannose-binding lectin", "ATP molecules"],
-          "answer": 3
-        },
-        {
           "question": "A vaccine that contains weakened but live pathogens is called:",
           "options": ["Inactivated vaccine", "Subunit vaccine", "Live attenuated vaccine", "Toxoid vaccine"],
           "answer": 2
@@ -2699,18 +2454,8 @@
           "answer": 1
         },
         {
-          "question": "Which of the following diseases is caused by a spirochete?",
-          "options": ["Tuberculosis", "Syphilis", "Gonorrhea", "Chlamydia"],
-          "answer": 1
-        },
-        {
-          "question": "The Wassermann test and its modern equivalents are used to diagnose:",
-          "options": ["Gonorrhea", "Syphilis", "Chlamydia", "HPV"],
-          "answer": 1
-        },
-        {
           "question": "Which organism can survive and replicate within macrophages?",
-          "options": ["Streptococcus pyogenes", "Mycobacterium tuberculosis", "Staphylococcus epidermidis", "Neisseria gonorrhoeae"],
+          "options": ["Streptococcus pyogenes", "Mycobacterium tuberculosis", "Staphylococcus epidermidis", "Bacillus subtilis"],
           "answer": 1
         },
         {
@@ -2819,119 +2564,14 @@
           "answer": 1
         },
         {
-          "question": "Which hepatitis virus is most likely to cause chronic infection?",
-          "options": ["Hepatitis A", "Hepatitis B", "Hepatitis E", "All equally likely"],
-          "answer": 1
-        },
-        {
           "question": "The eclipse period during viral replication is when:",
           "options": ["Viruses are released from the cell", "No complete virions can be detected in the cell", "The virus attaches to the cell", "The cell divides"],
           "answer": 1
         },
         {
-          "question": "Innate immunity is characterized by:",
-          "options": ["Memory response", "Specificity for individual pathogens", "Rapid, non-specific response", "Antibody production"],
-          "answer": 2
-        },
-        {
-          "question": "Toll-like receptors (TLRs) recognize:",
-          "options": ["Specific antigens", "Pathogen-associated molecular patterns (PAMPs)", "Antibodies", "MHC molecules"],
+          "question": "Dermatophyte fungi cause infections by digesting:",
+          "options": ["Collagen", "Keratin", "Elastin", "Melanin"],
           "answer": 1
-        },
-        {
-          "question": "The membrane attack complex (MAC) is formed by:",
-          "options": ["Antibodies", "T cells", "Complement proteins", "Phagocytes"],
-          "answer": 2
-        },
-        {
-          "question": "MHC Class I molecules present antigens to:",
-          "options": ["B cells", "CD4+ T cells", "CD8+ T cells", "NK cells only"],
-          "answer": 2
-        },
-        {
-          "question": "MHC Class II molecules are found on:",
-          "options": ["All nucleated cells", "Antigen-presenting cells only", "Red blood cells", "Neurons only"],
-          "answer": 1
-        },
-        {
-          "question": "Helper T cells (CD4+) primarily function by:",
-          "options": ["Directly killing infected cells", "Secreting cytokines to coordinate immune response", "Producing antibodies", "Phagocytosis"],
-          "answer": 1
-        },
-        {
-          "question": "Plasma cells are derived from:",
-          "options": ["T cells", "B cells", "Macrophages", "Neutrophils"],
-          "answer": 1
-        },
-        {
-          "question": "Memory cells provide:",
-          "options": ["Immediate non-specific response", "Faster and stronger secondary immune response", "Constant antibody production", "Phagocytic activity"],
-          "answer": 1
-        },
-        {
-          "question": "Anaphylaxis is mediated primarily by:",
-          "options": ["IgG", "IgA", "IgE", "IgM"],
-          "answer": 2
-        },
-        {
-          "question": "Type IV hypersensitivity is:",
-          "options": ["Antibody-mediated", "Delayed-type T cell-mediated", "Complement-mediated", "IgE-mediated"],
-          "answer": 1
-        },
-        {
-          "question": "Autoimmune diseases occur when:",
-          "options": ["Pathogens attack the immune system", "The immune system attacks self-antigens", "Vaccines cause allergies", "Antibiotics kill normal flora"],
-          "answer": 1
-        },
-        {
-          "question": "The causative agent of anthrax is:",
-          "options": ["Bacillus cereus", "Bacillus anthracis", "Clostridium perfringens", "Clostridium botulinum"],
-          "answer": 1
-        },
-        {
-          "question": "Gas gangrene is caused by:",
-          "options": ["Clostridium tetani", "Clostridium perfringens", "Clostridium difficile", "Clostridium botulinum"],
-          "answer": 1
-        },
-        {
-          "question": "Which organism causes peptic ulcers and is associated with gastric cancer?",
-          "options": ["Escherichia coli", "Helicobacter pylori", "Salmonella typhi", "Campylobacter jejuni"],
-          "answer": 1
-        },
-        {
-          "question": "Rocky Mountain spotted fever is transmitted by:",
-          "options": ["Mosquitoes", "Ticks", "Fleas", "Lice"],
-          "answer": 1
-        },
-        {
-          "question": "Malaria is caused by:",
-          "options": ["Bacteria", "Viruses", "Plasmodium species", "Fungi"],
-          "answer": 2
-        },
-        {
-          "question": "The definitive host for Plasmodium (malaria) is:",
-          "options": ["Humans", "Mosquitoes", "Birds", "Rodents"],
-          "answer": 1
-        },
-        {
-          "question": "Toxoplasmosis is particularly dangerous during:",
-          "options": ["Childhood", "Pregnancy", "Old age", "Adolescence"],
-          "answer": 1
-        },
-        {
-          "question": "The definitive host for Toxoplasma gondii is:",
-          "options": ["Humans", "Dogs", "Cats", "Rodents"],
-          "answer": 2
-        },
-        {
-          "question": "Cryptococcus neoformans causes disease primarily in:",
-          "options": ["Healthy individuals", "Immunocompromised patients", "Children only", "Pregnant women only"],
-          "answer": 1
-        },
-        {
-          "question": "Athlete's foot is caused by:",
-          "options": ["Bacteria", "Viruses", "Dermatophyte fungi", "Protozoa"],
-          "answer": 2
         },
         {
           "question": "Systemic fungal infections are most commonly seen in:",
@@ -2939,18 +2579,8 @@
           "answer": 1
         },
         {
-          "question": "The Koplik spots are pathognomonic for:",
-          "options": ["Rubella", "Measles", "Chickenpox", "Scarlet fever"],
-          "answer": 1
-        },
-        {
-          "question": "German measles is particularly dangerous in:",
-          "options": ["Children", "Elderly", "Pregnant women", "Athletes"],
-          "answer": 2
-        },
-        {
-          "question": "Mumps virus primarily affects the:",
-          "options": ["Lungs", "Parotid salivary glands", "Liver", "Kidneys"],
+          "question": "Cryptococcus neoformans is identified in CSF using:",
+          "options": ["Gram stain", "India ink stain", "Acid-fast stain", "Spore stain"],
           "answer": 1
         },
         {
@@ -2959,24 +2589,9 @@
           "answer": 1
         },
         {
-          "question": "Which vaccine is contraindicated in immunocompromised patients?",
+          "question": "Which vaccine type uses weakened but live pathogens?",
           "options": ["Inactivated vaccines", "Live attenuated vaccines", "Subunit vaccines", "Toxoid vaccines"],
           "answer": 1
-        },
-        {
-          "question": "The BCG vaccine protects against:",
-          "options": ["Hepatitis B", "Tuberculosis", "Pertussis", "Polio"],
-          "answer": 1
-        },
-        {
-          "question": "HIV viral load testing measures:",
-          "options": ["CD4 cell count", "Amount of HIV RNA in blood", "Antibody levels", "White blood cell count"],
-          "answer": 1
-        },
-        {
-          "question": "HAART (Highly Active Antiretroviral Therapy) for HIV typically includes:",
-          "options": ["One drug", "Two drugs", "Combination of multiple drug classes", "No drugs, only monitoring"],
-          "answer": 2
         },
         {
           "question": "Fomites are:",
@@ -3005,22 +2620,7 @@
         },
         {
           "question": "Which of the following is a vector-borne disease?",
-          "options": ["Tuberculosis", "Malaria", "Strep throat", "Hepatitis B"],
-          "answer": 1
-        },
-        {
-          "question": "Superantigens cause disease by:",
-          "options": ["Destroying red blood cells", "Non-specifically activating large numbers of T cells", "Blocking antibody production", "Inhibiting complement"],
-          "answer": 1
-        },
-        {
-          "question": "The Jarisch-Herxheimer reaction occurs during treatment of:",
-          "options": ["Tuberculosis", "Syphilis and other spirochetal infections", "Malaria", "Viral infections"],
-          "answer": 1
-        },
-        {
-          "question": "Toxic shock syndrome can be caused by:",
-          "options": ["E. coli", "Staphylococcus aureus superantigens", "Salmonella", "Candida"],
+          "options": ["Tuberculosis", "Lyme disease", "Strep throat", "Hepatitis B"],
           "answer": 1
         },
         {
