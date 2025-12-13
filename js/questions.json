@@ -2767,6 +2767,426 @@
           "question": "The period of illness is characterized by:",
           "options": ["No symptoms", "Most severe signs and symptoms", "Recovery phase", "Incubation"],
           "answer": 1
+        },
+        {
+          "question": "Glycolysis occurs in which cellular location?",
+          "options": ["Mitochondria", "Nucleus", "Cytoplasm", "Endoplasmic reticulum"],
+          "answer": 2
+        },
+        {
+          "question": "The net ATP yield from glycolysis is:",
+          "options": ["4 ATP", "2 ATP", "36 ATP", "0 ATP"],
+          "answer": 1
+        },
+        {
+          "question": "In aerobic respiration, the final electron acceptor is:",
+          "options": ["NAD+", "FAD", "Oxygen", "Carbon dioxide"],
+          "answer": 2
+        },
+        {
+          "question": "The Krebs cycle occurs in the _____ of prokaryotes.",
+          "options": ["Plasma membrane", "Cytoplasm", "Nucleus", "Ribosome"],
+          "answer": 1
+        },
+        {
+          "question": "Which process produces the most ATP during cellular respiration?",
+          "options": ["Glycolysis", "Krebs cycle", "Electron transport chain and chemiosmosis", "Fermentation"],
+          "answer": 2
+        },
+        {
+          "question": "ATP synthase produces ATP using energy from:",
+          "options": ["Direct substrate phosphorylation", "The proton gradient across the membrane", "Light energy", "Heat energy"],
+          "answer": 1
+        },
+        {
+          "question": "Lactic acid fermentation is performed by:",
+          "options": ["Yeast", "Streptococcus and Lactobacillus", "E. coli", "Clostridium"],
+          "answer": 1
+        },
+        {
+          "question": "Alcoholic fermentation produces:",
+          "options": ["Lactic acid and ATP", "Ethanol, CO2, and ATP", "Oxygen and water", "Pyruvate only"],
+          "answer": 1
+        },
+        {
+          "question": "NAD+ functions as an:",
+          "options": ["Enzyme", "Electron carrier", "Amino acid", "Structural protein"],
+          "answer": 1
+        },
+        {
+          "question": "When NAD+ accepts electrons, it becomes:",
+          "options": ["NAD", "NADH", "NADP+", "ATP"],
+          "answer": 1
+        },
+        {
+          "question": "In 'LEO says GER', LEO stands for:",
+          "options": ["Lose Electrons Oxidation", "Light Energy Obtains", "Low Energy Output", "Lipid Enzyme Oxidation"],
+          "answer": 0
+        },
+        {
+          "question": "Feedback inhibition occurs when:",
+          "options": ["A substrate inhibits its own enzyme", "The end product of a pathway inhibits an earlier enzyme", "Enzymes are denatured by heat", "ATP levels are too low"],
+          "answer": 1
+        },
+        {
+          "question": "Competitive inhibition occurs when an inhibitor:",
+          "options": ["Binds to the allosteric site", "Blocks the active site by mimicking the substrate", "Permanently denatures the enzyme", "Increases enzyme activity"],
+          "answer": 1
+        },
+        {
+          "question": "Bacteria that grow best at 37°C are classified as:",
+          "options": ["Psychrophiles", "Mesophiles", "Thermophiles", "Hyperthermophiles"],
+          "answer": 1
+        },
+        {
+          "question": "Which temperature classification includes most human pathogens?",
+          "options": ["Psychrophiles", "Mesophiles", "Thermophiles", "Acidophiles"],
+          "answer": 1
+        },
+        {
+          "question": "Acidophiles prefer a pH of:",
+          "options": ["7.0", "Above 8.5", "Below 5.5", "Exactly 6.0"],
+          "answer": 2
+        },
+        {
+          "question": "An organism that obtains energy from light and carbon from CO2 is a:",
+          "options": ["Chemoheterotroph", "Photoautotroph", "Chemoautotroph", "Photoheterotroph"],
+          "answer": 1
+        },
+        {
+          "question": "Most pathogens and animals are classified as:",
+          "options": ["Photoautotrophs", "Chemoautotrophs", "Chemoheterotrophs", "Photoheterotrophs"],
+          "answer": 2
+        },
+        {
+          "question": "During the lag phase of bacterial growth:",
+          "options": ["Cells are dividing rapidly", "Cells are preparing and synthesizing enzymes", "Cell death exceeds cell division", "The population is declining"],
+          "answer": 1
+        },
+        {
+          "question": "Antibiotics are most effective during which growth phase?",
+          "options": ["Lag phase", "Log (exponential) phase", "Stationary phase", "Death phase"],
+          "answer": 1
+        },
+        {
+          "question": "During the stationary phase:",
+          "options": ["Cells divide at maximum rate", "The growth rate equals the death rate", "All cells are dying", "Cells are preparing to divide"],
+          "answer": 1
+        },
+        {
+          "question": "Superoxide dismutase protects bacteria from:",
+          "options": ["Antibiotics", "Toxic oxygen products", "UV radiation", "Heat"],
+          "answer": 1
+        },
+        {
+          "question": "UV radiation causes DNA damage by creating:",
+          "options": ["Single-strand breaks", "Thymine dimers", "Base deletions", "Chromosome rearrangements"],
+          "answer": 1
+        },
+        {
+          "question": "The most effective wavelength for UV germicidal activity is:",
+          "options": ["400 nm", "260 nm", "100 nm", "550 nm"],
+          "answer": 1
+        },
+        {
+          "question": "70% alcohol is more effective than 100% alcohol because:",
+          "options": ["It evaporates faster", "Water is needed for protein denaturation", "It is less toxic", "It penetrates better"],
+          "answer": 1
+        },
+        {
+          "question": "Hydrogen peroxide is particularly effective against:",
+          "options": ["Endospores only", "Anaerobes", "Gram-positive bacteria only", "Prions"],
+          "answer": 1
+        },
+        {
+          "question": "Triclosan works by inhibiting:",
+          "options": ["Cell wall synthesis", "An enzyme for fatty acid synthesis", "Protein synthesis", "DNA replication"],
+          "answer": 1
+        },
+        {
+          "question": "Chlorine-based disinfectants like bleach work by:",
+          "options": ["Disrupting membranes only", "Denaturing proteins", "Causing DNA mutations", "Blocking ATP synthesis"],
+          "answer": 1
+        },
+        {
+          "question": "In Griffith's experiment, the living R strain became virulent after mixing with:",
+          "options": ["Living S strain", "Heat-killed S strain", "Antibiotics", "Penicillin"],
+          "answer": 1
+        },
+        {
+          "question": "The lac operon is an example of:",
+          "options": ["Constitutive expression", "Inducible gene regulation", "Repressible gene regulation", "No regulation"],
+          "answer": 1
+        },
+        {
+          "question": "Polyribosomes allow:",
+          "options": ["DNA replication on multiple chromosomes", "Multiple ribosomes to translate one mRNA simultaneously", "RNA splicing", "Protein folding"],
+          "answer": 1
+        },
+        {
+          "question": "The mnemonic for purines is 'PURe As Gold' meaning purines are:",
+          "options": ["Cytosine and Thymine", "Adenine and Guanine", "Uracil and Thymine", "All four bases"],
+          "answer": 1
+        },
+        {
+          "question": "How many hydrogen bonds form between guanine and cytosine?",
+          "options": ["1", "2", "3", "4"],
+          "answer": 2
+        },
+        {
+          "question": "Taq polymerase is used in PCR because it is:",
+          "options": ["Very fast", "Heat-stable (from Thermus aquaticus)", "Inexpensive", "Found in humans"],
+          "answer": 1
+        },
+        {
+          "question": "The denaturation step in PCR occurs at approximately:",
+          "options": ["60°C", "72°C", "94°C", "37°C"],
+          "answer": 2
+        },
+        {
+          "question": "After 10 cycles of PCR, how many copies of DNA are produced?",
+          "options": ["10", "20", "100", "1024"],
+          "answer": 3
+        },
+        {
+          "question": "Restriction enzymes create sticky ends that:",
+          "options": ["Cannot be joined", "Have single-stranded overhangs that can base pair", "Are completely double-stranded", "Destroy the DNA"],
+          "answer": 1
+        },
+        {
+          "question": "Electroporation is used to:",
+          "options": ["Visualize DNA", "Introduce DNA into cells using electric pulses", "Cut DNA", "Sequence DNA"],
+          "answer": 1
+        },
+        {
+          "question": "DNA probes are labeled with:",
+          "options": ["Antibiotics", "Fluorescent or radioactive tags", "Enzymes only", "Amino acids"],
+          "answer": 1
+        },
+        {
+          "question": "Dimorphic fungi can exist as:",
+          "options": ["Only yeast", "Only mold", "Either yeast or mold depending on conditions", "Neither yeast nor mold"],
+          "answer": 2
+        },
+        {
+          "question": "Conidiospores are asexual spores that form:",
+          "options": ["Inside a sac (sporangium)", "In chains on a conidiophore", "Through budding", "Through binary fission"],
+          "answer": 1
+        },
+        {
+          "question": "Aspergillus produces which type of asexual spore?",
+          "options": ["Sporangiospores", "Conidiospores", "Arthrospores", "Blastospores"],
+          "answer": 1
+        },
+        {
+          "question": "Yeasts reproduce asexually by:",
+          "options": ["Binary fission", "Budding", "Sporulation", "Fragmentation"],
+          "answer": 1
+        },
+        {
+          "question": "Which protozoan causes 'beaver fever' (giardiasis)?",
+          "options": ["Entamoeba histolytica", "Giardia lamblia", "Trichomonas vaginalis", "Plasmodium"],
+          "answer": 1
+        },
+        {
+          "question": "Which protozoan has NO cyst form and must be transmitted by direct contact?",
+          "options": ["Giardia", "Entamoeba", "Trichomonas vaginalis", "Cryptosporidium"],
+          "answer": 2
+        },
+        {
+          "question": "The 'brain-eating amoeba' Naegleria fowleri enters the body through:",
+          "options": ["Contaminated food", "The nose while swimming in warm freshwater", "Mosquito bites", "Sexual contact"],
+          "answer": 1
+        },
+        {
+          "question": "Trypanosoma cruzi causes Chagas disease and is transmitted by:",
+          "options": ["Mosquitoes", "Kissing bugs", "Ticks", "Sandflies"],
+          "answer": 1
+        },
+        {
+          "question": "The active feeding form of protozoa is called the:",
+          "options": ["Cyst", "Trophozoite", "Sporozoite", "Merozoite"],
+          "answer": 1
+        },
+        {
+          "question": "Schizogony is a type of reproduction where:",
+          "options": ["Two cells fuse", "The nucleus divides multiple times before the cell divides", "Cells divide by budding", "Spores are formed"],
+          "answer": 1
+        },
+        {
+          "question": "Apicomplexa protozoa like Plasmodium are characterized by:",
+          "options": ["Using flagella for movement", "Using cilia for movement", "Being non-motile intracellular parasites", "Using pseudopods"],
+          "answer": 2
+        },
+        {
+          "question": "The eclipse period during viral replication is when:",
+          "options": ["Viruses are released", "No complete virions can be detected inside the cell", "The virus attaches to the cell", "The cell is lysed"],
+          "answer": 1
+        },
+        {
+          "question": "Uncoating refers to:",
+          "options": ["Virus attachment to host cell", "Removal of viral capsid to release nucleic acid", "Virus budding from cell", "Viral DNA replication"],
+          "answer": 1
+        },
+        {
+          "question": "Enveloped viruses typically enter animal cells by:",
+          "options": ["Injection like bacteriophages", "Fusion with the plasma membrane or endocytosis", "Passing through the cell wall", "Binary fission"],
+          "answer": 1
+        },
+        {
+          "question": "Naked (non-enveloped) viruses are generally MORE resistant because:",
+          "options": ["They have larger genomes", "They lack a fragile lipid envelope", "They replicate faster", "They produce toxins"],
+          "answer": 1
+        },
+        {
+          "question": "Latent viral infections differ from persistent infections in that latent infections:",
+          "options": ["Continuously produce viruses", "Have periods of inactivity with possible reactivation", "Always cause symptoms", "Cannot reactivate"],
+          "answer": 1
+        },
+        {
+          "question": "Herpes simplex virus demonstrates which type of infection?",
+          "options": ["Acute only", "Latent infection", "No infection in humans", "Only lytic infection"],
+          "answer": 1
+        },
+        {
+          "question": "Which HIV enzyme is targeted by drugs like AZT?",
+          "options": ["Protease", "Integrase", "Reverse transcriptase", "Helicase"],
+          "answer": 2
+        },
+        {
+          "question": "Chloramphenicol can cause which serious side effect?",
+          "options": ["Hearing loss", "Bone marrow suppression", "Kidney damage", "Liver failure"],
+          "answer": 1
+        },
+        {
+          "question": "Tetracycline absorption is reduced by:",
+          "options": ["Vitamin C", "Calcium and dairy products", "Water", "Protein"],
+          "answer": 1
+        },
+        {
+          "question": "Rifamycin specifically inhibits:",
+          "options": ["DNA gyrase", "Prokaryotic RNA polymerase", "Ribosomes", "Cell wall synthesis"],
+          "answer": 1
+        },
+        {
+          "question": "Aminoglycosides can cause damage to:",
+          "options": ["Liver and spleen", "Kidneys and hearing (ototoxicity)", "Heart and lungs", "Skin and mucous membranes"],
+          "answer": 1
+        },
+        {
+          "question": "Polymyxin B works by disrupting:",
+          "options": ["Cell wall synthesis", "Bacterial plasma membranes", "Protein synthesis", "DNA replication"],
+          "answer": 1
+        },
+        {
+          "question": "Macrolide antibiotics like erythromycin inhibit protein synthesis by:",
+          "options": ["Blocking ribosome assembly", "Blocking translocation on the ribosome", "Preventing tRNA charging", "Destroying mRNA"],
+          "answer": 1
+        },
+        {
+          "question": "What property of penicillin makes it selectively toxic?",
+          "options": ["It only enters bacterial cells", "It targets peptidoglycan synthesis which humans lack", "It is metabolized differently by bacteria", "It accumulates only in infected tissue"],
+          "answer": 1
+        },
+        {
+          "question": "Cephalosporins are similar to penicillins in that they both:",
+          "options": ["Target ribosomes", "Contain a beta-lactam ring", "Are narrow spectrum only", "Cannot cause allergic reactions"],
+          "answer": 1
+        },
+        {
+          "question": "Beta-lactamases confer resistance by:",
+          "options": ["Pumping antibiotics out of the cell", "Breaking the beta-lactam ring of penicillins", "Modifying the ribosome", "Thickening the cell wall"],
+          "answer": 1
+        },
+        {
+          "question": "The prodrug form of acyclovir must be activated by:",
+          "options": ["Human enzymes", "Viral thymidine kinase", "Bacterial enzymes", "Light"],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is NOT a target for antimicrobial drugs?",
+          "options": ["Cell wall synthesis", "Protein synthesis", "ATP synthase in mitochondria", "Folic acid synthesis"],
+          "answer": 2
+        },
+        {
+          "question": "An opportunistic pathogen causes disease when:",
+          "options": ["It mutates", "Host defenses are compromised", "It acquires new virulence factors", "Antibiotics are present"],
+          "answer": 1
+        },
+        {
+          "question": "The term 'endemic' refers to a disease that:",
+          "options": ["Is spreading rapidly", "Is constantly present at baseline levels in a population", "Has been eradicated", "Only affects animals"],
+          "answer": 1
+        },
+        {
+          "question": "An epidemic becomes a pandemic when:",
+          "options": ["More than 100 people are affected", "It spreads worldwide across multiple continents", "It lasts more than one year", "It causes high mortality"],
+          "answer": 1
+        },
+        {
+          "question": "The index case refers to:",
+          "options": ["The most severe case", "The first identified case in an outbreak", "The last case", "A laboratory-confirmed case"],
+          "answer": 1
+        },
+        {
+          "question": "What is the primary function of the ETC (Electron Transport Chain)?",
+          "options": ["Produce CO2", "Create a proton gradient for ATP synthesis", "Break down glucose", "Synthesize proteins"],
+          "answer": 1
+        },
+        {
+          "question": "Anaerobic respiration differs from fermentation in that anaerobic respiration:",
+          "options": ["Produces more ATP", "Uses the electron transport chain with an alternative final electron acceptor", "Does not use glycolysis", "Only occurs in eukaryotes"],
+          "answer": 1
+        },
+        {
+          "question": "Denitrifying bacteria use which compound as a final electron acceptor?",
+          "options": ["Oxygen", "Nitrate (NO3-)", "Water", "Glucose"],
+          "answer": 1
+        },
+        {
+          "question": "Which organelle in eukaryotes contains the electron transport chain?",
+          "options": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
+          "answer": 2
+        },
+        {
+          "question": "Photoautotrophs use which as their energy source?",
+          "options": ["Chemical reactions", "Light", "Organic molecules", "Heat"],
+          "answer": 1
+        },
+        {
+          "question": "A plasmid that carries antibiotic resistance genes is called:",
+          "options": ["F plasmid", "R plasmid", "Virulence plasmid", "Ti plasmid"],
+          "answer": 1
+        },
+        {
+          "question": "Horizontal gene transfer is significant because it allows:",
+          "options": ["Sexual reproduction", "Rapid spread of traits like antibiotic resistance between bacteria", "Viral replication", "Protein synthesis"],
+          "answer": 1
+        },
+        {
+          "question": "Which stain is used to visualize bacterial endospores?",
+          "options": ["Gram stain", "Acid-fast stain", "Schaeffer-Fulton spore stain", "Simple stain"],
+          "answer": 2
+        },
+        {
+          "question": "In negative staining, the background is stained and the organism appears:",
+          "options": ["Purple", "Red", "Colorless/clear against a dark background", "Green"],
+          "answer": 2
+        },
+        {
+          "question": "Oil immersion is used with the 100x objective to:",
+          "options": ["Magnify the specimen more", "Prevent light refraction and increase resolution", "Stain the specimen", "Protect the lens"],
+          "answer": 1
+        },
+        {
+          "question": "Darkfield microscopy is useful for viewing:",
+          "options": ["Stained specimens", "Living, unstained specimens like spirochetes", "Electron-dense specimens", "Fluorescent specimens"],
+          "answer": 1
+        },
+        {
+          "question": "The mnemonic for remembering Gram stain order is:",
+          "options": ["Come In And Sit", "Pour Iodine After Safranin", "Cry Violent In A Storm", "Crystal violet, Iodine, Alcohol, Safranin"],
+          "answer": 3
         }
       ]
     }
