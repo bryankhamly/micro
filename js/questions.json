@@ -2349,36 +2349,6 @@
           "answer": 0
         },
         {
-          "question": "The function of hemagglutinin (H) in influenza virus is to:",
-          "options": ["Release new viruses from cells", "Bind to host cell receptors for entry", "Replicate viral RNA", "Form the viral capsid"],
-          "answer": 1
-        },
-        {
-          "question": "Neuraminidase (N) in influenza virus functions to:",
-          "options": ["Attach to host cells", "Help release new viruses from infected cells", "Synthesize viral proteins", "Protect viral RNA"],
-          "answer": 1
-        },
-        {
-          "question": "Antigenic drift refers to:",
-          "options": ["Major sudden changes in viral antigens", "Small gradual mutations in H and N genes", "Loss of viral antigens", "Transfer of genes between different species"],
-          "answer": 1
-        },
-        {
-          "question": "Antigenic shift occurs when:",
-          "options": ["Small mutations accumulate over time", "Two different influenza viruses infect the same cell and exchange RNA segments", "The virus loses its envelope", "Antibodies neutralize the virus"],
-          "answer": 1
-        },
-        {
-          "question": "Tamiflu (oseltamivir) works by inhibiting:",
-          "options": ["Hemagglutinin", "Neuraminidase", "RNA polymerase", "Reverse transcriptase"],
-          "answer": 1
-        },
-        {
-          "question": "SARS-CoV-2 binds to which receptor on human cells?",
-          "options": ["CD4", "ACE2", "Sialic acid", "CCR5"],
-          "answer": 1
-        },
-        {
           "question": "What is the minimum magnification typically needed to see bacteria?",
           "options": ["10x", "100x", "1000x", "10,000x"],
           "answer": 2
@@ -2624,63 +2594,13 @@
           "answer": 1
         },
         {
-          "question": "The normal flora of the gut provides protection by:",
-          "options": ["Producing antibodies", "Competing with pathogens for nutrients and space", "Killing all bacteria", "Increasing stomach acid"],
-          "answer": 1
-        },
-        {
-          "question": "Opportunistic infections occur when:",
-          "options": ["Pathogens become more virulent", "Host defenses are compromised", "Bacteria mutate", "Viruses replicate faster"],
-          "answer": 1
-        },
-        {
-          "question": "CRISPR-Cas9 is used for:",
-          "options": ["Antibiotic production", "Genome editing", "Vaccine development only", "Sterilization"],
-          "answer": 1
-        },
-        {
           "question": "The polymerase chain reaction (PCR) is used to:",
           "options": ["Culture bacteria", "Amplify specific DNA sequences", "Produce antibodies", "Identify proteins"],
           "answer": 1
         },
         {
-          "question": "ELISA testing detects:",
-          "options": ["DNA only", "Antigens or antibodies", "Live bacteria", "Viral RNA only"],
-          "answer": 1
-        },
-        {
-          "question": "Western blotting is used to detect:",
-          "options": ["DNA", "RNA", "Specific proteins", "Carbohydrates"],
-          "answer": 2
-        },
-        {
           "question": "The term 'broad-spectrum antibiotic' means:",
           "options": ["It is very potent", "It is effective against many different types of bacteria", "It only works against Gram-positive bacteria", "It is given in high doses"],
-          "answer": 1
-        },
-        {
-          "question": "Bacteriophage therapy uses:",
-          "options": ["Antibiotics from bacteria", "Viruses to kill specific bacteria", "Radiation", "Heat treatment"],
-          "answer": 1
-        },
-        {
-          "question": "The LD50 of a pathogen is:",
-          "options": ["The dose that infects 50% of subjects", "The dose that kills 50% of test subjects", "The time to cause disease", "The immune response threshold"],
-          "answer": 1
-        },
-        {
-          "question": "Virulence factors include all of the following EXCEPT:",
-          "options": ["Adhesins", "Capsules", "Toxins", "Ribosomes"],
-          "answer": 3
-        },
-        {
-          "question": "Siderophores help pathogens by:",
-          "options": ["Evading antibodies", "Acquiring iron from the host", "Destroying cell membranes", "Inhibiting phagocytosis"],
-          "answer": 1
-        },
-        {
-          "question": "The portal of entry most commonly used by respiratory pathogens is the:",
-          "options": ["Gastrointestinal tract", "Mucous membranes of the respiratory tract", "Skin", "Urogenital tract"],
           "answer": 1
         },
         {
@@ -2756,16 +2676,6 @@
         {
           "question": "Thrush is caused by overgrowth of:",
           "options": ["Bacteria", "Candida albicans", "Viruses", "Parasites"],
-          "answer": 1
-        },
-        {
-          "question": "A chronic carrier of a pathogen:",
-          "options": ["Always shows symptoms", "May be asymptomatic while shedding organisms", "Cannot transmit disease", "Is immune to reinfection"],
-          "answer": 1
-        },
-        {
-          "question": "The period of illness is characterized by:",
-          "options": ["No symptoms", "Most severe signs and symptoms", "Recovery phase", "Incubation"],
           "answer": 1
         },
         {
@@ -3107,26 +3017,6 @@
           "question": "Which of the following is NOT a target for antimicrobial drugs?",
           "options": ["Cell wall synthesis", "Protein synthesis", "ATP synthase in mitochondria", "Folic acid synthesis"],
           "answer": 2
-        },
-        {
-          "question": "An opportunistic pathogen causes disease when:",
-          "options": ["It mutates", "Host defenses are compromised", "It acquires new virulence factors", "Antibiotics are present"],
-          "answer": 1
-        },
-        {
-          "question": "The term 'endemic' refers to a disease that:",
-          "options": ["Is spreading rapidly", "Is constantly present at baseline levels in a population", "Has been eradicated", "Only affects animals"],
-          "answer": 1
-        },
-        {
-          "question": "An epidemic becomes a pandemic when:",
-          "options": ["More than 100 people are affected", "It spreads worldwide across multiple continents", "It lasts more than one year", "It causes high mortality"],
-          "answer": 1
-        },
-        {
-          "question": "The index case refers to:",
-          "options": ["The most severe case", "The first identified case in an outbreak", "The last case", "A laboratory-confirmed case"],
-          "answer": 1
         },
         {
           "question": "What is the primary function of the ETC (Electron Transport Chain)?",
