@@ -1024,16 +1024,6 @@
           "answer": 1
         },
         {
-          "question": "The most resistant microbial form is:",
-          "options": [
-            "Vegetative bacteria",
-            "Mycobacteria",
-            "Endospores",
-            "Prions"
-          ],
-          "answer": 3
-        },
-        {
           "question": "In DNA, the sugar in RNA is:",
           "options": [
             "Deoxyribose",
@@ -1042,16 +1032,6 @@
             "Fructose"
           ],
           "answer": 1
-        },
-        {
-          "question": "The start codon in mRNA is:",
-          "options": [
-            "UAA",
-            "UAG",
-            "UGA",
-            "AUG"
-          ],
-          "answer": 3
         },
         {
           "question": "A frameshift mutation is caused by:",
@@ -1464,16 +1444,6 @@
           "answer": 3
         },
         {
-          "question": "In Griffith's experiment, what was the 'transforming principle'?",
-          "options": [
-            "Protein",
-            "RNA",
-            "DNA",
-            "Polysaccharide"
-          ],
-          "answer": 2
-        },
-        {
           "question": "In blue-white screening, blue colonies indicate:",
           "options": [
             "Successful gene insertion",
@@ -1520,16 +1490,6 @@
             "Conidiophore",
             "Vegetative hyphae",
             "Sporangium"
-          ],
-          "answer": 2
-        },
-        {
-          "question": "Which protozoan lacks a cyst stage?",
-          "options": [
-            "Giardia lamblia",
-            "Entamoeba histolytica",
-            "Trichomonas vaginalis",
-            "Balantidium coli"
           ],
           "answer": 2
         },
@@ -1742,16 +1702,6 @@
             "Flea bite"
           ],
           "answer": 2
-        },
-        {
-          "question": "Which scientist disproved spontaneous generation using swan-neck flasks?",
-          "options": [
-            "Robert Koch",
-            "Louis Pasteur",
-            "John Snow",
-            "Edward Jenner"
-          ],
-          "answer": 1
         },
         {
           "question": "The O antigen in Gram-negative bacteria is part of:",
@@ -2144,16 +2094,6 @@
           "answer": 2
         },
         {
-          "question": "Which protozoan uses pseudopods for movement?",
-          "options": [
-            "Giardia",
-            "Trichomonas",
-            "Entamoeba",
-            "Plasmodium"
-          ],
-          "answer": 2
-        },
-        {
           "question": "Which fungal reproduction method produces conidiospores?",
           "options": [
             "Sexual",
@@ -2210,16 +2150,6 @@
             "Lyme disease",
             "Malaria",
             "Tetanus"
-          ],
-          "answer": 1
-        },
-        {
-          "question": "Which vector transmits Leishmaniasis?",
-          "options": [
-            "Mosquito",
-            "Sandfly",
-            "Tick",
-            "Flea"
           ],
           "answer": 1
         },
@@ -2352,16 +2282,6 @@
             "Peptidyl transferase"
           ],
           "answer": 0
-        },
-        {
-          "question": "Which of the following is used for pre-exposure prophylaxis against HIV?",
-          "options": [
-            "AZT",
-            "PrEP",
-            "PEP",
-            "HAART"
-          ],
-          "answer": 1
         },
         {
           "question": "Which virus causes hemorrhagic fever with up to 90% fatality?",
