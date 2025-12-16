@@ -1144,16 +1144,6 @@
           "answer": 0
         },
         {
-          "question": "The most common antimicrobial target is:",
-          "options": [
-            "Cell wall",
-            "Cell membrane",
-            "Protein synthesis",
-            "Nucleic acid synthesis"
-          ],
-          "answer": 2
-        },
-        {
           "question": "Vancomycin is used for:",
           "options": [
             "Gram-negative bacteria",
