@@ -1,0 +1,372 @@
+Absolutely! Based on a comprehensive analysis of both your **existing question bank** (`questionstext.txt`) and the **Final Review content** (`final review text form.txt`), I’ve identified several underrepresented or partially covered topics. I’ve generated **50 new, non-repeating, high-yield questions** that align with the Final Review’s depth and style.
+
+---
+
+### 🔬 **New Final Review Questions (Not in Existing Bank)**
+
+#### **Chapter 1: Introduction to Microbiology**
+1. **What scientific principle states that life arises only from pre-existing life?**  
+   A. Spontaneous generation  
+   B. Biogenesis  
+   C. Abiogenesis  
+   D. Germ theory  
+   **Answer: B**
+
+2. **Which of the following is NOT a microorganism according to standard microbiological classification?**  
+   A. Algae  
+   B. Helminths  
+   C. Viruses  
+   D. All are considered microorganisms  
+   **Answer: D**
+
+#### **Chapter 2: Chemistry**
+3. **Which of the following best describes a hydrogen bond?**  
+   A. Complete transfer of electrons between atoms  
+   B. Sharing of electron pairs between atoms  
+   C. Weak attraction between a hydrogen atom and an electronegative atom like O or N  
+   D. Interaction between two nonpolar molecules  
+   **Answer: C**
+
+4. **ATP is structurally most similar to which of the following?**  
+   A. Amino acid  
+   B. Nucleotide  
+   C. Monosaccharide  
+   D. Fatty acid  
+   **Answer: B**
+
+5. **Which macromolecule is NOT formed by dehydration synthesis?**  
+   A. Proteins  
+   B. Nucleic acids  
+   C. Lipids  
+   D. All are formed by dehydration synthesis  
+   **Answer: D**
+
+#### **Chapter 3: Microscopy & Staining**
+6. **Why is immersion oil used with the 100x objective lens in light microscopy?**  
+   A. To kill the bacteria on the slide  
+   B. To increase light refraction and improve resolution  
+   C. To act as a stain  
+   D. To reduce the working distance  
+   **Answer: B**
+
+7. **Negative staining is most useful for observing which bacterial structure?**  
+   A. Flagella  
+   B. Endospores  
+   C. Capsules  
+   D. Cell wall thickness  
+   **Answer: C**
+
+8. **Which of the following is a simple stain?**  
+   A. Gram stain  
+   B. Acid-fast stain  
+   C. Methylene blue  
+   D. Endospore stain  
+   **Answer: C**
+
+#### **Chapter 4: Cells**
+9. **Which bacterial structure is primarily responsible for adherence to host cells and surfaces?**  
+   A. Flagella  
+   B. Pili  
+   C. Fimbriae  
+   D. Glycocalyx  
+   **Answer: C**
+
+10. **Which of the following components is found in the periplasmic space of Gram-negative bacteria?**  
+    A. Teichoic acids  
+    B. Hydrolytic enzymes  
+    C. Mycolic acid  
+    D. 80S ribosomes  
+    **Answer: B**
+
+11. **Which statement about Mycoplasma is TRUE?**  
+    A. It stains Gram-positive due to thick peptidoglycan  
+    B. It is resistant to penicillin because it lacks a cell wall  
+    C. It forms endospores under stress  
+    D. It has an outer membrane with LPS  
+    **Answer: B**
+
+12. **Which flagellar arrangement describes a single flagellum at one pole?**  
+    A. Lophotrichous  
+    B. Amphitrichous  
+    C. Monotrichous  
+    D. Peritrichous  
+    **Answer: C**
+
+13. **Dipicolinic acid is a key component of:**  
+    A. Gram-negative outer membrane  
+    B. Bacterial capsules  
+    C. Endospores  
+    D. Fimbriae  
+    **Answer: C**
+
+#### **Chapter 5: Metabolism**
+14. **Which molecule is the final electron acceptor in lactic acid fermentation?**  
+    A. Oxygen  
+    B. Pyruvate  
+    C. Nitrate  
+    D. Acetaldehyde  
+    **Answer: B**
+
+15. **Chemiosmosis in prokaryotes directly results in the synthesis of ATP by:**  
+    A. Substrate-level phosphorylation  
+    B. Proton motive force driving ATP synthase  
+    C. Direct reduction of NAD+  
+    D. Hydrolysis of GTP  
+    **Answer: B**
+
+16. **Feedback inhibition typically involves the binding of an end product to:**  
+    A. The active site of the first enzyme in a pathway  
+    B. An allosteric site of an early enzyme in a pathway  
+    C. The mRNA of a metabolic gene  
+    D. The ribosome to halt translation  
+    **Answer: B**
+
+#### ** Chapter 6: Microbial Growth**
+17. **Which growth phase is characterized by the synthesis of secondary metabolites like antibiotics?**  
+    A. Lag phase  
+    B. Log phase  
+    C. Stationary phase  
+    D. Death phase  
+    **Answer: C**
+
+18. **An organism that grows optimally at pH 10 would be classified as a(n):**  
+    A. Acidophile  
+    B. Neutrophile  
+    C. Alkaliphile  
+    D. Halophile  
+    **Answer: C**
+
+19. **Which of the following best describes a chemolithoautotroph?**  
+    A. Uses organic compounds for energy and carbon  
+    B. Uses light for energy and CO₂ for carbon  
+    C. Uses inorganic molecules for energy and CO₂ for carbon  
+    D. Uses organic molecules for energy and CO₂ for carbon  
+    **Answer: C**
+
+20. **In an anaerobic jar using a GasPak system, what gas is generated to remove oxygen?**  
+    A. CO₂  
+    B. H₂  
+    C. N₂  
+    D. CH₄  
+    **Answer: B**
+
+#### **Chapter 7: Microbial Control**
+21. **Which method is most appropriate for sterilizing heat-labile solutions such as antibiotics?**  
+    A. Autoclaving  
+    B. Dry heat  
+    C. Membrane filtration  
+    D. UV radiation  
+    **Answer: C**
+
+22. **Which of the following microbes is most susceptible to disinfectants?**  
+    A. Prions  
+    B. Endospores  
+    C. Mycobacteria  
+    D. Enveloped viruses  
+    **Answer: D**
+
+23. **Which chemical agent denatures proteins and disrupts membranes but is ineffective against non-enveloped viruses and endospores?**  
+    A. Chlorine  
+    B. 70% isopropyl alcohol  
+    C. Glutaraldehyde  
+    D. Ethylene oxide  
+    **Answer: B**
+
+#### **Chapter 8: Microbial Genetics**
+24. **During DNA replication in bacteria, the RNA primer is synthesized by:**  
+    A. DNA polymerase III  
+    B. DNA ligase  
+    C. Primase  
+    D. Helicase  
+    **Answer: C**
+
+25. **Which of the following mutations is most likely to have no phenotypic effect?**  
+    A. Nonsense mutation  
+    B. Frameshift mutation  
+    C. Silent mutation  
+    D. Missense mutation  
+    **Answer: C**
+
+26. **In prokaryotes, multiple ribosomes can translate a single mRNA simultaneously, forming a:**  
+    A. Polypeptide chain  
+    B. Polyribosome  
+    C. Replisome  
+    D. Spliceosome  
+    **Answer: B**
+
+27. **Which enzyme is responsible for proofreading during DNA replication?**  
+    A. Helicase  
+    B. Primase  
+    C. DNA polymerase  
+    D. Ligase  
+    **Answer: C**
+
+#### **Chapter 9: Biotechnology**
+28. **Which of the following restriction enzymes produces blunt ends?**  
+    A. EcoRI  
+    B. BamHI  
+    C. HindIII  
+    D. HaeIII  
+    **Answer: D**
+
+29. **What is the function of the ampᴿ gene in plasmid vectors like pUC19?**  
+    A. It encodes β-galactosidase  
+    B. It allows selection of transformed bacteria on ampicillin  
+    C. It acts as a promoter for gene expression  
+    D. It facilitates conjugation  
+    **Answer: B**
+
+30. **In PCR, why is Taq polymerase used instead of human DNA polymerase?**  
+    A. It is cheaper to produce  
+    B. It can withstand high denaturation temperatures  
+    C. It has higher fidelity  
+    D. It works without primers  
+    **Answer: B**
+
+#### **Chapter 12: Fungi & Protozoa**
+31. **Which fungal structure produces asexual conidiospores in Aspergillus?**  
+    A. Sporangium  
+    B. Conidiophore  
+    C. Zygospore  
+    D. Basidium  
+    **Answer: B**
+
+32. **Which of the following protozoan groups is non-motile in its mature form and strictly intracellular?**  
+    A. Flagellates  
+    B. Amoebas  
+    C. Ciliates  
+    D. Apicomplexa  
+    **Answer: D**
+
+33. **A patient presents with chronic diarrhea after hiking and drinking untreated stream water. Chlorine treatment did not prevent infection. Which protozoan is most likely responsible?**  
+    A. Entamoeba histolytica  
+    B. Giardia lamblia  
+    C. Trichomonas vaginalis  
+    D. Toxoplasma gondii  
+    **Answer: B**
+
+34. **Cats are the definitive host for Toxoplasma gondii because they are the only host in which:**  
+    A. Tissue cysts form  
+    B. Sexual reproduction occurs and oocysts are shed  
+    C. The trophozoite stage develops  
+    D. Congenital transmission occurs  
+    **Answer: B**
+
+#### **Chapter 13: Viruses**
+35. **Which of the following is a key difference between the lytic and lysogenic cycles of bacteriophages?**  
+    A. Only the lytic cycle involves DNA integration into the host genome  
+    B. Only the lysogenic cycle produces new virions immediately  
+    C. The lysogenic cycle involves a prophage that replicates with the host  
+    D. The lytic cycle is triggered by UV light  
+    **Answer: C**
+
+36. **Which viral enzyme is responsible for converting viral RNA into DNA in retroviruses?**  
+    A. Integrase  
+    B. Protease  
+    C. RNA polymerase  
+    D. Reverse transcriptase  
+    **Answer: D**
+
+37. **Which of the following viruses is NOT enveloped?**  
+    A. Influenza virus  
+    B. HIV  
+    C. Poliovirus  
+    D. Herpes simplex virus  
+    **Answer: C**
+
+38. **Prions are uniquely resistant to standard sterilization procedures because they:**  
+    A. Contain protective lipid envelopes  
+    B. Are small enough to pass through filters  
+    C. Are extremely stable misfolded proteins  
+    D. Replicate slowly inside host cells  
+    **Answer: C**
+
+#### **Chapter 20: Antimicrobial Drugs**
+39. **Which antimicrobial drug inhibits mycolic acid synthesis and is used specifically against Mycobacterium tuberculosis?**  
+    A. Penicillin  
+    B. Isoniazid  
+    C. Tetracycline  
+    D. Vancomycin  
+    **Answer: B**
+
+40. **Which of the following best explains why sulfa drugs exhibit selective toxicity?**  
+    A. Humans synthesize folic acid, but bacteria must obtain it from the environment  
+    B. Bacteria synthesize folic acid from PABA, but humans acquire it from their diet  
+    C. Sulfa drugs bind only to bacterial ribosomes  
+    D. Humans lack the enzyme targeted by sulfa drugs  
+    **Answer: B**
+
+41. **Which class of antibiotics binds to the 50S ribosomal subunit and blocks peptide bond formation?**  
+    A. Tetracyclines  
+    B. Aminoglycosides  
+    C. Macrolides  
+    D. Fluoroquinolones  
+    **Answer: C**
+
+42. **Efflux pumps contribute to antibiotic resistance by:**  
+    A. Degrading the antibiotic enzymatically  
+    B. Preventing antibiotic entry through porins  
+    C. Actively pumping the antibiotic out of the cell  
+    D. Altering the antibiotic’s target site  
+    **Answer: C**
+
+#### **Student Presentation Topics**
+43. **Which of the following is a hallmark of Enterovirus D68 infection that distinguishes it from poliovirus?**  
+    A. Causes flaccid paralysis without fever  
+    B. Targets anterior horn cells in the spinal cord  
+    C. Is transmitted via the fecal-oral route  
+    D. Is eradicated worldwide  
+    **Answer: B**
+
+44. **The primary reason anthelmintics are not routinely used in Angiostrongyliasis is that:**  
+    A. The parasite is extracellular and accessible  
+    B. The drugs cannot cross the blood-brain barrier  
+    C. Dying larvae provoke a harmful inflammatory response  
+    D. The infection resolves spontaneously without treatment  
+    **Answer: C**
+
+45. **Which of the following is a key virulence factor of Yersinia pestis that prevents phagocytosis at 37°C?**  
+    A. LPS  
+    B. F1 capsule  
+    C. Pla protease  
+    D. Yops  
+    **Answer: B**
+
+46. **Schistosoma haematobium is associated with an increased risk of which malignancy?**  
+    A. Hepatocellular carcinoma  
+    B. Colorectal cancer  
+    C. Bladder cancer  
+    D. Lymphoma  
+    **Answer: C**
+
+47. **Which cytokine response is protective against Leishmania infection?**  
+    A. IL-4  
+    B. IL-10  
+    C. IFN-γ  
+    D. IL-13  
+    **Answer: C**
+
+48. **RSV-induced disease severity in infants is primarily due to:**  
+    A. Direct viral cytopathic effect on alveoli  
+    B. Toxin-mediated tissue damage  
+    C. Host immune-mediated inflammation and airway obstruction  
+    D. Secondary bacterial pneumonia  
+    **Answer: C**
+
+49. **Which of the following is TRUE about Mpox compared to smallpox?**  
+    A. Mpox has a higher mortality rate  
+    B. Mpox does not cause a rash  
+    C. Mpox is associated with lymphadenopathy  
+    D. Mpox is transmitted by mosquitoes  
+    **Answer: C**
+
+50. **CRE infections are especially dangerous because:**  
+    A. They are viral and untreatable  
+    B. They are often pan-resistant and spread rapidly in healthcare settings  
+    C. They only infect immunocompromised individuals  
+    D. There is an effective vaccine available  
+    **Answer: B**
+
+---
+
+Let me know if you’d like these formatted as a JSON object matching your original structure, or exported in another format (e.g., CSV, quizlet-style flashcards, etc.).
