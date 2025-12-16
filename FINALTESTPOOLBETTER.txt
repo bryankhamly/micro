@@ -1,0 +1,1347 @@
+ const questionBank = [
+            {
+                question: "Which domain includes organisms with peptidoglycan in their cell walls?",
+                options: ["Archaea", "Bacteria", "Eukarya", "Viruses"],
+                correct: 1
+            },
+            {
+                question: "In the Gram stain procedure, what is the purpose of iodine?",
+                options: ["Decolorizer", "Counterstain", "Mordant", "Fixative"],
+                correct: 2
+            },
+            {
+                question: "Which process produces the most ATP per glucose molecule?",
+                options: ["Fermentation", "Anaerobic respiration", "Aerobic respiration", "Glycolysis alone"],
+                correct: 2
+            },
+            {
+                question: "Which of the following is a characteristic of obligate anaerobes?",
+                options: ["Require oxygen to grow", "Grow equally well with or without oxygen", "Are killed by the presence of oxygen", "Require low oxygen concentrations"],
+                correct: 2
+            },
+            {
+                question: "What is the target of penicillin?",
+                options: ["70S ribosome", "DNA gyrase", "Peptidoglycan synthesis", "Folic acid pathway"],
+                correct: 2
+            },
+            {
+                question: "Anton van Leeuwenhoek is known for:",
+                options: ["Disproving spontaneous generation", "Discovering penicillin", "Developing Koch's postulates", "First observing microorganisms"],
+                correct: 3
+            },
+            {
+                question: "Which macromolecule has glycerol and fatty acids as monomers?",
+                options: ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+                correct: 1
+            },
+            {
+                question: "In DNA, adenine pairs with:",
+                options: ["Guanine", "Cytosine", "Thymine", "Uracil"],
+                correct: 2
+            },
+            {
+                question: "What is the primary function of the plasma membrane?",
+                options: ["Protein synthesis", "Energy production", "Selective permeability", "Genetic storage"],
+                correct: 2
+            },
+            {
+                question: "Which structure is unique to Gram-negative bacteria?",
+                options: ["Teichoic acids", "Thick peptidoglycan", "Outer membrane", "Endospores"],
+                correct: 2
+            },
+            {
+                question: "The process of glucose breakdown to pyruvate is called:",
+                options: ["Krebs cycle", "Glycolysis", "Fermentation", "Electron transport chain"],
+                correct: 1
+            },
+            {
+                question: "During which phase of bacterial growth are cells most vulnerable to antibiotics?",
+                options: ["Lag phase", "Log phase", "Stationary phase", "Death phase"],
+                correct: 1
+            },
+            {
+                question: "Which of the following is NOT a form of microbial control?",
+                options: ["Sterilization", "Disinfection", "Antisepsis", "Pasteurization"],
+                correct: 3
+            },
+            {
+                question: "The most resistant microbial structures to physical and chemical agents are:",
+                options: ["Gram-positive bacteria", "Gram-negative bacteria", "Endospores", "Prions"],
+                correct: 3
+            },
+            {
+                question: "In DNA replication, which enzyme synthesizes new DNA strands?",
+                options: ["DNA ligase", "Helicase", "DNA polymerase", "Primase"],
+                correct: 2
+            },
+            {
+                question: "Which codon serves as the start signal for translation?",
+                options: ["UAA", "UAG", "UGA", "AUG"],
+                correct: 3
+            },
+            {
+                question: "Transformation in bacteria involves:",
+                options: ["Transfer of DNA via bacteriophage", "Direct DNA uptake from the environment", "DNA transfer through a pilus", "Sexual reproduction"],
+                correct: 1
+            },
+            {
+                question: "In recombinant DNA technology, restriction enzymes are used to:",
+                options: ["Join DNA fragments", "Amplify DNA", "Cut DNA at specific sequences", "Replicate plasmids"],
+                correct: 2
+            },
+            {
+                question: "Molds differ from yeasts in that molds are:",
+                options: ["Unicellular", "Facultative anaerobes", "Filamentous", "Used in baking"],
+                correct: 2
+            },
+            {
+                question: "The dormant, infectious stage of protozoa is called a:",
+                options: ["Trophozoite", "Cyst", "Spore", "Oocyst"],
+                correct: 1
+            },
+            {
+                question: "Viruses are considered:",
+                options: ["Prokaryotic cells", "Eukaryotic cells", "Acellular particles", "Living organisms"],
+                correct: 2
+            },
+            {
+                question: "In the bacteriophage lytic cycle, the host cell is:",
+                options: ["Lysed", "Integrated", "Transformed", "Conjugated"],
+                correct: 0
+            },
+            {
+                question: "HIV is classified as a:",
+                options: ["DNA virus", "Retrovirus", "Bacteriophage", "Prion"],
+                correct: 1
+            },
+            {
+                question: "Selective toxicity in antimicrobial drugs refers to:",
+                options: ["Killing only resistant bacteria", "Killing pathogens without harming host", "Broad spectrum activity", "Inhibiting cell wall synthesis"],
+                correct: 1
+            },
+            {
+                question: "Which antimicrobial target is unique to bacteria?",
+                options: ["Cell wall synthesis", "Protein synthesis", "Nucleic acid synthesis", "Metabolic pathways"],
+                correct: 0
+            },
+            {
+                question: "What causes malaria?",
+                options: ["Bacteria", "Fungus", "Protozoan", "Virus"],
+                correct: 2
+            },
+            {
+                question: "Which scientist developed the swan-neck flask experiment?",
+                options: ["Robert Koch", "Louis Pasteur", "Anton van Leeuwenhoek", "Alexander Fleming"],
+                correct: 1
+            },
+            {
+                question: "The primary structure of a protein refers to:",
+                options: ["Alpha helices", "Beta sheets", "Amino acid sequence", "3D folding"],
+                correct: 2
+            },
+            {
+                question: "Which pH is considered neutral?",
+                options: ["5.5", "7.0", "8.5", "14.0"],
+                correct: 1
+            },
+            {
+                question: "The unit used to measure bacteria is:",
+                options: ["Millimeter", "Centimeter", "Micrometer", "Nanometer"],
+                correct: 2
+            },
+            {
+                question: "Which microscope lens provides 1000x total magnification?",
+                options: ["Low power", "High power", "Oil immersion", "Scanning"],
+                correct: 2
+            },
+            {
+                question: "Basic dyes stain:",
+                options: ["Background", "Cell walls", "Acidic components", "Cells with negative charge"],
+                correct: 3
+            },
+            {
+                question: "Acid-fast staining is used for bacteria with:",
+                options: ["Thick peptidoglycan", "Outer membrane", "Mycolic acid", "Capsules"],
+                correct: 2
+            },
+            {
+                question: "Which bacterial shape is spherical?",
+                options: ["Bacillus", "Vibrio", "Spirillum", "Coccus"],
+                correct: 3
+            },
+            {
+                question: "LPS in Gram-negative bacteria is found in the:",
+                options: ["Peptidoglycan layer", "Outer membrane", "Plasma membrane", "Periplasmic space"],
+                correct: 1
+            },
+            {
+                question: "Which structure provides motility in bacteria?",
+                options: ["Pili", "Fimbriae", "Flagella", "Glycocalyx"],
+                correct: 2
+            },
+            {
+                question: "Endospores are produced by which genera?",
+                options: ["Escherichia and Salmonella", "Staphylococcus and Streptococcus", "Bacillus and Clostridium", "Mycobacterium and Pseudomonas"],
+                correct: 2
+            },
+            {
+                question: "The 70S ribosome is found in:",
+                options: ["Eukaryotes", "Prokaryotes", "Both prokaryotes and eukaryotes", "Viruses"],
+                correct: 1
+            },
+            {
+                question: "According to the endosymbiotic theory, mitochondria evolved from:",
+                options: ["Viruses", "Free-living bacteria", "Archaea", "Fungi"],
+                correct: 1
+            },
+            {
+                question: "Which metabolic process yields the most ATP?",
+                options: ["Glycolysis", "Fermentation", "Aerobic respiration", "Anaerobic respiration"],
+                correct: 2
+            },
+            {
+                question: "In glycolysis, glucose is converted to:",
+                options: ["Pyruvic acid", "Acetyl-CoA", "Lactic acid", "Ethanol"],
+                correct: 0
+            },
+            {
+                question: "Which fermentation produces lactic acid?",
+                options: ["Alcoholic fermentation", "Lactic acid fermentation", "Mixed acid fermentation", "Butyric acid fermentation"],
+                correct: 1
+            },
+            {
+                question: "Binary fission is the process of:",
+                options: ["Viral replication", "Bacterial reproduction", "Fungal spore formation", "Protozoan conjugation"],
+                correct: 1
+            },
+            {
+                question: "Most human pathogens are:",
+                options: ["Psychrophiles", "Mesophiles", "Thermophiles", "Halophiles"],
+                correct: 1
+            },
+            {
+                question: "Organisms that require oxygen for growth are:",
+                options: ["Obligate anaerobes", "Facultative anaerobes", "Obligate aerobes", "Microaerophiles"],
+                correct: 2
+            },
+            {
+                question: "Which nutritional classification uses light for energy and CO2 for carbon?",
+                options: ["Photoautotroph", "Photoheterotroph", "Chemoautotroph", "Chemoheterotroph"],
+                correct: 0
+            },
+            {
+                question: "Biofilms are:",
+                options: ["Free-floating bacteria", "Bacterial communities in a matrix", "Endospore formations", "Viral aggregates"],
+                correct: 1
+            },
+            {
+                question: "Sterilization destroys:",
+                options: ["Pathogens only", "Viruses only", "All microorganisms including endospores", "Vegetative cells only"],
+                correct: 2
+            },
+            {
+                question: "Which method provides the highest level of microbial control?",
+                options: ["Boiling", "Pasteurization", "Autoclaving", "Refrigeration"],
+                correct: 2
+            },
+            {
+                question: "UV radiation kills microbes by:",
+                options: ["Denaturing proteins", "Creating thymine dimers", "Disrupting membranes", "Oxidizing cellular components"],
+                correct: 1
+            },
+            {
+                question: "Which chemical is effective against endospores?",
+                options: ["70% alcohol", "Hydrogen peroxide", "Chlorine bleach", "Soap"],
+                correct: 2
+            },
+            {
+                question: "The genome of a cell includes:",
+                options: ["Only chromosomal DNA", "All genetic information", "Only plasmid DNA", "RNA molecules"],
+                correct: 1
+            },
+            {
+                question: "In DNA, adenine and guanine are:",
+                options: ["Pyrimidines", "Purines", "Amino acids", "Sugars"],
+                correct: 1
+            },
+            {
+                question: "DNA replication is:",
+                options: ["Conservative", "Semi-conservative", "Dispersive", "Random"],
+                correct: 1
+            },
+            {
+                question: "The enzyme that unwinds DNA is:",
+                options: ["DNA polymerase", "Ligase", "Helicase", "Primase"],
+                correct: 2
+            },
+            {
+                question: "Transcription produces:",
+                options: ["DNA", "mRNA", "tRNA", "rRNA"],
+                correct: 1
+            },
+            {
+                question: "A codon consists of:",
+                options: ["One nucleotide", "Two nucleotides", "Three nucleotides", "Four nucleotides"],
+                correct: 2
+            },
+            {
+                question: "A mutation that changes a single nucleotide is called:",
+                options: ["Frameshift", "Silent", "Point mutation", "Deletion"],
+                correct: 2
+            },
+            {
+                question: "Conjugation requires:",
+                options: ["A virus", "Naked DNA", "A pilus", "Heat shock"],
+                correct: 2
+            },
+            {
+                question: "In recombinant DNA technology, the plasmid is:",
+                options: ["The gene of interest", "The host cell", "The vector", "The restriction enzyme"],
+                correct: 2
+            },
+            {
+                question: "PCR requires which heat-stable enzyme?",
+                options: ["DNA ligase", "Taq polymerase", "Restriction enzyme", "Reverse transcriptase"],
+                correct: 1
+            },
+            {
+                question: "In blue-white screening, white colonies indicate:",
+                options: ["No plasmid", "Plasmid without insert", "Recombinant plasmid", "Contamination"],
+                correct: 2
+            },
+            {
+                question: "Fungi grow best at which pH?",
+                options: ["pH 2", "pH 5", "pH 7", "pH 9"],
+                correct: 1
+            },
+            {
+                question: "Yeasts reproduce by:",
+                options: ["Binary fission", "Budding", "Schizogony", "Conjugation"],
+                correct: 1
+            },
+            {
+                question: "Which protozoan causes malaria?",
+                options: ["Giardia", "Entamoeba", "Plasmodium", "Trichomonas"],
+                correct: 2
+            },
+            {
+                question: "The active feeding stage of protozoa is the:",
+                options: ["Cyst", "Trophozoite", "Oocyst", "Sporozoite"],
+                correct: 1
+            },
+            {
+                question: "Which group of protozoa uses pseudopods for movement?",
+                options: ["Flagellates", "Amoebas", "Ciliates", "Apicomplexa"],
+                correct: 1
+            },
+            {
+                question: "Viruses lack:",
+                options: ["Nucleic acid", "Protein coat", "Ribosomes", "Capsid"],
+                correct: 2
+            },
+            {
+                question: "The protein coat of a virus is called:",
+                options: ["Envelope", "Capsid", "Nucleocapsid", "Spike"],
+                correct: 1
+            },
+            {
+                question: "Which type of virus is more resistant to environmental stress?",
+                options: ["Enveloped", "Naked", "Both are equally resistant", "Neither is resistant"],
+                correct: 1
+            },
+            {
+                question: "In the lysogenic cycle, viral DNA is:",
+                options: ["Immediately replicated", "Integrated into host DNA", "Destroyed by host", "Released from the cell"],
+                correct: 1
+            },
+            {
+                question: "HIV targets which cells?",
+                options: ["B cells", "Macrophages", "CD4+ T cells", "Neutrophils"],
+                correct: 2
+            },
+            {
+                question: "Reverse transcriptase converts:",
+                options: ["DNA to RNA", "RNA to DNA", "RNA to protein", "DNA to protein"],
+                correct: 1
+            },
+            {
+                question: "Prions consist of:",
+                options: ["DNA and protein", "RNA and protein", "Misfolded protein only", "Lipid envelope and protein"],
+                correct: 2
+            },
+            {
+                question: "Alexander Fleming discovered:",
+                options: ["Vaccination", "Germ theory", "Penicillin", "Koch's postulates"],
+                correct: 2
+            },
+            {
+                question: "Broad-spectrum antibiotics:",
+                options: ["Target specific bacteria", "Target many types of bacteria", "Are more toxic to humans", "Are always preferred"],
+                correct: 1
+            },
+            {
+                question: "Which drug inhibits peptidoglycan synthesis?",
+                options: ["Tetracycline", "Rifampin", "Penicillin", "Sulfonamide"],
+                correct: 2
+            },
+            {
+                question: "Aminoglycosides target the:",
+                options: ["30S ribosomal subunit", "50S ribosomal subunit", "Cell membrane", "DNA gyrase"],
+                correct: 0
+            },
+            {
+                question: "Sulfonamides inhibit:",
+                options: ["Cell wall synthesis", "Protein synthesis", "Folic acid synthesis", "DNA replication"],
+                correct: 2
+            },
+            {
+                question: "MRSA is resistant to:",
+                options: ["Vancomycin", "Methicillin", "All antibiotics", "Only penicillin"],
+                correct: 1
+            },
+            {
+                question: "Antiviral drugs are difficult to develop because:",
+                options: ["Viruses mutate rapidly", "Viruses use host machinery", "Viruses are intracellular", "All of the above"],
+                correct: 3
+            },
+            {
+                question: "Which microorganism causes Lyme disease?",
+                options: ["Virus", "Bacterium", "Fungus", "Protozoan"],
+                correct: 1
+            },
+            {
+                question: "Ebola virus is transmitted through:",
+                options: ["Airborne droplets", "Mosquito bites", "Direct contact with bodily fluids", "Contaminated water"],
+                correct: 2
+            },
+            {
+                question: "RSV causes severe respiratory illness in:",
+                options: ["Adults", "Elderly", "Infants", "Teenagers"],
+                correct: 2
+            },
+            {
+                question: "Acute Flaccid Myelitis (AFM) is primarily caused by:",
+                options: ["Bacteria", "Enterovirus D68", "Fungi", "Parasites"],
+                correct: 1
+            },
+            {
+                question: "Angiostrongyliasis is caused by:",
+                options: ["Bacteria", "Virus", "Nematode", "Protozoan"],
+                correct: 2
+            },
+            {
+                question: "CRE refers to bacteria resistant to:",
+                options: ["Penicillin", "Vancomycin", "Carbapenems", "All antibiotics"],
+                correct: 2
+            },
+            {
+                question: "Mpox (Monkeypox) is caused by:",
+                options: ["Bacterium", "Virus", "Fungus", "Parasite"],
+                correct: 1
+            },
+            {
+                question: "Leishmaniasis is transmitted by:",
+                options: ["Mosquitoes", "Ticks", "Sandflies", "Fleas"],
+                correct: 2
+            },
+            {
+                question: "Plague is caused by:",
+                options: ["Yersinia pestis", "Bacillus anthracis", "Clostridium tetani", "Mycobacterium tuberculosis"],
+                correct: 0
+            },
+            {
+                question: "Schistosomiasis is caused by:",
+                options: ["Bacterium", "Virus", "Trematode", "Nematode"],
+                correct: 2
+            },
+            {
+                question: "Which structure is found in both Gram-positive and Gram-negative bacteria?",
+                options: ["Outer membrane", "Teichoic acids", "Peptidoglycan", "Lipopolysaccharide"],
+                correct: 2
+            },
+            {
+                question: "The O polysaccharide is part of:",
+                options: ["Peptidoglycan", "Teichoic acid", "Lipopolysaccharide", "Glycocalyx"],
+                correct: 2
+            },
+            {
+                question: "In metabolism, catabolic reactions:",
+                options: ["Build complex molecules", "Require energy", "Release energy", "Are anabolic"],
+                correct: 2
+            },
+            {
+                question: "ATP is composed of:",
+                options: ["Adenine, ribose, and three phosphates", "Adenine, deoxyribose, and three phosphates", "Guanine, ribose, and three phosphates", "Adenine, ribose, and two phosphates"],
+                correct: 0
+            },
+            {
+                question: "Enzymes function by:",
+                options: ["Being consumed in reactions", "Increasing activation energy", "Lowering activation energy", "Changing reaction equilibrium"],
+                correct: 2
+            },
+            {
+                question: "In redox reactions, oxidation means:",
+                options: ["Gain of electrons", "Loss of electrons", "Gain of hydrogen", "Loss of oxygen"],
+                correct: 1
+            },
+            {
+                question: "The final electron acceptor in aerobic respiration is:",
+                options: ["NAD+", "FAD", "Oxygen", "Pyruvate"],
+                correct: 2
+            },
+            {
+                question: "Generation time refers to:",
+                options: ["Time for DNA replication", "Time for binary fission", "Time for protein synthesis", "Time for transcription"],
+                correct: 1
+            },
+            {
+                question: "Psychrophiles grow best at:",
+                options: ["0-20°C", "20-45°C", "45-80°C", "80-122°C"],
+                correct: 0
+            },
+            {
+                question: "Nitrogen fixation converts:",
+                options: ["N2 to NH3", "NH3 to NO2-", "NO2- to NO3-", "NO3- to N2"],
+                correct: 0
+            },
+            {
+                question: "The most common method of sterilization in laboratories is:",
+                options: ["Boiling", "Autoclaving", "Filtration", "UV radiation"],
+                correct: 1
+            },
+            {
+                question: "The most resistant microbial form is:",
+                options: ["Vegetative bacteria", "Mycobacteria", "Endospores", "Prions"],
+                correct: 3
+            },
+            {
+                question: "In DNA, the sugar in RNA is:",
+                options: ["Deoxyribose", "Ribose", "Glucose", "Fructose"],
+                correct: 1
+            },
+            {
+                question: "The start codon in mRNA is:",
+                options: ["UAA", "UAG", "UGA", "AUG"],
+                correct: 3
+            },
+            {
+                question: "A frameshift mutation is caused by:",
+                options: ["Substitution", "Insertion or deletion", "Silent mutation", "Missense mutation"],
+                correct: 1
+            },
+            {
+                question: "In Griffith's experiment, the transforming principle was:",
+                options: ["Protein", "RNA", "DNA", "Polysaccharide"],
+                correct: 2
+            },
+            {
+                question: "The enzyme that joins DNA fragments is:",
+                options: ["DNA polymerase", "Helicase", "Ligase", "Primase"],
+                correct: 2
+            },
+            {
+                question: "In PCR, the annealing step involves:",
+                options: ["Separating DNA strands", "Adding primers", "Extending DNA", "Denaturing proteins"],
+                correct: 1
+            },
+            {
+                question: "Which fungus is unicellular?",
+                options: ["Mold", "Mushroom", "Yeast", "Mildew"],
+                correct: 2
+            },
+            {
+                question: "Toxoplasmosis is particularly dangerous during:",
+                options: ["Childhood", "Adolescence", "Pregnancy", "Old age"],
+                correct: 2
+            },
+            {
+                question: "Which protozoan has no cyst form?",
+                options: ["Giardia", "Entamoeba", "Trichomonas", "Plasmodium"],
+                correct: 2
+            },
+            {
+                question: "The largest infectious agents are:",
+                options: ["Viruses", "Bacteria", "Fungi", "Prions"],
+                correct: 2
+            },
+            {
+                question: "Bacteriophages infect:",
+                options: ["Animals", "Plants", "Bacteria", "Fungi"],
+                correct: 2
+            },
+            {
+                question: "Latent viral infections:",
+                options: ["Always cause symptoms", "Are always lytic", "Can reactivate", "Are always persistent"],
+                correct: 2
+            },
+            {
+                question: "HIV integrates into the host genome as:",
+                options: ["Provirus", "Prophage", "Plasmid", "Episome"],
+                correct: 0
+            },
+            {
+                question: "The most common antimicrobial target is:",
+                options: ["Cell wall", "Cell membrane", "Protein synthesis", "Nucleic acid synthesis"],
+                correct: 2
+            },
+            {
+                question: "Vancomycin is used for:",
+                options: ["Gram-negative bacteria", "MRSA", "Viruses", "Fungi"],
+                correct: 1
+            },
+            {
+                question: "Drug resistance can be acquired through:",
+                options: ["Mutation", "Conjugation", "Transduction", "All of the above"],
+                correct: 3
+            }
+
+
+const additionalQuestionBank = [
+  // Chapter 1: Introduction
+  {
+    question: "Which scientist established the binomial nomenclature system?",
+    options: ["Louis Pasteur", "Robert Koch", "Carl Linnaeus", "Anton van Leeuwenhoek"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is NOT a characteristic of viruses?",
+    options: ["Contain DNA or RNA", "Have a protein coat", "Possess ribosomes", "Are obligate intracellular parasites"],
+    correct: 2
+  },
+
+  // Chapter 2: Chemistry
+  {
+    question: "In the octet rule, atoms with 2 valence electrons tend to:",
+    options: ["Gain electrons", "Share electrons", "Donate electrons", "Form covalent bonds only"],
+    correct: 2
+  },
+  {
+    question: "Which element is NOT part of the CHNOPS acronym?",
+    options: ["Calcium", "Nitrogen", "Phosphorus", "Sulfur"],
+    correct: 0
+  },
+  {
+    question: "Denaturation of a protein primarily affects which structure level?",
+    options: ["Primary", "Secondary", "Tertiary", "All except primary"],
+    correct: 3
+  },
+
+  // Chapter 3: Microscopy & Staining
+  {
+    question: "Why is heat fixation performed before staining?",
+    options: ["To enhance color", "To kill and adhere cells to the slide", "To dissolve the cell wall", "To increase permeability to counterstains"],
+    correct: 1
+  },
+  {
+    question: "Which staining technique is best for visualizing capsules?",
+    options: ["Gram stain", "Acid-fast stain", "Negative stain", "Simple stain"],
+    correct: 2
+  },
+  {
+    question: "Carbolfuchsin in the acid-fast stain requires heat to:",
+    options: ["Decolorize the slide", "Penetrate the waxy mycolic acid layer", "Act as a mordant", "Counterstain non-acid-fast cells"],
+    correct: 1
+  },
+
+  // Chapter 4: Cells
+  {
+    question: "Which bacterial structure is composed of pilin protein?",
+    options: ["Flagella", "Fimbriae", "Capsule", "Endospore"],
+    correct: 1
+  },
+  {
+    question: "The periplasmic space is most developed in which type of bacteria?",
+    options: ["Gram-positive", "Gram-negative", "Mycoplasma", "Endospore-formers"],
+    correct: 1
+  },
+  {
+    question: "Which statement about endospores is FALSE?",
+    options: ["They are reproductive structures", "They can survive boiling", "They contain dipicolinic acid", "They are produced by Bacillus and Clostridium"],
+    correct: 0
+  },
+  {
+    question: "Which organelle provides evidence for the endosymbiotic theory due to its 70S ribosomes?",
+    options: ["Nucleus", "Lysosome", "Mitochondria", "Golgi apparatus"],
+    correct: 2
+  },
+
+  // Chapter 5: Metabolism
+  {
+    question: "In glycolysis, how many ATP molecules are NET produced per glucose?",
+    options: ["2", "4", "36", "38"],
+    correct: 0
+  },
+  {
+    question: "Which molecule carries electrons from glycolysis and the Krebs cycle to the ETC?",
+    options: ["ATP", "FAD", "NAD+", "Coenzyme A"],
+    correct: 2
+  },
+  {
+    question: "What is the final electron acceptor in anaerobic respiration involving denitrification?",
+    options: ["Oxygen", "Sulfate", "Nitrate", "Pyruvate"],
+    correct: 2
+  },
+  {
+    question: "Feedback inhibition is an example of:",
+    options: ["Competitive inhibition", "Noncompetitive inhibition", "Allosteric activation", "Covalent modification"],
+    correct: 1
+  },
+
+  // Chapter 6: Microbial Growth
+  {
+    question: "Which phase of the bacterial growth curve is ideal for industrial antibiotic production?",
+    options: ["Lag", "Log", "Stationary", "Death"],
+    correct: 2
+  },
+  {
+    question: "An organism that grows best at pH 2 would be classified as a(n):",
+    options: ["Alkaliphile", "Neutrophile", "Acidophile", "Halophile"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is a chemoheterotroph?",
+    options: ["Cyanobacteria", "Escherichia coli", "Nitrosomonas", "Chlorobium"],
+    correct: 1
+  },
+  {
+    question: "Biofilms are particularly resistant to antibiotics because:",
+    options: ["They lack peptidoglycan", "The extracellular matrix limits antibiotic penetration", "They grow only anaerobically", "They reproduce by conjugation"],
+    correct: 1
+  },
+
+  // Chapter 7: Microbial Control
+  {
+    question: "Which method is most effective for sterilizing heat-sensitive liquids like serum?",
+    options: ["Autoclaving", "Pasteurization", "Filtration", "Incineration"],
+    correct: 2
+  },
+  {
+    question: "Why is 70% alcohol more effective than 100% alcohol as a disinfectant?",
+    options: ["It evaporates slower, allowing better penetration", "It denatures proteins more rapidly", "It is less toxic to skin", "It kills endospores"],
+    correct: 0
+  },
+  {
+    question: "Which microbial form is the MOST resistant to UV radiation?",
+    options: ["Vegetative bacteria", "Fungal spores", "Endospores", "Enveloped viruses"],
+    correct: 2
+  },
+  {
+    question: "Triclosan targets which bacterial process?",
+    options: ["Cell wall synthesis", "DNA replication", "Fatty acid synthesis", "Protein folding"],
+    correct: 2
+  },
+
+  // Chapter 8: Genetics
+  {
+    question: "In DNA replication, Okazaki fragments are found on the:",
+    options: ["Leading strand", "Lagging strand", "Template strand", "RNA primer"],
+    correct: 1
+  },
+  {
+    question: "Which enzyme is responsible for joining Okazaki fragments?",
+    options: ["DNA polymerase", "Helicase", "Primase", "DNA ligase"],
+    correct: 3
+  },
+  {
+    question: "A mutation that changes a codon from UUU to UUC (both code for phenylalanine) is a:",
+    options: ["Missense mutation", "Nonsense mutation", "Frameshift mutation", "Silent mutation"],
+    correct: 3
+  },
+  {
+    question: "In Griffith’s experiment, what was the 'transforming principle'?",
+    options: ["Protein", "RNA", "DNA", "Polysaccharide"],
+    correct: 2
+  },
+
+  // Chapter 9: Biotechnology
+  {
+    question: "In blue-white screening, blue colonies indicate:",
+    options: ["Successful gene insertion", "Non-recombinant plasmids", "No plasmid uptake", "Contaminated culture"],
+    correct: 1
+  },
+  {
+    question: "Which restriction enzyme produces sticky ends with the sequence AATT?",
+    options: ["EcoRI", "HindIII", "BamHI", "HaeIII"],
+    correct: 0
+  },
+  {
+    question: "The purpose of using calcium chloride in bacterial transformation is to:",
+    options: ["Lyse the cells", "Denature plasmid DNA", "Make cells competent", "Activate restriction enzymes"],
+    correct: 2
+  },
+  {
+    question: "How many DNA copies are produced after 5 cycles of PCR?",
+    options: ["10", "16", "32", "64"],
+    correct: 2
+  },
+
+  // Chapter 12: Fungi & Protozoa
+  {
+    question: "Which fungal structure is responsible for nutrient absorption?",
+    options: ["Aerial hyphae", "Conidiophore", "Vegetative hyphae", "Sporangium"],
+    correct: 2
+  },
+  {
+    question: "Which protozoan lacks a cyst stage?",
+    options: ["Giardia lamblia", "Entamoeba histolytica", "Trichomonas vaginalis", "Balantidium coli"],
+    correct: 2
+  },
+  {
+    question: "Schizogony is a form of reproduction seen in which organism?",
+    options: ["Saccharomyces", "Plasmodium", "Aspergillus", "Naegleria"],
+    correct: 1
+  },
+  {
+    question: "Why are cats essential in the life cycle of Toxoplasma gondii?",
+    options: ["They are the only host that sheds oocysts", "They are intermediate hosts", "They provide the cyst stage", "They are immune to the parasite"],
+    correct: 0
+  },
+
+  // Chapter 13: Viruses
+  {
+    question: "Which viral structure determines host specificity?",
+    options: ["Capsid", "Envelope", "Spikes", "Nucleic acid"],
+    correct: 2
+  },
+  {
+    question: "During the lysogenic cycle, bacteriophage DNA is called a:",
+    options: ["Provirus", "Prophage", "Capsid", "Virion"],
+    correct: 1
+  },
+  {
+    question: "HIV integrates into the host genome as a:",
+    options: ["Prophage", "Episome", "Provirus", "Plasmid"],
+    correct: 2
+  },
+  {
+    question: "Which enzyme is unique to retroviruses?",
+    options: ["DNA polymerase", "RNA polymerase", "Reverse transcriptase", "Integrase"],
+    correct: 2
+  },
+  {
+    question: "Prions cause disease by:",
+    options: ["Producing toxins", "Lysing host cells", "Converting normal proteins into abnormal forms", "Triggering excessive interferon production"],
+    correct: 2
+  },
+
+  // Chapter 20: Antimicrobial Drugs
+  {
+    question: "Which antibiotic inhibits peptidoglycan cross-linking by binding to D-ala-D-ala?",
+    options: ["Tetracycline", "Vancomycin", "Ciprofloxacin", "Sulfamethoxazole"],
+    correct: 1
+  },
+  {
+    question: "Beta-lactam antibiotics are ineffective against Mycoplasma because Mycoplasma:",
+    options: ["Produce beta-lactamase", "Have an outer membrane", "Lack a cell wall", "Have efflux pumps"],
+    correct: 2
+  },
+  {
+    question: "Which drug class inhibits bacterial DNA gyrase?",
+    options: ["Penicillins", "Macrolides", "Fluoroquinolones", "Aminoglycosides"],
+    correct: 2
+  },
+  {
+    question: "Trimethoprim and sulfamethoxazole are often combined because they:",
+    options: ["Target the same enzyme", "Exhibit synergistic inhibition of folic acid synthesis", "Reduce allergic reactions", "Work against viruses and bacteria"],
+    correct: 1
+  },
+
+  // Student Presentations
+  {
+    question: "What is the hallmark clinical sign of Lyme disease?",
+    options: ["Petechial rash", "Bull's eye rash (erythema migrans)", "Vesicular lesions", "Jaundice"],
+    correct: 1
+  },
+  {
+    question: "Ebola virus primarily targets which type of cells?",
+    options: ["Neurons", "Hepatocytes", "Immune cells (monocytes/macrophages)", "Epithelial cells"],
+    correct: 2
+  },
+  {
+    question: "RSV causes disease primarily by:",
+    options: ["Producing a potent exotoxin", "Inducing syncytia formation and host inflammation", "Lysing red blood cells", "Blocking acetylcholine receptors"],
+    correct: 1
+  },
+  {
+    question: "The primary cause of Acute Flaccid Myelitis (AFM) is:",
+    options: ["Poliovirus", "West Nile virus", "Enterovirus D68", "Rabies virus"],
+    correct: 2
+  },
+  {
+    question: "Humans are a dead-end host for Angiostrongylus cantonensis because:",
+    options: ["The parasite cannot reproduce in humans", "Humans lack the required immune response", "The parasite is killed by stomach acid", "Humans do not eat snails"],
+    correct: 0
+  },
+  {
+    question: "CRE resistance is primarily due to the production of:",
+    options: ["Beta-lactamase", "Carbapenemase", "Efflux pumps", "Altered porins"],
+    correct: 1
+  },
+  {
+    question: "What distinguishes Mpox from smallpox clinically?",
+    options: ["Presence of pustules", "Fever severity", "Lymphadenopathy", "Mortality rate"],
+    correct: 2
+  },
+  {
+    question: "Leishmania parasites survive inside macrophages by:",
+    options: ["Inhibiting phagolysosome fusion", "Producing superoxide dismutase", "Secreting exotoxins", "Forming biofilms"],
+    correct: 0
+  },
+  {
+    question: "Yersinia pestis uses a Type III Secretion System to inject:",
+    options: ["Endotoxin", "Yops (Yersinia outer proteins)", "Capsular polysaccharide", "Plasminogen activator"],
+    correct: 1
+  },
+  {
+    question: "Schistosoma cercariae infect humans by:",
+    options: ["Ingestion of contaminated water", "Inhalation of aerosols", "Skin penetration", "Flea bite"],
+    correct: 2
+  },
+
+  // Additional High-Yield Concepts
+  {
+    question: "Which scientist disproved spontaneous generation using swan-neck flasks?",
+    options: ["Robert Koch", "Louis Pasteur", "John Snow", "Edward Jenner"],
+    correct: 1
+  },
+  {
+    question: "The O antigen in Gram-negative bacteria is part of:",
+    options: ["Teichoic acid", "Peptidoglycan", "Lipopolysaccharide", "Capsule"],
+    correct: 2
+  },
+  {
+    question: "In the electron transport chain, protons are pumped into which space in bacteria?",
+    options: ["Nucleoid", "Periplasm", "Cytoplasm", "Outer membrane"],
+    correct: 1
+  },
+  {
+    question: "Which process requires a pilus?",
+    options: ["Transformation", "Transduction", "Conjugation", "Binary fission"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is a pyrimidine base?",
+    options: ["Adenine", "Guanine", "Thymine", "None of the above"],
+    correct: 2
+  },
+  {
+    question: "The start codon AUG codes for which amino acid?",
+    options: ["Tryptophan", "Methionine", "Leucine", "Serine"],
+    correct: 1
+  },
+  {
+    question: "Which antimicrobial target is unique to bacteria and absent in humans?",
+    options: ["70S ribosome", "Cell membrane", "DNA", "Metabolic enzymes"],
+    correct: 0
+  },
+  {
+    question: "Which physical method of control is bacteriostatic rather than bactericidal?",
+    options: ["Autoclaving", "Boiling", "Refrigeration", "Incineration"],
+    correct: 2
+  },
+  {
+    question: "In the Gram stain, what happens if you over-decolorize?",
+    options: ["Gram-positives appear Gram-negative", "Gram-negatives appear Gram-positive", "All cells appear purple", "No cells stain"],
+    correct: 0
+  },
+  {
+    question: "Which organism causes 'brain-eating amoeba' infection?",
+    options: ["Entamoeba histolytica", "Naegleria fowleri", "Acanthamoeba", "Giardia lamblia"],
+    correct: 1
+  },
+  {
+    question: "Which drug is used as prophylaxis for high-risk individuals exposed to HIV?",
+    options: ["AZT", "HAART", "PrEP", "PEP"],
+    correct: 2
+  },
+  {
+    question: "The primary reservoir for Ebola virus is:",
+    options: ["Monkeys", "Mosquitoes", "Fruit bats", "Rodents"],
+    correct: 2
+  },
+  {
+    question: "Which virus is associated with Burkitt’s lymphoma and nasopharyngeal carcinoma?",
+    options: ["HIV", "HPV", "EBV", "HSV"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is NOT a virulence factor of Yersinia pestis?",
+    options: ["F1 capsule", "Type III secretion system", "Mycolic acid", "Pla protease"],
+    correct: 2
+  },
+  {
+    question: "Praziquantel is the drug of choice for treating:",
+    options: ["Malaria", "Schistosomiasis", "Leishmaniasis", "Chagas disease"],
+    correct: 1
+  },
+  {
+    question: "Which cytokine profile is associated with susceptibility to Leishmaniasis?",
+    options: ["Th1", "Th2", "Treg", "Th17"],
+    correct: 1
+  },
+  {
+    question: "The 'Trojan horse' mechanism in Leishmaniasis involves:",
+    options: ["Macrophages ingesting neutrophils containing parasites", "Viruses carrying Leishmania DNA", "Antibody-mediated enhancement", "Complement evasion"],
+    correct: 0
+  },
+  {
+    question: "Which form of plague is transmissible via respiratory droplets?",
+    options: ["Bubonic", "Septicemic", "Pneumonic", "All forms"],
+    correct: 2
+  },
+  {
+    question: "Disseminated intravascular coagulation (DIC) in plague is caused by:",
+    options: ["Yops", "LPS endotoxin", "F1 capsule", "Pla protease"],
+    correct: 1
+  },
+  {
+    question: "Which of the following helminths is a trematode?",
+    options: ["Ascaris", "Schistosoma", "Enterobius", "Wuchereria"],
+    correct: 1
+  },
+  {
+    question: "The intermediate host for Schistosoma is:",
+    options: ["Mosquito", "Snail", "Flea", "Tick"],
+    correct: 1
+  },
+  {
+    question: "Which disease is the second most socioeconomically devastating parasitic disease after malaria?",
+    options: ["Chagas disease", "Leishmaniasis", "Schistosomiasis", "Hookworm"],
+    correct: 2
+  },
+  {
+    question: "Which presentation topic disease involves retrograde axonal transport?",
+    options: ["Ebola", "Lyme disease", "AFM", "Mpox"],
+    correct: 2
+  },
+  {
+    question: "Cytolytic T-cells contribute to neuronal damage in:",
+    options: ["RSV", "AFM", "Angiostrongyliasis", "CRE infection"],
+    correct: 1
+  },
+  {
+    question: "Which disease is associated with ‘swimmer’s itch’?",
+    options: ["Schistosomiasis", "Leishmaniasis", "Malaria", "Giardiasis"],
+    correct: 0
+  },
+  {
+    question: "Mpox virus belongs to which family?",
+    options: ["Filoviridae", "Orthopoxvirus", "Herpesviridae", "Flaviviridae"],
+    correct: 1
+  },
+  {
+    question: "Tecovirimat (TPOXX) is used to treat:",
+    options: ["Smallpox and Mpox", "Ebola", "RSV", "CRE infections"],
+    correct: 0
+  },
+  {
+    question: "Which antibiotic is reserved as a last resort for MRSA?",
+    options: ["Methicillin", "Penicillin", "Vancomycin", "Tetracycline"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is a narrow-spectrum antibiotic?",
+    options: ["Tetracycline", "Chloramphenicol", "Penicillin G", "Ciprofloxacin"],
+    correct: 2
+  },
+  {
+    question: "In PCR, the annealing temperature is typically around:",
+    options: ["50°C", "60°C", "72°C", "94°C"],
+    correct: 1
+  },
+  {
+    question: "The lacZ gene in plasmid vectors encodes:",
+    options: ["Ampicillin resistance", "Beta-galactosidase", "Green fluorescent protein", "DNA ligase"],
+    correct: 1
+  },
+  {
+    question: "Which enzyme synthesizes RNA primers during DNA replication?",
+    options: ["DNA polymerase", "Primase", "Helicase", "Ligase"],
+    correct: 1
+  },
+  {
+    question: "Which base pair is held together by three hydrogen bonds?",
+    options: ["A-T", "A-U", "G-C", "T-A"],
+    correct: 2
+  },
+  {
+    question: "Which structure allows bacteria to float in aquatic environments?",
+    options: ["Flagella", "Pili", "Gas vesicles", "Capsule"],
+    correct: 2
+  },
+  {
+    question: "In the bacterial growth curve, secondary metabolites like antibiotics are produced in the:",
+    options: ["Lag phase", "Log phase", "Stationary phase", "Death phase"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is NOT a method of horizontal gene transfer?",
+    options: ["Transformation", "Transduction", "Conjugation", "Binary fission"],
+    correct: 3
+  },
+  {
+    question: "Which scientist linked Bacillus anthracis to anthrax using postulates?",
+    options: ["Louis Pasteur", "Robert Koch", "Alexander Fleming", "Joseph Lister"],
+    correct: 1
+  },
+  {
+    question: "The acid-fast property of Mycobacterium is due to:",
+    options: ["Thick peptidoglycan", "Teichoic acids", "Mycolic acid", "Lipopolysaccharide"],
+    correct: 2
+  },
+  {
+    question: "Which staining method uses malachite green and safranin?",
+    options: ["Gram stain", "Acid-fast stain", "Endospore stain", "Capsule stain"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is a differential stain?",
+    options: ["Methylene blue", "Crystal violet", "Gram stain", "Carbolfuchsin"],
+    correct: 2
+  },
+  {
+    question: "Which protozoan uses pseudopods for movement?",
+    options: ["Giardia", "Trichomonas", "Entamoeba", "Plasmodium"],
+    correct: 2
+  },
+  {
+    question: "Which fungal reproduction method produces conidiospores?",
+    options: ["Sexual", "Asexual", "Binary fission", "Budding"],
+    correct: 1
+  },
+  {
+    question: "Which of the following is true about naked viruses?",
+    options: ["They have a lipid envelope", "They are more resistant to disinfectants", "They bud from host cells", "They are easily inactivated by drying"],
+    correct: 1
+  },
+  {
+    question: "Which step in the HIV life cycle is blocked by protease inhibitors?",
+    options: ["Attachment", "Reverse transcription", "Integration", "Maturation"],
+    correct: 3
+  },
+  {
+    question: "Which drug inhibits RNA polymerase in bacteria?",
+    options: ["Rifampin", "Ciprofloxacin", "Tetracycline", "Vancomycin"],
+    correct: 0
+  },
+  {
+    question: "Which of the following is a bacteriostatic drug?",
+    options: ["Penicillin", "Ciprofloxacin", "Tetracycline", "Vancomycin"],
+    correct: 2
+  },
+  {
+    question: "Which disease is caused by a spirochete?",
+    options: ["Tuberculosis", "Lyme disease", "Malaria", "Tetanus"],
+    correct: 1
+  },
+  {
+    question: "Which vector transmits Leishmaniasis?",
+    options: ["Mosquito", "Sandfly", "Tick", "Flea"],
+    correct: 1
+  },
+  {
+    question: "Which form of leishmaniasis is most fatal if untreated?",
+    options: ["Cutaneous", "Mucocutaneous", "Visceral", "Diffuse"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is used to treat visceral leishmaniasis?",
+    options: ["Praziquantel", "AmBisome", "Doxycycline", "Metronidazole"],
+    correct: 1
+  },
+  {
+    question: "Which protein is essential for RSV-induced syncytia formation?",
+    options: ["G protein", "F protein", "gp120", "Hemagglutinin"],
+    correct: 1
+  },
+  {
+    question: "Which of the following is NOT a symptom of AFM?",
+    options: ["Sudden limb weakness", "Facial droop", "Fever and cough", "Difficulty swallowing"],
+    correct: 2
+  },
+  {
+    question: "Which of the following best describes CRE?",
+    options: ["Resistant to all antibiotics", "Resistant to carbapenems", "A virus with high mortality", "A fungal infection of the lungs"],
+    correct: 1
+  },
+  {
+    question: "Which carbapenemase class is metallo-beta-lactamase?",
+    options: ["Class A", "Class B", "Class D", "None"],
+    correct: 1
+  },
+  {
+    question: "How is Mpox primarily transmitted?",
+    options: ["Airborne droplets", "Contaminated water", "Direct contact with lesions", "Insect bite"],
+    correct: 2
+  },
+  {
+    question: "Which disease involves biofilm blockage of a flea's gut, promoting transmission?",
+    options: ["Lyme disease", "Plague", "Typhus", "Tularemia"],
+    correct: 1
+  },
+  {
+    question: "Which Yersinia pestis virulence factor prevents phagocytosis?",
+    options: ["LPS", "Yops", "F1 capsule", "Pla protease"],
+    correct: 2
+  },
+  {
+    question: "Which helminth causes blood in urine?",
+    options: ["Schistosoma haematobium", "Schistosoma mansoni", "Ascaris lumbricoides", "Enterobius vermicularis"],
+    correct: 0
+  },
+  {
+    question: "Which is the definitive host for Toxoplasma gondii?",
+    options: ["Humans", "Cats", "Mice", "Livestock"],
+    correct: 1
+  },
+  {
+    question: "Which of the following is a key feature of prions?",
+    options: ["Contain RNA", "Trigger interferon response", "Resist standard autoclaving", "Have a protein coat"],
+    correct: 2
+  },
+  {
+    question: "Which enzyme is inhibited by sulfonamides?",
+    options: ["Dihydropteroate synthase", "Dihydrofolate reductase", "DNA gyrase", "Peptidyl transferase"],
+    correct: 0
+  },
+  {
+    question: "Which of the following is used for pre-exposure prophylaxis against HIV?",
+    options: ["AZT", "PrEP", "PEP", "HAART"],
+    correct: 1
+  },
+  {
+    question: "Which virus causes hemorrhagic fever with up to 90% fatality?",
+    options: ["Mpox", "Ebola", "RSV", "HIV"],
+    correct: 1
+  },
+  {
+    question: "Which tick transmits Lyme disease in the eastern US?",
+    options: ["Dermacentor variabilis", "Ixodes scapularis", "Amblyomma americanum", "Rhipicephalus sanguineus"],
+    correct: 1
+  },
+  {
+    question: "Which of the following is NOT associated with RSV?",
+    options: ["Bronchiolitis in infants", "Syncytia formation", "Vaccination for pregnant women", "Antigenic shift"],
+    correct: 3
+  },
+  {
+    question: "Which parasite causes eosinophilic meningitis?",
+    options: ["Toxoplasma gondii", "Angiostrongylus cantonensis", "Naegleria fowleri", "Trypanosoma cruzi"],
+    correct: 1
+  },
+  {
+    question: "Anthelmintics are avoided in Angiostrongyliasis because:",
+    options: ["They are ineffective", "They cause severe allergic reactions", "Dying larvae worsen inflammation", "They promote cyst formation"],
+    correct: 2
+  },
+  {
+    question: "Which disease was declared eradicated in 1980?",
+    options: ["Polio", "Measles", "Smallpox", "Rinderpest"],
+    correct: 2
+  },
+  {
+    question: "Which scientist developed the first rabies vaccine?",
+    options: ["Edward Jenner", "Louis Pasteur", "Robert Koch", "Paul Ehrlich"],
+    correct: 1
+  },
+  {
+    question: "Which of the following is a broad-spectrum antibiotic?",
+    options: ["Penicillin G", "Vancomycin", "Tetracycline", "Nafcillin"],
+    correct: 2
+  },
+  {
+    question: "Which process describes the uptake of naked DNA from the environment?",
+    options: ["Conjugation", "Transduction", "Transformation", "Transposition"],
+    correct: 2
+  },
+  {
+    question: "Which scientist is known for germ theory and aseptic technique?",
+    options: ["Lister", "Pasteur", "Koch", "Fleming"],
+    correct: 0
+  },
+  {
+    question: "Which structure is found in Gram-positive but not Gram-negative bacteria?",
+    options: ["Outer membrane", "Lipopolysaccharide", "Teichoic acid", "Periplasm"],
+    correct: 2
+  },
+  {
+    question: "Which of the following is a selective medium?",
+    options: ["Nutrient agar", "Blood agar", "MacConkey agar", "TSA"],
+    correct: 2
+  },
+  {
+    question: "Which phase of metabolism includes glycolysis?",
+    options: ["Anabolic", "Catabolic", "Amphibolic", "Fermentative"],
+    correct: 1
+  },
+  {
+    question: "Which cofactor is required for transaminase enzymes?",
+    options: ["NAD+", "FAD", "Vitamin B6 (PLP)", "Coenzyme A"],
+    correct: 2
+  },
+  {
+    question: "Which method measures bacterial growth by cloudiness?",
+    options: ["Plate count", "Turbidimetry", "Membrane filtration", "MPN"],
+    correct: 1
+  },
+  {
+    question: "Which organism is a psychrophile?",
+    options: ["Thermus aquaticus", "Escherichia coli", "Pseudomonas fluorescens", "Clostridium botulinum"],
+    correct: 2
+  },
+  {
+    question: "Which chemical control agent is sporicidal at high concentrations?",
+    options: ["70% alcohol", "Hydrogen peroxide", "Phenol", "Quaternary ammonium compounds"],
+    correct: 1
+  },
+  {
+    question: "Which UV wavelength is most germicidal?",
+    options: ["200 nm", "260 nm", "300 nm", "350 nm"],
+    correct: 1
+  },
+  {
+    question: "Which enzyme repairs thymine dimers?",
+    options: ["DNA polymerase", "Ligase", "Photolyase", "Helicase"],
+    correct: 2
+  },
+  {
+    question: "Which plasmid carries genes for conjugation?",
+    options: ["R plasmid", "F plasmid", "Col plasmid", "Degrative plasmid"],
+    correct: 1
+  },
+  {
+    question: "Which technique separates DNA fragments by size?",
+    options: ["PCR", "Gel electrophoresis", "Blotting", "Sequencing"],
+    correct: 1
+  },
+  {
+    question: "Which fungus is used in baking and brewing?",
+    options: ["Aspergillus", "Penicillium", "Saccharomyces", "Rhizopus"],
+    correct: 2
+  },
+  {
+    question: "Which protozoan disease is sexually transmitted?",
+    options: ["Malaria", "Giardiasis", "Trichomoniasis", "Toxoplasmosis"],
+    correct: 2
+  },
+  {
+    question: "Which virus integrates into host DNA as a provirus?",
+    options: ["Influenza", "Herpes simplex", "HIV", "Polio"],
+    correct: 2
+  },
+  {
+    question: "Which drug class is associated with ototoxicity and nephrotoxicity?",
+    options: ["Penicillins", "Aminoglycosides", "Tetracyclines", "Macrolides"],
+    correct: 1
+  },
+  {
+    question: "Which of the following inhibits folic acid synthesis?",
+    options: ["Ciprofloxacin", "Sulfonamides", "Erythromycin", "Isoniazid"],
+    correct: 1
+  },
+  {
+    question: "Which disease is NOT caused by a virus?",
+    options: ["Ebola", "Mpox", "Lyme disease", "RSV"],
+    correct: 2
+  }
+];

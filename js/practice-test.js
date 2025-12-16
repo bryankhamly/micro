@@ -31,8 +31,7 @@ async function loadQuestions() {
 
 // Get selected chapters
 function getSelectedChapters() {
-    const checkboxes = document.querySelectorAll('.chapter-checkbox input:checked');
-    return Array.from(checkboxes).map(cb => cb.value);
+    return ['finalv2'];
 }
 
 // Count available questions for selected chapters
@@ -347,10 +346,6 @@ function generateReviewQuestions(filter) {
 // Event Listeners
 questionSlider.addEventListener('input', (e) => {
     sliderValue.textContent = e.target.value;
-});
-
-document.querySelectorAll('.chapter-checkbox input').forEach(checkbox => {
-    checkbox.addEventListener('change', updateAvailableQuestions);
 });
 
 startBtn.addEventListener('click', startTest);
