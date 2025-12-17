@@ -2712,6 +2712,506 @@
             "The parasite is intracellular and protected"
           ],
           "answer": 1
+        },
+        {
+          "question": "What scientific principle states that life arises only from pre-existing life?",
+          "options": [
+            "Spontaneous generation",
+            "Biogenesis",
+            "Abiogenesis",
+            "Germ theory"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is NOT a microorganism according to standard microbiological classification?",
+          "options": [
+            "Algae",
+            "Helminths",
+            "Viruses",
+            "All are considered microorganisms"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "Which of the following best describes a hydrogen bond?",
+          "options": [
+            "Complete transfer of electrons between atoms",
+            "Sharing of electron pairs between atoms",
+            "Weak attraction between a hydrogen atom and an electronegative atom like O or N",
+            "Interaction between two nonpolar molecules"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "ATP is structurally most similar to which of the following?",
+          "options": [
+            "Amino acid",
+            "Nucleotide",
+            "Monosaccharide",
+            "Fatty acid"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which macromolecule is NOT formed by dehydration synthesis?",
+          "options": [
+            "Proteins",
+            "Nucleic acids",
+            "Lipids",
+            "All are formed by dehydration synthesis"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "Why is immersion oil used with the 100x objective lens in light microscopy?",
+          "options": [
+            "To kill the bacteria on the slide",
+            "To increase light refraction and improve resolution",
+            "To act as a stain",
+            "To reduce the working distance"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Negative staining is most useful for observing which bacterial structure?",
+          "options": [
+            "Flagella",
+            "Endospores",
+            "Capsules",
+            "Cell wall thickness"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is a simple stain?",
+          "options": [
+            "Gram stain",
+            "Acid-fast stain",
+            "Methylene blue",
+            "Endospore stain"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which bacterial structure is primarily responsible for adherence to host cells and surfaces?",
+          "options": [
+            "Flagella",
+            "Pili",
+            "Fimbriae",
+            "Glycocalyx"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following components is found in the periplasmic space of Gram-negative bacteria?",
+          "options": [
+            "Teichoic acids",
+            "Hydrolytic enzymes",
+            "Mycolic acid",
+            "80S ribosomes"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which statement about Mycoplasma is TRUE?",
+          "options": [
+            "It stains Gram-positive due to thick peptidoglycan",
+            "It is resistant to penicillin because it lacks a cell wall",
+            "It forms endospores under stress",
+            "It has an outer membrane with LPS"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which flagellar arrangement describes a single flagellum at one pole?",
+          "options": [
+            "Lophotrichous",
+            "Amphitrichous",
+            "Monotrichous",
+            "Peritrichous"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Dipicolinic acid is a key component of:",
+          "options": [
+            "Gram-negative outer membrane",
+            "Bacterial capsules",
+            "Endospores",
+            "Fimbriae"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which molecule is the final electron acceptor in lactic acid fermentation?",
+          "options": [
+            "Oxygen",
+            "Pyruvate",
+            "Nitrate",
+            "Acetaldehyde"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Chemiosmosis in prokaryotes directly results in the synthesis of ATP by:",
+          "options": [
+            "Substrate-level phosphorylation",
+            "Proton motive force driving ATP synthase",
+            "Direct reduction of NAD+",
+            "Hydrolysis of GTP"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Feedback inhibition typically involves the binding of an end product to:",
+          "options": [
+            "The active site of the first enzyme in a pathway",
+            "An allosteric site of an early enzyme in a pathway",
+            "The mRNA of a metabolic gene",
+            "The ribosome to halt translation"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which growth phase is characterized by the synthesis of secondary metabolites like antibiotics?",
+          "options": [
+            "Lag phase",
+            "Log phase",
+            "Stationary phase",
+            "Death phase"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "An organism that grows optimally at pH 10 would be classified as a(n):",
+          "options": [
+            "Acidophile",
+            "Neutrophile",
+            "Alkaliphile",
+            "Halophile"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following best describes a chemolithoautotroph?",
+          "options": [
+            "Uses organic compounds for energy and carbon",
+            "Uses light for energy and CO2 for carbon",
+            "Uses inorganic molecules for energy and CO2 for carbon",
+            "Uses organic molecules for energy and CO2 for carbon"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "In an anaerobic jar using a GasPak system, what gas is generated to remove oxygen?",
+          "options": [
+            "CO2",
+            "H2",
+            "N2",
+            "CH4"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which method is most appropriate for sterilizing heat-labile solutions such as antibiotics?",
+          "options": [
+            "Autoclaving",
+            "Dry heat",
+            "Membrane filtration",
+            "UV radiation"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following microbes is most susceptible to disinfectants?",
+          "options": [
+            "Prions",
+            "Endospores",
+            "Mycobacteria",
+            "Enveloped viruses"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "Which chemical agent denatures proteins and disrupts membranes but is ineffective against non-enveloped viruses and endospores?",
+          "options": [
+            "Chlorine",
+            "70% isopropyl alcohol",
+            "Glutaraldehyde",
+            "Ethylene oxide"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "During DNA replication in bacteria, the RNA primer is synthesized by:",
+          "options": [
+            "DNA polymerase III",
+            "DNA ligase",
+            "Primase",
+            "Helicase"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following mutations is most likely to have no phenotypic effect?",
+          "options": [
+            "Nonsense mutation",
+            "Frameshift mutation",
+            "Silent mutation",
+            "Missense mutation"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "In prokaryotes, multiple ribosomes can translate a single mRNA simultaneously, forming a:",
+          "options": [
+            "Polypeptide chain",
+            "Polyribosome",
+            "Replisome",
+            "Spliceosome"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which enzyme is responsible for proofreading during DNA replication?",
+          "options": [
+            "Helicase",
+            "Primase",
+            "DNA polymerase",
+            "Ligase"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following restriction enzymes produces blunt ends?",
+          "options": [
+            "EcoRI",
+            "BamHI",
+            "HindIII",
+            "HaeIII"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "What is the function of the ampR gene in plasmid vectors like pUC19?",
+          "options": [
+            "It encodes beta-galactosidase",
+            "It allows selection of transformed bacteria on ampicillin",
+            "It acts as a promoter for gene expression",
+            "It facilitates conjugation"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "In PCR, why is Taq polymerase used instead of human DNA polymerase?",
+          "options": [
+            "It is cheaper to produce",
+            "It can withstand high denaturation temperatures",
+            "It has higher fidelity",
+            "It works without primers"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which fungal structure produces asexual conidiospores in Aspergillus?",
+          "options": [
+            "Sporangium",
+            "Conidiophore",
+            "Zygospore",
+            "Basidium"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following protozoan groups is non-motile in its mature form and strictly intracellular?",
+          "options": [
+            "Flagellates",
+            "Amoebas",
+            "Ciliates",
+            "Apicomplexa"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "A patient presents with chronic diarrhea after hiking and drinking untreated stream water. Chlorine treatment did not prevent infection. Which protozoan is most likely responsible?",
+          "options": [
+            "Entamoeba histolytica",
+            "Giardia lamblia",
+            "Trichomonas vaginalis",
+            "Toxoplasma gondii"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Cats are the definitive host for Toxoplasma gondii because they are the only host in which:",
+          "options": [
+            "Tissue cysts form",
+            "Sexual reproduction occurs and oocysts are shed",
+            "The trophozoite stage develops",
+            "Congenital transmission occurs"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following is a key difference between the lytic and lysogenic cycles of bacteriophages?",
+          "options": [
+            "Only the lytic cycle involves DNA integration into the host genome",
+            "Only the lysogenic cycle produces new virions immediately",
+            "The lysogenic cycle involves a prophage that replicates with the host",
+            "The lytic cycle is triggered by UV light"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which viral enzyme is responsible for converting viral RNA into DNA in retroviruses?",
+          "options": [
+            "Integrase",
+            "Protease",
+            "RNA polymerase",
+            "Reverse transcriptase"
+          ],
+          "answer": 3
+        },
+        {
+          "question": "Which of the following viruses is NOT enveloped?",
+          "options": [
+            "Influenza virus",
+            "HIV",
+            "Poliovirus",
+            "Herpes simplex virus"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Prions are uniquely resistant to standard sterilization procedures because they:",
+          "options": [
+            "Contain protective lipid envelopes",
+            "Are small enough to pass through filters",
+            "Are extremely stable misfolded proteins",
+            "Replicate slowly inside host cells"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which antimicrobial drug inhibits mycolic acid synthesis and is used specifically against Mycobacterium tuberculosis?",
+          "options": [
+            "Penicillin",
+            "Isoniazid",
+            "Tetracycline",
+            "Vancomycin"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which of the following best explains why sulfa drugs exhibit selective toxicity?",
+          "options": [
+            "Humans synthesize folic acid, but bacteria must obtain it from the environment",
+            "Bacteria synthesize folic acid from PABA, but humans acquire it from their diet",
+            "Sulfa drugs bind only to bacterial ribosomes",
+            "Humans lack the enzyme targeted by sulfa drugs"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Which class of antibiotics binds to the 50S ribosomal subunit and blocks peptide bond formation?",
+          "options": [
+            "Tetracyclines",
+            "Aminoglycosides",
+            "Macrolides",
+            "Fluoroquinolones"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Efflux pumps contribute to antibiotic resistance by:",
+          "options": [
+            "Degrading the antibiotic enzymatically",
+            "Preventing antibiotic entry through porins",
+            "Actively pumping the antibiotic out of the cell",
+            "Altering the antibiotic's target site"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is a hallmark of Enterovirus D68 infection that distinguishes it from poliovirus?",
+          "options": [
+            "Causes flaccid paralysis without fever",
+            "Targets anterior horn cells in the spinal cord",
+            "Is transmitted via the fecal-oral route",
+            "Is eradicated worldwide"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "The primary reason anthelmintics are not routinely used in Angiostrongyliasis is that:",
+          "options": [
+            "The parasite is extracellular and accessible",
+            "The drugs cannot cross the blood-brain barrier",
+            "Dying larvae provoke a harmful inflammatory response",
+            "The infection resolves spontaneously without treatment"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is a key virulence factor of Yersinia pestis that prevents phagocytosis at 37°C?",
+          "options": [
+            "LPS",
+            "F1 capsule",
+            "Pla protease",
+            "Yops"
+          ],
+          "answer": 1
+        },
+        {
+          "question": "Schistosoma haematobium is associated with an increased risk of which malignancy?",
+          "options": [
+            "Hepatocellular carcinoma",
+            "Colorectal cancer",
+            "Bladder cancer",
+            "Lymphoma"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which cytokine response is protective against Leishmania infection?",
+          "options": [
+            "IL-4",
+            "IL-10",
+            "IFN-gamma",
+            "IL-13"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "RSV-induced disease severity in infants is primarily due to:",
+          "options": [
+            "Direct viral cytopathic effect on alveoli",
+            "Toxin-mediated tissue damage",
+            "Host immune-mediated inflammation and airway obstruction",
+            "Secondary bacterial pneumonia"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "Which of the following is TRUE about Mpox compared to smallpox?",
+          "options": [
+            "Mpox has a higher mortality rate",
+            "Mpox does not cause a rash",
+            "Mpox is associated with lymphadenopathy",
+            "Mpox is transmitted by mosquitoes"
+          ],
+          "answer": 2
+        },
+        {
+          "question": "CRE infections are especially dangerous because:",
+          "options": [
+            "They are viral and untreatable",
+            "They are often pan-resistant and spread rapidly in healthcare settings",
+            "They only infect immunocompromised individuals",
+            "There is an effective vaccine available"
+          ],
+          "answer": 1
         }
       ]
     }

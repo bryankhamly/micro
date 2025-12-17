@@ -176,7 +176,116 @@
                     display: none;
                 }
             }
+
+            /* Lab Exam Review Card */
+            .lab-exam-review-card {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                padding: 1.5rem 2rem;
+                background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+                border-radius: 16px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                box-shadow: 0 6px 24px rgba(6, 182, 212, 0.3);
+                margin-bottom: 2.5rem;
+                position: relative;
+                overflow: hidden;
+            }
+            .lab-exam-review-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(255,255,255,0.1) 0%, transparent 50%, rgba(255,255,255,0.05) 100%);
+                pointer-events: none;
+            }
+            .lab-exam-review-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 32px rgba(6, 182, 212, 0.4);
+            }
+            .lab-exam-review-icon {
+                width: 60px;
+                height: 60px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                backdrop-filter: blur(10px);
+            }
+            .lab-exam-review-icon svg {
+                width: 32px;
+                height: 32px;
+                stroke: white;
+            }
+            .lab-exam-review-content {
+                flex: 1;
+            }
+            .lab-exam-review-content h3 {
+                color: white;
+                font-size: 1.35rem;
+                margin: 0 0 0.25rem 0;
+                font-weight: 700;
+            }
+            .lab-exam-review-content p {
+                color: rgba(255, 255, 255, 0.9);
+                margin: 0;
+                font-size: 0.95rem;
+            }
+            .lab-exam-review-arrow {
+                width: 40px;
+                height: 40px;
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                transition: transform 0.3s ease;
+            }
+            .lab-exam-review-arrow svg {
+                stroke: white;
+                width: 20px;
+                height: 20px;
+            }
+            .lab-exam-review-card:hover .lab-exam-review-arrow {
+                transform: translateX(4px);
+            }
+            @media (max-width: 768px) {
+                .lab-exam-review-card {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 1.5rem 1.25rem;
+                }
+                .lab-exam-review-arrow {
+                    display: none;
+                }
+            }
         </style>
+
+        <!-- Lab Exam 2 Review -->
+        <a href="labs/lab-exam-2-review.html" class="lab-exam-review-card">
+            <div class="lab-exam-review-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 3h6v2H9zM9 3a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2"/>
+                    <path d="M9 12h6M9 16h4"/>
+                    <circle cx="12" cy="8" r="1"/>
+                </svg>
+            </div>
+            <div class="lab-exam-review-content">
+                <h3>Lab Exam 2 Review</h3>
+                <p>Exercises 13, 15, 16, 43, 54, 56, 60, 61 - Staining, Media, Biochemical Tests</p>
+            </div>
+            <div class="lab-exam-review-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </div>
+        </a>
 
         <!-- Study Chapters Section -->
         <div class="section-divider">
